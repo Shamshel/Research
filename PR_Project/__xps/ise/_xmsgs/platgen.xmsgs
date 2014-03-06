@@ -164,17 +164,8 @@ INFO:The EXT_SPI_CLK  = clk_100_0000MHz and  S_AXI_ACLK = clk_100_0000MHz are co
 <msg type="info" file="EDK" num="4194" delta="old" >Running <arg fmt="%s" index="1">XST</arg> parallelly on <arg fmt="%s" index="2">4</arg> processors
 </msg>
 
-<msg type="error" file="EDK" num="0" delta="new" ><arg fmt="%s" index="1">xst: unknown error occurred.</arg>
-</msg>
-
-<msg type="error" file="EDK" num="546" delta="old" >Aborting XST flow execution!
-</msg>
-
 <msg type="info" file="EDK" num="3509" delta="old" >NCF files should not be modified as they will be regenerated.
 If any constraint needs to be overridden, this should be done by modifying the data/<arg fmt="%s" index="1">system</arg>.ucf file.
-</msg>
-
-<msg type="error" file="EDK" num="440" delta="old" ><arg fmt="%s" index="1">platgen</arg> failed with errors!
 </msg>
 
 </messages>

@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.21 secs
  
 --> 
 TABLE OF CONTENTS
@@ -35,7 +35,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "system_ring_oscillator_0_wrapper_xst.prj"
-Verilog Include Directory          : {"C:\Users\ECE\Documents\PR_Project\pcores\" "C:\Users\ECE\Documents\ip_core_example\MyProcessorIPLib\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"C:\Users\ECE\Documents\PR_Project\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc7k325tffg900-2
@@ -64,6 +64,8 @@ Cores Search Directories           : {./}
 =========================================================================
 Analyzing Verilog file "C:/Users/ECE/Documents/PR_Project/pcores/ring_oscillator_v1_00_a/hdl/verilog/user_logic.v" into library ring_oscillator_v1_00_a
 Parsing module <user_logic>.
+Analyzing Verilog file "C:/Users/ECE/Documents/PR_Project/pcores/ring_oscillator_v1_00_a/hdl/verilog/rp.v" into library ring_oscillator_v1_00_a
+Parsing module <rp>.
 Parsing VHDL file "C:/Xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" into library proc_common_v3_00_a
 Parsing package <family>.
 Parsing package body <family>.
@@ -455,17 +457,14 @@ Elaborating entity <pselect_f> (architecture <imp>) with generics from library <
 Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
 INFO:HDLCompiler:679 - "C:/Xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd" Line 417. Case statement is complete. others clause is never selected
 Going to verilog side to elaborate module user_logic
-
-Elaborating module <user_logic(C_NUM_REG=2,C_SLV_DWIDTH=32)>.
-ERROR:HDLCompiler:1654 - "C:/Users/ECE/Documents/PR_Project/pcores/ring_oscillator_v1_00_a/hdl/verilog/user_logic.v" Line 190: Instantiating <reconfigurablePeripherial> from unknown module <rp>
-Module user_logic remains a blackbox, due to errors in its contents
-WARNING:HDLCompiler:1499 - "C:/Users/ECE/Documents/PR_Project/pcores/ring_oscillator_v1_00_a/hdl/verilog/user_logic.v" Line 54: Empty module <user_logic(C_NUM_REG=2,C_SLV_DWIDTH=32)> remains a black box.
+ERROR:HDLCompiler:329 - "C:/Users/ECE/Documents/PR_Project/pcores/ring_oscillator_v1_00_a/hdl/verilog/user_logic.v" Line 194: Target <slv_reg1> of concurrent assignment or output port connection should be a net type.
 Back to vhdl to continue elaboration
+Netlist ring_oscillator(32,32,"00000000000000000000000111111111",0,8,"01110011100000000000000000000000","01110011100000001111111111111111","kintex7",2,1,32,32)(0,31,0,31,0,31,1,7)(IMP) remains a blackbox, due to errors in its contents
 --> 
 
-Total memory usage is 266780 kilobytes
+Total memory usage is 262748 kilobytes
 
 Number of errors   :    1 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

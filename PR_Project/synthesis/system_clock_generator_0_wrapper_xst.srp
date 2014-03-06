@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> 
 TABLE OF CONTENTS
@@ -35,7 +35,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "system_clock_generator_0_wrapper_xst.prj"
-Verilog Include Directory          : {"C:\Users\ECE\Documents\PR_Project\pcores\" "C:\Users\ECE\Documents\ip_core_example\MyProcessorIPLib\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"C:\Users\ECE\Documents\PR_Project\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc7k325tffg900-2
@@ -58,7 +58,6 @@ Cores Search Directories           : {./}
 
 =========================================================================
 
-WARNING:Xst - Deleting Xdb  0x0.000000p-1022ssociated with XstModel XstGModel
 
 =========================================================================
 *                          HDL Parsing                                  *
@@ -344,13 +343,13 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.54 secs
+Total CPU time to Xst completion: 9.28 secs
  
 --> 
 
-Total memory usage is 462424 kilobytes
+Total memory usage is 461784 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   13 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
 Number of infos    :   17 (   0 filtered)
 

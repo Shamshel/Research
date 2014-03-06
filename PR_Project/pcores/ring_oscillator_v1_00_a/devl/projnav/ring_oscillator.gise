@@ -66,6 +66,10 @@
     <transform xil_pn:end_ts="1392164612" xil_pn:in_ck="2315349774386322414" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1392164612">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../hdl/verilog/rp.v"/>
       <outfile xil_pn:name="../../hdl/verilog/user_logic.v"/>
       <outfile xil_pn:name="../../hdl/vhdl/ring_oscillator.vhd"/>

@@ -120,5 +120,6 @@ vhdl axi_lite_ipif_v1_01_a C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pco
 vhdl axi_lite_ipif_v1_01_a C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd
 vhdl axi_lite_ipif_v1_01_a C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd
 verilog ring_oscillator_v1_00_a C:\Users\ECE\Documents\PR_Project\pcores\ring_oscillator_v1_00_a/hdl/verilog/user_logic.v
+verilog ring_oscillator_v1_00_a C:\Users\ECE\Documents\PR_Project\pcores\ring_oscillator_v1_00_a/hdl/verilog/rp.v
 vhdl ring_oscillator_v1_00_a C:\Users\ECE\Documents\PR_Project\pcores\ring_oscillator_v1_00_a/hdl/vhdl/ring_oscillator.vhd
 vhdl work ../hdl/system_ring_oscillator_0_wrapper.vhd

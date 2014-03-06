@@ -5,9 +5,6 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="0" delta="new" >Deleting Xdb <arg fmt="% as" index="1"> 0x0.000000p-1022s</arg>sociated with XstModel <arg fmt="%s" index="2">XstGModel</arg>
-</msg>
-
 <msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:/Users/ECE/Documents/PR_Project/hdl/elaborate/clock_generator_0_v4_03_a/hdl/vhdl/clock_generator.vhd" Line 266: Assignment to <arg fmt="%s" index="1">net_vdd0</arg> ignored, since the identifier is never used
 </msg>
 

@@ -25,7 +25,13 @@ entity system_stub is
     axi_xadc_0_CONVST_pin : in std_logic;
     axi_xadc_0_ALARM_pin : out std_logic_vector(7 downto 0);
     axi_xadc_0_TEMP_OUT_pin : out std_logic_vector(11 downto 0);
-    axi_xadc_0_MUXADDR_pin : out std_logic_vector(4 downto 0)
+    axi_xadc_0_MUXADDR_pin : out std_logic_vector(4 downto 0);
+    axi_xadc_1_VAUXP_pin : in std_logic_vector(15 downto 0);
+    axi_xadc_1_VAUXN_pin : in std_logic_vector(15 downto 0);
+    axi_xadc_1_CONVST_pin : in std_logic;
+    axi_xadc_1_ALARM_pin : out std_logic_vector(7 downto 0);
+    axi_xadc_1_TEMP_OUT_pin : out std_logic_vector(11 downto 0);
+    axi_xadc_1_MUXADDR_pin : out std_logic_vector(4 downto 0)
   );
 end system_stub;
 
@@ -49,7 +55,13 @@ architecture STRUCTURE of system_stub is
       axi_xadc_0_CONVST_pin : in std_logic;
       axi_xadc_0_ALARM_pin : out std_logic_vector(7 downto 0);
       axi_xadc_0_TEMP_OUT_pin : out std_logic_vector(11 downto 0);
-      axi_xadc_0_MUXADDR_pin : out std_logic_vector(4 downto 0)
+      axi_xadc_0_MUXADDR_pin : out std_logic_vector(4 downto 0);
+      axi_xadc_1_VAUXP_pin : in std_logic_vector(15 downto 0);
+      axi_xadc_1_VAUXN_pin : in std_logic_vector(15 downto 0);
+      axi_xadc_1_CONVST_pin : in std_logic;
+      axi_xadc_1_ALARM_pin : out std_logic_vector(7 downto 0);
+      axi_xadc_1_TEMP_OUT_pin : out std_logic_vector(11 downto 0);
+      axi_xadc_1_MUXADDR_pin : out std_logic_vector(4 downto 0)
     );
   end component;
 
@@ -76,7 +88,13 @@ begin
       axi_xadc_0_CONVST_pin => axi_xadc_0_CONVST_pin,
       axi_xadc_0_ALARM_pin => axi_xadc_0_ALARM_pin,
       axi_xadc_0_TEMP_OUT_pin => axi_xadc_0_TEMP_OUT_pin,
-      axi_xadc_0_MUXADDR_pin => axi_xadc_0_MUXADDR_pin
+      axi_xadc_0_MUXADDR_pin => axi_xadc_0_MUXADDR_pin,
+      axi_xadc_1_VAUXP_pin => axi_xadc_1_VAUXP_pin,
+      axi_xadc_1_VAUXN_pin => axi_xadc_1_VAUXN_pin,
+      axi_xadc_1_CONVST_pin => axi_xadc_1_CONVST_pin,
+      axi_xadc_1_ALARM_pin => axi_xadc_1_ALARM_pin,
+      axi_xadc_1_TEMP_OUT_pin => axi_xadc_1_TEMP_OUT_pin,
+      axi_xadc_1_MUXADDR_pin => axi_xadc_1_MUXADDR_pin
     );
 
 end architecture STRUCTURE;

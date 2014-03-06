@@ -4,8 +4,6 @@ xc7k325tffg900-2
 vhdl
 -intstyle
 default
--lp
-C:/Users/ECE/Documents/ip_core_example/
 -msg
 __xps/ise/xmsgprops.lst
 -parallel

@@ -11,4 +11,4 @@ run
 -hierarchy_separator /
 -iobuf NO
 -sd {../implementation}
--vlgincdir {"C:\Users\ECE\Documents\PR_Project\pcores\" "C:\Users\ECE\Documents\ip_core_example\MyProcessorIPLib\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+-vlgincdir {"C:\Users\ECE\Documents\PR_Project\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }

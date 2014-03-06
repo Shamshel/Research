@@ -5,10 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="1654" delta="old" >"C:/Users/ECE/Documents/PR_Project/pcores/ring_oscillator_v1_00_a/hdl/verilog/user_logic.v" Line 190: Instantiating &lt;<arg fmt="%s" index="1">reconfigurablePeripherial</arg>&gt; from unknown module &lt;<arg fmt="%s" index="2">rp</arg>&gt;
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:/Users/ECE/Documents/PR_Project/pcores/ring_oscillator_v1_00_a/hdl/verilog/user_logic.v" Line 54: Empty module &lt;<arg fmt="%s" index="1">user_logic(C_NUM_REG=2,C_SLV_DWIDTH=32)</arg>&gt; remains a black box.
+<msg type="error" file="HDLCompiler" num="329" delta="new" >"C:/Users/ECE/Documents/PR_Project/pcores/ring_oscillator_v1_00_a/hdl/verilog/user_logic.v" Line 194: Target &lt;<arg fmt="%s" index="1">slv_reg1</arg>&gt; of concurrent assignment or output port connection should be a net type.
 </msg>
 
 </messages>

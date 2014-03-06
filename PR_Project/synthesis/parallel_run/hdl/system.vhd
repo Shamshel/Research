@@ -25,7 +25,13 @@ entity system is
     axi_xadc_0_CONVST_pin : in std_logic;
     axi_xadc_0_ALARM_pin : out std_logic_vector(7 downto 0);
     axi_xadc_0_TEMP_OUT_pin : out std_logic_vector(11 downto 0);
-    axi_xadc_0_MUXADDR_pin : out std_logic_vector(4 downto 0)
+    axi_xadc_0_MUXADDR_pin : out std_logic_vector(4 downto 0);
+    axi_xadc_1_VAUXP_pin : in std_logic_vector(15 downto 0);
+    axi_xadc_1_VAUXN_pin : in std_logic_vector(15 downto 0);
+    axi_xadc_1_CONVST_pin : in std_logic;
+    axi_xadc_1_ALARM_pin : out std_logic_vector(7 downto 0);
+    axi_xadc_1_TEMP_OUT_pin : out std_logic_vector(11 downto 0);
+    axi_xadc_1_MUXADDR_pin : out std_logic_vector(4 downto 0)
   );
 end system;
 
@@ -1779,31 +1785,38 @@ architecture STRUCTURE of system is
     );
   end component;
 
-  component system_ring_oscillator_0_wrapper is
+  component system_axi_xadc_0_wrapper is
     port (
       S_AXI_ACLK : in std_logic;
       S_AXI_ARESETN : in std_logic;
-      S_AXI_AWADDR : in std_logic_vector(31 downto 0);
+      S_AXI_AWADDR : in std_logic_vector(10 downto 0);
       S_AXI_AWVALID : in std_logic;
+      S_AXI_AWREADY : out std_logic;
       S_AXI_WDATA : in std_logic_vector(31 downto 0);
       S_AXI_WSTRB : in std_logic_vector(3 downto 0);
       S_AXI_WVALID : in std_logic;
+      S_AXI_WREADY : out std_logic;
+      S_AXI_BRESP : out std_logic_vector(1 downto 0);
+      S_AXI_BVALID : out std_logic;
       S_AXI_BREADY : in std_logic;
-      S_AXI_ARADDR : in std_logic_vector(31 downto 0);
+      S_AXI_ARADDR : in std_logic_vector(10 downto 0);
       S_AXI_ARVALID : in std_logic;
-      S_AXI_RREADY : in std_logic;
       S_AXI_ARREADY : out std_logic;
       S_AXI_RDATA : out std_logic_vector(31 downto 0);
       S_AXI_RRESP : out std_logic_vector(1 downto 0);
       S_AXI_RVALID : out std_logic;
-      S_AXI_WREADY : out std_logic;
-      S_AXI_BRESP : out std_logic_vector(1 downto 0);
-      S_AXI_BVALID : out std_logic;
-      S_AXI_AWREADY : out std_logic
+      S_AXI_RREADY : in std_logic;
+      VAUXP : in std_logic_vector(15 downto 0);
+      VAUXN : in std_logic_vector(15 downto 0);
+      CONVST : in std_logic;
+      IP2INTC_Irpt : out std_logic;
+      ALARM : out std_logic_vector(7 downto 0);
+      TEMP_OUT : out std_logic_vector(11 downto 0);
+      MUXADDR : out std_logic_vector(4 downto 0)
     );
   end component;
 
-  component system_axi_xadc_0_wrapper is
+  component system_axi_xadc_1_wrapper is
     port (
       S_AXI_ACLK : in std_logic;
       S_AXI_ARESETN : in std_logic;
@@ -1932,6 +1945,12 @@ architecture STRUCTURE of system is
   signal axi_xadc_0_TEMP_OUT : std_logic_vector(11 downto 0);
   signal axi_xadc_0_VAUXN : std_logic_vector(15 downto 0);
   signal axi_xadc_0_VAUXP : std_logic_vector(15 downto 0);
+  signal axi_xadc_1_ALARM : std_logic_vector(7 downto 0);
+  signal axi_xadc_1_CONVST : std_logic;
+  signal axi_xadc_1_MUXADDR : std_logic_vector(4 downto 0);
+  signal axi_xadc_1_TEMP_OUT : std_logic_vector(11 downto 0);
+  signal axi_xadc_1_VAUXN : std_logic_vector(15 downto 0);
+  signal axi_xadc_1_VAUXP : std_logic_vector(15 downto 0);
   signal clk_100_0000MHz : std_logic_vector(0 to 0);
   signal microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr : std_logic_vector(0 to 31);
   signal microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Clk : std_logic;
@@ -2032,8 +2051,8 @@ architecture STRUCTURE of system is
   attribute BOX_TYPE of system_qspi_flash_wrapper : component is "user_black_box";
   attribute BOX_TYPE of system_iic_main_wrapper : component is "user_black_box";
   attribute BOX_TYPE of system_axi_hwicap_0_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of system_ring_oscillator_0_wrapper : component is "user_black_box";
   attribute BOX_TYPE of system_axi_xadc_0_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of system_axi_xadc_1_wrapper : component is "user_black_box";
 
 begin
 
@@ -2045,6 +2064,12 @@ begin
   axi_xadc_0_ALARM_pin <= axi_xadc_0_ALARM;
   axi_xadc_0_TEMP_OUT_pin <= axi_xadc_0_TEMP_OUT;
   axi_xadc_0_MUXADDR_pin <= axi_xadc_0_MUXADDR;
+  axi_xadc_1_VAUXP <= axi_xadc_1_VAUXP_pin;
+  axi_xadc_1_VAUXN <= axi_xadc_1_VAUXN_pin;
+  axi_xadc_1_CONVST <= axi_xadc_1_CONVST_pin;
+  axi_xadc_1_ALARM_pin <= axi_xadc_1_ALARM;
+  axi_xadc_1_TEMP_OUT_pin <= axi_xadc_1_TEMP_OUT;
+  axi_xadc_1_MUXADDR_pin <= axi_xadc_1_MUXADDR;
   pgassign1(6 downto 6) <= clk_100_0000MHz(0 to 0);
   pgassign1(5 downto 5) <= clk_100_0000MHz(0 to 0);
   pgassign1(4 downto 4) <= clk_100_0000MHz(0 to 0);
@@ -3800,30 +3825,37 @@ begin
       IP2INTC_Irpt => open
     );
 
-  ring_oscillator_0 : system_ring_oscillator_0_wrapper
+  axi_xadc_0 : system_axi_xadc_0_wrapper
     port map (
       S_AXI_ACLK => pgassign1(6),
       S_AXI_ARESETN => axi4lite_0_M_ARESETN(5),
-      S_AXI_AWADDR => axi4lite_0_M_AWADDR(191 downto 160),
+      S_AXI_AWADDR => axi4lite_0_M_AWADDR(170 downto 160),
       S_AXI_AWVALID => axi4lite_0_M_AWVALID(5),
+      S_AXI_AWREADY => axi4lite_0_M_AWREADY(5),
       S_AXI_WDATA => axi4lite_0_M_WDATA(191 downto 160),
       S_AXI_WSTRB => axi4lite_0_M_WSTRB(23 downto 20),
       S_AXI_WVALID => axi4lite_0_M_WVALID(5),
+      S_AXI_WREADY => axi4lite_0_M_WREADY(5),
+      S_AXI_BRESP => axi4lite_0_M_BRESP(11 downto 10),
+      S_AXI_BVALID => axi4lite_0_M_BVALID(5),
       S_AXI_BREADY => axi4lite_0_M_BREADY(5),
-      S_AXI_ARADDR => axi4lite_0_M_ARADDR(191 downto 160),
+      S_AXI_ARADDR => axi4lite_0_M_ARADDR(170 downto 160),
       S_AXI_ARVALID => axi4lite_0_M_ARVALID(5),
-      S_AXI_RREADY => axi4lite_0_M_RREADY(5),
       S_AXI_ARREADY => axi4lite_0_M_ARREADY(5),
       S_AXI_RDATA => axi4lite_0_M_RDATA(191 downto 160),
       S_AXI_RRESP => axi4lite_0_M_RRESP(11 downto 10),
       S_AXI_RVALID => axi4lite_0_M_RVALID(5),
-      S_AXI_WREADY => axi4lite_0_M_WREADY(5),
-      S_AXI_BRESP => axi4lite_0_M_BRESP(11 downto 10),
-      S_AXI_BVALID => axi4lite_0_M_BVALID(5),
-      S_AXI_AWREADY => axi4lite_0_M_AWREADY(5)
+      S_AXI_RREADY => axi4lite_0_M_RREADY(5),
+      VAUXP => axi_xadc_0_VAUXP,
+      VAUXN => axi_xadc_0_VAUXN,
+      CONVST => axi_xadc_0_CONVST,
+      IP2INTC_Irpt => open,
+      ALARM => axi_xadc_0_ALARM,
+      TEMP_OUT => axi_xadc_0_TEMP_OUT,
+      MUXADDR => axi_xadc_0_MUXADDR
     );
 
-  axi_xadc_0 : system_axi_xadc_0_wrapper
+  axi_xadc_1 : system_axi_xadc_1_wrapper
     port map (
       S_AXI_ACLK => pgassign1(6),
       S_AXI_ARESETN => axi4lite_0_M_ARESETN(6),
@@ -3844,13 +3876,13 @@ begin
       S_AXI_RRESP => axi4lite_0_M_RRESP(13 downto 12),
       S_AXI_RVALID => axi4lite_0_M_RVALID(6),
       S_AXI_RREADY => axi4lite_0_M_RREADY(6),
-      VAUXP => axi_xadc_0_VAUXP,
-      VAUXN => axi_xadc_0_VAUXN,
-      CONVST => axi_xadc_0_CONVST,
+      VAUXP => axi_xadc_1_VAUXP,
+      VAUXN => axi_xadc_1_VAUXN,
+      CONVST => axi_xadc_1_CONVST,
       IP2INTC_Irpt => open,
-      ALARM => axi_xadc_0_ALARM,
-      TEMP_OUT => axi_xadc_0_TEMP_OUT,
-      MUXADDR => axi_xadc_0_MUXADDR
+      ALARM => axi_xadc_1_ALARM,
+      TEMP_OUT => axi_xadc_1_TEMP_OUT,
+      MUXADDR => axi_xadc_1_MUXADDR
     );
 
   iobuf_0 : IOBUF

@@ -3,7 +3,6 @@ XmpVersion: 14.6
 VerMgmt: 14.6
 IntStyle: default
 Flow: ise
-ModuleSearchPath: C:/Users/ECE/Documents/ip_core_example
 MHS File: system.mhs
 Architecture: kintex7
 Device: xc7k325t

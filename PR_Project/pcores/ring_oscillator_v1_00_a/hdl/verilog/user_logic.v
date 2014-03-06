@@ -118,6 +118,7 @@ output                                    IP2Bus_Error;
 
   // USER logic implementation added here
 
+	
  
   // ------------------------------------------------------
   // Example code to read/write user logic slave model s/w accessible registers
@@ -186,14 +187,6 @@ output                                    IP2Bus_Error;
       endcase
 
     end // SLAVE_REG_READ_PROC
-	 
-	 rp reconfigurablePeripherial
-	(
-		.clk(Bus2IP_Clk),
-		.go_count(slv_reg0[C_SLV_DWIDTH-1 : 0]),
-		.osc_count(slv_reg1[C_SLV_DWIDTH-1 : 0])
-	
-	);
 
   // ------------------------------------------------------------
   // Example code to drive IP to Bus signals

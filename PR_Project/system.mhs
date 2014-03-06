@@ -28,6 +28,12 @@
  PORT axi_xadc_0_ALARM_pin = axi_xadc_0_ALARM, DIR = O, VEC = [7:0]
  PORT axi_xadc_0_TEMP_OUT_pin = axi_xadc_0_TEMP_OUT, DIR = O, VEC = [11:0]
  PORT axi_xadc_0_MUXADDR_pin = axi_xadc_0_MUXADDR, DIR = O, VEC = [4:0]
+ PORT axi_xadc_1_VAUXP_pin = axi_xadc_1_VAUXP, DIR = I, VEC = [15:0]
+ PORT axi_xadc_1_VAUXN_pin = axi_xadc_1_VAUXN, DIR = I, VEC = [15:0]
+ PORT axi_xadc_1_CONVST_pin = axi_xadc_1_CONVST, DIR = I
+ PORT axi_xadc_1_ALARM_pin = axi_xadc_1_ALARM, DIR = O, VEC = [7:0]
+ PORT axi_xadc_1_TEMP_OUT_pin = axi_xadc_1_TEMP_OUT, DIR = O, VEC = [11:0]
+ PORT axi_xadc_1_MUXADDR_pin = axi_xadc_1_MUXADDR, DIR = O, VEC = [4:0]
 
 
 BEGIN proc_sys_reset
@@ -199,16 +205,6 @@ BEGIN axi_hwicap
  PORT ICAP_Clk = clk_100_0000MHz
 END
 
-BEGIN ring_oscillator
- PARAMETER INSTANCE = ring_oscillator_0
- PARAMETER HW_VER = 1.00.a
- PARAMETER C_NUM_REG = 2
- PARAMETER C_BASEADDR = 0x73800000
- PARAMETER C_HIGHADDR = 0x7380ffff
- BUS_INTERFACE S_AXI = axi4lite_0
- PORT S_AXI_ACLK = clk_100_0000MHz
-END
-
 BEGIN axi_xadc
  PARAMETER INSTANCE = axi_xadc_0
  PARAMETER HW_VER = 1.00.a
@@ -223,5 +219,21 @@ BEGIN axi_xadc
  PORT ALARM = axi_xadc_0_ALARM
  PORT TEMP_OUT = axi_xadc_0_TEMP_OUT
  PORT MUXADDR = axi_xadc_0_MUXADDR
+END
+
+BEGIN axi_xadc
+ PARAMETER INSTANCE = axi_xadc_1
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_HAS_TEMP_BUS = 1
+ PARAMETER C_BASEADDR = 0x7e220000
+ PARAMETER C_HIGHADDR = 0x7e22ffff
+ BUS_INTERFACE S_AXI = axi4lite_0
+ PORT S_AXI_ACLK = clk_100_0000MHz
+ PORT VAUXP = axi_xadc_1_VAUXP
+ PORT VAUXN = axi_xadc_1_VAUXN
+ PORT CONVST = axi_xadc_1_CONVST
+ PORT ALARM = axi_xadc_1_ALARM
+ PORT TEMP_OUT = axi_xadc_1_TEMP_OUT
+ PORT MUXADDR = axi_xadc_1_MUXADDR
 END
 
