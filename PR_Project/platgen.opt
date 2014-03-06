@@ -1,0 +1,13 @@
+-p
+xc7k325tffg900-2
+-lang
+vhdl
+-intstyle
+default
+-lp
+C:/Users/ECE/Documents/ip_core_example/
+-msg
+__xps/ise/xmsgprops.lst
+-parallel
+yes
+system.mhs

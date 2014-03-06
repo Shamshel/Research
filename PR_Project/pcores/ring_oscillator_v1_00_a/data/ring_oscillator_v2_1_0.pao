@@ -1,0 +1,11 @@
+##############################################################################
+## Filename:          C:/Users/ECE/Documents/PR_Project/pcores/ring_oscillator_v1_00_a/data/ring_oscillator_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Thu Nov 14 10:08:41 2013 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+lib ring_oscillator_v1_00_a user_logic verilog
+lib ring_oscillator_v1_00_a rp verilog
+lib ring_oscillator_v1_00_a ring_oscillator vhdl

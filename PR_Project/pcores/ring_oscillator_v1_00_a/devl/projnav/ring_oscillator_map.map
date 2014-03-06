@@ -1,0 +1,61 @@
+Release 14.6 Map P.68d (nt64)
+Xilinx Map Application Log File for Design 'ring_oscillator'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o ring_oscillator_map.ncd ring_oscillator.ngd
+ring_oscillator.pcf 
+Target Device  : xc6vlx240t
+Target Package : ff1156
+Target Speed   : -1
+Mapper Version : virtex6 -- $Revision: 1.55 $
+Mapped Date    : Thu Nov 14 12:43:09 2013
+
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:56 - Part 'xc6vlx240t' is not a WebPack part.
+INFO:Security:61 - The XILINXD_LICENSE_FILE environment variable is not set.
+INFO:Security:63 - The LM_LICENSE_FILE environment variable is not set.
+INFO:Security:68 - For more information or for assistance in obtaining 
+ a license, please run the Xilinx License Configuration Manager
+       (xlcm or "Manage Xilinx Licenses".)
+INFO:Security:68a - user is ECE, on host ECE-PC.
+WARNING:Security:9b - No 'ISE' feature version 2013.06 was available for part
+'xc6vlx240t'.
+ERROR:Security:12 - No 'xc6vlx240t' feature version 2013.06 was available (-15),
+     so 'WebPack' may not be used.
+----------------------------------------------------------------------
+Cannot connect to license server system.
+ The license server manager (lmgrd) has not been started yet,
+ the wrong port@host or license file is being used, or the
+ port or hostname in the license file has been changed.
+Feature:       ISE
+Server name:   localhost
+License path:  C:/.Xilinx\Xilinx (1).lic;C:/.Xilinx\Xilinx
+(2).lic;C:/.Xilinx\Xilinx.lic;C:\Xilinx\14.6\ISE_DS\ISE\/coregen/core_licenses\X
+ilinx.lic;C:\Xilinx\14.6\ISE_DS\ISE\/coregen/core_licenses\XilinxFree.lic;C:\Xil
+inx\14.6\ISE_DS\EDK/data/core_licenses\Xilinx.lic;@localhost;
+FLEXnet Licensing error:-15,570
+For further information, refer to the FLEXnet Licensing documentation,
+available at "www.flexerasoftware.com".Cannot connect to license server system.
+ The license server manager (lmgrd) has not been started yet,
+ the wrong port@host or license file is being used, or the
+ port or hostname in the license file has been changed.
+Feature:       xc6vlx240t
+Server name:   localhost
+License path:  C:/.Xilinx\Xilinx (1).lic;C:/.Xilinx\Xilinx
+(2).lic;C:/.Xilinx\Xilinx.lic;C:\Xilinx\14.6\ISE_DS\ISE\/coregen/core_licenses\X
+ilinx.lic;C:\Xilinx\14.6\ISE_DS\ISE\/coregen/core_licenses\XilinxFree.lic;C:\Xil
+inx\14.6\ISE_DS\EDK/data/core_licenses\Xilinx.lic;@localhost;
+FLEXnet Licensing error:-15,570
+For further information, refer to the FLEXnet Licensing documentation,
+available at "www.flexerasoftware.com".
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ERROR:Map:258 - A problem was encountered attempting to get the license for this
+   architecture. 
+
+Design Summary
+--------------
+Number of errors   :   1
+Number of warnings :   0

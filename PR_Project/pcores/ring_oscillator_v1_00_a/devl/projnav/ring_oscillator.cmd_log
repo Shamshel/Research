@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project/pcores/ring_oscillator_v1_00_a/devl/projnav/ring_oscillator.xst" -ofn "C:/Users/ECE/Documents/PR_Project/pcores/ring_oscillator_v1_00_a/devl/projnav/ring_oscillator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6vlx240t-ff1156-1 ring_oscillator.ngc ring_oscillator.ngd  
+map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ring_oscillator_map.ncd ring_oscillator.ngd ring_oscillator.pcf 

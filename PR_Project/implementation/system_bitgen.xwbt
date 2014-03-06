@@ -1,0 +1,7 @@
+INFILE=C:\Users\ECE\Documents\PR_Project\implementation\system.ncd
+OUTFILE=C:\Users\ECE\Documents\PR_Project\implementation\system.bit
+FAMILY=Kintex7
+PART=xc7k325t-2ffg900
+WORKINGDIR=C:\Users\ECE\Documents\PR_Project\implementation
+LICENSE=WebPack
+USER_INFO=210713283_1777489707_210553578_303

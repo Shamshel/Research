@@ -1,0 +1,16 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/ECE/Documents/PR_Project/pcores/ring_oscillator_v1_00_a/devl/projnav/user_logic_isim_beh.exe" -prj "C:/Users/ECE/Documents/PR_Project/pcores/ring_oscillator_v1_00_a/devl/projnav/user_logic_beh.prj" "work.user_logic" "work.glbl" 
+ISim P.68d (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/ECE/Documents/PR_Project/pcores/ring_oscillator_v1_00_a/devl/projnav/../../hdl/verilog/user_logic.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module user_logic
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 2 Verilog Units
+Built simulation executable C:/Users/ECE/Documents/PR_Project/pcores/ring_oscillator_v1_00_a/devl/projnav/user_logic_isim_beh.exe
+Fuse Memory Usage: 28480 KB
+Fuse CPU Usage: 312 ms

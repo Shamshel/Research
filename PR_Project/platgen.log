@@ -1,0 +1,331 @@
+Release 14.6 - platgen Xilinx EDK 14.6 Build EDK_P.68d
+ (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: platgen -p xc7k325tffg900-2 -lang vhdl -intstyle default -lp
+C:/Users/ECE/Documents/ip_core_example/ -msg __xps/ise/xmsgprops.lst -parallel
+yes system.mhs 
+
+WARNING:EDK - INFO:Security:71 - If a license for part 'xc7k325t' is available,
+   it will be possible to use 'XPS_TDP' instead of 'XPS'.
+   WARNING:Security:42 - Your software subscription period has lapsed. Your
+   current version of Xilinx tools will continue to function, but you no longer
+   qualify for Xilinx software updates or new releases.
+
+
+Parse C:/Users/ECE/Documents/PR_Project/system.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to kintex7 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: axi_quad_spi, INSTANCE:QSPI_FLASH - tcl is overriding
+   PARAMETER C_SUB_FAMILY value to kintex7 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_quad_spi_v2_00_b
+   \data\axi_quad_spi_v2_1_0.mpd line 88 
+orig_family is kintex7
+INFO:EDK:4130 - IPNAME: axi_hwicap, INSTANCE:axi_hwicap_0 - tcl is overriding
+   PARAMETER C_FAMILY value to kintex7 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_hwicap_v2_03_a\d
+   ata\axi_hwicap_v2_1_0.mpd line 94 
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+INFO:EDK - 
+   INFO:For axi_quad_spi v2.00.b... 
+   Checking the C_SCK_RATIO parameter... 
+INFO:EDK - 
+   INFO: The EXT_SPI_CLK port is connected with clk_100_0000MHz signal.
+
+INFO:EDK - 
+   INFO: The actual SPI clock from the core will be EXT_SPI_CLK(integer
+   value)/C_SCK_RATIO.
+
+INFO:EDK - 
+   INFO: Core name                   : QSPI_FLASH
+
+INFO:EDK - 
+   INFO: Instance name               : QSPI_FLASH
+
+INFO:EDK - 
+   INFO: The core is instantiated in the Legacy Mode.
+
+INFO:EDK - 
+   INFO: The AXI interface is AXI4 Lite interface.
+
+INFO:EDK - 
+   INFO: In this mode, the core is backward compatible with the
+   axi_quad_spi_v1_00_a core in register mapping.
+
+INFO:EDK - 
+   INFO: This is Legacy mode of the core and 0 will not affect the core
+   configuration.
+
+INFO:EDK - 
+   INFO: The FIFO depth for AXI Quad SPI core instance is chosen as 16.
+
+INFO:EDK - 
+   INFO: With present configuration, the AXI Quad SPI core's PORT SPISEL is
+   connected to net_vcc. 
+INFO:EDK - 
+   INFO: To make the core operating in the master mode, make sure that the
+   mst_n_slv bit is configured to logic 1 in SPICR settings. 
+INFO:EDK - 
+   INFO: The STARTUP primitive is not used in the AXI Quad SPI core
+   configuration.
+
+
+**************************************************************************
+
+For axi_hwicap v2.03.a... 
+Checking the C_INCLUDE_STARTUP parameter...
+
+With present configuration, the PORT EOS_IN is unconnected.
+
+With present configuration, the STARTUP primitive would be used in the AXI
+HWICAP core.
+
+**************************************************************************
+Address Map for Processor microblaze_0
+  (0000000000-0x0001ffff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x0001ffff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40200000-0x4020ffff) axi_hwicap_0	axi4lite_0
+  (0x40600000-0x4060ffff) RS232_Uart_1	axi4lite_0
+  (0x40800000-0x4080ffff) IIC_MAIN	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+  (0x73800000-0x7380ffff) ring_oscillator_0	axi4lite_0
+  (0x75600000-0x7560ffff) QSPI_FLASH	axi4lite_0
+  (0x7e200000-0x7e20ffff) axi_xadc_0	axi4lite_0
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x20000 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 7 slave(s) 
+
+Checking port drivers...
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_i_bram_ctrl -
+   tcl is overriding PARAMETER C_MASK value to 0x40000000 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_d_bram_ctrl -
+   tcl is overriding PARAMETER C_MASK value to 0x40000000 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_AXI value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 232 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 367 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_BRK value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 402 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_NM_BRK value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 403 
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4lite_0.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 149 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+INFO:EDK - 
+   INFO:For axi_quad_spi, in the present instance, the C_SCK_RATIO is set to :
+   2. 
+INFO:EDK - 
+   INFO: The EXT_SPI_CLK period is : 10000 ps.
+
+INFO:EDK - 
+   INFO: User can connect the same AXI clock connected to the core to
+   EXT_SPI_CLK port with proper C_SCK_RATIO value.
+
+INFO:EDK - 
+   INFO: For the Winbond memories, the EXT_SPI_CLK is connected to 100000000 Hz
+   clock source and C_SCK_RATIO is 2.
+
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: Setting timing constaints for microblaze_0_ilmb.
+INFO: The microblaze_0_ilmb core has constraints automatically generated by XPS
+in implementation/microblaze_0_ilmb_wrapper/microblaze_0_ilmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: Setting timing constaints for microblaze_0_dlmb.
+INFO: The microblaze_0_dlmb core has constraints automatically generated by XPS
+in implementation/microblaze_0_dlmb_wrapper/microblaze_0_dlmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: Setting timing constaints for microblaze_0.
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: No asynchronous clock conversions in axi_interconnect axi4lite_0.
+INFO:EDK - 
+   INFO:The EXT_SPI_CLK  = clk_100_0000MHz and  S_AXI_ACLK = clk_100_0000MHz are
+   connected to the same source of clock. 
+INFO:EDK - 
+   INFO:The EXT_SPI_CLK  = clk_100_0000MHz and  S_AXI_ACLK = clk_100_0000MHz are
+   connected to the same source of clock. 
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+IPNAME:axi_quad_spi INSTANCE:qspi_flash -
+C:\Users\ECE\Documents\PR_Project\system.mhs line 160 - Copying (BBD-specified)
+netlist files.
+
+Managing cache ...
+IPNAME:proc_sys_reset INSTANCE:proc_sys_reset_0 -
+C:\Users\ECE\Documents\PR_Project\system.mhs line 33 - Copying cache
+implementation netlist
+IPNAME:lmb_v10 INSTANCE:microblaze_0_ilmb -
+C:\Users\ECE\Documents\PR_Project\system.mhs line 46 - Copying cache
+implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_i_bram_ctrl -
+C:\Users\ECE\Documents\PR_Project\system.mhs line 53 - Copying cache
+implementation netlist
+IPNAME:lmb_v10 INSTANCE:microblaze_0_dlmb -
+C:\Users\ECE\Documents\PR_Project\system.mhs line 62 - Copying cache
+implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_d_bram_ctrl -
+C:\Users\ECE\Documents\PR_Project\system.mhs line 69 - Copying cache
+implementation netlist
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
+C:\Users\ECE\Documents\PR_Project\system.mhs line 78 - Copying cache
+implementation netlist
+IPNAME:microblaze INSTANCE:microblaze_0 -
+C:\Users\ECE\Documents\PR_Project\system.mhs line 85 - Copying cache
+implementation netlist
+IPNAME:mdm INSTANCE:debug_module - C:\Users\ECE\Documents\PR_Project\system.mhs
+line 108 - Copying cache implementation netlist
+IPNAME:axi_uartlite INSTANCE:rs232_uart_1 -
+C:\Users\ECE\Documents\PR_Project\system.mhs line 145 - Copying cache
+implementation netlist
+IPNAME:axi_quad_spi INSTANCE:qspi_flash -
+C:\Users\ECE\Documents\PR_Project\system.mhs line 160 - Copying cache
+implementation netlist
+IPNAME:axi_iic INSTANCE:iic_main - C:\Users\ECE\Documents\PR_Project\system.mhs
+line 178 - Copying cache implementation netlist
+IPNAME:axi_hwicap INSTANCE:axi_hwicap_0 -
+C:\Users\ECE\Documents\PR_Project\system.mhs line 191 - Copying cache
+implementation netlist
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
+C:\Users\ECE\Documents\PR_Project\system.mhs line 78 - elaborating IP
+IPNAME:clock_generator INSTANCE:clock_generator_0 -
+C:\Users\ECE\Documents\PR_Project\system.mhs line 121 - elaborating IP
+ClkGen elaborate status: PASSED
+----------------------------------------
+----------------------------------------
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 0.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INFO:EDK:4194 - Running XST parallelly on 4 processors
+INSTANCE:clock_generator_0 - C:\Users\ECE\Documents\PR_Project\system.mhs line
+121 - Running XST synthesis
+INSTANCE:axi4lite_0 - C:\Users\ECE\Documents\PR_Project\system.mhs line 137 -
+Running XST synthesis
+INSTANCE:ring_oscillator_0 - C:\Users\ECE\Documents\PR_Project\system.mhs line
+202 - Running XST synthesis
+INSTANCE:axi_xadc_0 - C:\Users\ECE\Documents\PR_Project\system.mhs line 212 -
+Running XST synthesis
+ERROR:EDK - xst: unknown error occurred.
+ERROR:EDK:546 - Aborting XST flow execution!
+
+Running NGCBUILD ...
+IPNAME:system_clock_generator_0_wrapper INSTANCE:clock_generator_0 -
+C:\Users\ECE\Documents\PR_Project\system.mhs line 121 - Running NGCBUILD
+INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
+   If any constraint needs to be overridden, this should be done by modifying
+   the data/system.ucf file.
+
+Rebuilding cache ...
+ERROR:EDK:440 - platgen failed with errors!

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/ECE/Documents/PR_Project/pcores/ring_oscillator_v1_00_a/devl/projnav/user_logic_isim_beh.exe" -prj "C:/Users/ECE/Documents/PR_Project/pcores/ring_oscillator_v1_00_a/devl/projnav/user_logic_beh.prj" "work.user_logic" "work.glbl" 

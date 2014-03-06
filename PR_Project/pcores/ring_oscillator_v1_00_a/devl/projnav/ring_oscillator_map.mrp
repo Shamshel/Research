@@ -1,0 +1,38 @@
+Release 14.6 Map P.68d (nt64)
+Xilinx Mapping Report File for Design 'ring_oscillator'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o ring_oscillator_map.ncd ring_oscillator.ngd
+ring_oscillator.pcf 
+Target Device  : xc6vlx240t
+Target Package : ff1156
+Target Speed   : -1
+Mapper Version : virtex6 -- $Revision: 1.55 $
+Mapped Date    : Thu Nov 14 12:43:09 2013
+
+Design Summary
+--------------
+Number of errors   :   1
+Number of warnings :   0
+
+Section 1 - Errors
+------------------
+ERROR:Security:12 - No 'xc6vlx240t' feature version 2013.06 was available (-15),
+ERROR:Map:258 - A problem was encountered attempting to get the license for this
+   architecture. 
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:9b - No 'ISE' feature version 2013.06 was available for part
+'xc6vlx240t'.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:56 - Part 'xc6vlx240t' is not a WebPack part.
+INFO:Security:61 - The XILINXD_LICENSE_FILE environment variable is not set.
+INFO:Security:63 - The LM_LICENSE_FILE environment variable is not set.
+INFO:Security:68 - For more information or for assistance in obtaining 
+INFO:Security:68a - user is ECE, on host ECE-PC.

@@ -1,0 +1,1 @@
+ -p xc7k325tffg900-2 -pe microblaze_0 ../../workspace/PR_Project/Debug/PR_Project.elf

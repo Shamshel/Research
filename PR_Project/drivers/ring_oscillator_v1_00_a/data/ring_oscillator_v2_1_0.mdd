@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          C:\Users\ECE\Documents\PR_Project/drivers/ring_oscillator_v1_00_a/data/ring_oscillator_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Thu Nov 14 10:08:45 2013 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER ring_oscillator
+
+  OPTION supported_peripherals = (ring_oscillator);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

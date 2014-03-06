@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "C:\Users\ECE\Documents\PR_Project\pcores\ring_oscillator_v1_00_a\devl\synthesis\ring_oscillator_xst.prj"
+-top ring_oscillator
+-p virtex6
+-ofn "C:\Users\ECE\Documents\PR_Project\pcores\ring_oscillator_v1_00_a\devl\synthesis\ring_oscillator_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib ring_oscillator_v1_00_a

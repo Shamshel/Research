@@ -1,0 +1,131 @@
+
+bitinit version Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) Xilinx Inc. 2002.
+
+Parsing MHS File system.mhs...
+
+Overriding IP level properties ...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to kintex7 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: axi_quad_spi, INSTANCE:QSPI_FLASH - tcl is overriding
+   PARAMETER C_SUB_FAMILY value to kintex7 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_quad_spi_v2_00_b
+   \data\axi_quad_spi_v2_1_0.mpd line 88 
+orig_family is kintex7
+INFO:EDK:4130 - IPNAME: axi_hwicap, INSTANCE:axi_hwicap_0 - tcl is overriding
+   PARAMETER C_FAMILY value to kintex7 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_hwicap_v2_03_a\d
+   ata\axi_hwicap_v2_1_0.mpd line 94 
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+INFO:EDK - 
+   INFO:For axi_quad_spi v2.00.b... 
+   Checking the C_SCK_RATIO parameter... 
+INFO:EDK - 
+   INFO: The EXT_SPI_CLK port is connected with clk_100_0000MHz signal.
+
+INFO:EDK - 
+   INFO: The actual SPI clock from the core will be EXT_SPI_CLK(integer
+   value)/C_SCK_RATIO.
+
+INFO:EDK - 
+   INFO: Core name                   : QSPI_FLASH
+
+INFO:EDK - 
+   INFO: Instance name               : QSPI_FLASH
+
+INFO:EDK - 
+   INFO: The core is instantiated in the Legacy Mode.
+
+INFO:EDK - 
+   INFO: The AXI interface is AXI4 Lite interface.
+
+INFO:EDK - 
+   INFO: In this mode, the core is backward compatible with the
+   axi_quad_spi_v1_00_a core in register mapping.
+
+INFO:EDK - 
+   INFO: This is Legacy mode of the core and 0 will not affect the core
+   configuration.
+
+INFO:EDK - 
+   INFO: The FIFO depth for AXI Quad SPI core instance is chosen as 16.
+
+INFO:EDK - 
+   INFO: With present configuration, the AXI Quad SPI core's PORT SPISEL is
+   connected to net_vcc. 
+INFO:EDK - 
+   INFO: To make the core operating in the master mode, make sure that the
+   mst_n_slv bit is configured to logic 1 in SPICR settings. 
+INFO:EDK - 
+   INFO: The STARTUP primitive is not used in the AXI Quad SPI core
+   configuration.
+
+
+**************************************************************************
+
+For axi_hwicap v2.03.a... 
+Checking the C_INCLUDE_STARTUP parameter...
+
+With present configuration, the PORT EOS_IN is unconnected.
+
+With present configuration, the STARTUP primitive would be used in the AXI
+HWICAP core.
+
+**************************************************************************
+Address Map for Processor microblaze_0
+  (0000000000-0x0001ffff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x0001ffff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40200000-0x4020ffff) axi_hwicap_0	axi4lite_0
+  (0x40600000-0x4060ffff) RS232_Uart_1	axi4lite_0
+  (0x40800000-0x4080ffff) IIC_MAIN	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+  (0x73800000-0x7380ffff) ring_oscillator_0	axi4lite_0
+  (0x75600000-0x7560ffff) QSPI_FLASH	axi4lite_0
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x20000 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+Initializing Memory...
+Running Data2Mem with the following command:
+data2mem -bm "implementation/system_bd" -p xc7k325tffg900-2 -bt
+"implementation/system.bit"  -bd
+"../../workspace/PR_Project/Debug/PR_Project.elf" tag microblaze_0  -o b
+implementation/download.bit 
+Memory Initialization completed successfully.
+

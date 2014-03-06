@@ -1,0 +1,10 @@
+-batch 
+-create ring_oscillator 
+-ver 1.00.a 
+-dir "C:\Users\ECE\Documents\PR_Project" 
+-lang verilog 
+-bus axi4lite s 
+-reg 2 
+-xps 
+-ise 
+-driver 

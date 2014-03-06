@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">microblaze</arg>, INSTANCE:<arg fmt="%s" index="2">microblaze_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_ENDIANNESS</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\data\microblaze_v2_1_0.mpd line 198</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">microblaze</arg>, INSTANCE:<arg fmt="%s" index="2">microblaze_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_ICACHE_USE_FSL</arg> value to <arg fmt="%s" index="6">0</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\data\microblaze_v2_1_0.mpd line 339</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">microblaze</arg>, INSTANCE:<arg fmt="%s" index="2">microblaze_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_DCACHE_USE_FSL</arg> value to <arg fmt="%s" index="6">0</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\data\microblaze_v2_1_0.mpd line 369</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_interconnect</arg>, INSTANCE:<arg fmt="%s" index="2">axi4lite_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_BASEFAMILY</arg> value to <arg fmt="%s" index="6">kintex7</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_06_a\data\axi_interconnect_v2_1_0.mpd line 81</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_quad_spi</arg>, INSTANCE:<arg fmt="%s" index="2">QSPI_FLASH</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_SUB_FAMILY</arg> value to <arg fmt="%s" index="6">kintex7</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_quad_spi_v2_00_b\data\axi_quad_spi_v2_1_0.mpd line 88</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">axi_hwicap</arg>, INSTANCE:<arg fmt="%s" index="2">axi_hwicap_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_FAMILY</arg> value to <arg fmt="%s" index="6">kintex7</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_hwicap_v2_03_a\data\axi_hwicap_v2_1_0.mpd line 94</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="740" delta="old" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">microblaze_0_i_bram_ctrl</arg>:<arg fmt="%s" index="2">BRAM_Clk_A</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
+</msg>
+
+<msg type="info" file="EDK" num="740" delta="old" >Cannot determine the input clock associated with port : <arg fmt="%s" index="1">microblaze_0_d_bram_ctrl</arg>:<arg fmt="%s" index="2">BRAM_Clk_A</arg>. Clock DRCs will not be performed on this core and cores connected to it. 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" ><arg fmt="%s" index="1">
+INFO:For axi_quad_spi v2.00.b... 
+Checking the C_SCK_RATIO parameter...</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" ><arg fmt="%s" index="1">
+INFO: The EXT_SPI_CLK port is connected with clk_100_0000MHz signal.
+</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" ><arg fmt="%s" index="1">
+INFO: The actual SPI clock from the core will be EXT_SPI_CLK(integer value)/C_SCK_RATIO.
+</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" ><arg fmt="%s" index="1">
+INFO: Core name                   : QSPI_FLASH
+</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" ><arg fmt="%s" index="1">
+INFO: Instance name               : QSPI_FLASH
+</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" ><arg fmt="%s" index="1">
+INFO: The core is instantiated in the Legacy Mode.
+</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" ><arg fmt="%s" index="1">
+INFO: The AXI interface is AXI4 Lite interface.
+</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" ><arg fmt="%s" index="1">
+INFO: In this mode, the core is backward compatible with the axi_quad_spi_v1_00_a core in register mapping.
+</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" ><arg fmt="%s" index="1">
+INFO: This is Legacy mode of the core and 0 will not affect the core configuration.
+</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" ><arg fmt="%s" index="1">
+INFO: The FIFO depth for AXI Quad SPI core instance is chosen as 16.
+</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" ><arg fmt="%s" index="1">
+INFO: With present configuration, the AXI Quad SPI core&apos;s PORT SPISEL is connected to net_vcc.</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" ><arg fmt="%s" index="1">
+INFO: To make the core operating in the master mode, make sure that the mst_n_slv bit is configured to logic 1 in SPICR settings.</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="0" delta="new" ><arg fmt="%s" index="1">
+INFO: The STARTUP primitive is not used in the AXI Quad SPI core configuration.
+</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">lmb_v10</arg>, INSTANCE:<arg fmt="%s" index="2">microblaze_0_ilmb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_LMB_NUM_SLAVES</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data\lmb_v10_v2_1_0.mpd line 82</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">lmb_v10</arg>, INSTANCE:<arg fmt="%s" index="2">microblaze_0_dlmb</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_LMB_NUM_SLAVES</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data\lmb_v10_v2_1_0.mpd line 82</arg> 
+</msg>
+
+<msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">bram_block</arg>, INSTANCE:<arg fmt="%s" index="2">microblaze_0_bram_block</arg> - <arg fmt="%s" index="3">tool</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_MEMSIZE</arg> value to <arg fmt="%s" index="6">0x20000</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\data\bram_block_v2_1_0.mpd line 78</arg> 
+</msg>
+
+</messages>
+
