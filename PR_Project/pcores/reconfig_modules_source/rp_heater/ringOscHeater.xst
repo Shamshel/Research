@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/cody/Documents/ISE/oscHeatingCore/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/cody/Documents/ISE/oscHeatingCore/xst"
+elaborate
+-ifn ringOscHeater.prj
+-ifmt mixed

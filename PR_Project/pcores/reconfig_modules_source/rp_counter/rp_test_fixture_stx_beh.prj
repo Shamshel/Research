@@ -1,0 +1,3 @@
+verilog isim_temp "rp.v"
+verilog isim_temp "rp_test_fixture.v"
+verilog isim_temp "C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v"

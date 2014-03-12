@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/cody/Documents/ISE/oscHeatingCore/ringOscHeater.xst" -ofn "C:/Users/cody/Documents/ISE/oscHeatingCore/ringOscHeater.syr" 

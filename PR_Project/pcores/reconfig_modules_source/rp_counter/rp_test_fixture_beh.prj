@@ -1,0 +1,3 @@
+verilog work "rp.v"
+verilog work "rp_test_fixture.v"
+verilog work "C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v"
