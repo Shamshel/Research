@@ -139,7 +139,8 @@ architecture IMP of user_logic is
 				Reset_n : in std_logic
 			);
   end component rp;
-
+  signal reg_1									 :std_logic_vector(0 to C_SLV_DWIDTH-1);
+  
   ------------------------------------------
   -- Signals for user logic slave model s/w accessible register example
   ------------------------------------------
@@ -198,7 +199,7 @@ begin
     if Bus2IP_Clk'event and Bus2IP_Clk = '1' then
       if Bus2IP_Resetn = '0' then
         slv_reg0 <= (others => '0');
-        slv_reg1 <= (others => '0');
+        --slv_reg1 <= (others => '0');
       else
         case slv_reg_write_sel is
           when "10" =>
@@ -207,12 +208,12 @@ begin
                 slv_reg0(byte_index*8+7 downto byte_index*8) <= Bus2IP_Data(byte_index*8+7 downto byte_index*8);
               end if;
             end loop;
-          when "01" =>
-            for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
-              if ( Bus2IP_BE(byte_index) = '1' ) then
-                slv_reg1(byte_index*8+7 downto byte_index*8) <= Bus2IP_Data(byte_index*8+7 downto byte_index*8);
-              end if;
-            end loop;
+          --when "01" =>
+          --  for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
+          --    if ( Bus2IP_BE(byte_index) = '1' ) then
+          --      slv_reg1(byte_index*8+7 downto byte_index*8) <= Bus2IP_Data(byte_index*8+7 downto byte_index*8);
+          --    end if;
+          --  end loop;
           when others => null;
         end case;
       end if;
@@ -221,7 +222,7 @@ begin
   end process SLAVE_REG_WRITE_PROC;
 
   -- implement slave model software accessible register(s) read mux
-  SLAVE_REG_READ_PROC : process( slv_reg_read_sel, slv_reg0, slv_reg1 ) is
+  SLAVE_REG_READ_PROC : process( slv_reg_read_sel, slv_reg0, reg_1 ) is
   begin
 
     case slv_reg_read_sel is

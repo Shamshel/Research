@@ -1,0 +1,104 @@
+Release 14.6 ngdbuild P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -p xc7k325tffg900-2 -dd _ngo -uc counter.ucf counter.edf
+
+Executing edif2ngd -quiet "counter.edf" "_ngo\counter.ngo"
+Release 14.6 - edif2ngd P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading NGO file
+"C:/Users/ECE/Documents/PR_Project_Planahead/PR_Project_Planahead.runs/counter/_
+ngo/counter.ngo" ...
+-----------------------------------------------
+WARNING:Security:42 - Your license support version '2014.05' for
+PartialReconfiguration expires in 23 days after which you will not qualify for
+Xilinx software updates or new releases.
+
+-----------------------------------------------
+
+-----------------------------------------------
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "counter.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
+   'TS_sys_clk_pin', was traced into MMCME2_ADV instance
+   clock_generator_0/MMCM1_INST/MMCM_ADV_inst. The following new TNM groups and
+   period specifications were generated at the MMCME2_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_clock_generator_0_clock_generator_0_SIG_MMCM1_CLKOUT0 =
+   PERIOD "clock_generator_0_clock_generator_0_SIG_MMCM1_CLKOUT0" TS_sys_clk_pin
+   * 0.5 HIGH 50%>
+
+Done...
+Checking Partitions ...
+
+Checking expanded design ...
+WARNING:NgdBuild:486 - Attribute "CLOCK_HOLD" is not allowed on symbol
+   "clock_generator_0/MMCM1_INST/MMCM_ADV_inst" of type "MMCME2_ADV".  This
+   attribute will be ignored.
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[27].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'QSPI_FLASH/QSPI_FLASH/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.C
+   LK_CROSS_I/RX_FIFO_FULL_SYNC_SPI_2_AXI_2' has unconnected output pin
+WARNING:NgdBuild:440 - FF primitive
+   'QSPI_FLASH/QSPI_FLASH/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_
+   0_GEN.SPI_MODULE_I/MST_TRANS_INHIBIT_D1_I' has unconnected output pin
+WARNING:NgdBuild:440 - FF primitive
+   'QSPI_FLASH/QSPI_FLASH/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_
+   0_GEN.SPI_MODULE_I/SCK_I_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'QSPI_FLASH/QSPI_FLASH/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.C
+   LK_CROSS_I/SPICR_5_TXFIFO_AX2S_2' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'QSPI_FLASH/QSPI_FLASH/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.C
+   LK_CROSS_I/SPIXFER_DONE_S2AX_2' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'QSPI_FLASH/QSPI_FLASH/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.C
+   LK_CROSS_I/TX_FIFO_FULL_AX2S_2' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'QSPI_FLASH/QSPI_FLASH/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.C
+   LK_CROSS_I/RX_FIFO_EMPTY_AX2S_2' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'QSPI_FLASH/QSPI_FLASH/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.C
+   LK_CROSS_I/SPICR_6_RXFIFO_RST_AX2S_2' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'QSPI_FLASH/QSPI_FLASH/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.C
+   LK_CROSS_I/TX_FIFO_EMPTY_S2AX_2' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'IIC_MAIN/IIC_MAIN/X_IIC/X_AXI_IPIF_SSP1/X_SOFT_RESET/FF_WRACK' has
+   unconnected output pin
+
+Partition Implementation Status
+-------------------------------
+
+  Preserved Partitions:
+
+
+  Implemented Partitions:
+
+    Partition "/system":
+Attribute STATE set to IMPLEMENT.
+
+    Partition
+"/system/reconfigurable_peripherials_0/reconfigurable_peripherials_0/USER_LOGIC_
+I/rp_instance" (Reconfigurable Module "rp_counter"):
+Attribute STATE set to IMPLEMENT.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:  12
+
+Total memory usage is 267856 kilobytes
+
+Writing NGD file "counter.ngd" ...
+Total REAL time to NGDBUILD completion:  32 sec
+Total CPU time to NGDBUILD completion:   17 sec
+
+Writing NGDBUILD log file "counter.bld"...

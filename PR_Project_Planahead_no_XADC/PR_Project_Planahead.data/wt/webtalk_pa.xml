@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Thu May 08 16:08:37 2014">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="be47c72458ab42989c2c9fb5be81c107" type="ProjectID"/>
+<property name="ProjectIteration" value="4" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="IsPRProject" value="true" type="IsPRProject"/>
+<property name="DesignMode" value="GateLvl" type="DesignMode"/>
+<property name="ReconfigPartitionCount" value="1" type="ReconfigPartitionCount"/>
+<property name="ReconfigModuleCount" value="3" type="ReconfigModuleCount"/>
+<property name="PartitionCount" value="2" type="PartitionCount"/>
+<property name="ImplStrategy" value="ISE Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="EditProperties" value="1" type="JavaHandler"/>
+<property name="FlipToViewTaskSynthesis" value="1" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="OpenProject" value="1" type="JavaHandler"/>
+<property name="RunDRC" value="1" type="JavaHandler"/>
+<property name="RunImplementation" value="3" type="JavaHandler"/>
+<property name="ShowView" value="1" type="JavaHandler"/>
+<property name="ViewTaskImplementation" value="1" type="JavaHandler"/>
+<property name="ViewTaskProjectManager" value="1" type="JavaHandler"/>
+<property name="ViewTaskSynthesis" value="2" type="JavaHandler"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="25" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="20" type="TclMode"/>
+<property name="ISEMode" value="0" type="ISEMode"/>
+</item>
+</section>
+</application>
+</document>

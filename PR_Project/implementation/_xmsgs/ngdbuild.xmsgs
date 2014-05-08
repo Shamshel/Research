@@ -54,5 +54,8 @@
 <msg type="warning" file="NgdBuild" num="443" delta="old" >SFF primitive &apos;<arg fmt="%s" index="1">IIC_MAIN/IIC_MAIN/X_IIC/X_AXI_IPIF_SSP1/X_SOFT_RESET/FF_WRACK</arg>&apos; has unconnected output pin
 </msg>
 
+<msg type="error" file="NgdBuild" num="604" delta="new" ><arg fmt="%s" index="1">logical</arg> block &apos;<arg fmt="%s" index="2">reconfigurable_peripherials_0/reconfigurable_peripherials_0/USER_LOGIC_I/rp_instance</arg>&apos; with type &apos;<arg fmt="%s" index="3">rp</arg>&apos; could not be resolved. A pin name misspelling can cause this, a missing edif or ngc file, case mismatch between the block name and the edif or ngc file name, or the misspelling of a type name. Symbol &apos;<arg fmt="%s" index="4">rp</arg>&apos; is not supported in target &apos;<arg fmt="%s" index="5">kintex7</arg>&apos;.
+</msg>
+
 </messages>
 

@@ -12,6 +12,9 @@ Loading design module
 "C:/Users/ECE/Documents/PR_Project/implementation/system_axi_xadc_0_wrapper.ngc"
 ...
 Loading design module
+"C:/Users/ECE/Documents/PR_Project/implementation/system_axi_xadc_1_wrapper.ngc"
+...
+Loading design module
 "C:/Users/ECE/Documents/PR_Project/implementation/system_rs232_uart_1_wrapper.ng
 c"...
 Loading design module
@@ -51,8 +54,8 @@ Loading design module
 "C:/Users/ECE/Documents/PR_Project/implementation/system_axi_hwicap_0_wrapper.ng
 c"...
 Loading design module
-"C:/Users/ECE/Documents/PR_Project/implementation/system_ring_oscillator_0_wrapp
-er.ngc"...
+"C:/Users/ECE/Documents/PR_Project/implementation/system_reconfigurable_peripher
+ials_0_wrapper.ngc"...
 Loading design module
 "C:/Users/ECE/Documents/PR_Project/implementation/system_microblaze_0_bram_block
 _wrapper.ngc"...
@@ -145,6 +148,12 @@ WARNING:NgdBuild:443 - SFF primitive
 WARNING:NgdBuild:443 - SFF primitive
    'IIC_MAIN/IIC_MAIN/X_IIC/X_AXI_IPIF_SSP1/X_SOFT_RESET/FF_WRACK' has
    unconnected output pin
+ERROR:NgdBuild:604 - logical block
+   'reconfigurable_peripherials_0/reconfigurable_peripherials_0/USER_LOGIC_I/rp_
+   instance' with type 'rp' could not be resolved. A pin name misspelling can
+   cause this, a missing edif or ngc file, case mismatch between the block name
+   and the edif or ngc file name, or the misspelling of a type name. Symbol 'rp'
+   is not supported in target 'kintex7'.
 
 Partition Implementation Status
 -------------------------------
@@ -154,13 +163,14 @@ Partition Implementation Status
 -------------------------------
 
 NGDBUILD Design Results Summary:
-  Number of errors:     0
+  Number of errors:     1
   Number of warnings:  15
 
-Total memory usage is 289544 kilobytes
+Total memory usage is 290924 kilobytes
 
-Writing NGD file "system.ngd" ...
-Total REAL time to NGDBUILD completion:  56 sec
-Total CPU time to NGDBUILD completion:   56 sec
+Total REAL time to NGDBUILD completion:  59 sec
+Total CPU time to NGDBUILD completion:   57 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
 
 Writing NGDBUILD log file "system.bld"...

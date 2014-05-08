@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="RS232_Uart_1_sin" Dir="IN"/>
+		<Port Id="RESET" Dir="IN"/>
+		<Port Id="CLK_P" Dir="IN"/>
+		<Port Id="CLK_N" Dir="IN"/>
+		<Port Id="sm_fan_pwm_net_vcc" Dir="OUT"/>
+		<Port Id="RS232_Uart_1_sout" Dir="OUT"/>
+		<Port Id="QSPI_FLASH_SS" Dir="INOUT"/>
+		<Port Id="QSPI_FLASH_IO1" Dir="INOUT"/>
+		<Port Id="QSPI_FLASH_IO0" Dir="INOUT"/>
+		<Port Id="IIC_MAIN_SDA" Dir="INOUT"/>
+		<Port Id="IIC_MAIN_SCL" Dir="INOUT"/>
+		<DiffPair Pos="CLK_P" Neg="CLK_N"/>
+	</Ifc>
+</Interface>
+

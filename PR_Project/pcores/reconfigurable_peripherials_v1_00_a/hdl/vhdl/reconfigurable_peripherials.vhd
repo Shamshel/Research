@@ -128,7 +128,7 @@ entity reconfigurable_peripherials is
     C_DPHASE_TIMEOUT               : integer              := 8;
     C_BASEADDR                     : std_logic_vector     := X"FFFFFFFF";
     C_HIGHADDR                     : std_logic_vector     := X"00000000";
-    C_FAMILY                       : string               := "virtex6";
+    C_FAMILY                       : string               := "kintex7";
     C_NUM_REG                      : integer              := 1;
     C_NUM_MEM                      : integer              := 1;
     C_SLV_AWIDTH                   : integer              := 32;

@@ -117,8 +117,7 @@ Address Map for Processor microblaze_0
   (0x40800000-0x4080ffff) IIC_MAIN	axi4lite_0
   (0x41400000-0x4140ffff) debug_module	axi4lite_0
   (0x75600000-0x7560ffff) QSPI_FLASH	axi4lite_0
-  (0x7e200000-0x7e20ffff) axi_xadc_0	axi4lite_0
-  (0x7e220000-0x7e22ffff) axi_xadc_1	axi4lite_0
+  (0x7b000000-0x7b00ffff) reconfigurable_peripherials_0	axi4lite_0
 INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
    PARAMETER C_LMB_NUM_SLAVES value to 1 -
    C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
@@ -137,7 +136,7 @@ Checking platform address map ...
 Checking platform configuration ...
 IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
 IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
-IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 7 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 6 slave(s) 
 
 Checking port drivers...
 
@@ -240,50 +239,53 @@ Creating hardware output directories ...
 
 Managing hardware (BBD-specified) netlist files ...
 IPNAME:axi_quad_spi INSTANCE:qspi_flash -
-C:\Users\ECE\Documents\PR_Project\system.mhs line 166 - Copying (BBD-specified)
+C:\Users\ECE\Documents\PR_Project\system.mhs line 154 - Copying (BBD-specified)
 netlist files.
 
 Managing cache ...
 IPNAME:proc_sys_reset INSTANCE:proc_sys_reset_0 -
-C:\Users\ECE\Documents\PR_Project\system.mhs line 39 - Copying cache
+C:\Users\ECE\Documents\PR_Project\system.mhs line 27 - Copying cache
 implementation netlist
 IPNAME:lmb_v10 INSTANCE:microblaze_0_ilmb -
-C:\Users\ECE\Documents\PR_Project\system.mhs line 52 - Copying cache
+C:\Users\ECE\Documents\PR_Project\system.mhs line 40 - Copying cache
 implementation netlist
 IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_i_bram_ctrl -
-C:\Users\ECE\Documents\PR_Project\system.mhs line 59 - Copying cache
+C:\Users\ECE\Documents\PR_Project\system.mhs line 47 - Copying cache
 implementation netlist
 IPNAME:lmb_v10 INSTANCE:microblaze_0_dlmb -
-C:\Users\ECE\Documents\PR_Project\system.mhs line 68 - Copying cache
+C:\Users\ECE\Documents\PR_Project\system.mhs line 56 - Copying cache
 implementation netlist
 IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_d_bram_ctrl -
-C:\Users\ECE\Documents\PR_Project\system.mhs line 75 - Copying cache
+C:\Users\ECE\Documents\PR_Project\system.mhs line 63 - Copying cache
 implementation netlist
 IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
-C:\Users\ECE\Documents\PR_Project\system.mhs line 84 - Copying cache
+C:\Users\ECE\Documents\PR_Project\system.mhs line 72 - Copying cache
 implementation netlist
 IPNAME:microblaze INSTANCE:microblaze_0 -
-C:\Users\ECE\Documents\PR_Project\system.mhs line 91 - Copying cache
+C:\Users\ECE\Documents\PR_Project\system.mhs line 79 - Copying cache
 implementation netlist
 IPNAME:mdm INSTANCE:debug_module - C:\Users\ECE\Documents\PR_Project\system.mhs
-line 114 - Copying cache implementation netlist
+line 102 - Copying cache implementation netlist
 IPNAME:axi_uartlite INSTANCE:rs232_uart_1 -
-C:\Users\ECE\Documents\PR_Project\system.mhs line 151 - Copying cache
+C:\Users\ECE\Documents\PR_Project\system.mhs line 139 - Copying cache
 implementation netlist
 IPNAME:axi_quad_spi INSTANCE:qspi_flash -
-C:\Users\ECE\Documents\PR_Project\system.mhs line 166 - Copying cache
+C:\Users\ECE\Documents\PR_Project\system.mhs line 154 - Copying cache
 implementation netlist
 IPNAME:axi_iic INSTANCE:iic_main - C:\Users\ECE\Documents\PR_Project\system.mhs
-line 184 - Copying cache implementation netlist
+line 172 - Copying cache implementation netlist
 IPNAME:axi_hwicap INSTANCE:axi_hwicap_0 -
-C:\Users\ECE\Documents\PR_Project\system.mhs line 197 - Copying cache
+C:\Users\ECE\Documents\PR_Project\system.mhs line 185 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_0 -
+C:\Users\ECE\Documents\PR_Project\system.mhs line 196 - Copying cache
 implementation netlist
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
-C:\Users\ECE\Documents\PR_Project\system.mhs line 84 - elaborating IP
+C:\Users\ECE\Documents\PR_Project\system.mhs line 72 - elaborating IP
 IPNAME:clock_generator INSTANCE:clock_generator_0 -
-C:\Users\ECE\Documents\PR_Project\system.mhs line 127 - elaborating IP
+C:\Users\ECE\Documents\PR_Project\system.mhs line 115 - elaborating IP
 ClkGen elaborate status: PASSED
 ----------------------------------------
 ----------------------------------------
@@ -291,7 +293,7 @@ ClkGen elaborate status: PASSED
 Writing HDL for elaborated instances ...
 
 Inserting wrapper level ...
-Completion time: 1.00 seconds
+Completion time: 0.00 seconds
 
 Constructing platform-level connectivity ...
 Completion time: 0.00 seconds
@@ -309,23 +311,21 @@ INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
 INFO:EDK:4194 - Running XST parallelly on 4 processors
 INSTANCE:clock_generator_0 - C:\Users\ECE\Documents\PR_Project\system.mhs line
-127 - Running XST synthesis
-INSTANCE:axi4lite_0 - C:\Users\ECE\Documents\PR_Project\system.mhs line 143 -
+115 - Running XST synthesis
+INSTANCE:axi4lite_0 - C:\Users\ECE\Documents\PR_Project\system.mhs line 131 -
 Running XST synthesis
-INSTANCE:axi_xadc_0 - C:\Users\ECE\Documents\PR_Project\system.mhs line 208 -
-Running XST synthesis
-INSTANCE:axi_xadc_1 - C:\Users\ECE\Documents\PR_Project\system.mhs line 224 -
-Running XST synthesis
+INSTANCE:reconfigurable_peripherials_0 -
+C:\Users\ECE\Documents\PR_Project\system.mhs line 196 - Running XST synthesis
 
 Running NGCBUILD ...
 IPNAME:system_clock_generator_0_wrapper INSTANCE:clock_generator_0 -
-C:\Users\ECE\Documents\PR_Project\system.mhs line 127 - Running NGCBUILD
+C:\Users\ECE\Documents\PR_Project\system.mhs line 115 - Running NGCBUILD
 IPNAME:system_axi4lite_0_wrapper INSTANCE:axi4lite_0 -
-C:\Users\ECE\Documents\PR_Project\system.mhs line 143 - Running NGCBUILD
+C:\Users\ECE\Documents\PR_Project\system.mhs line 131 - Running NGCBUILD
 INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
    If any constraint needs to be overridden, this should be done by modifying
    the data/system.ucf file.
 
 Rebuilding cache ...
 
-Total run time: 44.00 seconds
+Total run time: 39.00 seconds

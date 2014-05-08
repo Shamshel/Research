@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: rp.prj
 
@@ -68,7 +68,7 @@ Automatic Register Balancing       : No
 ---- Target Options
 LUT Combining                      : Auto
 Reduce Control Sets                : Auto
-Add IO Buffers                     : YES
+Add IO Buffers                     : NO
 Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 32
 Register Duplication               : YES
@@ -105,7 +105,7 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\ECE\Documents\PR_Project\pcores\reconfig_modules_source\rp_osc\rp\ring_osc\rp.v" into library work
+Analyzing Verilog file "C:\Users\ECE\Documents\PR_Project\pcores\reconfig_modules_source\rp_counter\rp.v" into library work
 Parsing module <rp>.
 
 =========================================================================
@@ -119,23 +119,20 @@ Elaborating module <rp>.
 =========================================================================
 
 Synthesizing Unit <rp>.
-    Related source file is "C:\Users\ECE\Documents\PR_Project\pcores\reconfig_modules_source\rp_osc\rp\ring_osc\rp.v".
-        RESET_COND = 32'b00000000000000000000000000000000
-        GO_DONE_MASK = 32'b10000000000000000000000000000000
-        BUS_WIDTH = 32
-WARNING:Xst:647 - Input <Reset_n> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 1-bit register for signal <on>.
+    Related source file is "C:\Users\ECE\Documents\PR_Project\pcores\reconfig_modules_source\rp_counter\rp.v".
     Found 1-bit register for signal <done>.
+    Found 1-bit register for signal <on>.
     Found 32-bit register for signal <reg_1>.
+    Found 1-bit register for signal <stored>.
     Found 32-bit register for signal <timeout_count>.
-    Found 32-bit adder for signal <timeout_count[31]_GND_1_o_add_7_OUT> created at line 141.
-    Found 32-bit adder for signal <reg_1[31]_GND_1_o_add_17_OUT> created at line 170.
-    Found 32-bit comparator lessequal for signal <n0006> created at line 117
+    Found 32-bit adder for signal <timeout_count[31]_GND_1_o_add_7_OUT> created at line 143.
+    Found 32-bit adder for signal <reg_1[31]_GND_1_o_add_14_OUT> created at line 171.
+    Found 32-bit comparator greater for signal <n0006> created at line 123
     Summary:
 	inferred   2 Adder/Subtractor(s).
-	inferred  66 D-type flip-flop(s).
+	inferred  67 D-type flip-flop(s).
 	inferred   1 Comparator(s).
-	inferred   1 Multiplexer(s).
+	inferred   2 Multiplexer(s).
 Unit <rp> synthesized.
 
 =========================================================================
@@ -144,12 +141,13 @@ HDL Synthesis Report
 Macro Statistics
 # Adders/Subtractors                                   : 2
  32-bit adder                                          : 2
-# Registers                                            : 4
- 1-bit register                                        : 2
+# Registers                                            : 5
+ 1-bit register                                        : 3
  32-bit register                                       : 2
 # Comparators                                          : 1
- 32-bit comparator lessequal                           : 1
-# Multiplexers                                         : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 2
+ 1-bit 2-to-1 multiplexer                              : 1
  32-bit 2-to-1 multiplexer                             : 1
 
 =========================================================================
@@ -158,44 +156,10 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1293 - FF/Latch <reg_1_31> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_30> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_29> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_28> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_27> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_26> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_25> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_24> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_23> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_22> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_21> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_20> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_19> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_18> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_17> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_16> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_0> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_1> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_2> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_3> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_4> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_5> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_6> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_7> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_8> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_9> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_10> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_11> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_12> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_13> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_14> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_15> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <on> (without init value) has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <done> is unconnected in block <rp>.
 
 Synthesizing (advanced) Unit <rp>.
-The following registers are absorbed into counter <timeout_count>: 1 register on signal <timeout_count>.
 The following registers are absorbed into counter <reg_1>: 1 register on signal <reg_1>.
+The following registers are absorbed into counter <timeout_count>: 1 register on signal <timeout_count>.
 Unit <rp> synthesized (advanced).
 
 =========================================================================
@@ -204,82 +168,17 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # Counters                                             : 2
  32-bit up counter                                     : 2
-# Registers                                            : 2
- Flip-Flops                                            : 2
+# Registers                                            : 3
+ Flip-Flops                                            : 3
 # Comparators                                          : 1
- 32-bit comparator lessequal                           : 1
+ 32-bit comparator greater                             : 1
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1710 - FF/Latch <on> (without init value) has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_31> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_30> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_29> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_28> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_27> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_26> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_25> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_24> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_23> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_22> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_21> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_20> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_19> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_18> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_17> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_16> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_15> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_14> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_13> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_12> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_11> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_10> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_9> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_8> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_7> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_6> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_5> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_4> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_3> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_2> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_1> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <reg_1_0> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <done> is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_1> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_2> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_3> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_4> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_5> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_8> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_6> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_7> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_9> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_10> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_11> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_12> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_13> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_14> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_17> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_15> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_16> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_18> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_19> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_20> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_21> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_22> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_23> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_24> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_25> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_26> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_27> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_28> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_29> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_30> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_31> of sequential type is unconnected in block <rp>.
-WARNING:Xst:2677 - Node <timeout_count_0> of sequential type is unconnected in block <rp>.
+WARNING:Xst:2170 - Unit rp : the following signal(s) form a combinatorial loop: a<0>.
 
 Optimizing unit <rp> ...
 
@@ -292,7 +191,10 @@ Final Macro Processing ...
 =========================================================================
 Final Register Report
 
-Found no macro
+Macro Statistics
+# Registers                                            : 67
+ Flip-Flops                                            : 67
+
 =========================================================================
 
 =========================================================================
@@ -314,10 +216,21 @@ Top Level Output File Name         : rp.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1
+# BELS                             : 198
 #      GND                         : 1
-# IO Buffers                       : 32
-#      OBUF                        : 32
+#      INV                         : 2
+#      LUT1                        : 62
+#      LUT2                        : 1
+#      LUT3                        : 3
+#      LUT5                        : 1
+#      LUT6                        : 1
+#      MUXCY                       : 62
+#      VCC                         : 1
+#      XORCY                       : 64
+# FlipFlops/Latches                : 67
+#      FD                          : 33
+#      FDR                         : 2
+#      FDRE                        : 32
 
 Device utilization summary:
 ---------------------------
@@ -326,17 +239,20 @@ Selected Device : 7k325tffg900-2
 
 
 Slice Logic Utilization: 
+ Number of Slice Registers:              67  out of  407600     0%  
+ Number of Slice LUTs:                   70  out of  203800     0%  
+    Number used as Logic:                70  out of  203800     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      0
-   Number with an unused Flip Flop:       0  out of      0         
-   Number with an unused LUT:             0  out of      0         
-   Number of fully used LUT-FF pairs:     0  out of      0         
-   Number of unique control sets:         0
+ Number of LUT Flip Flop pairs used:     70
+   Number with an unused Flip Flop:       3  out of     70     4%  
+   Number with an unused LUT:             0  out of     70     0%  
+   Number of fully used LUT-FF pairs:    67  out of     70    95%  
+   Number of unique control sets:         3
 
 IO Utilization: 
- Number of IOs:                          35
- Number of bonded IOBs:                  32  out of    500     6%  
+ Number of IOs:                          66
+ Number of bonded IOBs:                   0  out of    500     0%  
 
 Specific Feature Utilization:
 
@@ -358,7 +274,16 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-No clock signals found in this design
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+a<0>(a<0>1:O)                      | NONE(*)(reg_1_0)       | 33    |
+Clk                                | NONE(timeout_count_0)  | 34    |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -368,9 +293,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: No path found
-   Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: No path found
+   Minimum period: 1.534ns (Maximum Frequency: 651.827MHz)
+   Minimum input arrival time before clock: 0.829ns
+   Maximum output required time after clock: 0.236ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -378,21 +303,203 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
+Timing constraint: Default period analysis for Clock 'a<0>'
+  Clock period: 1.534ns (frequency: 651.827MHz)
+  Total number of paths / destination ports: 529 / 33
+-------------------------------------------------------------------------
+Delay:               1.534ns (Levels of Logic = 33)
+  Source:            reg_1_0 (FF)
+  Destination:       reg_1_31 (FF)
+  Source Clock:      a<0> rising
+  Destination Clock: a<0> rising
+
+  Data Path: reg_1_0 to reg_1_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.236   0.350  reg_1_0 (reg_1_0)
+     LUT1:I0->O            1   0.043   0.000  Mcount_reg_1_cy<0>_rt (Mcount_reg_1_cy<0>_rt)
+     MUXCY:S->O            1   0.238   0.000  Mcount_reg_1_cy<0> (Mcount_reg_1_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_reg_1_cy<1> (Mcount_reg_1_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_reg_1_cy<2> (Mcount_reg_1_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_reg_1_cy<3> (Mcount_reg_1_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_reg_1_cy<4> (Mcount_reg_1_cy<4>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_reg_1_cy<5> (Mcount_reg_1_cy<5>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_reg_1_cy<6> (Mcount_reg_1_cy<6>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_reg_1_cy<7> (Mcount_reg_1_cy<7>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_reg_1_cy<8> (Mcount_reg_1_cy<8>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_reg_1_cy<9> (Mcount_reg_1_cy<9>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_reg_1_cy<10> (Mcount_reg_1_cy<10>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_reg_1_cy<11> (Mcount_reg_1_cy<11>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_reg_1_cy<12> (Mcount_reg_1_cy<12>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_reg_1_cy<13> (Mcount_reg_1_cy<13>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_reg_1_cy<14> (Mcount_reg_1_cy<14>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_reg_1_cy<15> (Mcount_reg_1_cy<15>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_reg_1_cy<16> (Mcount_reg_1_cy<16>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_reg_1_cy<17> (Mcount_reg_1_cy<17>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_reg_1_cy<18> (Mcount_reg_1_cy<18>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_reg_1_cy<19> (Mcount_reg_1_cy<19>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_reg_1_cy<20> (Mcount_reg_1_cy<20>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_reg_1_cy<21> (Mcount_reg_1_cy<21>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_reg_1_cy<22> (Mcount_reg_1_cy<22>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_reg_1_cy<23> (Mcount_reg_1_cy<23>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_reg_1_cy<24> (Mcount_reg_1_cy<24>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_reg_1_cy<25> (Mcount_reg_1_cy<25>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_reg_1_cy<26> (Mcount_reg_1_cy<26>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_reg_1_cy<27> (Mcount_reg_1_cy<27>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_reg_1_cy<28> (Mcount_reg_1_cy<28>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_reg_1_cy<29> (Mcount_reg_1_cy<29>)
+     MUXCY:CI->O           0   0.014   0.000  Mcount_reg_1_cy<30> (Mcount_reg_1_cy<30>)
+     XORCY:CI->O           1   0.262   0.000  Mcount_reg_1_xor<31> (Mcount_reg_131)
+     FD:D                     -0.000          reg_1_31
+    ----------------------------------------
+    Total                      1.534ns (1.184ns logic, 0.350ns route)
+                                       (77.2% logic, 22.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 1.534ns (frequency: 651.827MHz)
+  Total number of paths / destination ports: 566 / 66
+-------------------------------------------------------------------------
+Delay:               1.534ns (Levels of Logic = 33)
+  Source:            timeout_count_0 (FF)
+  Destination:       timeout_count_31 (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: timeout_count_0 to timeout_count_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.236   0.339  timeout_count_0 (timeout_count_0)
+     INV:I->O              1   0.054   0.000  Mcount_timeout_count_lut<0>_INV_0 (Mcount_timeout_count_lut<0>)
+     MUXCY:S->O            1   0.238   0.000  Mcount_timeout_count_cy<0> (Mcount_timeout_count_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_timeout_count_cy<1> (Mcount_timeout_count_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_timeout_count_cy<2> (Mcount_timeout_count_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_timeout_count_cy<3> (Mcount_timeout_count_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_timeout_count_cy<4> (Mcount_timeout_count_cy<4>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_timeout_count_cy<5> (Mcount_timeout_count_cy<5>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_timeout_count_cy<6> (Mcount_timeout_count_cy<6>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_timeout_count_cy<7> (Mcount_timeout_count_cy<7>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_timeout_count_cy<8> (Mcount_timeout_count_cy<8>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_timeout_count_cy<9> (Mcount_timeout_count_cy<9>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_timeout_count_cy<10> (Mcount_timeout_count_cy<10>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_timeout_count_cy<11> (Mcount_timeout_count_cy<11>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_timeout_count_cy<12> (Mcount_timeout_count_cy<12>)
+     MUXCY:CI->O           1   0.013   0.000  Mcount_timeout_count_cy<13> (Mcount_timeout_count_cy<13>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_timeout_count_cy<14> (Mcount_timeout_count_cy<14>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_timeout_count_cy<15> (Mcount_timeout_count_cy<15>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_timeout_count_cy<16> (Mcount_timeout_count_cy<16>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_timeout_count_cy<17> (Mcount_timeout_count_cy<17>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_timeout_count_cy<18> (Mcount_timeout_count_cy<18>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_timeout_count_cy<19> (Mcount_timeout_count_cy<19>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_timeout_count_cy<20> (Mcount_timeout_count_cy<20>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_timeout_count_cy<21> (Mcount_timeout_count_cy<21>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_timeout_count_cy<22> (Mcount_timeout_count_cy<22>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_timeout_count_cy<23> (Mcount_timeout_count_cy<23>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_timeout_count_cy<24> (Mcount_timeout_count_cy<24>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_timeout_count_cy<25> (Mcount_timeout_count_cy<25>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_timeout_count_cy<26> (Mcount_timeout_count_cy<26>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_timeout_count_cy<27> (Mcount_timeout_count_cy<27>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_timeout_count_cy<28> (Mcount_timeout_count_cy<28>)
+     MUXCY:CI->O           1   0.014   0.000  Mcount_timeout_count_cy<29> (Mcount_timeout_count_cy<29>)
+     MUXCY:CI->O           0   0.014   0.000  Mcount_timeout_count_cy<30> (Mcount_timeout_count_cy<30>)
+     XORCY:CI->O           1   0.262   0.000  Mcount_timeout_count_xor<31> (Result<31>)
+     FDRE:D                   -0.000          timeout_count_31
+    ----------------------------------------
+    Total                      1.534ns (1.195ns logic, 0.339ns route)
+                                       (77.9% logic, 22.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 68 / 68
+-------------------------------------------------------------------------
+Offset:              0.829ns (Levels of Logic = 1)
+  Source:            reg_0<31> (PAD)
+  Destination:       timeout_count_0 (FF)
+  Destination Clock: Clk rising
+
+  Data Path: reg_0<31> to timeout_count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT3:I0->O           32   0.043   0.469  _n006811 (_n00681)
+     FDRE:CE                   0.161          timeout_count_0
+    ----------------------------------------
+    Total                      0.829ns (0.360ns logic, 0.469ns route)
+                                       (43.4% logic, 56.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'a<0>'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.109ns (Levels of Logic = 1)
+  Source:            Reset_n (PAD)
+  Destination:       stored (FF)
+  Destination Clock: a<0> rising
+
+  Data Path: Reset_n to stored
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT3:I1->O            1   0.043   0.000  stored_rstpot (stored_rstpot)
+     FD:D                     -0.000          stored
+    ----------------------------------------
+    Total                      0.109ns (0.109ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'a<0>'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              0.236ns (Levels of Logic = 0)
+  Source:            reg_1_31 (FF)
+  Destination:       reg_1<31> (PAD)
+  Source Clock:      a<0> rising
+
+  Data Path: reg_1_31 to reg_1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.236   0.000  reg_1_31 (reg_1_31)
+    ----------------------------------------
+    Total                      0.236ns (0.236ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
+Clock to Setup on destination clock Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk            |    1.534|         |         |         |
+a<0>           |    1.331|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock a<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk            |    1.672|         |         |         |
+a<0>           |    1.534|         |         |         |
+---------------+---------+---------+---------+---------+
+
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.36 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.92 secs
  
 --> 
 
-Total memory usage is 447552 kilobytes
+Total memory usage is 419684 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  101 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 

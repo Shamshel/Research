@@ -19,19 +19,7 @@ entity system_stub is
     IIC_MAIN_SDA : inout std_logic;
     IIC_MAIN_SCL : inout std_logic;
     CLK_P : in std_logic;
-    CLK_N : in std_logic;
-    axi_xadc_0_VAUXP_pin : in std_logic_vector(15 downto 0);
-    axi_xadc_0_VAUXN_pin : in std_logic_vector(15 downto 0);
-    axi_xadc_0_CONVST_pin : in std_logic;
-    axi_xadc_0_ALARM_pin : out std_logic_vector(7 downto 0);
-    axi_xadc_0_TEMP_OUT_pin : out std_logic_vector(11 downto 0);
-    axi_xadc_0_MUXADDR_pin : out std_logic_vector(4 downto 0);
-    axi_xadc_1_VAUXP_pin : in std_logic_vector(15 downto 0);
-    axi_xadc_1_VAUXN_pin : in std_logic_vector(15 downto 0);
-    axi_xadc_1_CONVST_pin : in std_logic;
-    axi_xadc_1_ALARM_pin : out std_logic_vector(7 downto 0);
-    axi_xadc_1_TEMP_OUT_pin : out std_logic_vector(11 downto 0);
-    axi_xadc_1_MUXADDR_pin : out std_logic_vector(4 downto 0)
+    CLK_N : in std_logic
   );
 end system_stub;
 
@@ -49,19 +37,7 @@ architecture STRUCTURE of system_stub is
       IIC_MAIN_SDA : inout std_logic;
       IIC_MAIN_SCL : inout std_logic;
       CLK_P : in std_logic;
-      CLK_N : in std_logic;
-      axi_xadc_0_VAUXP_pin : in std_logic_vector(15 downto 0);
-      axi_xadc_0_VAUXN_pin : in std_logic_vector(15 downto 0);
-      axi_xadc_0_CONVST_pin : in std_logic;
-      axi_xadc_0_ALARM_pin : out std_logic_vector(7 downto 0);
-      axi_xadc_0_TEMP_OUT_pin : out std_logic_vector(11 downto 0);
-      axi_xadc_0_MUXADDR_pin : out std_logic_vector(4 downto 0);
-      axi_xadc_1_VAUXP_pin : in std_logic_vector(15 downto 0);
-      axi_xadc_1_VAUXN_pin : in std_logic_vector(15 downto 0);
-      axi_xadc_1_CONVST_pin : in std_logic;
-      axi_xadc_1_ALARM_pin : out std_logic_vector(7 downto 0);
-      axi_xadc_1_TEMP_OUT_pin : out std_logic_vector(11 downto 0);
-      axi_xadc_1_MUXADDR_pin : out std_logic_vector(4 downto 0)
+      CLK_N : in std_logic
     );
   end component;
 
@@ -82,19 +58,7 @@ begin
       IIC_MAIN_SDA => IIC_MAIN_SDA,
       IIC_MAIN_SCL => IIC_MAIN_SCL,
       CLK_P => CLK_P,
-      CLK_N => CLK_N,
-      axi_xadc_0_VAUXP_pin => axi_xadc_0_VAUXP_pin,
-      axi_xadc_0_VAUXN_pin => axi_xadc_0_VAUXN_pin,
-      axi_xadc_0_CONVST_pin => axi_xadc_0_CONVST_pin,
-      axi_xadc_0_ALARM_pin => axi_xadc_0_ALARM_pin,
-      axi_xadc_0_TEMP_OUT_pin => axi_xadc_0_TEMP_OUT_pin,
-      axi_xadc_0_MUXADDR_pin => axi_xadc_0_MUXADDR_pin,
-      axi_xadc_1_VAUXP_pin => axi_xadc_1_VAUXP_pin,
-      axi_xadc_1_VAUXN_pin => axi_xadc_1_VAUXN_pin,
-      axi_xadc_1_CONVST_pin => axi_xadc_1_CONVST_pin,
-      axi_xadc_1_ALARM_pin => axi_xadc_1_ALARM_pin,
-      axi_xadc_1_TEMP_OUT_pin => axi_xadc_1_TEMP_OUT_pin,
-      axi_xadc_1_MUXADDR_pin => axi_xadc_1_MUXADDR_pin
+      CLK_N => CLK_N
     );
 
 end architecture STRUCTURE;

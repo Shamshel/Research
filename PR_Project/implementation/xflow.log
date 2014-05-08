@@ -35,6 +35,9 @@ Loading design module
 "C:/Users/ECE/Documents/PR_Project/implementation/system_axi_xadc_0_wrapper.ngc"
 ...
 Loading design module
+"C:/Users/ECE/Documents/PR_Project/implementation/system_axi_xadc_1_wrapper.ngc"
+...
+Loading design module
 "C:/Users/ECE/Documents/PR_Project/implementation/system_rs232_uart_1_wrapper.ng
 c"...
 Loading design module
@@ -74,8 +77,8 @@ Loading design module
 "C:/Users/ECE/Documents/PR_Project/implementation/system_axi_hwicap_0_wrapper.ng
 c"...
 Loading design module
-"C:/Users/ECE/Documents/PR_Project/implementation/system_ring_oscillator_0_wrapp
-er.ngc"...
+"C:/Users/ECE/Documents/PR_Project/implementation/system_reconfigurable_peripher
+ials_0_wrapper.ngc"...
 Loading design module
 "C:/Users/ECE/Documents/PR_Project/implementation/system_microblaze_0_bram_block
 _wrapper.ngc"...
@@ -168,6 +171,12 @@ WARNING:NgdBuild:443 - SFF primitive
 WARNING:NgdBuild:443 - SFF primitive
    'IIC_MAIN/IIC_MAIN/X_IIC/X_AXI_IPIF_SSP1/X_SOFT_RESET/FF_WRACK' has
    unconnected output pin
+ERROR:NgdBuild:604 - logical block
+   'reconfigurable_peripherials_0/reconfigurable_peripherials_0/USER_LOGIC_I/rp_
+   instance' with type 'rp' could not be resolved. A pin name misspelling can
+   cause this, a missing edif or ngc file, case mismatch between the block name
+   and the edif or ngc file name, or the misspelling of a type name. Symbol 'rp'
+   is not supported in target 'kintex7'.
 
 Partition Implementation Status
 -------------------------------
@@ -177,353 +186,13 @@ Partition Implementation Status
 -------------------------------
 
 NGDBUILD Design Results Summary:
-  Number of errors:     0
+  Number of errors:     1
   Number of warnings:  15
 
-Writing NGD file "system.ngd" ...
-Total REAL time to NGDBUILD completion:  56 sec
-Total CPU time to NGDBUILD completion:   56 sec
+Total REAL time to NGDBUILD completion:  59 sec
+Total CPU time to NGDBUILD completion:   57 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
 
 Writing NGDBUILD log file "system.bld"...
-
-NGDBUILD done.
-
-
-
-#----------------------------------------------#
-# Starting program map
-# map -o system_map.ncd -w -pr b -ol high -timing -detail system.ngd system.pcf 
-#----------------------------------------------#
-Release 14.6 - Map P.68d (nt64)
-Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
-PMSPEC -- Overriding Xilinx file
-<C:/Xilinx/14.6/ISE_DS/EDK/data/Xdh_PrimTypeLib.xda> with local file
-<C:/Xilinx/14.6/ISE_DS/ISE/data/Xdh_PrimTypeLib.xda>
-Using target part "7k325tffg900-2".
-vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-INFO:Security:56 - Part 'xc7k325t' is not a WebPack part.
-WARNING:Security:9b - No 'ISE' feature version 2013.06 was available for part
-'xc7k325t'.
-WARNING:Security:42 - Your software subscription period has lapsed. Your current
-version of Xilinx tools will continue to function, but you no longer qualify for
-Xilinx software updates or new releases.
-WARNING:Security:42 - Your software subscription period has lapsed. Your current
-version of Xilinx tools will continue to function, but you no longer qualify for
-Xilinx software updates or new releases.
-----------------------------------------------------------------------
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXP_pin<15>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXP_pin<15>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXP_pin<14>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXP_pin<14>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXP_pin<13>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXP_pin<13>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXP_pin<12>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXP_pin<12>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXP_pin<11>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXP_pin<11>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXP_pin<10>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXP_pin<10>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXP_pin<9>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXP_pin<9>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXP_pin<8>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXP_pin<8>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXP_pin<7>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXP_pin<7>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXP_pin<6>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXP_pin<6>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXP_pin<5>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXP_pin<5>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXP_pin<4>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXP_pin<4>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXP_pin<3>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXP_pin<3>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXP_pin<2>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXP_pin<2>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXP_pin<1>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXP_pin<1>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXP_pin<0>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXP_pin<0>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXN_pin<15>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXN_pin<15>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXN_pin<14>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXN_pin<14>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXN_pin<13>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXN_pin<13>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXN_pin<12>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXN_pin<12>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXN_pin<11>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXN_pin<11>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXN_pin<10>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXN_pin<10>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXN_pin<9>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXN_pin<9>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXN_pin<8>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXN_pin<8>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXN_pin<7>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXN_pin<7>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXN_pin<6>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXN_pin<6>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXN_pin<5>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXN_pin<5>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXN_pin<4>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXN_pin<4>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXN_pin<3>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXN_pin<3>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXN_pin<2>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXN_pin<2>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXN_pin<1>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXN_pin<1>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_VAUXN_pin<0>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_VAUXN_pin<0>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_CONVST_pin" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_CONVST_pin" is not constrained (LOC) to
-   a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_ALARM_pin<7>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_ALARM_pin<7>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_ALARM_pin<6>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_ALARM_pin<6>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_ALARM_pin<5>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_ALARM_pin<5>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_ALARM_pin<4>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_ALARM_pin<4>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_ALARM_pin<3>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_ALARM_pin<3>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_ALARM_pin<2>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_ALARM_pin<2>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_ALARM_pin<1>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_ALARM_pin<1>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_ALARM_pin<0>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_ALARM_pin<0>" is not constrained (LOC)
-   to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_TEMP_OUT_pin<11>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_TEMP_OUT_pin<11>" is not constrained
-   (LOC) to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_TEMP_OUT_pin<10>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_TEMP_OUT_pin<10>" is not constrained
-   (LOC) to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_TEMP_OUT_pin<9>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_TEMP_OUT_pin<9>" is not constrained
-   (LOC) to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_TEMP_OUT_pin<8>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_TEMP_OUT_pin<8>" is not constrained
-   (LOC) to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_TEMP_OUT_pin<7>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_TEMP_OUT_pin<7>" is not constrained
-   (LOC) to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_TEMP_OUT_pin<6>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_TEMP_OUT_pin<6>" is not constrained
-   (LOC) to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_TEMP_OUT_pin<5>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_TEMP_OUT_pin<5>" is not constrained
-   (LOC) to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_TEMP_OUT_pin<4>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_TEMP_OUT_pin<4>" is not constrained
-   (LOC) to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_TEMP_OUT_pin<3>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_TEMP_OUT_pin<3>" is not constrained
-   (LOC) to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_TEMP_OUT_pin<2>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_TEMP_OUT_pin<2>" is not constrained
-   (LOC) to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_TEMP_OUT_pin<1>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_TEMP_OUT_pin<1>" is not constrained
-   (LOC) to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_TEMP_OUT_pin<0>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_TEMP_OUT_pin<0>" is not constrained
-   (LOC) to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_MUXADDR_pin<4>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_MUXADDR_pin<4>" is not constrained
-   (LOC) to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_MUXADDR_pin<3>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_MUXADDR_pin<3>" is not constrained
-   (LOC) to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_MUXADDR_pin<2>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_MUXADDR_pin<2>" is not constrained
-   (LOC) to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_MUXADDR_pin<1>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_MUXADDR_pin<1>" is not constrained
-   (LOC) to a specific location.
-WARNING:LIT:701 - PAD symbol "axi_xadc_0_MUXADDR_pin<0>" has an undefined
-   IOSTANDARD.
-WARNING:LIT:702 - PAD symbol "axi_xadc_0_MUXADDR_pin<0>" is not constrained
-   (LOC) to a specific location.
-Mapping design into LUTs...
-WARNING:MapLib:701 - Signal axi_xadc_0_VAUXP_pin<15> connected to top level port
-   axi_xadc_0_VAUXP_pin<15> has been removed.
-WARNING:MapLib:701 - Signal axi_xadc_0_VAUXP_pin<14> connected to top level port
-   axi_xadc_0_VAUXP_pin<14> has been removed.
-WARNING:MapLib:701 - Signal axi_xadc_0_VAUXP_pin<13> connected to top level port
-   axi_xadc_0_VAUXP_pin<13> has been removed.
-WARNING:MapLib:701 - Signal axi_xadc_0_VAUXP_pin<7> connected to top level port
-   axi_xadc_0_VAUXP_pin<7> has been removed.
-WARNING:MapLib:701 - Signal axi_xadc_0_VAUXP_pin<6> connected to top level port
-   axi_xadc_0_VAUXP_pin<6> has been removed.
-WARNING:MapLib:701 - Signal axi_xadc_0_VAUXN_pin<15> connected to top level port
-   axi_xadc_0_VAUXN_pin<15> has been removed.
-WARNING:MapLib:701 - Signal axi_xadc_0_VAUXN_pin<14> connected to top level port
-   axi_xadc_0_VAUXN_pin<14> has been removed.
-WARNING:MapLib:701 - Signal axi_xadc_0_VAUXN_pin<13> connected to top level port
-   axi_xadc_0_VAUXN_pin<13> has been removed.
-WARNING:MapLib:701 - Signal axi_xadc_0_VAUXN_pin<7> connected to top level port
-   axi_xadc_0_VAUXN_pin<7> has been removed.
-WARNING:MapLib:701 - Signal axi_xadc_0_VAUXN_pin<6> connected to top level port
-   axi_xadc_0_VAUXN_pin<6> has been removed.
-Writing file system_map.ngm...
-Running directed packing...
-Running delay-based LUT packing...
-Updating timing models...
-INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
-   (.mrp).
-Running timing-driven placement...
-Total REAL time at the beginning of Placer: 37 secs 
-Total CPU  time at the beginning of Placer: 33 secs 
-
-Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:e6eb035e) REAL time: 47 secs 
-
-Phase 2.7  Design Feasibility Check
-INFO:Place:834 - Only a subset of IOs are locked. Out of 37 IOs, 11 are locked
-   and 26 are not locked. If you would like to print the names of these IOs,
-   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
-ERROR:Place:835 - Given the original pre-placement, no legal placements can be
-   found for 1 group(s). The following is the description of these group(s). The
-   relative offsets of the components are shown in brackets next to the
-   component names.
-        MONITOR axi_xadc_0/axi_xadc_0/AXI_XADC_CORE_I/is_7series.XADC_I (100,
-   -11)
-        IPAD axi_xadc_0_VAUXP_pin<11> (0, 0)
-        IPAD axi_xadc_0_VAUXP_pin<12> (0, -8)
-        IPAD axi_xadc_0_VAUXP_pin<10> (0, 8)
-        IPAD axi_xadc_0_VAUXN_pin<5> (0, -11)
-        IPAD axi_xadc_0_VAUXN_pin<8> (0, 29)
-        IPAD axi_xadc_0_VAUXN_pin<9> (0, 21)
-        IPAD axi_xadc_0_VAUXN_pin<0> (0, 33)
-        IPAD axi_xadc_0_VAUXN_pin<1> (0, 25)
-        IPAD axi_xadc_0_VAUXN_pin<2> (0, 17)
-        IPAD axi_xadc_0_VAUXN_pin<3> (0, 5)
-        IPAD axi_xadc_0_VAUXN_pin<4> (0, -3)
-        IPAD axi_xadc_0_VAUXP_pin<0> (0, 32)
-        IPAD axi_xadc_0_VAUXP_pin<3> (0, 4)
-        IPAD axi_xadc_0_VAUXP_pin<4> (0, -4)
-        IPAD axi_xadc_0_VAUXP_pin<1> (0, 24)
-        IPAD axi_xadc_0_VAUXP_pin<2> (0, 16)
-        IPAD axi_xadc_0_VAUXP_pin<8> (0, 28)
-        IPAD axi_xadc_0_VAUXP_pin<5> (0, -12)
-        IPAD axi_xadc_0_VAUXP_pin<9> (0, 20)
-        IPAD axi_xadc_0_VAUXN_pin<11> (0, 1)
-        IPAD axi_xadc_0_VAUXN_pin<12> (0, -7)
-        IPAD axi_xadc_0_VAUXN_pin<10> (0, 9)
-
-
-
-Phase 2.7  Design Feasibility Check (Checksum:e6eb035e) REAL time: 47 secs 
-
-Total REAL time to Placer completion: 47 secs 
-Total CPU  time to Placer completion: 42 secs 
-ERROR:Pack:1654 - The timing-driven placement phase encountered an error.
-
-Mapping completed.
-See MAP report file "system_map.mrp" for details.
-Problem encountered during the packing phase.
-
-Design Summary
---------------
-Number of errors   :   2
-Number of warnings : 126
-ERROR:Xflow - Program map returned error code 2. Aborting flow execution...
+ERROR:Xflow - Program ngdbuild returned error code 2. Aborting flow execution...

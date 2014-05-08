@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-03-11T21:07:55</DateModified>
+  <DateModified>2014-05-06T14:18:08</DateModified>
   <ModuleName>rp</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/cody/Documents/ISE/Research-master/Research-master/PR_Project/pcores/reconfig_modules_source/rp_counter/iseconfig/rp.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/cody/Documents/ISE/Research-master/Research-master/PR_Project/pcores/reconfig_modules_source/rp_counter\</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2014-03-12T16:34:32</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_counter/iseconfig/rp.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_counter\</ImplementationReportsDirectory>
   <DateInitialized>2014-03-06T14:59:36</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
