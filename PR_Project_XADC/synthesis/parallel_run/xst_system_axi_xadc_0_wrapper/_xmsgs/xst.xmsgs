@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a/hdl/vhdl/axi_xadc.vhd" Line 740: Actual for formal port <arg fmt="%s" index="1">vauxn</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="946" delta="old" >"C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a/hdl/vhdl/axi_xadc.vhd" Line 741: Actual for formal port <arg fmt="%s" index="1">vauxp</arg> is neither a static name nor a globally static expression
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a/hdl/vhdl/xadc_core.vhd" Line 323: Net &lt;<arg fmt="%s" index="1">vn_i</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a/hdl/vhdl/xadc_core.vhd" Line 324: Net &lt;<arg fmt="%s" index="1">vp_i</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_interrupt_control_v2_01_a/hdl/vhdl/interrupt_control.vhd" Line 1086: Assignment to <arg fmt="%s" index="1">ipif_pri_encode_present</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="error" file="HDLCompiler" num="432" delta="old" >"C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a/hdl/vhdl/axi_xadc.vhd" Line 217: Formal &lt;<arg fmt="%s" index="1">vauxp</arg>&gt; has no actual or default value.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="432" delta="old" >"C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a/hdl/vhdl/axi_xadc.vhd" Line 218: Formal &lt;<arg fmt="%s" index="1">vauxn</arg>&gt; has no actual or default value.
+</msg>
+
+</messages>
+

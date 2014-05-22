@@ -1,0 +1,726 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:\Users\ECE\Documents\PR_Project_XADC\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_axi_xadc_0_wrapper_xst.prj"
+Verilog Include Directory          : {"C:\Users\ECE\Documents\PR_Project_XADC\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc7k325tffg900-2
+Output File Name                   : "system_axi_xadc_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_axi_xadc_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {./}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/family.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing package <family>.
+Parsing package body <family>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing package <coregen_comp_defs>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing package <Common_Types>.
+Parsing package body <Common_Types>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing package <conv_funs_pkg>.
+Parsing package body <conv_funs_pkg>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <async_fifo_fg>.
+Parsing architecture <implementation> of entity <async_fifo_fg>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <sync_fifo_fg>.
+Parsing architecture <implementation> of entity <sync_fifo_fg>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/basic_sfifo_fg.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <basic_sfifo_fg>.
+Parsing architecture <implementation> of entity <basic_sfifo_fg>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <blk_mem_gen_wrapper>.
+Parsing architecture <implementation> of entity <blk_mem_gen_wrapper>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/addsub.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <addsub>.
+Parsing architecture <imp> of entity <addsub>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <counter_bit>.
+Parsing architecture <imp> of entity <counter_bit>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/counter.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <Counter>.
+Parsing architecture <imp> of entity <counter>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <direct_path_cntr>.
+Parsing architecture <imp> of entity <direct_path_cntr>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <direct_path_cntr_ai>.
+Parsing architecture <imp> of entity <direct_path_cntr_ai>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <down_counter>.
+Parsing architecture <simulation> of entity <down_counter>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <eval_timer>.
+Parsing architecture <imp> of entity <eval_timer>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <inferred_lut4>.
+Parsing architecture <implementation> of entity <inferred_lut4>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <IPIF_Steer>.
+Parsing architecture <IMP> of entity <ipif_steer>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <ipif_steer128>.
+Parsing architecture <IMP> of entity <ipif_steer128>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <ipif_mirror128>.
+Parsing architecture <IMP> of entity <ipif_mirror128>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <ld_arith_reg>.
+Parsing architecture <imp> of entity <ld_arith_reg>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <ld_arith_reg2>.
+Parsing architecture <imp> of entity <ld_arith_reg2>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <mux_onehot>.
+Parsing architecture <imp> of entity <mux_onehot>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/or_bits.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <or_bits>.
+Parsing architecture <implementation> of entity <or_bits>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <or_muxcy>.
+Parsing architecture <implementation> of entity <or_muxcy>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <or_gate>.
+Parsing architecture <imp> of entity <or_gate>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <or_gate128>.
+Parsing architecture <imp> of entity <or_gate128>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pf_adder_bit>.
+Parsing architecture <implementation> of entity <pf_adder_bit>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pf_adder>.
+Parsing architecture <implementation> of entity <pf_adder>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pf_counter_bit>.
+Parsing architecture <implementation> of entity <pf_counter_bit>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pf_counter>.
+Parsing architecture <implementation> of entity <pf_counter>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pf_counter_top>.
+Parsing architecture <implementation> of entity <pf_counter_top>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pf_occ_counter>.
+Parsing architecture <implementation> of entity <pf_occ_counter>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pf_occ_counter_top>.
+Parsing architecture <implementation> of entity <pf_occ_counter_top>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pf_dpram_select>.
+Parsing architecture <implementation> of entity <pf_dpram_select>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pselect.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pselect>.
+Parsing architecture <imp> of entity <pselect>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pselect_mask>.
+Parsing architecture <imp> of entity <pselect_mask>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <srl16_fifo>.
+Parsing architecture <implementation> of entity <srl16_fifo>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <SRL_FIFO>.
+Parsing architecture <IMP> of entity <srl_fifo>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <srl_fifo2>.
+Parsing architecture <imp> of entity <srl_fifo2>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <srl_fifo3>.
+Parsing architecture <imp> of entity <srl_fifo3>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu>.
+Parsing architecture <imp> of entity <srl_fifo_rbu>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <valid_be>.
+Parsing architecture <implementation> of entity <valid_be>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <or_with_enable_f>.
+Parsing architecture <implementation> of entity <or_with_enable_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <muxf_struct>.
+Parsing architecture <imp> of entity <muxf_struct>.
+Parsing entity <muxf_struct_f>.
+Parsing architecture <imp> of entity <muxf_struct_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <cntr_incr_decr_addn_f>.
+Parsing architecture <imp> of entity <cntr_incr_decr_addn_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <dynshreg_f>.
+Parsing architecture <behavioral> of entity <dynshreg_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <dynshreg_i_f>.
+Parsing architecture <behavioral> of entity <dynshreg_i_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <mux_onehot_f>.
+Parsing architecture <imp> of entity <mux_onehot_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu_f>.
+Parsing architecture <imp> of entity <srl_fifo_rbu_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <srl_fifo_f>.
+Parsing architecture <imp> of entity <srl_fifo_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <compare_vectors_f>.
+Parsing architecture <imp> of entity <compare_vectors_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <or_muxcy_f>.
+Parsing architecture <implementation> of entity <or_muxcy_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/or_gate_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <or_gate_f>.
+Parsing architecture <imp> of entity <or_gate_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <soft_reset>.
+Parsing architecture <implementation> of entity <soft_reset>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/family.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing package <family>.
+Parsing package body <family>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing package <coregen_comp_defs>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing package <Common_Types>.
+Parsing package body <Common_Types>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing package <conv_funs_pkg>.
+Parsing package body <conv_funs_pkg>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <async_fifo_fg>.
+Parsing architecture <implementation> of entity <async_fifo_fg>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <sync_fifo_fg>.
+Parsing architecture <implementation> of entity <sync_fifo_fg>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/basic_sfifo_fg.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <basic_sfifo_fg>.
+Parsing architecture <implementation> of entity <basic_sfifo_fg>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <blk_mem_gen_wrapper>.
+Parsing architecture <implementation> of entity <blk_mem_gen_wrapper>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/addsub.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <addsub>.
+Parsing architecture <imp> of entity <addsub>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <counter_bit>.
+Parsing architecture <imp> of entity <counter_bit>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/counter.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <Counter>.
+Parsing architecture <imp> of entity <counter>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <direct_path_cntr>.
+Parsing architecture <imp> of entity <direct_path_cntr>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <direct_path_cntr_ai>.
+Parsing architecture <imp> of entity <direct_path_cntr_ai>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <down_counter>.
+Parsing architecture <simulation> of entity <down_counter>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <eval_timer>.
+Parsing architecture <imp> of entity <eval_timer>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <inferred_lut4>.
+Parsing architecture <implementation> of entity <inferred_lut4>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <IPIF_Steer>.
+Parsing architecture <IMP> of entity <ipif_steer>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <ipif_steer128>.
+Parsing architecture <IMP> of entity <ipif_steer128>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <ipif_mirror128>.
+Parsing architecture <IMP> of entity <ipif_mirror128>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <ld_arith_reg>.
+Parsing architecture <imp> of entity <ld_arith_reg>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <ld_arith_reg2>.
+Parsing architecture <imp> of entity <ld_arith_reg2>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <mux_onehot>.
+Parsing architecture <imp> of entity <mux_onehot>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/or_bits.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <or_bits>.
+Parsing architecture <implementation> of entity <or_bits>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <or_muxcy>.
+Parsing architecture <implementation> of entity <or_muxcy>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <or_gate>.
+Parsing architecture <imp> of entity <or_gate>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <or_gate128>.
+Parsing architecture <imp> of entity <or_gate128>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pf_adder_bit>.
+Parsing architecture <implementation> of entity <pf_adder_bit>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pf_adder>.
+Parsing architecture <implementation> of entity <pf_adder>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pf_counter_bit>.
+Parsing architecture <implementation> of entity <pf_counter_bit>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pf_counter>.
+Parsing architecture <implementation> of entity <pf_counter>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pf_counter_top>.
+Parsing architecture <implementation> of entity <pf_counter_top>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pf_occ_counter>.
+Parsing architecture <implementation> of entity <pf_occ_counter>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pf_occ_counter_top>.
+Parsing architecture <implementation> of entity <pf_occ_counter_top>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pf_dpram_select>.
+Parsing architecture <implementation> of entity <pf_dpram_select>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pselect.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pselect>.
+Parsing architecture <imp> of entity <pselect>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pselect_mask>.
+Parsing architecture <imp> of entity <pselect_mask>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <srl16_fifo>.
+Parsing architecture <implementation> of entity <srl16_fifo>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <SRL_FIFO>.
+Parsing architecture <IMP> of entity <srl_fifo>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <srl_fifo2>.
+Parsing architecture <imp> of entity <srl_fifo2>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <srl_fifo3>.
+Parsing architecture <imp> of entity <srl_fifo3>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu>.
+Parsing architecture <imp> of entity <srl_fifo_rbu>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <valid_be>.
+Parsing architecture <implementation> of entity <valid_be>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <or_with_enable_f>.
+Parsing architecture <implementation> of entity <or_with_enable_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <muxf_struct>.
+Parsing architecture <imp> of entity <muxf_struct>.
+Parsing entity <muxf_struct_f>.
+Parsing architecture <imp> of entity <muxf_struct_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <cntr_incr_decr_addn_f>.
+Parsing architecture <imp> of entity <cntr_incr_decr_addn_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <dynshreg_f>.
+Parsing architecture <behavioral> of entity <dynshreg_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <dynshreg_i_f>.
+Parsing architecture <behavioral> of entity <dynshreg_i_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <mux_onehot_f>.
+Parsing architecture <imp> of entity <mux_onehot_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu_f>.
+Parsing architecture <imp> of entity <srl_fifo_rbu_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <srl_fifo_f>.
+Parsing architecture <imp> of entity <srl_fifo_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <compare_vectors_f>.
+Parsing architecture <imp> of entity <compare_vectors_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <or_muxcy_f>.
+Parsing architecture <implementation> of entity <or_muxcy_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/or_gate_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <or_gate_f>.
+Parsing architecture <imp> of entity <or_gate_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <soft_reset>.
+Parsing architecture <implementation> of entity <soft_reset>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_interrupt_control_v2_01_a/hdl/vhdl/interrupt_control.vhd" into library axi_xadc_v1_00_a_interrupt_control_v2_01_a
+Parsing entity <interrupt_control>.
+Parsing architecture <implementation> of entity <interrupt_control>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/family.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing package <family>.
+Parsing package body <family>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing package <coregen_comp_defs>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing package <Common_Types>.
+Parsing package body <Common_Types>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing package <conv_funs_pkg>.
+Parsing package body <conv_funs_pkg>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <async_fifo_fg>.
+Parsing architecture <implementation> of entity <async_fifo_fg>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <sync_fifo_fg>.
+Parsing architecture <implementation> of entity <sync_fifo_fg>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/basic_sfifo_fg.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <basic_sfifo_fg>.
+Parsing architecture <implementation> of entity <basic_sfifo_fg>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <blk_mem_gen_wrapper>.
+Parsing architecture <implementation> of entity <blk_mem_gen_wrapper>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/addsub.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <addsub>.
+Parsing architecture <imp> of entity <addsub>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <counter_bit>.
+Parsing architecture <imp> of entity <counter_bit>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/counter.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <Counter>.
+Parsing architecture <imp> of entity <counter>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <direct_path_cntr>.
+Parsing architecture <imp> of entity <direct_path_cntr>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <direct_path_cntr_ai>.
+Parsing architecture <imp> of entity <direct_path_cntr_ai>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <down_counter>.
+Parsing architecture <simulation> of entity <down_counter>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <eval_timer>.
+Parsing architecture <imp> of entity <eval_timer>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <inferred_lut4>.
+Parsing architecture <implementation> of entity <inferred_lut4>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <IPIF_Steer>.
+Parsing architecture <IMP> of entity <ipif_steer>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <ipif_steer128>.
+Parsing architecture <IMP> of entity <ipif_steer128>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <ipif_mirror128>.
+Parsing architecture <IMP> of entity <ipif_mirror128>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <ld_arith_reg>.
+Parsing architecture <imp> of entity <ld_arith_reg>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <ld_arith_reg2>.
+Parsing architecture <imp> of entity <ld_arith_reg2>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <mux_onehot>.
+Parsing architecture <imp> of entity <mux_onehot>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/or_bits.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <or_bits>.
+Parsing architecture <implementation> of entity <or_bits>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <or_muxcy>.
+Parsing architecture <implementation> of entity <or_muxcy>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <or_gate>.
+Parsing architecture <imp> of entity <or_gate>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <or_gate128>.
+Parsing architecture <imp> of entity <or_gate128>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pf_adder_bit>.
+Parsing architecture <implementation> of entity <pf_adder_bit>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pf_adder>.
+Parsing architecture <implementation> of entity <pf_adder>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pf_counter_bit>.
+Parsing architecture <implementation> of entity <pf_counter_bit>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pf_counter>.
+Parsing architecture <implementation> of entity <pf_counter>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pf_counter_top>.
+Parsing architecture <implementation> of entity <pf_counter_top>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pf_occ_counter>.
+Parsing architecture <implementation> of entity <pf_occ_counter>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pf_occ_counter_top>.
+Parsing architecture <implementation> of entity <pf_occ_counter_top>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pf_dpram_select>.
+Parsing architecture <implementation> of entity <pf_dpram_select>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pselect.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pselect>.
+Parsing architecture <imp> of entity <pselect>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pselect_mask>.
+Parsing architecture <imp> of entity <pselect_mask>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <srl16_fifo>.
+Parsing architecture <implementation> of entity <srl16_fifo>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <SRL_FIFO>.
+Parsing architecture <IMP> of entity <srl_fifo>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <srl_fifo2>.
+Parsing architecture <imp> of entity <srl_fifo2>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <srl_fifo3>.
+Parsing architecture <imp> of entity <srl_fifo3>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu>.
+Parsing architecture <imp> of entity <srl_fifo_rbu>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <valid_be>.
+Parsing architecture <implementation> of entity <valid_be>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <or_with_enable_f>.
+Parsing architecture <implementation> of entity <or_with_enable_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <muxf_struct>.
+Parsing architecture <imp> of entity <muxf_struct>.
+Parsing entity <muxf_struct_f>.
+Parsing architecture <imp> of entity <muxf_struct_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <cntr_incr_decr_addn_f>.
+Parsing architecture <imp> of entity <cntr_incr_decr_addn_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <dynshreg_f>.
+Parsing architecture <behavioral> of entity <dynshreg_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <dynshreg_i_f>.
+Parsing architecture <behavioral> of entity <dynshreg_i_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <mux_onehot_f>.
+Parsing architecture <imp> of entity <mux_onehot_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu_f>.
+Parsing architecture <imp> of entity <srl_fifo_rbu_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <srl_fifo_f>.
+Parsing architecture <imp> of entity <srl_fifo_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <compare_vectors_f>.
+Parsing architecture <imp> of entity <compare_vectors_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <or_muxcy_f>.
+Parsing architecture <implementation> of entity <or_muxcy_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/or_gate_f.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <or_gate_f>.
+Parsing architecture <imp> of entity <or_gate_f>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" into library axi_xadc_v1_00_a_proc_common_v3_00_a
+Parsing entity <soft_reset>.
+Parsing architecture <implementation> of entity <soft_reset>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_axi_lite_ipif_v1_01_a/hdl/vhdl/address_decoder.vhd" into library axi_xadc_v1_00_a_axi_lite_ipif_v1_01_a
+Parsing entity <address_decoder>.
+Parsing architecture <IMP> of entity <address_decoder>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd" into library axi_xadc_v1_00_a_axi_lite_ipif_v1_01_a
+Parsing entity <slave_attachment>.
+Parsing architecture <imp> of entity <slave_attachment>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd" into library axi_xadc_v1_00_a_axi_lite_ipif_v1_01_a
+Parsing entity <axi_lite_ipif>.
+Parsing architecture <imp> of entity <axi_lite_ipif>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a/hdl/vhdl/drp_arbiter.vhd" into library axi_xadc_v1_00_a
+Parsing entity <drp_arbiter>.
+Parsing architecture <behv> of entity <drp_arbiter>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a/hdl/vhdl/drp_rdwr_fsm.vhd" into library axi_xadc_v1_00_a
+Parsing entity <drp_rdwr_fsm>.
+Parsing architecture <beh> of entity <drp_rdwr_fsm>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a/hdl/vhdl/temp_rd_arbiter.vhd" into library axi_xadc_v1_00_a
+Parsing entity <temp_rd_arbiter>.
+Parsing architecture <behv> of entity <temp_rd_arbiter>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a/hdl/vhdl/xadc_core.vhd" into library axi_xadc_v1_00_a
+Parsing entity <xadc_core>.
+Parsing architecture <imp> of entity <xadc_core>.
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a/hdl/vhdl/axi_xadc.vhd" into library axi_xadc_v1_00_a
+Parsing entity <axi_xadc>.
+Parsing architecture <imp> of entity <axi_xadc>.
+WARNING:HDLCompiler:946 - "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a/hdl/vhdl/axi_xadc.vhd" Line 740: Actual for formal port vauxn is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a/hdl/vhdl/axi_xadc.vhd" Line 741: Actual for formal port vauxp is neither a static name nor a globally static expression
+Parsing VHDL file "C:\Users\ECE\Documents\PR_Project_XADC\synthesis\parallel_run\hdl\system_axi_xadc_0_wrapper.vhd" into library work
+Parsing entity <system_axi_xadc_0_wrapper>.
+Parsing architecture <STRUCTURE> of entity <system_axi_xadc_0_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <system_axi_xadc_0_wrapper> (architecture <STRUCTURE>) from library <work>.
+
+Elaborating entity <axi_xadc> (architecture <imp>) with generics from library <axi_xadc_v1_00_a>.
+
+Elaborating entity <axi_lite_ipif> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_axi_lite_ipif_v1_01_a>.
+
+Elaborating entity <slave_attachment> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_axi_lite_ipif_v1_01_a>.
+
+Elaborating entity <address_decoder> (architecture <IMP>) with generics from library <axi_xadc_v1_00_a_axi_lite_ipif_v1_01_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+INFO:HDLCompiler:679 - "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd" Line 417. Case statement is complete. others clause is never selected
+
+Elaborating entity <xadc_core> (architecture <imp>) with generics from library <axi_xadc_v1_00_a>.
+
+Elaborating entity <temp_rd_arbiter> (architecture <behv>) from library <axi_xadc_v1_00_a>.
+
+Elaborating entity <drp_arbiter> (architecture <behv>) from library <axi_xadc_v1_00_a>.
+
+Elaborating entity <drp_rdwr_fsm> (architecture <beh>) from library <axi_xadc_v1_00_a>.
+INFO:HDLCompiler:679 - "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a/hdl/vhdl/drp_rdwr_fsm.vhd" Line 192. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:634 - "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a/hdl/vhdl/xadc_core.vhd" Line 323: Net <vn_i> does not have a driver.
+WARNING:HDLCompiler:634 - "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a/hdl/vhdl/xadc_core.vhd" Line 324: Net <vp_i> does not have a driver.
+
+Elaborating entity <soft_reset> (architecture <implementation>) with generics from library <axi_xadc_v1_00_a_proc_common_v3_00_a>.
+
+Elaborating entity <interrupt_control> (architecture <implementation>) with generics from library <axi_xadc_v1_00_a_interrupt_control_v2_01_a>.
+WARNING:HDLCompiler:1127 - "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a_interrupt_control_v2_01_a/hdl/vhdl/interrupt_control.vhd" Line 1086: Assignment to ipif_pri_encode_present ignored, since the identifier is never used
+ERROR:HDLCompiler:432 - "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a/hdl/vhdl/axi_xadc.vhd" Line 217: Formal <vauxp> has no actual or default value.
+ERROR:HDLCompiler:432 - "C:/Users/ECE/Documents/PR_Project_XADC/pcores/axi_xadc_v1_00_a/hdl/vhdl/axi_xadc.vhd" Line 218: Formal <vauxn> has no actual or default value.
+Netlist system_axi_xadc_0_wrapper(STRUCTURE) remains a blackbox, due to errors in its contents
+--> 
+
+Total memory usage is 269152 kilobytes
+
+Number of errors   :    2 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

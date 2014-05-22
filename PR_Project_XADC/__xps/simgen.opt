@@ -1,0 +1,1 @@
+ -p kintex7 -lang vhdl$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT) -msg __xps/ise/xmsgprops.lst -s mgm -X C:/Users/ECE/Documents/PR_Project_XADC/
