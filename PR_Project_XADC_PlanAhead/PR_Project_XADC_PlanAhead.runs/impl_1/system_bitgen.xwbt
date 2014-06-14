@@ -1,8 +1,0 @@
-INTSTYLE=pa
-INFILE=C:\Users\ECE\Documents\PR_Project_XADC_PlanAhead\PR_Project_XADC_PlanAhead.runs\impl_1\system_routed.ncd
-OUTFILE=C:\Users\ECE\Documents\PR_Project_XADC_PlanAhead\PR_Project_XADC_PlanAhead.runs\impl_1\system.bit
-FAMILY=Kintex7
-PART=xc7k325t-2ffg900
-WORKINGDIR=C:\Users\ECE\Documents\PR_Project_XADC_PlanAhead\PR_Project_XADC_PlanAhead.runs\impl_1
-LICENSE=WebPack
-USER_INFO=210713283_1777489707_210553578_303

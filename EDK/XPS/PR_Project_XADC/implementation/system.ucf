@@ -1,0 +1,54 @@
+# Project: PR_Project_XADC
+
+#
+# pin constraints
+#
+NET CLK_N LOC = "AD11"  |  IOSTANDARD = "DIFF_SSTL15";
+NET CLK_P LOC = "AD12"  |  IOSTANDARD = "DIFF_SSTL15";
+NET IIC_MAIN_SCL LOC = "K21"  |  DRIVE = "8"  |  IOSTANDARD = "LVCMOS25"  |  SLEW = "SLOW";
+NET IIC_MAIN_SDA LOC = "L21"  |  DRIVE = "8"  |  IOSTANDARD = "LVCMOS25"  |  SLEW = "SLOW";
+NET RESET LOC = "AB7"  |  IOSTANDARD = "LVCMOS15";
+NET RS232_Uart_1_sin LOC = "M19"  |  IOSTANDARD = "LVCMOS25";
+NET RS232_Uart_1_sout LOC = "K24"  |  IOSTANDARD = "LVCMOS25";
+NET sm_fan_pwm_net_vcc LOC = "L26"  |  IOSTANDARD = "LVCMOS25";
+#
+# additional constraints
+#
+
+NET "CLK" TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 200000 kHz;
+
+NET axi_xadc_0_VAUXP_AMS_pin[0] LOC = "J23" | IOSTANDARD = "LVCMOS25";
+NET axi_xadc_0_VAUXN_AMS_pin[0] LOC = "J24" | IOSTANDARD = "LVCMOS25";
+NET axi_xadc_0_VAUXP_AMS_pin[1] LOC = "L22" | IOSTANDARD = "LVCMOS25";
+NET axi_xadc_0_VAUXN_AMS_pin[1] LOC = "L23" | IOSTANDARD = "LVCMOS25";
+
+NET	axi_xadc_0_CONVST_pin LOC = "AC27" | IOSTANDARD = "LVCMOS25";
+
+NET	axi_xadc_0_MUXADDR_pin[0] LOC = "A11" | IOSTANDARD = "LVCMOS25";
+NET	axi_xadc_0_MUXADDR_pin[1] LOC = "A12" | IOSTANDARD = "LVCMOS25";
+NET	axi_xadc_0_MUXADDR_pin[2] LOC = "A13" | IOSTANDARD = "LVCMOS25";
+NET	axi_xadc_0_MUXADDR_pin[3] LOC = "A15" | IOSTANDARD = "LVCMOS25";
+NET	axi_xadc_0_MUXADDR_pin[4] LOC = "A16" | IOSTANDARD = "LVCMOS25";
+
+NET	axi_xadc_0_TEMP_OUT_pin[0] LOC = "A17" | IOSTANDARD = "LVCMOS25";
+NET	axi_xadc_0_TEMP_OUT_pin[1] LOC = "A18" | IOSTANDARD = "LVCMOS25";
+NET	axi_xadc_0_TEMP_OUT_pin[2] LOC = "A20" | IOSTANDARD = "LVCMOS25";
+NET	axi_xadc_0_TEMP_OUT_pin[3] LOC = "A21" | IOSTANDARD = "LVCMOS25";
+NET	axi_xadc_0_TEMP_OUT_pin[4] LOC = "A22" | IOSTANDARD = "LVCMOS25";
+NET	axi_xadc_0_TEMP_OUT_pin[5] LOC = "A25" | IOSTANDARD = "LVCMOS25";
+NET	axi_xadc_0_TEMP_OUT_pin[6] LOC = "A26" | IOSTANDARD = "LVCMOS25";
+NET	axi_xadc_0_TEMP_OUT_pin[7] LOC = "A27" | IOSTANDARD = "LVCMOS25";
+NET	axi_xadc_0_TEMP_OUT_pin[8] LOC = "A28" | IOSTANDARD = "LVCMOS25";
+NET	axi_xadc_0_TEMP_OUT_pin[9] LOC = "A30" | IOSTANDARD = "LVCMOS25";
+NET	axi_xadc_0_TEMP_OUT_pin[10] LOC = "AA20" | IOSTANDARD = "LVCMOS25";
+NET	axi_xadc_0_TEMP_OUT_pin[11] LOC = "AA30" | IOSTANDARD = "LVCMOS25";
+
+NET	axi_xadc_0_ALARM_pin[0] LOC = "AB20" | IOSTANDARD = "LVCMOS25";
+NET	axi_xadc_0_ALARM_pin[1] LOC = "AB27" | IOSTANDARD = "LVCMOS25";
+NET	axi_xadc_0_ALARM_pin[2] LOC = "AB29" | IOSTANDARD = "LVCMOS25";
+NET	axi_xadc_0_ALARM_pin[3] LOC = "AB30" | IOSTANDARD = "LVCMOS25";
+NET	axi_xadc_0_ALARM_pin[4] LOC = "AC22" | IOSTANDARD = "LVCMOS25";
+NET	axi_xadc_0_ALARM_pin[5] LOC = "AC24" | IOSTANDARD = "LVCMOS25";
+NET	axi_xadc_0_ALARM_pin[6] LOC = "AC25" | IOSTANDARD = "LVCMOS25";
+NET	axi_xadc_0_ALARM_pin[7] LOC = "AC26" | IOSTANDARD = "LVCMOS25";

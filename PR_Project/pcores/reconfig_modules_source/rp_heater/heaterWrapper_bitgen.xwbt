@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\cody\Documents\ISE\oscHeatingCore\heaterWrapper.ncd
-OUTFILE=C:\Users\cody\Documents\ISE\oscHeatingCore\heaterWrapper.bit
-FAMILY=Spartan3E
-PART=xc3s250e-4tq144
-WORKINGDIR=C:\Users\cody\Documents\ISE\oscHeatingCore
-LICENSE=WebPack
-USER_INFO=209261660_0_0_138

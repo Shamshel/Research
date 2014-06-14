@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/cody/Documents/ISE/oscHeatingCore/ringOscHeater_isim_beh.exe" -prj "C:/Users/cody/Documents/ISE/oscHeatingCore/ringOscHeater_beh.prj" "work.ringOscHeater" "work.glbl" 

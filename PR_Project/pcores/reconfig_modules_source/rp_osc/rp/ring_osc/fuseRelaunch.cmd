@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_osc/rp/ring_osc/rp_isim_beh.exe" -prj "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_osc/rp/ring_osc/rp_beh.prj" "work.rp" "work.glbl" 
