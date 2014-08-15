@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/ECE/Documents/freq_counter/freq_counter/frequency_counter_testbench_isim_beh.exe" -prj "C:/Users/ECE/Documents/freq_counter/freq_counter/frequency_counter_testbench_beh.prj" "work.frequency_counter_testbench" 

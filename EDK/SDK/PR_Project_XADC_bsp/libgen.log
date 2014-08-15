@@ -9,6 +9,7 @@ libgen.log system.mss
 Staging source files.
 Running DRCs.
 Running generate.
+GetClb/SetClb not supported
 Running post_generate.
 Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
 "COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift

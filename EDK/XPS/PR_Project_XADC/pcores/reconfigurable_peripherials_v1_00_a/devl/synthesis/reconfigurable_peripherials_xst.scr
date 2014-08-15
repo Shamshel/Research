@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "C:\Users\ECE\Documents\PR_Project\pcores\reconfigurable_peripherials_v1_00_a\devl\synthesis\reconfigurable_peripherials_xst.prj"
+-top reconfigurable_peripherials
+-p virtex6
+-ofn "C:\Users\ECE\Documents\PR_Project\pcores\reconfigurable_peripherials_v1_00_a\devl\synthesis\reconfigurable_peripherials_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib reconfigurable_peripherials_v1_00_a

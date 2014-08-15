@@ -1,0 +1,9 @@
+-batch 
+-create ring_osc_controller 
+-ver 1.00.a 
+-dir "C:\Users\ECE\Documents\PR_Project_XADC" 
+-lang vhdl 
+-bus axi4lite s 
+-rst 
+-reg 3 
+-xps 

@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> 
 TABLE OF CONTENTS
@@ -506,11 +506,11 @@ INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered
 
 Asynchronous Control Signals Information:
 ----------------------------------------
--------------------------------------------------------------------+-----------------------------------------+-------+
-Control Signal                                                     | Buffer(FF name)                         | Load  |
--------------------------------------------------------------------+-----------------------------------------+-------+
-microblaze_0_bram_block/net_gnd0(microblaze_0_bram_block/XST_GND:G)| NONE(microblaze_0_bram_block/ramb36e1_5)| 128   |
--------------------------------------------------------------------+-----------------------------------------+-------+
+-------------------------------------------------------------------+------------------------------------------+-------+
+Control Signal                                                     | Buffer(FF name)                          | Load  |
+-------------------------------------------------------------------+------------------------------------------+-------+
+microblaze_0_bram_block/net_gnd0(microblaze_0_bram_block/XST_GND:G)| NONE(microblaze_0_bram_block/ramb36e1_29)| 128   |
+-------------------------------------------------------------------+------------------------------------------+-------+
 
 Timing Summary:
 ---------------
@@ -571,12 +571,12 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 11.98 secs
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.52 secs
  
 --> 
 
-Total memory usage is 461792 kilobytes
+Total memory usage is 462240 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    5 (   0 filtered)

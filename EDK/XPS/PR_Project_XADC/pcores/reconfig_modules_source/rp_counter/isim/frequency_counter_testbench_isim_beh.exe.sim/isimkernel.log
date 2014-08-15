@@ -1,0 +1,10 @@
+Command line:
+   frequency_counter_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49921
+
+Mon Aug 11 20:47:02 2014
+
+
+ Elaboration Time: 0.031201 sec

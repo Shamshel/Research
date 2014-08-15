@@ -1,0 +1,10 @@
+##############################################################################
+## Filename:          C:/Users/ECE/Documents/PR_Project_XADC/pcores/ring_osc_controller_v1_00_a/data/ring_osc_controller_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Sat Jun 14 10:53:10 2014 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+lib ring_osc_controller_v1_00_a user_logic vhdl
+lib ring_osc_controller_v1_00_a ring_osc_controller vhdl

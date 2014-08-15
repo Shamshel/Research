@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Project Name="counter" FileVersion="1.2" ProjectVersion="2.0">
+	<Partition Name="/system" State="implement" ImportLocation="NONE">
+		<Partition Name="/system/reconfigurable_peripherials_0/reconfigurable_peripherials_0/USER_LOGIC_I/rp_instance" State="implement" ImportLocation="NONE" Reconfigurable="true" ReconfigModuleName="counter">
+		</Partition>
+	</Partition>
+</Project>
+

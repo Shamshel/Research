@@ -1,0 +1,72 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/ECE/Documents/freq_counter/freq_counter/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/ECE/Documents/freq_counter/freq_counter/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: frequency_counter.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\ECE\Documents\freq_counter\freq_counter\frequency_counter.vhd" into library work
+Parsing entity <frequency_counter>.
+ERROR:HDLCompiler:621 - "C:\Users\ECE\Documents\freq_counter\freq_counter\frequency_counter.vhd" Line 37: Near integer ; type conversion expects one single argument
+ERROR:HDLCompiler:854 - "C:\Users\ECE\Documents\freq_counter\freq_counter\frequency_counter.vhd" Line 33: Unit <frequency_counter> ignored due to previous errors.
+Parsing architecture <Behavioral> of entity <frequency_counter>.
+ERROR:HDLCompiler:374 - "C:\Users\ECE\Documents\freq_counter\freq_counter\frequency_counter.vhd" Line 53: Entity <frequency_counter> is not yet compiled.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\freq_counter\freq_counter\frequency_counter.vhd" Line 54: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\freq_counter\freq_counter\frequency_counter.vhd" Line 55: <integer> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\freq_counter\freq_counter\frequency_counter.vhd" Line 56: <integer> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\freq_counter\freq_counter\frequency_counter.vhd" Line 65: <master_gate> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\freq_counter\freq_counter\frequency_counter.vhd" Line 66: <master_clk_timeout> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\freq_counter\freq_counter\frequency_counter.vhd" Line 77: <master_gate> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\freq_counter\freq_counter\frequency_counter.vhd" Line 78: <master_clk_timeout> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\freq_counter\freq_counter\frequency_counter.vhd" Line 84: <master_gate> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\freq_counter\freq_counter\frequency_counter.vhd" Line 85: <master_clk_timeout> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\freq_counter\freq_counter\frequency_counter.vhd" Line 81: <master_clk_timeout> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\freq_counter\freq_counter\frequency_counter.vhd" Line 74: <master_clk_timeout> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\freq_counter\freq_counter\frequency_counter.vhd" Line 92: <master_gate> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\freq_counter\freq_counter\frequency_counter.vhd" Line 93: <master_clk_timeout> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\freq_counter\freq_counter\frequency_counter.vhd" Line 71: <reg_0> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\freq_counter\freq_counter\frequency_counter.vhd" Line 68: <clk_master> is not declared.
+ERROR:HDLCompiler:989 - "C:\Users\ECE\Documents\freq_counter\freq_counter\frequency_counter.vhd" Line 68: Attribute event requires a static signal prefix
+Sorry, too many errors..
+--> 
+
+Total memory usage is 215608 kilobytes
+
+Number of errors   :   19 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

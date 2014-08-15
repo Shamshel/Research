@@ -1,0 +1,8 @@
+-batch 
+-create fan_controller 
+-ver 1.00.a 
+-dir "C:\Users\ECE\Documents\PR_Project_XADC" 
+-lang vhdl 
+-bus axi4lite s 
+-reg 1 
+-xps 

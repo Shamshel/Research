@@ -1,0 +1,72 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/ECE/Documents/PR_Project_XADC/pcores/fan_controller_v1_00_a/hdl/vhdl/fan_controller/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/ECE/Documents/PR_Project_XADC/pcores/fan_controller_v1_00_a/hdl/vhdl/fan_controller/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: user_logic.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" into library work
+ERROR:HDLCompiler:104 - "C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 58: Cannot find <proc_common_pkg> in library <proc_common_v3_00_a>. Please ensure that the library was compiled, and that a library and a use clause are present in the VHDL file.
+Parsing entity <user_logic>.
+ERROR:HDLCompiler:854 - "C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 84: Unit <user_logic> ignored due to previous errors.
+Parsing architecture <IMP> of entity <user_logic>.
+ERROR:HDLCompiler:374 - "C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 131: Entity <user_logic> is not yet compiled.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 138: <std_logic_vector> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 139: <std_logic_vector> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 140: <std_logic_vector> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 141: <std_logic_vector> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 142: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 143: <std_logic> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 144: <integer> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 168: <slv_reg_write_sel> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 169: <slv_reg_read_sel> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 170: <slv_write_ack> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 171: <slv_read_ack> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 176: <integer> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 182: <slv_reg0> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 186: <c_slv_dwidth> is not declared.
+ERROR:HDLCompiler:24 - "C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 186: "**" expects 2 arguments
+ERROR:HDLCompiler:69 - "C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 188: <slv_reg0> is not declared.
+Sorry, too many errors..
+--> 
+
+Total memory usage is 215860 kilobytes
+
+Number of errors   :   19 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

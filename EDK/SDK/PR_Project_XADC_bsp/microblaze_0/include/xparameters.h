@@ -17,6 +17,29 @@
 
 /******************************************************************/
 
+/* Definitions for driver HWICAP */
+#define XPAR_XHWICAP_NUM_INSTANCES 1
+
+/* Definitions for peripheral AXI_HWICAP_0 */
+#define XPAR_AXI_HWICAP_0_BASEADDR 0x40200000
+#define XPAR_AXI_HWICAP_0_HIGHADDR 0x4020FFFF
+#define XPAR_AXI_HWICAP_0_DEVICE_ID 0
+#define XPAR_AXI_HWICAP_0_ICAP_DWIDTH 32
+#define XPAR_AXI_HWICAP_0_MODE 0
+
+
+/******************************************************************/
+
+/* Canonical definitions for peripheral AXI_HWICAP_0 */
+#define XPAR_HWICAP_0_DEVICE_ID XPAR_AXI_HWICAP_0_DEVICE_ID
+#define XPAR_HWICAP_0_BASEADDR 0x40200000
+#define XPAR_HWICAP_0_HIGHADDR 0x4020FFFF
+#define XPAR_HWICAP_0_ICAP_DWIDTH 32
+#define XPAR_HWICAP_0_MODE 0
+
+
+/******************************************************************/
+
 /* Definitions for driver SYSMON */
 #define XPAR_XSYSMON_NUM_INSTANCES 1
 
@@ -82,6 +105,19 @@
 #define XPAR_UARTLITE_1_ODD_PARITY 1
 #define XPAR_UARTLITE_1_DATA_BITS 8
 #define XPAR_UARTLITE_1_SIO_CHAN 0
+
+
+/******************************************************************/
+
+
+/* Definitions for peripheral FAN_CONTROLLER_0 */
+#define XPAR_FAN_CONTROLLER_0_BASEADDR 0x71A00000
+#define XPAR_FAN_CONTROLLER_0_HIGHADDR 0x71A0FFFF
+
+
+/* Definitions for peripheral RECONFIGURABLE_PERIPHERIALS_0 */
+#define XPAR_RECONFIGURABLE_PERIPHERIALS_0_BASEADDR 0x7B000000
+#define XPAR_RECONFIGURABLE_PERIPHERIALS_0_HIGHADDR 0x7B00FFFF
 
 
 /******************************************************************/

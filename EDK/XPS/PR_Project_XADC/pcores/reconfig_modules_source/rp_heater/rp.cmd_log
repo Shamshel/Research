@@ -1,0 +1,56 @@
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.syr" 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k325t-ffg900-2 rp.ngc rp.ngd  
+map -intstyle ise -p xc7k325t-ffg900-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o rp_map.ncd rp.ngd rp.pcf 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k325t-ffg900-2 rp.ngc rp.ngd  
+map -intstyle ise -p xc7k325t-ffg900-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o rp_map.ncd rp.ngd rp.pcf 
+map -intstyle ise -p xc7k325t-ffg900-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -u -lc off -power off -o rp_map.ncd rp.ngd rp.pcf 
+par -w -intstyle ise -ol high -mt off rp_map.ncd rp.ncd rp.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rp.twx rp.ncd -o rp.twr rp.pcf 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.syr" 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k325t-ffg900-2 rp.ngc rp.ngd  
+map -intstyle ise -p xc7k325t-ffg900-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -u -lc off -power off -o rp_map.ncd rp.ngd rp.pcf 
+par -w -intstyle ise -ol high -mt off rp_map.ncd rp.ncd rp.pcf 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k325t-ffg900-2 rp.ngc rp.ngd  
+map -intstyle ise -p xc7k325t-ffg900-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -u -lc off -power off -o rp_map.ncd rp.ngd rp.pcf 
+par -w -intstyle ise -ol high -mt off rp_map.ncd rp.ncd rp.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rp.twx rp.ncd -o rp.twr rp.pcf 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k325t-ffg900-2 rp.ngc rp.ngd  
+map -intstyle ise -p xc7k325t-ffg900-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -u -lc off -power off -o rp_map.ncd rp.ngd rp.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rp_preroute.twx rp_map.ncd -o rp_preroute.twr rp.pcf 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k325t-ffg900-2 rp.ngc rp.ngd  
+map -intstyle ise -p xc7k325t-ffg900-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -u -lc off -power off -o rp_map.ncd rp.ngd rp.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rp_preroute.twx rp_map.ncd -o rp_preroute.twr rp.pcf 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k325t-ffg900-2 rp.ngc rp.ngd  
+map -intstyle ise -p xc7k325t-ffg900-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -u -lc off -power off -o rp_map.ncd rp.ngd rp.pcf 
+par -w -intstyle ise -ol high -mt off rp_map.ncd rp.ncd rp.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rp.twx rp.ncd -o rp.twr rp.pcf 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.syr" 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k325t-ffg900-2 rp.ngc rp.ngd  
+map -intstyle ise -p xc7k325t-ffg900-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -u -lc off -power off -o rp_map.ncd rp.ngd rp.pcf 
+par -w -intstyle ise -ol high -mt off rp_map.ncd rp.ncd rp.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rp.twx rp.ncd -o rp.twr rp.pcf 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.syr" 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.syr" 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.syr" 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.syr" 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.syr" 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.syr" 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7k325t-ffg900-2 rp.ngc rp.ngd  
+map -intstyle ise -p xc7k325t-ffg900-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -u -lc off -power off -o rp_map.ncd rp.ngd rp.pcf 
+par -w -intstyle ise -ol high -mt off rp_map.ncd rp.ncd rp.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rp.twx rp.ncd -o rp.twr rp.pcf 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_heater/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_heater/rp.syr" 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_heater/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_heater/rp.syr" 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_heater/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_heater/rp.syr" 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_heater/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_heater/rp.syr" 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_heater/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_heater/rp.syr" 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_heater/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_heater/rp.syr" 

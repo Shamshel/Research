@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Strategy Version="1" Minor="2">
+	<StratHandle Name="ISE14_BM" Flow="ISE14">
+	</StratHandle>
+	<Step Id="ngdbuild">
+		<Option Id="MoreOptsStr"><![CDATA[-bm "C:\Users\ECE\My Documents\PR_Project_XADC\implementation\system.bmm" -uc "C:\Users\ECE\Documents\PR_Project_XADC\data\system.ucf"]]></Option>
+	</Step>
+	<Step Id="map">
+	</Step>
+	<Step Id="par">
+	</Step>
+	<Step Id="trce">
+	</Step>
+	<Step Id="xdl">
+	</Step>
+	<Step Id="bitgen">
+		<Option Id="MemFile">C:\Users\ECE\workspace\PR_Project_XADC\Debug\PR_Project_XADC.elf</Option>
+	</Step>
+</Strategy>
+

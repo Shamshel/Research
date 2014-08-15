@@ -9,7 +9,7 @@ use UNISIM.VCOMPONENTS.ALL;
 
 entity system_stub is
   port (
-    sm_fan_pwm_net_vcc : out std_logic;
+    sm_fan_pwm_net : out std_logic;
     RS232_Uart_1_sout : out std_logic;
     RS232_Uart_1_sin : in std_logic;
     RESET : in std_logic;
@@ -32,7 +32,7 @@ architecture STRUCTURE of system_stub is
 
   component system is
     port (
-      sm_fan_pwm_net_vcc : out std_logic;
+      sm_fan_pwm_net : out std_logic;
       RS232_Uart_1_sout : out std_logic;
       RS232_Uart_1_sin : in std_logic;
       RESET : in std_logic;
@@ -58,7 +58,7 @@ begin
 
   system_i : system
     port map (
-      sm_fan_pwm_net_vcc => sm_fan_pwm_net_vcc,
+      sm_fan_pwm_net => sm_fan_pwm_net,
       RS232_Uart_1_sout => RS232_Uart_1_sout,
       RS232_Uart_1_sin => RS232_Uart_1_sin,
       RESET => RESET,

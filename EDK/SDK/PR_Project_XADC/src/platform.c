@@ -77,12 +77,20 @@ enable_caches()
 #endif
 }
 
-void sleep()
+void sleep_ms(unsigned int ms)
 {
-	int timeout = 1000000;
-	for(; timeout > 0; timeout--);
+	unsigned int i = 0;
+	for(i; i < (ms*100000); i++);
 
 }
+
+void sleep_us(unsigned int ms)
+{
+	unsigned int i = 0;
+	for(i; i < (ms*100); i++);
+
+}
+
 
 void
 disable_caches()
@@ -123,25 +131,25 @@ void init_XADC()
 int XADC_raw_temperature()
 {
 	//set sequence to the temperature sensor
-	Xil_Out32(XADC_BASEADDR + CONFIG_0, 0x0600);
+	//Xil_Out32(XADC_BASEADDR + CONFIG_0, 0x0600);
 
 	//begin conversion
-	Xil_Out32(XADC_BASEADDR + CONVSTR, 0x03E9);
-	Xil_Out32(XADC_BASEADDR + CONVSTR, 0x03E8);
+	//Xil_Out32(XADC_BASEADDR + CONVSTR, 0x03E9);
+	//Xil_Out32(XADC_BASEADDR + CONVSTR, 0x03E8);
 
 	//wait for EOC
-	char EOC = 0;
+	//char EOC = 0;
 
 	//xil_printf("entering loop\n\r");
 
-	while(!EOC)
-	{
-		EOC = Xil_In32(XADC_BASEADDR + IPISR) & 0x20;
-		sleep();
+	//while(!EOC)
+	//{
+	//	EOC = Xil_In32(XADC_BASEADDR + IPISR) & 0x20;
+	//	sleep();
 		//xil_printf("looping\n\r");
 
 
-	}
+	//}
 
 	return Xil_In32(XADC_BASEADDR + TEMPERATURE_REG);
 
@@ -150,7 +158,7 @@ int XADC_raw_temperature()
 float XADC_core_temperature()
 {
 	//see page 30 of UG480
-	return ((float)(XADC_raw_temperature()>>4)*503.975/4096)-273.15;
+	return ((float)(XADC_raw_temperature())*503.975/4096)-273.15;
 
 }
 
@@ -168,7 +176,7 @@ int XADC_raw_voltage()
 	while(!EOC)
 	{
 		EOC = Xil_In32(XADC_BASEADDR + IPISR) & 0x20;
-		sleep();
+		sleep_ms(1);
 		//xil_printf("looping\n\r");
 
 	}
@@ -187,6 +195,7 @@ float XADC_core_voltage()
 void
 init_platform()
 {
+	Xil_Out32(RP_BASEADDR+0x00, 0x00000000);
     /*
      * If you want to run this example outside of SDK,
      * uncomment the following line and also #include "ps7_init.h" at the top.

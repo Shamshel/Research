@@ -1,1 +1,1 @@
- -p xc7k325tffg900-2 -pe microblaze_0 ../../workspace/PR_Project_XADC/Debug/PR_Project_XADC.elf
+ -p xc7k325tffg900-2 -pe microblaze_0 bootloops/microblaze_0.elf

@@ -1,0 +1,3 @@
+verilog work "ring_oscillator.v"
+vhdl work "frequency_counter.vhd"
+vhdl work "rp.vhd"

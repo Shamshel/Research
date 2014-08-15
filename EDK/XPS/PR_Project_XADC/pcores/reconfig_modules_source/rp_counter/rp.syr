@@ -1,0 +1,1080 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: rp.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "rp.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "rp"
+Output Format                      : NGC
+Target Device                      : xc7k325t-2-ffg900
+
+---- Source Options
+Top Module Name                    : rp
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : NO
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\ECE\Documents\PR_Project_XADC\pcores\reconfig_modules_source\rp_counter\ring_oscillator.v" into library work
+Parsing module <ring_oscillator>.
+Parsing VHDL file "C:\Users\ECE\Documents\PR_Project_XADC\pcores\reconfig_modules_source\rp_counter\frequency_counter.vhd" into library work
+Parsing entity <frequency_counter>.
+Parsing architecture <Behavioral> of entity <frequency_counter>.
+Parsing VHDL file "C:\Users\ECE\Documents\PR_Project_XADC\pcores\reconfig_modules_source\rp_counter\rp.vhd" into library work
+Parsing entity <rp>.
+Parsing architecture <Behavioral> of entity <rp>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <rp> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <frequency_counter> (architecture <Behavioral>) with generics from library <work>.
+Going to verilog side to elaborate module ring_oscillator
+
+Elaborating module <ring_oscillator>.
+Back to vhdl to continue elaboration
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <rp>.
+    Related source file is "C:\Users\ECE\Documents\PR_Project_XADC\pcores\reconfig_modules_source\rp_counter\rp.vhd".
+        C_BUS_WIDTH = 32
+    Summary:
+	no macro.
+Unit <rp> synthesized.
+
+Synthesizing Unit <frequency_counter>.
+    Related source file is "C:\Users\ECE\Documents\PR_Project_XADC\pcores\reconfig_modules_source\rp_counter\frequency_counter.vhd".
+        C_BUS_WIDTH = 32
+        C_OVERFLOW_COUNT = 256
+    Found 1-bit register for signal <master_gate>.
+    Found 32-bit register for signal <master_clk_timeout>.
+    Found 32-bit register for signal <test_clk_counter>.
+    Found 32-bit register for signal <reg_1>.
+    Found 32-bit adder for signal <master_clk_timeout[31]_GND_5_o_add_1_OUT> created at line 78.
+    Found 32-bit adder for signal <test_clk_counter[31]_GND_5_o_add_6_OUT> created at line 129.
+    Found 32-bit comparator greater for signal <GND_5_o_master_clk_timeout[31]_LessThan_1_o> created at line 74
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  97 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   5 Multiplexer(s).
+Unit <frequency_counter> synthesized.
+
+Synthesizing Unit <ring_oscillator>.
+    Related source file is "C:\Users\ECE\Documents\PR_Project_XADC\pcores\reconfig_modules_source\rp_counter\ring_oscillator.v".
+    Set property "KEEP = TRUE" for signal <a<511>>.
+    Set property "KEEP = TRUE" for signal <a<510>>.
+    Set property "KEEP = TRUE" for signal <a<509>>.
+    Set property "KEEP = TRUE" for signal <a<508>>.
+    Set property "KEEP = TRUE" for signal <a<507>>.
+    Set property "KEEP = TRUE" for signal <a<506>>.
+    Set property "KEEP = TRUE" for signal <a<505>>.
+    Set property "KEEP = TRUE" for signal <a<504>>.
+    Set property "KEEP = TRUE" for signal <a<503>>.
+    Set property "KEEP = TRUE" for signal <a<502>>.
+    Set property "KEEP = TRUE" for signal <a<501>>.
+    Set property "KEEP = TRUE" for signal <a<500>>.
+    Set property "KEEP = TRUE" for signal <a<499>>.
+    Set property "KEEP = TRUE" for signal <a<498>>.
+    Set property "KEEP = TRUE" for signal <a<497>>.
+    Set property "KEEP = TRUE" for signal <a<496>>.
+    Set property "KEEP = TRUE" for signal <a<495>>.
+    Set property "KEEP = TRUE" for signal <a<494>>.
+    Set property "KEEP = TRUE" for signal <a<493>>.
+    Set property "KEEP = TRUE" for signal <a<492>>.
+    Set property "KEEP = TRUE" for signal <a<491>>.
+    Set property "KEEP = TRUE" for signal <a<490>>.
+    Set property "KEEP = TRUE" for signal <a<489>>.
+    Set property "KEEP = TRUE" for signal <a<488>>.
+    Set property "KEEP = TRUE" for signal <a<487>>.
+    Set property "KEEP = TRUE" for signal <a<486>>.
+    Set property "KEEP = TRUE" for signal <a<485>>.
+    Set property "KEEP = TRUE" for signal <a<484>>.
+    Set property "KEEP = TRUE" for signal <a<483>>.
+    Set property "KEEP = TRUE" for signal <a<482>>.
+    Set property "KEEP = TRUE" for signal <a<481>>.
+    Set property "KEEP = TRUE" for signal <a<480>>.
+    Set property "KEEP = TRUE" for signal <a<479>>.
+    Set property "KEEP = TRUE" for signal <a<478>>.
+    Set property "KEEP = TRUE" for signal <a<477>>.
+    Set property "KEEP = TRUE" for signal <a<476>>.
+    Set property "KEEP = TRUE" for signal <a<475>>.
+    Set property "KEEP = TRUE" for signal <a<474>>.
+    Set property "KEEP = TRUE" for signal <a<473>>.
+    Set property "KEEP = TRUE" for signal <a<472>>.
+    Set property "KEEP = TRUE" for signal <a<471>>.
+    Set property "KEEP = TRUE" for signal <a<470>>.
+    Set property "KEEP = TRUE" for signal <a<469>>.
+    Set property "KEEP = TRUE" for signal <a<468>>.
+    Set property "KEEP = TRUE" for signal <a<467>>.
+    Set property "KEEP = TRUE" for signal <a<466>>.
+    Set property "KEEP = TRUE" for signal <a<465>>.
+    Set property "KEEP = TRUE" for signal <a<464>>.
+    Set property "KEEP = TRUE" for signal <a<463>>.
+    Set property "KEEP = TRUE" for signal <a<462>>.
+    Set property "KEEP = TRUE" for signal <a<461>>.
+    Set property "KEEP = TRUE" for signal <a<460>>.
+    Set property "KEEP = TRUE" for signal <a<459>>.
+    Set property "KEEP = TRUE" for signal <a<458>>.
+    Set property "KEEP = TRUE" for signal <a<457>>.
+    Set property "KEEP = TRUE" for signal <a<456>>.
+    Set property "KEEP = TRUE" for signal <a<455>>.
+    Set property "KEEP = TRUE" for signal <a<454>>.
+    Set property "KEEP = TRUE" for signal <a<453>>.
+    Set property "KEEP = TRUE" for signal <a<452>>.
+    Set property "KEEP = TRUE" for signal <a<451>>.
+    Set property "KEEP = TRUE" for signal <a<450>>.
+    Set property "KEEP = TRUE" for signal <a<449>>.
+    Set property "KEEP = TRUE" for signal <a<448>>.
+    Set property "KEEP = TRUE" for signal <a<447>>.
+    Set property "KEEP = TRUE" for signal <a<446>>.
+    Set property "KEEP = TRUE" for signal <a<445>>.
+    Set property "KEEP = TRUE" for signal <a<444>>.
+    Set property "KEEP = TRUE" for signal <a<443>>.
+    Set property "KEEP = TRUE" for signal <a<442>>.
+    Set property "KEEP = TRUE" for signal <a<441>>.
+    Set property "KEEP = TRUE" for signal <a<440>>.
+    Set property "KEEP = TRUE" for signal <a<439>>.
+    Set property "KEEP = TRUE" for signal <a<438>>.
+    Set property "KEEP = TRUE" for signal <a<437>>.
+    Set property "KEEP = TRUE" for signal <a<436>>.
+    Set property "KEEP = TRUE" for signal <a<435>>.
+    Set property "KEEP = TRUE" for signal <a<434>>.
+    Set property "KEEP = TRUE" for signal <a<433>>.
+    Set property "KEEP = TRUE" for signal <a<432>>.
+    Set property "KEEP = TRUE" for signal <a<431>>.
+    Set property "KEEP = TRUE" for signal <a<430>>.
+    Set property "KEEP = TRUE" for signal <a<429>>.
+    Set property "KEEP = TRUE" for signal <a<428>>.
+    Set property "KEEP = TRUE" for signal <a<427>>.
+    Set property "KEEP = TRUE" for signal <a<426>>.
+    Set property "KEEP = TRUE" for signal <a<425>>.
+    Set property "KEEP = TRUE" for signal <a<424>>.
+    Set property "KEEP = TRUE" for signal <a<423>>.
+    Set property "KEEP = TRUE" for signal <a<422>>.
+    Set property "KEEP = TRUE" for signal <a<421>>.
+    Set property "KEEP = TRUE" for signal <a<420>>.
+    Set property "KEEP = TRUE" for signal <a<419>>.
+    Set property "KEEP = TRUE" for signal <a<418>>.
+    Set property "KEEP = TRUE" for signal <a<417>>.
+    Set property "KEEP = TRUE" for signal <a<416>>.
+    Set property "KEEP = TRUE" for signal <a<415>>.
+    Set property "KEEP = TRUE" for signal <a<414>>.
+    Set property "KEEP = TRUE" for signal <a<413>>.
+    Set property "KEEP = TRUE" for signal <a<412>>.
+    Set property "KEEP = TRUE" for signal <a<411>>.
+    Set property "KEEP = TRUE" for signal <a<410>>.
+    Set property "KEEP = TRUE" for signal <a<409>>.
+    Set property "KEEP = TRUE" for signal <a<408>>.
+    Set property "KEEP = TRUE" for signal <a<407>>.
+    Set property "KEEP = TRUE" for signal <a<406>>.
+    Set property "KEEP = TRUE" for signal <a<405>>.
+    Set property "KEEP = TRUE" for signal <a<404>>.
+    Set property "KEEP = TRUE" for signal <a<403>>.
+    Set property "KEEP = TRUE" for signal <a<402>>.
+    Set property "KEEP = TRUE" for signal <a<401>>.
+    Set property "KEEP = TRUE" for signal <a<400>>.
+    Set property "KEEP = TRUE" for signal <a<399>>.
+    Set property "KEEP = TRUE" for signal <a<398>>.
+    Set property "KEEP = TRUE" for signal <a<397>>.
+    Set property "KEEP = TRUE" for signal <a<396>>.
+    Set property "KEEP = TRUE" for signal <a<395>>.
+    Set property "KEEP = TRUE" for signal <a<394>>.
+    Set property "KEEP = TRUE" for signal <a<393>>.
+    Set property "KEEP = TRUE" for signal <a<392>>.
+    Set property "KEEP = TRUE" for signal <a<391>>.
+    Set property "KEEP = TRUE" for signal <a<390>>.
+    Set property "KEEP = TRUE" for signal <a<389>>.
+    Set property "KEEP = TRUE" for signal <a<388>>.
+    Set property "KEEP = TRUE" for signal <a<387>>.
+    Set property "KEEP = TRUE" for signal <a<386>>.
+    Set property "KEEP = TRUE" for signal <a<385>>.
+    Set property "KEEP = TRUE" for signal <a<384>>.
+    Set property "KEEP = TRUE" for signal <a<383>>.
+    Set property "KEEP = TRUE" for signal <a<382>>.
+    Set property "KEEP = TRUE" for signal <a<381>>.
+    Set property "KEEP = TRUE" for signal <a<380>>.
+    Set property "KEEP = TRUE" for signal <a<379>>.
+    Set property "KEEP = TRUE" for signal <a<378>>.
+    Set property "KEEP = TRUE" for signal <a<377>>.
+    Set property "KEEP = TRUE" for signal <a<376>>.
+    Set property "KEEP = TRUE" for signal <a<375>>.
+    Set property "KEEP = TRUE" for signal <a<374>>.
+    Set property "KEEP = TRUE" for signal <a<373>>.
+    Set property "KEEP = TRUE" for signal <a<372>>.
+    Set property "KEEP = TRUE" for signal <a<371>>.
+    Set property "KEEP = TRUE" for signal <a<370>>.
+    Set property "KEEP = TRUE" for signal <a<369>>.
+    Set property "KEEP = TRUE" for signal <a<368>>.
+    Set property "KEEP = TRUE" for signal <a<367>>.
+    Set property "KEEP = TRUE" for signal <a<366>>.
+    Set property "KEEP = TRUE" for signal <a<365>>.
+    Set property "KEEP = TRUE" for signal <a<364>>.
+    Set property "KEEP = TRUE" for signal <a<363>>.
+    Set property "KEEP = TRUE" for signal <a<362>>.
+    Set property "KEEP = TRUE" for signal <a<361>>.
+    Set property "KEEP = TRUE" for signal <a<360>>.
+    Set property "KEEP = TRUE" for signal <a<359>>.
+    Set property "KEEP = TRUE" for signal <a<358>>.
+    Set property "KEEP = TRUE" for signal <a<357>>.
+    Set property "KEEP = TRUE" for signal <a<356>>.
+    Set property "KEEP = TRUE" for signal <a<355>>.
+    Set property "KEEP = TRUE" for signal <a<354>>.
+    Set property "KEEP = TRUE" for signal <a<353>>.
+    Set property "KEEP = TRUE" for signal <a<352>>.
+    Set property "KEEP = TRUE" for signal <a<351>>.
+    Set property "KEEP = TRUE" for signal <a<350>>.
+    Set property "KEEP = TRUE" for signal <a<349>>.
+    Set property "KEEP = TRUE" for signal <a<348>>.
+    Set property "KEEP = TRUE" for signal <a<347>>.
+    Set property "KEEP = TRUE" for signal <a<346>>.
+    Set property "KEEP = TRUE" for signal <a<345>>.
+    Set property "KEEP = TRUE" for signal <a<344>>.
+    Set property "KEEP = TRUE" for signal <a<343>>.
+    Set property "KEEP = TRUE" for signal <a<342>>.
+    Set property "KEEP = TRUE" for signal <a<341>>.
+    Set property "KEEP = TRUE" for signal <a<340>>.
+    Set property "KEEP = TRUE" for signal <a<339>>.
+    Set property "KEEP = TRUE" for signal <a<338>>.
+    Set property "KEEP = TRUE" for signal <a<337>>.
+    Set property "KEEP = TRUE" for signal <a<336>>.
+    Set property "KEEP = TRUE" for signal <a<335>>.
+    Set property "KEEP = TRUE" for signal <a<334>>.
+    Set property "KEEP = TRUE" for signal <a<333>>.
+    Set property "KEEP = TRUE" for signal <a<332>>.
+    Set property "KEEP = TRUE" for signal <a<331>>.
+    Set property "KEEP = TRUE" for signal <a<330>>.
+    Set property "KEEP = TRUE" for signal <a<329>>.
+    Set property "KEEP = TRUE" for signal <a<328>>.
+    Set property "KEEP = TRUE" for signal <a<327>>.
+    Set property "KEEP = TRUE" for signal <a<326>>.
+    Set property "KEEP = TRUE" for signal <a<325>>.
+    Set property "KEEP = TRUE" for signal <a<324>>.
+    Set property "KEEP = TRUE" for signal <a<323>>.
+    Set property "KEEP = TRUE" for signal <a<322>>.
+    Set property "KEEP = TRUE" for signal <a<321>>.
+    Set property "KEEP = TRUE" for signal <a<320>>.
+    Set property "KEEP = TRUE" for signal <a<319>>.
+    Set property "KEEP = TRUE" for signal <a<318>>.
+    Set property "KEEP = TRUE" for signal <a<317>>.
+    Set property "KEEP = TRUE" for signal <a<316>>.
+    Set property "KEEP = TRUE" for signal <a<315>>.
+    Set property "KEEP = TRUE" for signal <a<314>>.
+    Set property "KEEP = TRUE" for signal <a<313>>.
+    Set property "KEEP = TRUE" for signal <a<312>>.
+    Set property "KEEP = TRUE" for signal <a<311>>.
+    Set property "KEEP = TRUE" for signal <a<310>>.
+    Set property "KEEP = TRUE" for signal <a<309>>.
+    Set property "KEEP = TRUE" for signal <a<308>>.
+    Set property "KEEP = TRUE" for signal <a<307>>.
+    Set property "KEEP = TRUE" for signal <a<306>>.
+    Set property "KEEP = TRUE" for signal <a<305>>.
+    Set property "KEEP = TRUE" for signal <a<304>>.
+    Set property "KEEP = TRUE" for signal <a<303>>.
+    Set property "KEEP = TRUE" for signal <a<302>>.
+    Set property "KEEP = TRUE" for signal <a<301>>.
+    Set property "KEEP = TRUE" for signal <a<300>>.
+    Set property "KEEP = TRUE" for signal <a<299>>.
+    Set property "KEEP = TRUE" for signal <a<298>>.
+    Set property "KEEP = TRUE" for signal <a<297>>.
+    Set property "KEEP = TRUE" for signal <a<296>>.
+    Set property "KEEP = TRUE" for signal <a<295>>.
+    Set property "KEEP = TRUE" for signal <a<294>>.
+    Set property "KEEP = TRUE" for signal <a<293>>.
+    Set property "KEEP = TRUE" for signal <a<292>>.
+    Set property "KEEP = TRUE" for signal <a<291>>.
+    Set property "KEEP = TRUE" for signal <a<290>>.
+    Set property "KEEP = TRUE" for signal <a<289>>.
+    Set property "KEEP = TRUE" for signal <a<288>>.
+    Set property "KEEP = TRUE" for signal <a<287>>.
+    Set property "KEEP = TRUE" for signal <a<286>>.
+    Set property "KEEP = TRUE" for signal <a<285>>.
+    Set property "KEEP = TRUE" for signal <a<284>>.
+    Set property "KEEP = TRUE" for signal <a<283>>.
+    Set property "KEEP = TRUE" for signal <a<282>>.
+    Set property "KEEP = TRUE" for signal <a<281>>.
+    Set property "KEEP = TRUE" for signal <a<280>>.
+    Set property "KEEP = TRUE" for signal <a<279>>.
+    Set property "KEEP = TRUE" for signal <a<278>>.
+    Set property "KEEP = TRUE" for signal <a<277>>.
+    Set property "KEEP = TRUE" for signal <a<276>>.
+    Set property "KEEP = TRUE" for signal <a<275>>.
+    Set property "KEEP = TRUE" for signal <a<274>>.
+    Set property "KEEP = TRUE" for signal <a<273>>.
+    Set property "KEEP = TRUE" for signal <a<272>>.
+    Set property "KEEP = TRUE" for signal <a<271>>.
+    Set property "KEEP = TRUE" for signal <a<270>>.
+    Set property "KEEP = TRUE" for signal <a<269>>.
+    Set property "KEEP = TRUE" for signal <a<268>>.
+    Set property "KEEP = TRUE" for signal <a<267>>.
+    Set property "KEEP = TRUE" for signal <a<266>>.
+    Set property "KEEP = TRUE" for signal <a<265>>.
+    Set property "KEEP = TRUE" for signal <a<264>>.
+    Set property "KEEP = TRUE" for signal <a<263>>.
+    Set property "KEEP = TRUE" for signal <a<262>>.
+    Set property "KEEP = TRUE" for signal <a<261>>.
+    Set property "KEEP = TRUE" for signal <a<260>>.
+    Set property "KEEP = TRUE" for signal <a<259>>.
+    Set property "KEEP = TRUE" for signal <a<258>>.
+    Set property "KEEP = TRUE" for signal <a<257>>.
+    Set property "KEEP = TRUE" for signal <a<256>>.
+    Set property "KEEP = TRUE" for signal <a<255>>.
+    Set property "KEEP = TRUE" for signal <a<254>>.
+    Set property "KEEP = TRUE" for signal <a<253>>.
+    Set property "KEEP = TRUE" for signal <a<252>>.
+    Set property "KEEP = TRUE" for signal <a<251>>.
+    Set property "KEEP = TRUE" for signal <a<250>>.
+    Set property "KEEP = TRUE" for signal <a<249>>.
+    Set property "KEEP = TRUE" for signal <a<248>>.
+    Set property "KEEP = TRUE" for signal <a<247>>.
+    Set property "KEEP = TRUE" for signal <a<246>>.
+    Set property "KEEP = TRUE" for signal <a<245>>.
+    Set property "KEEP = TRUE" for signal <a<244>>.
+    Set property "KEEP = TRUE" for signal <a<243>>.
+    Set property "KEEP = TRUE" for signal <a<242>>.
+    Set property "KEEP = TRUE" for signal <a<241>>.
+    Set property "KEEP = TRUE" for signal <a<240>>.
+    Set property "KEEP = TRUE" for signal <a<239>>.
+    Set property "KEEP = TRUE" for signal <a<238>>.
+    Set property "KEEP = TRUE" for signal <a<237>>.
+    Set property "KEEP = TRUE" for signal <a<236>>.
+    Set property "KEEP = TRUE" for signal <a<235>>.
+    Set property "KEEP = TRUE" for signal <a<234>>.
+    Set property "KEEP = TRUE" for signal <a<233>>.
+    Set property "KEEP = TRUE" for signal <a<232>>.
+    Set property "KEEP = TRUE" for signal <a<231>>.
+    Set property "KEEP = TRUE" for signal <a<230>>.
+    Set property "KEEP = TRUE" for signal <a<229>>.
+    Set property "KEEP = TRUE" for signal <a<228>>.
+    Set property "KEEP = TRUE" for signal <a<227>>.
+    Set property "KEEP = TRUE" for signal <a<226>>.
+    Set property "KEEP = TRUE" for signal <a<225>>.
+    Set property "KEEP = TRUE" for signal <a<224>>.
+    Set property "KEEP = TRUE" for signal <a<223>>.
+    Set property "KEEP = TRUE" for signal <a<222>>.
+    Set property "KEEP = TRUE" for signal <a<221>>.
+    Set property "KEEP = TRUE" for signal <a<220>>.
+    Set property "KEEP = TRUE" for signal <a<219>>.
+    Set property "KEEP = TRUE" for signal <a<218>>.
+    Set property "KEEP = TRUE" for signal <a<217>>.
+    Set property "KEEP = TRUE" for signal <a<216>>.
+    Set property "KEEP = TRUE" for signal <a<215>>.
+    Set property "KEEP = TRUE" for signal <a<214>>.
+    Set property "KEEP = TRUE" for signal <a<213>>.
+    Set property "KEEP = TRUE" for signal <a<212>>.
+    Set property "KEEP = TRUE" for signal <a<211>>.
+    Set property "KEEP = TRUE" for signal <a<210>>.
+    Set property "KEEP = TRUE" for signal <a<209>>.
+    Set property "KEEP = TRUE" for signal <a<208>>.
+    Set property "KEEP = TRUE" for signal <a<207>>.
+    Set property "KEEP = TRUE" for signal <a<206>>.
+    Set property "KEEP = TRUE" for signal <a<205>>.
+    Set property "KEEP = TRUE" for signal <a<204>>.
+    Set property "KEEP = TRUE" for signal <a<203>>.
+    Set property "KEEP = TRUE" for signal <a<202>>.
+    Set property "KEEP = TRUE" for signal <a<201>>.
+    Set property "KEEP = TRUE" for signal <a<200>>.
+    Set property "KEEP = TRUE" for signal <a<199>>.
+    Set property "KEEP = TRUE" for signal <a<198>>.
+    Set property "KEEP = TRUE" for signal <a<197>>.
+    Set property "KEEP = TRUE" for signal <a<196>>.
+    Set property "KEEP = TRUE" for signal <a<195>>.
+    Set property "KEEP = TRUE" for signal <a<194>>.
+    Set property "KEEP = TRUE" for signal <a<193>>.
+    Set property "KEEP = TRUE" for signal <a<192>>.
+    Set property "KEEP = TRUE" for signal <a<191>>.
+    Set property "KEEP = TRUE" for signal <a<190>>.
+    Set property "KEEP = TRUE" for signal <a<189>>.
+    Set property "KEEP = TRUE" for signal <a<188>>.
+    Set property "KEEP = TRUE" for signal <a<187>>.
+    Set property "KEEP = TRUE" for signal <a<186>>.
+    Set property "KEEP = TRUE" for signal <a<185>>.
+    Set property "KEEP = TRUE" for signal <a<184>>.
+    Set property "KEEP = TRUE" for signal <a<183>>.
+    Set property "KEEP = TRUE" for signal <a<182>>.
+    Set property "KEEP = TRUE" for signal <a<181>>.
+    Set property "KEEP = TRUE" for signal <a<180>>.
+    Set property "KEEP = TRUE" for signal <a<179>>.
+    Set property "KEEP = TRUE" for signal <a<178>>.
+    Set property "KEEP = TRUE" for signal <a<177>>.
+    Set property "KEEP = TRUE" for signal <a<176>>.
+    Set property "KEEP = TRUE" for signal <a<175>>.
+    Set property "KEEP = TRUE" for signal <a<174>>.
+    Set property "KEEP = TRUE" for signal <a<173>>.
+    Set property "KEEP = TRUE" for signal <a<172>>.
+    Set property "KEEP = TRUE" for signal <a<171>>.
+    Set property "KEEP = TRUE" for signal <a<170>>.
+    Set property "KEEP = TRUE" for signal <a<169>>.
+    Set property "KEEP = TRUE" for signal <a<168>>.
+    Set property "KEEP = TRUE" for signal <a<167>>.
+    Set property "KEEP = TRUE" for signal <a<166>>.
+    Set property "KEEP = TRUE" for signal <a<165>>.
+    Set property "KEEP = TRUE" for signal <a<164>>.
+    Set property "KEEP = TRUE" for signal <a<163>>.
+    Set property "KEEP = TRUE" for signal <a<162>>.
+    Set property "KEEP = TRUE" for signal <a<161>>.
+    Set property "KEEP = TRUE" for signal <a<160>>.
+    Set property "KEEP = TRUE" for signal <a<159>>.
+    Set property "KEEP = TRUE" for signal <a<158>>.
+    Set property "KEEP = TRUE" for signal <a<157>>.
+    Set property "KEEP = TRUE" for signal <a<156>>.
+    Set property "KEEP = TRUE" for signal <a<155>>.
+    Set property "KEEP = TRUE" for signal <a<154>>.
+    Set property "KEEP = TRUE" for signal <a<153>>.
+    Set property "KEEP = TRUE" for signal <a<152>>.
+    Set property "KEEP = TRUE" for signal <a<151>>.
+    Set property "KEEP = TRUE" for signal <a<150>>.
+    Set property "KEEP = TRUE" for signal <a<149>>.
+    Set property "KEEP = TRUE" for signal <a<148>>.
+    Set property "KEEP = TRUE" for signal <a<147>>.
+    Set property "KEEP = TRUE" for signal <a<146>>.
+    Set property "KEEP = TRUE" for signal <a<145>>.
+    Set property "KEEP = TRUE" for signal <a<144>>.
+    Set property "KEEP = TRUE" for signal <a<143>>.
+    Set property "KEEP = TRUE" for signal <a<142>>.
+    Set property "KEEP = TRUE" for signal <a<141>>.
+    Set property "KEEP = TRUE" for signal <a<140>>.
+    Set property "KEEP = TRUE" for signal <a<139>>.
+    Set property "KEEP = TRUE" for signal <a<138>>.
+    Set property "KEEP = TRUE" for signal <a<137>>.
+    Set property "KEEP = TRUE" for signal <a<136>>.
+    Set property "KEEP = TRUE" for signal <a<135>>.
+    Set property "KEEP = TRUE" for signal <a<134>>.
+    Set property "KEEP = TRUE" for signal <a<133>>.
+    Set property "KEEP = TRUE" for signal <a<132>>.
+    Set property "KEEP = TRUE" for signal <a<131>>.
+    Set property "KEEP = TRUE" for signal <a<130>>.
+    Set property "KEEP = TRUE" for signal <a<129>>.
+    Set property "KEEP = TRUE" for signal <a<128>>.
+    Set property "KEEP = TRUE" for signal <a<127>>.
+    Set property "KEEP = TRUE" for signal <a<126>>.
+    Set property "KEEP = TRUE" for signal <a<125>>.
+    Set property "KEEP = TRUE" for signal <a<124>>.
+    Set property "KEEP = TRUE" for signal <a<123>>.
+    Set property "KEEP = TRUE" for signal <a<122>>.
+    Set property "KEEP = TRUE" for signal <a<121>>.
+    Set property "KEEP = TRUE" for signal <a<120>>.
+    Set property "KEEP = TRUE" for signal <a<119>>.
+    Set property "KEEP = TRUE" for signal <a<118>>.
+    Set property "KEEP = TRUE" for signal <a<117>>.
+    Set property "KEEP = TRUE" for signal <a<116>>.
+    Set property "KEEP = TRUE" for signal <a<115>>.
+    Set property "KEEP = TRUE" for signal <a<114>>.
+    Set property "KEEP = TRUE" for signal <a<113>>.
+    Set property "KEEP = TRUE" for signal <a<112>>.
+    Set property "KEEP = TRUE" for signal <a<111>>.
+    Set property "KEEP = TRUE" for signal <a<110>>.
+    Set property "KEEP = TRUE" for signal <a<109>>.
+    Set property "KEEP = TRUE" for signal <a<108>>.
+    Set property "KEEP = TRUE" for signal <a<107>>.
+    Set property "KEEP = TRUE" for signal <a<106>>.
+    Set property "KEEP = TRUE" for signal <a<105>>.
+    Set property "KEEP = TRUE" for signal <a<104>>.
+    Set property "KEEP = TRUE" for signal <a<103>>.
+    Set property "KEEP = TRUE" for signal <a<102>>.
+    Set property "KEEP = TRUE" for signal <a<101>>.
+    Set property "KEEP = TRUE" for signal <a<100>>.
+    Set property "KEEP = TRUE" for signal <a<99>>.
+    Set property "KEEP = TRUE" for signal <a<98>>.
+    Set property "KEEP = TRUE" for signal <a<97>>.
+    Set property "KEEP = TRUE" for signal <a<96>>.
+    Set property "KEEP = TRUE" for signal <a<95>>.
+    Set property "KEEP = TRUE" for signal <a<94>>.
+    Set property "KEEP = TRUE" for signal <a<93>>.
+    Set property "KEEP = TRUE" for signal <a<92>>.
+    Set property "KEEP = TRUE" for signal <a<91>>.
+    Set property "KEEP = TRUE" for signal <a<90>>.
+    Set property "KEEP = TRUE" for signal <a<89>>.
+    Set property "KEEP = TRUE" for signal <a<88>>.
+    Set property "KEEP = TRUE" for signal <a<87>>.
+    Set property "KEEP = TRUE" for signal <a<86>>.
+    Set property "KEEP = TRUE" for signal <a<85>>.
+    Set property "KEEP = TRUE" for signal <a<84>>.
+    Set property "KEEP = TRUE" for signal <a<83>>.
+    Set property "KEEP = TRUE" for signal <a<82>>.
+    Set property "KEEP = TRUE" for signal <a<81>>.
+    Set property "KEEP = TRUE" for signal <a<80>>.
+    Set property "KEEP = TRUE" for signal <a<79>>.
+    Set property "KEEP = TRUE" for signal <a<78>>.
+    Set property "KEEP = TRUE" for signal <a<77>>.
+    Set property "KEEP = TRUE" for signal <a<76>>.
+    Set property "KEEP = TRUE" for signal <a<75>>.
+    Set property "KEEP = TRUE" for signal <a<74>>.
+    Set property "KEEP = TRUE" for signal <a<73>>.
+    Set property "KEEP = TRUE" for signal <a<72>>.
+    Set property "KEEP = TRUE" for signal <a<71>>.
+    Set property "KEEP = TRUE" for signal <a<70>>.
+    Set property "KEEP = TRUE" for signal <a<69>>.
+    Set property "KEEP = TRUE" for signal <a<68>>.
+    Set property "KEEP = TRUE" for signal <a<67>>.
+    Set property "KEEP = TRUE" for signal <a<66>>.
+    Set property "KEEP = TRUE" for signal <a<65>>.
+    Set property "KEEP = TRUE" for signal <a<64>>.
+    Set property "KEEP = TRUE" for signal <a<63>>.
+    Set property "KEEP = TRUE" for signal <a<62>>.
+    Set property "KEEP = TRUE" for signal <a<61>>.
+    Set property "KEEP = TRUE" for signal <a<60>>.
+    Set property "KEEP = TRUE" for signal <a<59>>.
+    Set property "KEEP = TRUE" for signal <a<58>>.
+    Set property "KEEP = TRUE" for signal <a<57>>.
+    Set property "KEEP = TRUE" for signal <a<56>>.
+    Set property "KEEP = TRUE" for signal <a<55>>.
+    Set property "KEEP = TRUE" for signal <a<54>>.
+    Set property "KEEP = TRUE" for signal <a<53>>.
+    Set property "KEEP = TRUE" for signal <a<52>>.
+    Set property "KEEP = TRUE" for signal <a<51>>.
+    Set property "KEEP = TRUE" for signal <a<50>>.
+    Set property "KEEP = TRUE" for signal <a<49>>.
+    Set property "KEEP = TRUE" for signal <a<48>>.
+    Set property "KEEP = TRUE" for signal <a<47>>.
+    Set property "KEEP = TRUE" for signal <a<46>>.
+    Set property "KEEP = TRUE" for signal <a<45>>.
+    Set property "KEEP = TRUE" for signal <a<44>>.
+    Set property "KEEP = TRUE" for signal <a<43>>.
+    Set property "KEEP = TRUE" for signal <a<42>>.
+    Set property "KEEP = TRUE" for signal <a<41>>.
+    Set property "KEEP = TRUE" for signal <a<40>>.
+    Set property "KEEP = TRUE" for signal <a<39>>.
+    Set property "KEEP = TRUE" for signal <a<38>>.
+    Set property "KEEP = TRUE" for signal <a<37>>.
+    Set property "KEEP = TRUE" for signal <a<36>>.
+    Set property "KEEP = TRUE" for signal <a<35>>.
+    Set property "KEEP = TRUE" for signal <a<34>>.
+    Set property "KEEP = TRUE" for signal <a<33>>.
+    Set property "KEEP = TRUE" for signal <a<32>>.
+    Set property "KEEP = TRUE" for signal <a<31>>.
+    Set property "KEEP = TRUE" for signal <a<30>>.
+    Set property "KEEP = TRUE" for signal <a<29>>.
+    Set property "KEEP = TRUE" for signal <a<28>>.
+    Set property "KEEP = TRUE" for signal <a<27>>.
+    Set property "KEEP = TRUE" for signal <a<26>>.
+    Set property "KEEP = TRUE" for signal <a<25>>.
+    Set property "KEEP = TRUE" for signal <a<24>>.
+    Set property "KEEP = TRUE" for signal <a<23>>.
+    Set property "KEEP = TRUE" for signal <a<22>>.
+    Set property "KEEP = TRUE" for signal <a<21>>.
+    Set property "KEEP = TRUE" for signal <a<20>>.
+    Set property "KEEP = TRUE" for signal <a<19>>.
+    Set property "KEEP = TRUE" for signal <a<18>>.
+    Set property "KEEP = TRUE" for signal <a<17>>.
+    Set property "KEEP = TRUE" for signal <a<16>>.
+    Set property "KEEP = TRUE" for signal <a<15>>.
+    Set property "KEEP = TRUE" for signal <a<14>>.
+    Set property "KEEP = TRUE" for signal <a<13>>.
+    Set property "KEEP = TRUE" for signal <a<12>>.
+    Set property "KEEP = TRUE" for signal <a<11>>.
+    Set property "KEEP = TRUE" for signal <a<10>>.
+    Set property "KEEP = TRUE" for signal <a<9>>.
+    Set property "KEEP = TRUE" for signal <a<8>>.
+    Set property "KEEP = TRUE" for signal <a<7>>.
+    Set property "KEEP = TRUE" for signal <a<6>>.
+    Set property "KEEP = TRUE" for signal <a<5>>.
+    Set property "KEEP = TRUE" for signal <a<4>>.
+    Set property "KEEP = TRUE" for signal <a<3>>.
+    Set property "KEEP = TRUE" for signal <a<2>>.
+    Set property "KEEP = TRUE" for signal <a<1>>.
+    Set property "KEEP = TRUE" for signal <a<0>>.
+    Summary:
+	no macro.
+Unit <ring_oscillator> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Registers                                            : 4
+ 1-bit register                                        : 1
+ 32-bit register                                       : 3
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 5
+ 1-bit 2-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <frequency_counter>.
+The following registers are absorbed into counter <master_clk_timeout>: 1 register on signal <master_clk_timeout>.
+The following registers are absorbed into counter <test_clk_counter>: 1 register on signal <test_clk_counter>.
+Unit <frequency_counter> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 32-bit up counter                                     : 2
+# Registers                                            : 33
+ Flip-Flops                                            : 33
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 3
+ 1-bit 2-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <test_clk_counter_31> of sequential type is unconnected in block <frequency_counter>.
+WARNING:Xst:2170 - Unit ring_oscillator : the following signal(s) form a combinatorial loop: a<508>, a<502>, a<496>, a<490>, a<484>, a<478>, a<472>, a<466>, a<460>, a<454>, a<448>, a<442>, a<436>, a<430>, a<424>, a<418>, a<412>, a<406>, a<400>, a<394>, a<388>, a<382>, a<376>, a<370>, a<364>, a<358>, a<352>, a<346>, a<340>, a<334>, a<328>, a<322>, a<316>, a<310>, a<304>, a<298>, a<293>, a<287>, a<281>, a<275>, a<269>, a<263>, a<257>, a<251>, a<245>, a<239>, a<233>, a<137>, a<131>, a<125>, a<34>, a<40>, a<46>, a<52>, a<58>, a<169>, a<64>, a<70>, a<76>, a<82>, a<88>, a<94>, a<218>, a<159>, a<212>, a<205>, a<199>, a<145>, a<151>, a<156>, a<99>, a<105>, a<111>, a<117>, a<123>, a<5>, a<10>, a<176>, a<18>, a<165>, a<24>, a<30>, a<171>, a<509>, a<503>, a<497>, a<491>, a<485>, a<479>, a<473>, a<467>, a<461>, a<455>, a<449>, a<443>, a<437>, a<431>, a<425>, a<419>, a<413>, a<407>, a<401>, a<395>, a<389>, a<383>, a<377>, a<371>, a<365>, a<359>, a<353>, a<347>, a<341>, a<335>, a<329>, a<323>, a<317>, a<311>, a<305>, a<299>, a<294>, a<288>, a<282>, a<276>, a<270>, a<264>, a<258>, a<252>, a<246>, a<240>, a<234>, a<138>, a<132>, a<126>, a<33>, a<39>, a<45>, a<226>, a<51>, a<229>, a<57>, a<63>, a<69>, a<75>, a<81>, a<87>, a<93>, a<219>, a<160>, a<213>, a<206>, a<200>, a<150>, a<155>, a<220>, a<98>, a<104>, a<110>, a<116>, a<122>, a<193>, a<190>, a<187>, a<183>, a<13>, a<180>, a<9>, a<17>, a<23>, a<167>, a<29>, a<214>, a<172>, a<510>, a<504>, a<498>, a<492>, a<486>, a<480>, a<474>, a<468>, a<462>, a<456>, a<450>, a<444>, a<438>, a<432>, a<426>, a<420>, a<414>, a<408>, a<402>, a<396>, a<390>, a<384>, a<378>, a<372>, a<366>, a<360>, a<354>, a<348>, a<342>, a<336>, a<330>, a<324>, a<318>, a<312>, a<306>, a<300>, a<289>, a<283>, a<277>, a<271>, a<265>, a<259>, a<253>, a<247>, a<241>, a<235>, a<139>, a<133>, a<127>, a<38>, a<44>, a<225>, a<50>, a<228>, a<56>, a<223>, a<62>, a<222>, a<68>, a<74>, a<80>, a<86>, a<92>, a<163>, a<208>, a<201>, a<194>, a<144>, a<149>, a<97>, a<103>, a<109>, a<115>, a<121>, a<0>, a<4>, a<8>, a<177>, a<16>, a<22>, a<166>, a<28>, a<215>, a<173>, a<511>, a<505>, a<499>, a<493>, a<487>, a<481>, a<475>, a<469>, a<463>, a<457>, a<451>, a<445>, a<439>, a<433>, a<427>, a<421>, a<415>, a<409>, a<403>, a<397>, a<391>, a<385>, a<379>, a<373>, a<367>, a<361>, a<355>, a<349>, a<343>, a<337>, a<331>, a<325>, a<319>, a<313>, a<307>, a<301>, a<295>, a<290>, a<284>, a<278>, a<272>, a<266>, a<260>, a<254>, a<248>, a<242>, a<236>, a<140>, a<134>, a<128>, a<37>, a<43>, a<224>, a<49>, a<55>, a<61>, a<67>, a<73>, a<79>, a<85>, a<91>, a<185>, a<216>, a<209>, a<202>, a<195>, a<143>, a<148>, a<154>, a<142>, a<102>, a<108>, a<114>, a<120>, a<191>, a<188>, a<184>, a<3>, a<181>, a<7>, a<178>, a<15>, a<175>, a<21>, a<162>, a<27>, a<506>, a<500>, a<494>, a<488>, a<482>, a<476>, a<470>, a<464>, a<458>, a<452>, a<446>, a<440>, a<434>, a<428>, a<422>, a<416>, a<410>, a<404>, a<398>, a<392>, a<386>, a<380>, a<374>, a<368>, a<362>, a<356>, a<350>, a<344>, a<338>, a<332>, a<326>, a<320>, a<314>, a<308>, a<302>, a<296>, a<291>, a<285>, a<279>, a<273>, a<267>, a<261>, a<255>, a<249>, a<243>, a<237>, a<231>, a<135>, a<129>, a<36>, a<42>, a<48>, a<54>, a<60>, a<66>, a<72>, a<78>, a<84>, a<90>, a<96>, a<196>, a<158>, a<210>, a<203>, a<197>, a<217>, a<147>, a<153>, a<157>, a<101>, a<107>, a<113>, a<119>, a<2>, a<6>, a<12>, a<20>, a<161>, a<26>, a<32>, a<168>, a<507>, a<501>, a<495>, a<489>, a<483>, a<477>, a<471>, a<465>, a<459>, a<453>, a<447>, a<441>, a<435>, a<429>, a<423>, a<417>, a<411>, a<405>, a<399>, a<393>, a<387>, a<381>, a<375>, a<369>, a<363>, a<357>, a<351>, a<345>, a<339>, a<333>, a<327>, a<321>, a<315>, a<309>, a<303>, a<297>, a<292>, a<286>, a<280>, a<274>, a<268>, a<262>, a<256>, a<250>, a<244>, a<238>, a<232>, a<136>, a<130>, a<124>, a<35>, a<41>, a<47>, a<227>, a<53>, a<230>, a<59>, a<65>, a<71>, a<77>, a<83>, a<89>, a<95>, a<207>, a<174>, a<211>, a<204>, a<198>, a<221>, a<146>, a<152>, a<141>, a<100>, a<106>, a<112>, a<118>, a<192>, a<189>, a<186>, a<1>, a<182>, a<14>, a<179>, a<11>, a<19>, a<164>, a<25>, a<31>, a<170>.
+
+Optimizing unit <rp> ...
+
+Optimizing unit <frequency_counter> ...
+
+Optimizing unit <ring_oscillator> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block rp, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 96
+ Flip-Flops                                            : 96
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : rp.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 785
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 511
+#      LUT2                        : 67
+#      LUT3                        : 33
+#      LUT4                        : 30
+#      MUXCY                       : 78
+#      VCC                         : 1
+#      XORCY                       : 63
+# FlipFlops/Latches                : 96
+#      FDC                         : 33
+#      FDCE                        : 63
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k325tffg900-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              96  out of  407600     0%  
+ Number of Slice LUTs:                  642  out of  203800     0%  
+    Number used as Logic:               642  out of  203800     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    642
+   Number with an unused Flip Flop:     546  out of    642    85%  
+   Number with an unused LUT:             0  out of    642     0%  
+   Number of fully used LUT-FF pairs:    96  out of    642    14%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                          66
+ Number of bonded IOBs:                   0  out of    500     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                    | Load  |
+-----------------------------------+------------------------------------------+-------+
+ring_osc/a<0>(ring_osc/a<0>1:O)    | NONE(*)(freq_counter/test_clk_counter_30)| 63    |
+Clk                                | NONE(freq_counter/master_clk_timeout_31) | 33    |
+-----------------------------------+------------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.039ns (Maximum Frequency: 490.472MHz)
+   Minimum input arrival time before clock: 1.462ns
+   Maximum output required time after clock: 0.236ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ring_osc/a<0>'
+  Clock period: 1.526ns (frequency: 655.416MHz)
+  Total number of paths / destination ports: 527 / 62
+-------------------------------------------------------------------------
+Delay:               1.526ns (Levels of Logic = 32)
+  Source:            freq_counter/test_clk_counter_0 (FF)
+  Destination:       freq_counter/test_clk_counter_30 (FF)
+  Source Clock:      ring_osc/a<0> rising
+  Destination Clock: ring_osc/a<0> rising
+
+  Data Path: freq_counter/test_clk_counter_0 to freq_counter/test_clk_counter_30
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.236   0.355  freq_counter/test_clk_counter_0 (freq_counter/test_clk_counter_0)
+     LUT2:I1->O            1   0.043   0.000  freq_counter/Mcount_test_clk_counter_lut<0> (freq_counter/Mcount_test_clk_counter_lut<0>)
+     MUXCY:S->O            1   0.238   0.000  freq_counter/Mcount_test_clk_counter_cy<0> (freq_counter/Mcount_test_clk_counter_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<1> (freq_counter/Mcount_test_clk_counter_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<2> (freq_counter/Mcount_test_clk_counter_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<3> (freq_counter/Mcount_test_clk_counter_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<4> (freq_counter/Mcount_test_clk_counter_cy<4>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<5> (freq_counter/Mcount_test_clk_counter_cy<5>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<6> (freq_counter/Mcount_test_clk_counter_cy<6>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<7> (freq_counter/Mcount_test_clk_counter_cy<7>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<8> (freq_counter/Mcount_test_clk_counter_cy<8>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<9> (freq_counter/Mcount_test_clk_counter_cy<9>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<10> (freq_counter/Mcount_test_clk_counter_cy<10>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<11> (freq_counter/Mcount_test_clk_counter_cy<11>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<12> (freq_counter/Mcount_test_clk_counter_cy<12>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<13> (freq_counter/Mcount_test_clk_counter_cy<13>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<14> (freq_counter/Mcount_test_clk_counter_cy<14>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<15> (freq_counter/Mcount_test_clk_counter_cy<15>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<16> (freq_counter/Mcount_test_clk_counter_cy<16>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<17> (freq_counter/Mcount_test_clk_counter_cy<17>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<18> (freq_counter/Mcount_test_clk_counter_cy<18>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<19> (freq_counter/Mcount_test_clk_counter_cy<19>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<20> (freq_counter/Mcount_test_clk_counter_cy<20>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<21> (freq_counter/Mcount_test_clk_counter_cy<21>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<22> (freq_counter/Mcount_test_clk_counter_cy<22>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<23> (freq_counter/Mcount_test_clk_counter_cy<23>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<24> (freq_counter/Mcount_test_clk_counter_cy<24>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<25> (freq_counter/Mcount_test_clk_counter_cy<25>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<26> (freq_counter/Mcount_test_clk_counter_cy<26>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<27> (freq_counter/Mcount_test_clk_counter_cy<27>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<28> (freq_counter/Mcount_test_clk_counter_cy<28>)
+     MUXCY:CI->O           0   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<29> (freq_counter/Mcount_test_clk_counter_cy<29>)
+     XORCY:CI->O           1   0.262   0.000  freq_counter/Mcount_test_clk_counter_xor<30> (freq_counter/Mcount_test_clk_counter30)
+     FDCE:D                   -0.000          freq_counter/test_clk_counter_30
+    ----------------------------------------
+    Total                      1.526ns (1.170ns logic, 0.355ns route)
+                                       (76.7% logic, 23.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 2.039ns (frequency: 490.472MHz)
+  Total number of paths / destination ports: 2640 / 65
+-------------------------------------------------------------------------
+Delay:               2.039ns (Levels of Logic = 18)
+  Source:            freq_counter/master_clk_timeout_1 (FF)
+  Destination:       freq_counter/master_clk_timeout_31 (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: freq_counter/master_clk_timeout_1 to freq_counter/master_clk_timeout_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.236   0.534  freq_counter/master_clk_timeout_1 (freq_counter/master_clk_timeout_1)
+     LUT4:I0->O            0   0.043   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_lutdi (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_lutdi)
+     MUXCY:DI->O           1   0.228   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<0> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<1> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<2> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<3> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<4> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<4>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<5> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<5>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<6> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<6>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<7> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<7>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<8> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<8>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<9> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<9>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<10> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<10>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<11> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<11>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<12> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<12>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<13> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<13>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<14> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<14>)
+     MUXCY:CI->O           2   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<15> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<15>)
+     MUXCY:CI->O          32   0.165   0.469  freq_counter/_n0051_inv1_cy (freq_counter/_n0051_inv)
+     FDCE:CE                   0.161          freq_counter/master_clk_timeout_0
+    ----------------------------------------
+    Total                      2.039ns (1.036ns logic, 1.003ns route)
+                                       (50.8% logic, 49.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ring_osc/a<0>'
+  Total number of paths / destination ports: 653 / 157
+-------------------------------------------------------------------------
+Offset:              1.000ns (Levels of Logic = 32)
+  Source:            reg_0<0> (PAD)
+  Destination:       freq_counter/test_clk_counter_30 (FF)
+  Destination Clock: ring_osc/a<0> rising
+
+  Data Path: reg_0<0> to freq_counter/test_clk_counter_30
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT2:I0->O            1   0.043   0.000  freq_counter/Mcount_test_clk_counter_lut<0> (freq_counter/Mcount_test_clk_counter_lut<0>)
+     MUXCY:S->O            1   0.238   0.000  freq_counter/Mcount_test_clk_counter_cy<0> (freq_counter/Mcount_test_clk_counter_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<1> (freq_counter/Mcount_test_clk_counter_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<2> (freq_counter/Mcount_test_clk_counter_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<3> (freq_counter/Mcount_test_clk_counter_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<4> (freq_counter/Mcount_test_clk_counter_cy<4>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<5> (freq_counter/Mcount_test_clk_counter_cy<5>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<6> (freq_counter/Mcount_test_clk_counter_cy<6>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<7> (freq_counter/Mcount_test_clk_counter_cy<7>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<8> (freq_counter/Mcount_test_clk_counter_cy<8>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<9> (freq_counter/Mcount_test_clk_counter_cy<9>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<10> (freq_counter/Mcount_test_clk_counter_cy<10>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<11> (freq_counter/Mcount_test_clk_counter_cy<11>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<12> (freq_counter/Mcount_test_clk_counter_cy<12>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<13> (freq_counter/Mcount_test_clk_counter_cy<13>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<14> (freq_counter/Mcount_test_clk_counter_cy<14>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<15> (freq_counter/Mcount_test_clk_counter_cy<15>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<16> (freq_counter/Mcount_test_clk_counter_cy<16>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<17> (freq_counter/Mcount_test_clk_counter_cy<17>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<18> (freq_counter/Mcount_test_clk_counter_cy<18>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<19> (freq_counter/Mcount_test_clk_counter_cy<19>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<20> (freq_counter/Mcount_test_clk_counter_cy<20>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<21> (freq_counter/Mcount_test_clk_counter_cy<21>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<22> (freq_counter/Mcount_test_clk_counter_cy<22>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<23> (freq_counter/Mcount_test_clk_counter_cy<23>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<24> (freq_counter/Mcount_test_clk_counter_cy<24>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<25> (freq_counter/Mcount_test_clk_counter_cy<25>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<26> (freq_counter/Mcount_test_clk_counter_cy<26>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<27> (freq_counter/Mcount_test_clk_counter_cy<27>)
+     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<28> (freq_counter/Mcount_test_clk_counter_cy<28>)
+     MUXCY:CI->O           0   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<29> (freq_counter/Mcount_test_clk_counter_cy<29>)
+     XORCY:CI->O           1   0.262   0.000  freq_counter/Mcount_test_clk_counter_xor<30> (freq_counter/Mcount_test_clk_counter30)
+     FDCE:D                   -0.000          freq_counter/test_clk_counter_30
+    ----------------------------------------
+    Total                      1.000ns (1.000ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 2672 / 98
+-------------------------------------------------------------------------
+Offset:              1.462ns (Levels of Logic = 18)
+  Source:            reg_0<31> (PAD)
+  Destination:       freq_counter/master_clk_timeout_31 (FF)
+  Destination Clock: Clk rising
+
+  Data Path: reg_0<31> to freq_counter/master_clk_timeout_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT4:I0->O            1   0.043   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_lut<0> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_lut<0>)
+     MUXCY:S->O            1   0.238   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<0> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<1> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<2> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<3> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<4> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<4>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<5> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<5>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<6> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<6>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<7> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<7>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<8> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<8>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<9> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<9>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<10> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<10>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<11> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<11>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<12> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<12>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<13> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<13>)
+     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<14> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<14>)
+     MUXCY:CI->O           2   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<15> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<15>)
+     MUXCY:CI->O          32   0.165   0.469  freq_counter/_n0051_inv1_cy (freq_counter/_n0051_inv)
+     FDCE:CE                   0.161          freq_counter/master_clk_timeout_0
+    ----------------------------------------
+    Total                      1.462ns (0.993ns logic, 0.469ns route)
+                                       (67.9% logic, 32.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ring_osc/a<0>'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              0.236ns (Levels of Logic = 0)
+  Source:            freq_counter/reg_1_0 (FF)
+  Destination:       reg_1<31> (PAD)
+  Source Clock:      ring_osc/a<0> rising
+
+  Data Path: freq_counter/reg_1_0 to reg_1<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              0   0.236   0.000  freq_counter/reg_1_0 (freq_counter/reg_1_0)
+    ----------------------------------------
+    Total                      0.236ns (0.236ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk            |    2.039|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ring_osc/a<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk            |    1.389|         |         |         |
+ring_osc/a<0>  |    1.526|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.87 secs
+ 
+--> 
+
+Total memory usage is 449796 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

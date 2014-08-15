@@ -1,0 +1,8 @@
+V3 3
+FL C:/Users/ECE/Documents/freq_counter/freq_counter/frequency_counter.vhd 2014/08/08.03:52:27 P.68d
+EN work/frequency_counter 1407491760 \
+      FL C:/Users/ECE/Documents/freq_counter/freq_counter/frequency_counter.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611
+AR work/frequency_counter/Behavioral 1407491761 \
+      FL C:/Users/ECE/Documents/freq_counter/freq_counter/frequency_counter.vhd \
+      EN work/frequency_counter 1407491760

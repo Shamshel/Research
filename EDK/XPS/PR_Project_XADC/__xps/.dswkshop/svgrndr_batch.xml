@@ -27,6 +27,12 @@
 
   <RENDERIMG RASNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\axi_xadc_0.jpg" SVGNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\axi_xadc_0.svg" TMPSVGFN="C:\Users\ECE\Documents\PR_Project_XADC\__xps\.dswkshop\axi_xadc_0.svg"/>
 
+  <RENDERIMG RASNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\axi_hwicap_0.jpg" SVGNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\axi_hwicap_0.svg" TMPSVGFN="C:\Users\ECE\Documents\PR_Project_XADC\__xps\.dswkshop\axi_hwicap_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\reconfigurable_peripherials_0.jpg" SVGNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\reconfigurable_peripherials_0.svg" TMPSVGFN="C:\Users\ECE\Documents\PR_Project_XADC\__xps\.dswkshop\reconfigurable_peripherials_0.svg"/>
+
+  <RENDERIMG RASNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\fan_controller_0.jpg" SVGNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\fan_controller_0.svg" TMPSVGFN="C:\Users\ECE\Documents\PR_Project_XADC\__xps\.dswkshop\fan_controller_0.svg"/>
+
   <RENDERIMG RASNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\system_blkd.jpg" SVGNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\system_blkd.svg" TMPSVGFN="C:\Users\ECE\Documents\PR_Project_XADC\__xps\.dswkshop\system_blkd.svg"/>
 
 </RENDERBATCH>

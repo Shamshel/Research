@@ -1,0 +1,12 @@
+//! **************************************************************************
+// Written by: Map P.68d on Sun Jun 29 13:35:21 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "dip_sw<0>" LOCATE = SITE "Y29" LEVEL 1;
+COMP "dip_sw<1>" LOCATE = SITE "W29" LEVEL 1;
+COMP "dip_sw<2>" LOCATE = SITE "AA28" LEVEL 1;
+COMP "dip_sw<3>" LOCATE = SITE "Y28" LEVEL 1;
+COMP "sw_c" LOCATE = SITE "G12" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,2 @@
+vhdl isim_temp "frequency_counter.vhd"
+vhdl isim_temp "frequency_counter_testbench.vhd"

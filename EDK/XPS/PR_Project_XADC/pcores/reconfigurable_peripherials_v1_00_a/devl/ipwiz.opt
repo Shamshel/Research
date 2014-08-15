@@ -1,0 +1,11 @@
+-batch 
+-create reconfigurable_peripherials 
+-ver 1.00.a 
+-dir "C:\Users\ECE\Documents\PR_Project" 
+-lang vhdl 
+-bus axi4lite s 
+-rst 
+-reg 2 
+-xps 
+-ise 
+-driver 

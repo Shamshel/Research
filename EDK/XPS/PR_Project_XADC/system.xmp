@@ -25,5 +25,5 @@ EnableParTimingError: 1
 ShowLicenseDialog: 1
 BInfo: 
 Processor: microblaze_0
-ElfImp: ../../workspace/PR_Project_XADC/Debug/PR_Project_XADC.elf
+ElfImp: 
 ElfSim: 

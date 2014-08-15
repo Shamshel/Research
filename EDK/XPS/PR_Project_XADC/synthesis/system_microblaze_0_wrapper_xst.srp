@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> 
 TABLE OF CONTENTS
@@ -7577,12 +7577,12 @@ DCACHE_FSL_OUT_CLK|    3.915|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 39.00 secs
-Total CPU time to Xst completion: 38.41 secs
+Total REAL time to Xst completion: 42.00 secs
+Total CPU time to Xst completion: 41.56 secs
  
 --> 
 
-Total memory usage is 446944 kilobytes
+Total memory usage is 446304 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings : 4725 (   0 filtered)

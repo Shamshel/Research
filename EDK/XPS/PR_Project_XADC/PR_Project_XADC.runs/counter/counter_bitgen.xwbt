@@ -1,0 +1,8 @@
+INTSTYLE=pa
+INFILE=C:\Users\ECE\Documents\PR_Project_XADC\PR_Project_XADC.runs\counter\counter_routed.ncd
+OUTFILE=C:\Users\ECE\Documents\PR_Project_XADC\PR_Project_XADC.runs\counter\counter.bit
+FAMILY=Kintex7
+PART=xc7k325t-2ffg900
+WORKINGDIR=C:\Users\ECE\Documents\PR_Project_XADC\PR_Project_XADC.runs\counter
+LICENSE=WebPack
+USER_INFO=210713283_1777489707_210553578_303

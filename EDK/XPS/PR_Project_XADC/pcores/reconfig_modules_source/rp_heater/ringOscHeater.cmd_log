@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp/ringOscHeater.xst" -ofn "C:/Users/ECE/Documents/PR_Project/pcores/reconfig_modules_source/rp_heater/rp/ringOscHeater.syr" 

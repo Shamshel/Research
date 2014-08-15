@@ -1,0 +1,40 @@
+#:C9     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.68d
+#Current Working Directory:
+#:D   C:\Users\ECE\Documents\PR_Project\pcores\reconfig_modules_source\rp_heater
+#Date/Time:
+#:T   Mon Jun 23 12:57:10 2014
+#------------------------------
+	#Reading rp.ncd...
+	#Loading device for application Rf_Device from file '7k325t.nph' in environment C:\Xilinx\14.6\ISE_DS\ISE\.
+	#   "rp" is an NCD, version 3.2, device xc7k325t, package ffg900, speed -2
+	#Design creation date: 2014.06.23.16.42.07
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select -k comp 'Mcount_reg_1_val'
+	#3
+unselect -all
+	#4
+unselect -all
+	#5
+select comp 'Mcount_reg_1_val'
+	#comp "Mcount_reg_1_val",  site "SLICE_X1Y4",  type = SLICEL  (RPM grid X19Y8)
+	#6
+unselect -all
+	#7
+select net 'reg_1<3>/ProtoComp0.A5LUT.O5'
+	#net "reg_1<3>/ProtoComp0.A5LUT.O5"
+	#8
+unselect -all
+	#9
+unselect -all
+	#10
+unselect -all
+	#11
+select site 'TIEOFF_X2Y0'
+	#site "TIEOFF_X2Y0",  type = TIEOFF  (RPM grid X16Y0)

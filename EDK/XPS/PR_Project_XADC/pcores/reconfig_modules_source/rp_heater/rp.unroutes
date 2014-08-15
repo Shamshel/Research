@@ -1,0 +1,15 @@
+Release 14.6 - par P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Mon Jun 23 10:43:04 2014
+
+All signals are completely routed.
+
+WARNING:ParHelpers:362 - There are 3 sourceless signals in this design. This design will not pass the DRC check run by
+   Bitgen.
+
+   Clk
+   Reset_n
+   reg_0
+
+
