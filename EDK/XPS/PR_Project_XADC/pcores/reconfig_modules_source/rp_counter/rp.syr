@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: rp.prj
 
@@ -145,14 +145,15 @@ Synthesizing Unit <frequency_counter>.
     Found 32-bit register for signal <master_clk_timeout>.
     Found 32-bit register for signal <test_clk_counter>.
     Found 32-bit register for signal <reg_1>.
-    Found 32-bit adder for signal <master_clk_timeout[31]_GND_5_o_add_1_OUT> created at line 78.
-    Found 32-bit adder for signal <test_clk_counter[31]_GND_5_o_add_6_OUT> created at line 129.
-    Found 32-bit comparator greater for signal <GND_5_o_master_clk_timeout[31]_LessThan_1_o> created at line 74
+    Found 31-bit register for signal <output_buffer>.
+    Found 32-bit adder for signal <master_clk_timeout[31]_GND_5_o_add_1_OUT> created at line 79.
+    Found 32-bit adder for signal <test_clk_counter[31]_GND_5_o_add_6_OUT> created at line 128.
+    Found 32-bit comparator greater for signal <GND_5_o_master_clk_timeout[31]_LessThan_1_o> created at line 75
     Summary:
 	inferred   2 Adder/Subtractor(s).
-	inferred  97 D-type flip-flop(s).
+	inferred 128 D-type flip-flop(s).
 	inferred   1 Comparator(s).
-	inferred   5 Multiplexer(s).
+	inferred   7 Multiplexer(s).
 Unit <frequency_counter> synthesized.
 
 Synthesizing Unit <ring_oscillator>.
@@ -679,14 +680,16 @@ HDL Synthesis Report
 Macro Statistics
 # Adders/Subtractors                                   : 2
  32-bit adder                                          : 2
-# Registers                                            : 4
+# Registers                                            : 5
  1-bit register                                        : 1
+ 31-bit register                                       : 1
  32-bit register                                       : 3
 # Comparators                                          : 1
  32-bit comparator greater                             : 1
-# Multiplexers                                         : 5
+# Multiplexers                                         : 7
  1-bit 2-to-1 multiplexer                              : 1
- 32-bit 2-to-1 multiplexer                             : 4
+ 31-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 5
 
 =========================================================================
 
@@ -697,36 +700,38 @@ Macro Statistics
 
 Synthesizing (advanced) Unit <frequency_counter>.
 The following registers are absorbed into counter <master_clk_timeout>: 1 register on signal <master_clk_timeout>.
-The following registers are absorbed into counter <test_clk_counter>: 1 register on signal <test_clk_counter>.
 Unit <frequency_counter> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Counters                                             : 2
- 32-bit up counter                                     : 2
-# Registers                                            : 33
- Flip-Flops                                            : 33
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 96
+ Flip-Flops                                            : 96
 # Comparators                                          : 1
  32-bit comparator greater                             : 1
-# Multiplexers                                         : 3
+# Multiplexers                                         : 6
  1-bit 2-to-1 multiplexer                              : 1
- 32-bit 2-to-1 multiplexer                             : 2
+ 31-bit 2-to-1 multiplexer                             : 1
+ 32-bit 2-to-1 multiplexer                             : 4
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:2677 - Node <test_clk_counter_31> of sequential type is unconnected in block <frequency_counter>.
-WARNING:Xst:2170 - Unit ring_oscillator : the following signal(s) form a combinatorial loop: a<508>, a<502>, a<496>, a<490>, a<484>, a<478>, a<472>, a<466>, a<460>, a<454>, a<448>, a<442>, a<436>, a<430>, a<424>, a<418>, a<412>, a<406>, a<400>, a<394>, a<388>, a<382>, a<376>, a<370>, a<364>, a<358>, a<352>, a<346>, a<340>, a<334>, a<328>, a<322>, a<316>, a<310>, a<304>, a<298>, a<293>, a<287>, a<281>, a<275>, a<269>, a<263>, a<257>, a<251>, a<245>, a<239>, a<233>, a<137>, a<131>, a<125>, a<34>, a<40>, a<46>, a<52>, a<58>, a<169>, a<64>, a<70>, a<76>, a<82>, a<88>, a<94>, a<218>, a<159>, a<212>, a<205>, a<199>, a<145>, a<151>, a<156>, a<99>, a<105>, a<111>, a<117>, a<123>, a<5>, a<10>, a<176>, a<18>, a<165>, a<24>, a<30>, a<171>, a<509>, a<503>, a<497>, a<491>, a<485>, a<479>, a<473>, a<467>, a<461>, a<455>, a<449>, a<443>, a<437>, a<431>, a<425>, a<419>, a<413>, a<407>, a<401>, a<395>, a<389>, a<383>, a<377>, a<371>, a<365>, a<359>, a<353>, a<347>, a<341>, a<335>, a<329>, a<323>, a<317>, a<311>, a<305>, a<299>, a<294>, a<288>, a<282>, a<276>, a<270>, a<264>, a<258>, a<252>, a<246>, a<240>, a<234>, a<138>, a<132>, a<126>, a<33>, a<39>, a<45>, a<226>, a<51>, a<229>, a<57>, a<63>, a<69>, a<75>, a<81>, a<87>, a<93>, a<219>, a<160>, a<213>, a<206>, a<200>, a<150>, a<155>, a<220>, a<98>, a<104>, a<110>, a<116>, a<122>, a<193>, a<190>, a<187>, a<183>, a<13>, a<180>, a<9>, a<17>, a<23>, a<167>, a<29>, a<214>, a<172>, a<510>, a<504>, a<498>, a<492>, a<486>, a<480>, a<474>, a<468>, a<462>, a<456>, a<450>, a<444>, a<438>, a<432>, a<426>, a<420>, a<414>, a<408>, a<402>, a<396>, a<390>, a<384>, a<378>, a<372>, a<366>, a<360>, a<354>, a<348>, a<342>, a<336>, a<330>, a<324>, a<318>, a<312>, a<306>, a<300>, a<289>, a<283>, a<277>, a<271>, a<265>, a<259>, a<253>, a<247>, a<241>, a<235>, a<139>, a<133>, a<127>, a<38>, a<44>, a<225>, a<50>, a<228>, a<56>, a<223>, a<62>, a<222>, a<68>, a<74>, a<80>, a<86>, a<92>, a<163>, a<208>, a<201>, a<194>, a<144>, a<149>, a<97>, a<103>, a<109>, a<115>, a<121>, a<0>, a<4>, a<8>, a<177>, a<16>, a<22>, a<166>, a<28>, a<215>, a<173>, a<511>, a<505>, a<499>, a<493>, a<487>, a<481>, a<475>, a<469>, a<463>, a<457>, a<451>, a<445>, a<439>, a<433>, a<427>, a<421>, a<415>, a<409>, a<403>, a<397>, a<391>, a<385>, a<379>, a<373>, a<367>, a<361>, a<355>, a<349>, a<343>, a<337>, a<331>, a<325>, a<319>, a<313>, a<307>, a<301>, a<295>, a<290>, a<284>, a<278>, a<272>, a<266>, a<260>, a<254>, a<248>, a<242>, a<236>, a<140>, a<134>, a<128>, a<37>, a<43>, a<224>, a<49>, a<55>, a<61>, a<67>, a<73>, a<79>, a<85>, a<91>, a<185>, a<216>, a<209>, a<202>, a<195>, a<143>, a<148>, a<154>, a<142>, a<102>, a<108>, a<114>, a<120>, a<191>, a<188>, a<184>, a<3>, a<181>, a<7>, a<178>, a<15>, a<175>, a<21>, a<162>, a<27>, a<506>, a<500>, a<494>, a<488>, a<482>, a<476>, a<470>, a<464>, a<458>, a<452>, a<446>, a<440>, a<434>, a<428>, a<422>, a<416>, a<410>, a<404>, a<398>, a<392>, a<386>, a<380>, a<374>, a<368>, a<362>, a<356>, a<350>, a<344>, a<338>, a<332>, a<326>, a<320>, a<314>, a<308>, a<302>, a<296>, a<291>, a<285>, a<279>, a<273>, a<267>, a<261>, a<255>, a<249>, a<243>, a<237>, a<231>, a<135>, a<129>, a<36>, a<42>, a<48>, a<54>, a<60>, a<66>, a<72>, a<78>, a<84>, a<90>, a<96>, a<196>, a<158>, a<210>, a<203>, a<197>, a<217>, a<147>, a<153>, a<157>, a<101>, a<107>, a<113>, a<119>, a<2>, a<6>, a<12>, a<20>, a<161>, a<26>, a<32>, a<168>, a<507>, a<501>, a<495>, a<489>, a<483>, a<477>, a<471>, a<465>, a<459>, a<453>, a<447>, a<441>, a<435>, a<429>, a<423>, a<417>, a<411>, a<405>, a<399>, a<393>, a<387>, a<381>, a<375>, a<369>, a<363>, a<357>, a<351>, a<345>, a<339>, a<333>, a<327>, a<321>, a<315>, a<309>, a<303>, a<297>, a<292>, a<286>, a<280>, a<274>, a<268>, a<262>, a<256>, a<250>, a<244>, a<238>, a<232>, a<136>, a<130>, a<124>, a<35>, a<41>, a<47>, a<227>, a<53>, a<230>, a<59>, a<65>, a<71>, a<77>, a<83>, a<89>, a<95>, a<207>, a<174>, a<211>, a<204>, a<198>, a<221>, a<146>, a<152>, a<141>, a<100>, a<106>, a<112>, a<118>, a<192>, a<189>, a<186>, a<1>, a<182>, a<14>, a<179>, a<11>, a<19>, a<164>, a<25>, a<31>, a<170>.
+WARNING:Xst:2170 - Unit ring_oscillator : the following signal(s) form a combinatorial loop: a<296>, a<290>, a<284>, a<278>, a<272>, a<266>, a<260>, a<254>, a<248>, a<242>, a<236>, a<230>, a<224>, a<218>, a<212>, a<206>, a<200>, a<194>, a<188>, a<182>, a<176>, a<170>, a<164>, a<158>, a<152>, a<146>, a<140>, a<134>, a<128>, a<122>, a<116>, a<110>, a<104>, a<98>, a<92>, a<86>, a<80>, a<2>, a<6>, a<12>, a<20>, a<26>, a<32>, a<38>, a<44>, a<50>, a<56>, a<510>, a<494>, a<488>, a<61>, a<482>, a<67>, a<73>, a<500>, a<467>, a<499>, a<476>, a<470>, a<463>, a<457>, a<449>, a<444>, a<405>, a<399>, a<393>, a<438>, a<387>, a<435>, a<381>, a<432>, a<375>, a<429>, a<369>, a<426>, a<363>, a<423>, a<357>, a<420>, a<351>, a<417>, a<345>, a<414>, a<339>, a<333>, a<441>, a<327>, a<321>, a<412>, a<315>, a<309>, a<303>, a<297>, a<291>, a<285>, a<279>, a<273>, a<267>, a<261>, a<255>, a<249>, a<243>, a<237>, a<231>, a<225>, a<219>, a<213>, a<207>, a<201>, a<195>, a<189>, a<183>, a<177>, a<171>, a<165>, a<159>, a<153>, a<147>, a<141>, a<135>, a<129>, a<123>, a<117>, a<111>, a<105>, a<99>, a<93>, a<87>, a<81>, a<1>, a<14>, a<11>, a<19>, a<25>, a<31>, a<37>, a<43>, a<49>, a<55>, a<507>, a<511>, a<502>, a<495>, a<489>, a<60>, a<483>, a<66>, a<72>, a<78>, a<479>, a<451>, a<477>, a<471>, a<464>, a<458>, a<400>, a<394>, a<388>, a<382>, a<376>, a<370>, a<364>, a<358>, a<352>, a<346>, a<340>, a<334>, a<328>, a<409>, a<322>, a<316>, a<310>, a<304>, a<298>, a<292>, a<286>, a<280>, a<274>, a<268>, a<262>, a<256>, a<250>, a<244>, a<238>, a<232>, a<226>, a<220>, a<214>, a<208>, a<202>, a<196>, a<190>, a<184>, a<178>, a<172>, a<166>, a<160>, a<154>, a<148>, a<142>, a<136>, a<130>, a<124>, a<118>, a<112>, a<106>, a<100>, a<94>, a<88>, a<82>, a<0>, a<5>, a<10>, a<18>, a<24>, a<30>, a<36>, a<42>, a<48>, a<54>, a<508>, a<509>, a<503>, a<496>, a<490>, a<484>, a<65>, a<71>, a<77>, a<452>, a<447>, a<472>, a<465>, a<459>, a<446>, a<401>, a<395>, a<439>, a<389>, a<436>, a<383>, a<433>, a<377>, a<430>, a<371>, a<427>, a<365>, a<424>, a<359>, a<421>, a<353>, a<418>, a<347>, a<415>, a<341>, a<335>, a<329>, a<408>, a<323>, a<317>, a<311>, a<305>, a<299>, a<293>, a<287>, a<281>, a<275>, a<269>, a<263>, a<257>, a<251>, a<245>, a<239>, a<233>, a<227>, a<221>, a<215>, a<209>, a<203>, a<197>, a<191>, a<185>, a<179>, a<173>, a<167>, a<161>, a<155>, a<149>, a<143>, a<137>, a<131>, a<125>, a<119>, a<113>, a<107>, a<101>, a<95>, a<89>, a<83>, a<13>, a<9>, a<17>, a<23>, a<29>, a<35>, a<41>, a<47>, a<53>, a<59>, a<501>, a<491>, a<485>, a<64>, a<70>, a<76>, a<406>, a<478>, a<448>, a<473>, a<466>, a<460>, a<497>, a<442>, a<402>, a<396>, a<390>, a<384>, a<378>, a<372>, a<366>, a<360>, a<354>, a<348>, a<342>, a<336>, a<330>, a<410>, a<324>, a<318>, a<312>, a<306>, a<300>, a<294>, a<288>, a<282>, a<276>, a<270>, a<264>, a<258>, a<252>, a<246>, a<240>, a<234>, a<228>, a<222>, a<216>, a<210>, a<204>, a<198>, a<192>, a<186>, a<180>, a<174>, a<168>, a<162>, a<156>, a<150>, a<144>, a<138>, a<132>, a<126>, a<120>, a<114>, a<108>, a<102>, a<96>, a<90>, a<84>, a<4>, a<8>, a<16>, a<22>, a<28>, a<34>, a<40>, a<46>, a<52>, a<58>, a<504>, a<492>, a<486>, a<63>, a<480>, a<69>, a<75>, a<453>, a<450>, a<474>, a<468>, a<461>, a<454>, a<403>, a<397>, a<391>, a<440>, a<385>, a<437>, a<379>, a<434>, a<373>, a<431>, a<367>, a<428>, a<361>, a<425>, a<355>, a<422>, a<349>, a<419>, a<343>, a<416>, a<337>, a<413>, a<331>, a<411>, a<325>, a<319>, a<313>, a<307>, a<301>, a<295>, a<289>, a<283>, a<277>, a<271>, a<265>, a<259>, a<253>, a<247>, a<241>, a<235>, a<229>, a<223>, a<217>, a<211>, a<205>, a<199>, a<193>, a<187>, a<181>, a<175>, a<169>, a<163>, a<157>, a<151>, a<145>, a<139>, a<133>, a<127>, a<121>, a<115>, a<109>, a<103>, a<97>, a<91>, a<85>, a<79>, a<3>, a<7>, a<15>, a<21>, a<27>, a<33>, a<39>, a<45>, a<51>, a<57>, a<505>, a<506>, a<493>, a<487>, a<62>, a<481>, a<68>, a<74>, a<456>, a<498>, a<475>, a<469>, a<462>, a<455>, a<407>, a<443>, a<404>, a<398>, a<392>, a<386>, a<380>, a<374>, a<368>, a<362>, a<356>, a<350>, a<344>, a<338>, a<332>, a<445>, a<326>, a<320>, a<314>, a<308>, a<302>.
 
 Optimizing unit <rp> ...
 
 Optimizing unit <frequency_counter> ...
 
 Optimizing unit <ring_oscillator> ...
+WARNING:Xst:1293 - FF/Latch <freq_counter/master_clk_timeout_31> has a constant value of 0 in block <rp>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -738,8 +743,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 96
- Flip-Flops                                            : 96
+# Registers                                            : 127
+ Flip-Flops                                            : 127
 
 =========================================================================
 
@@ -762,19 +767,21 @@ Top Level Output File Name         : rp.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 785
+# BELS                             : 854
 #      GND                         : 1
-#      INV                         : 1
-#      LUT1                        : 511
-#      LUT2                        : 67
+#      INV                         : 2
+#      LUT1                        : 542
+#      LUT2                        : 97
 #      LUT3                        : 33
 #      LUT4                        : 30
+#      LUT5                        : 2
+#      LUT6                        : 5
 #      MUXCY                       : 78
 #      VCC                         : 1
 #      XORCY                       : 63
-# FlipFlops/Latches                : 96
-#      FDC                         : 33
-#      FDCE                        : 63
+# FlipFlops/Latches                : 127
+#      FDC                         : 65
+#      FDCE                        : 62
 
 Device utilization summary:
 ---------------------------
@@ -783,15 +790,15 @@ Selected Device : 7k325tffg900-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              96  out of  407600     0%  
- Number of Slice LUTs:                  642  out of  203800     0%  
-    Number used as Logic:               642  out of  203800     0%  
+ Number of Slice Registers:             127  out of  407600     0%  
+ Number of Slice LUTs:                  711  out of  203800     0%  
+    Number used as Logic:               711  out of  203800     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    642
-   Number with an unused Flip Flop:     546  out of    642    85%  
-   Number with an unused LUT:             0  out of    642     0%  
-   Number of fully used LUT-FF pairs:    96  out of    642    14%  
+ Number of LUT Flip Flop pairs used:    711
+   Number with an unused Flip Flop:     584  out of    711    82%  
+   Number with an unused LUT:             0  out of    711     0%  
+   Number of fully used LUT-FF pairs:   127  out of    711    17%  
    Number of unique control sets:         4
 
 IO Utilization: 
@@ -818,12 +825,12 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)                    | Load  |
------------------------------------+------------------------------------------+-------+
-ring_osc/a<0>(ring_osc/a<0>1:O)    | NONE(*)(freq_counter/test_clk_counter_30)| 63    |
-Clk                                | NONE(freq_counter/master_clk_timeout_31) | 33    |
------------------------------------+------------------------------------------+-------+
+-----------------------------------+-----------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                   | Load  |
+-----------------------------------+-----------------------------------------+-------+
+Clk                                | NONE(freq_counter/master_clk_timeout_30)| 32    |
+ring_osc/a<0>(ring_osc/a<0>1:O)    | NONE(*)(freq_counter/reg_1_31)          | 95    |
+-----------------------------------+-----------------------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
@@ -837,7 +844,7 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 2.039ns (Maximum Frequency: 490.472MHz)
+   Minimum period: 2.482ns (Maximum Frequency: 402.906MHz)
    Minimum input arrival time before clock: 1.462ns
    Maximum output required time after clock: 0.236ns
    Maximum combinational path delay: No path found
@@ -847,70 +854,17 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'ring_osc/a<0>'
-  Clock period: 1.526ns (frequency: 655.416MHz)
-  Total number of paths / destination ports: 527 / 62
--------------------------------------------------------------------------
-Delay:               1.526ns (Levels of Logic = 32)
-  Source:            freq_counter/test_clk_counter_0 (FF)
-  Destination:       freq_counter/test_clk_counter_30 (FF)
-  Source Clock:      ring_osc/a<0> rising
-  Destination Clock: ring_osc/a<0> rising
-
-  Data Path: freq_counter/test_clk_counter_0 to freq_counter/test_clk_counter_30
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDCE:C->Q             2   0.236   0.355  freq_counter/test_clk_counter_0 (freq_counter/test_clk_counter_0)
-     LUT2:I1->O            1   0.043   0.000  freq_counter/Mcount_test_clk_counter_lut<0> (freq_counter/Mcount_test_clk_counter_lut<0>)
-     MUXCY:S->O            1   0.238   0.000  freq_counter/Mcount_test_clk_counter_cy<0> (freq_counter/Mcount_test_clk_counter_cy<0>)
-     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<1> (freq_counter/Mcount_test_clk_counter_cy<1>)
-     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<2> (freq_counter/Mcount_test_clk_counter_cy<2>)
-     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<3> (freq_counter/Mcount_test_clk_counter_cy<3>)
-     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<4> (freq_counter/Mcount_test_clk_counter_cy<4>)
-     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<5> (freq_counter/Mcount_test_clk_counter_cy<5>)
-     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<6> (freq_counter/Mcount_test_clk_counter_cy<6>)
-     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<7> (freq_counter/Mcount_test_clk_counter_cy<7>)
-     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<8> (freq_counter/Mcount_test_clk_counter_cy<8>)
-     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<9> (freq_counter/Mcount_test_clk_counter_cy<9>)
-     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<10> (freq_counter/Mcount_test_clk_counter_cy<10>)
-     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<11> (freq_counter/Mcount_test_clk_counter_cy<11>)
-     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<12> (freq_counter/Mcount_test_clk_counter_cy<12>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<13> (freq_counter/Mcount_test_clk_counter_cy<13>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<14> (freq_counter/Mcount_test_clk_counter_cy<14>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<15> (freq_counter/Mcount_test_clk_counter_cy<15>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<16> (freq_counter/Mcount_test_clk_counter_cy<16>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<17> (freq_counter/Mcount_test_clk_counter_cy<17>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<18> (freq_counter/Mcount_test_clk_counter_cy<18>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<19> (freq_counter/Mcount_test_clk_counter_cy<19>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<20> (freq_counter/Mcount_test_clk_counter_cy<20>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<21> (freq_counter/Mcount_test_clk_counter_cy<21>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<22> (freq_counter/Mcount_test_clk_counter_cy<22>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<23> (freq_counter/Mcount_test_clk_counter_cy<23>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<24> (freq_counter/Mcount_test_clk_counter_cy<24>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<25> (freq_counter/Mcount_test_clk_counter_cy<25>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<26> (freq_counter/Mcount_test_clk_counter_cy<26>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<27> (freq_counter/Mcount_test_clk_counter_cy<27>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<28> (freq_counter/Mcount_test_clk_counter_cy<28>)
-     MUXCY:CI->O           0   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<29> (freq_counter/Mcount_test_clk_counter_cy<29>)
-     XORCY:CI->O           1   0.262   0.000  freq_counter/Mcount_test_clk_counter_xor<30> (freq_counter/Mcount_test_clk_counter30)
-     FDCE:D                   -0.000          freq_counter/test_clk_counter_30
-    ----------------------------------------
-    Total                      1.526ns (1.170ns logic, 0.355ns route)
-                                       (76.7% logic, 23.3% route)
-
-=========================================================================
 Timing constraint: Default period analysis for Clock 'Clk'
-  Clock period: 2.039ns (frequency: 490.472MHz)
-  Total number of paths / destination ports: 2640 / 65
+  Clock period: 2.039ns (frequency: 490.517MHz)
+  Total number of paths / destination ports: 2480 / 63
 -------------------------------------------------------------------------
 Delay:               2.039ns (Levels of Logic = 18)
   Source:            freq_counter/master_clk_timeout_1 (FF)
-  Destination:       freq_counter/master_clk_timeout_31 (FF)
+  Destination:       freq_counter/master_clk_timeout_30 (FF)
   Source Clock:      Clk rising
   Destination Clock: Clk rising
 
-  Data Path: freq_counter/master_clk_timeout_1 to freq_counter/master_clk_timeout_31
+  Data Path: freq_counter/master_clk_timeout_1 to freq_counter/master_clk_timeout_30
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -932,72 +886,46 @@ Delay:               2.039ns (Levels of Logic = 18)
      MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<13> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<13>)
      MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<14> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<14>)
      MUXCY:CI->O           2   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<15> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<15>)
-     MUXCY:CI->O          32   0.165   0.469  freq_counter/_n0051_inv1_cy (freq_counter/_n0051_inv)
+     MUXCY:CI->O          31   0.165   0.469  freq_counter/_n0067_inv1_cy (freq_counter/_n0067_inv)
      FDCE:CE                   0.161          freq_counter/master_clk_timeout_0
     ----------------------------------------
     Total                      2.039ns (1.036ns logic, 1.003ns route)
                                        (50.8% logic, 49.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'ring_osc/a<0>'
-  Total number of paths / destination ports: 653 / 157
+Timing constraint: Default period analysis for Clock 'ring_osc/a<0>'
+  Clock period: 2.482ns (frequency: 402.906MHz)
+  Total number of paths / destination ports: 1582 / 125
 -------------------------------------------------------------------------
-Offset:              1.000ns (Levels of Logic = 32)
-  Source:            reg_0<0> (PAD)
-  Destination:       freq_counter/test_clk_counter_30 (FF)
+Delay:               2.482ns (Levels of Logic = 3)
+  Source:            freq_counter/test_clk_counter_24 (FF)
+  Destination:       freq_counter/output_buffer_30 (FF)
+  Source Clock:      ring_osc/a<0> rising
   Destination Clock: ring_osc/a<0> rising
 
-  Data Path: reg_0<0> to freq_counter/test_clk_counter_30
+  Data Path: freq_counter/test_clk_counter_24 to freq_counter/output_buffer_30
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT2:I0->O            1   0.043   0.000  freq_counter/Mcount_test_clk_counter_lut<0> (freq_counter/Mcount_test_clk_counter_lut<0>)
-     MUXCY:S->O            1   0.238   0.000  freq_counter/Mcount_test_clk_counter_cy<0> (freq_counter/Mcount_test_clk_counter_cy<0>)
-     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<1> (freq_counter/Mcount_test_clk_counter_cy<1>)
-     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<2> (freq_counter/Mcount_test_clk_counter_cy<2>)
-     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<3> (freq_counter/Mcount_test_clk_counter_cy<3>)
-     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<4> (freq_counter/Mcount_test_clk_counter_cy<4>)
-     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<5> (freq_counter/Mcount_test_clk_counter_cy<5>)
-     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<6> (freq_counter/Mcount_test_clk_counter_cy<6>)
-     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<7> (freq_counter/Mcount_test_clk_counter_cy<7>)
-     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<8> (freq_counter/Mcount_test_clk_counter_cy<8>)
-     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<9> (freq_counter/Mcount_test_clk_counter_cy<9>)
-     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<10> (freq_counter/Mcount_test_clk_counter_cy<10>)
-     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<11> (freq_counter/Mcount_test_clk_counter_cy<11>)
-     MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcount_test_clk_counter_cy<12> (freq_counter/Mcount_test_clk_counter_cy<12>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<13> (freq_counter/Mcount_test_clk_counter_cy<13>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<14> (freq_counter/Mcount_test_clk_counter_cy<14>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<15> (freq_counter/Mcount_test_clk_counter_cy<15>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<16> (freq_counter/Mcount_test_clk_counter_cy<16>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<17> (freq_counter/Mcount_test_clk_counter_cy<17>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<18> (freq_counter/Mcount_test_clk_counter_cy<18>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<19> (freq_counter/Mcount_test_clk_counter_cy<19>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<20> (freq_counter/Mcount_test_clk_counter_cy<20>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<21> (freq_counter/Mcount_test_clk_counter_cy<21>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<22> (freq_counter/Mcount_test_clk_counter_cy<22>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<23> (freq_counter/Mcount_test_clk_counter_cy<23>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<24> (freq_counter/Mcount_test_clk_counter_cy<24>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<25> (freq_counter/Mcount_test_clk_counter_cy<25>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<26> (freq_counter/Mcount_test_clk_counter_cy<26>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<27> (freq_counter/Mcount_test_clk_counter_cy<27>)
-     MUXCY:CI->O           1   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<28> (freq_counter/Mcount_test_clk_counter_cy<28>)
-     MUXCY:CI->O           0   0.014   0.000  freq_counter/Mcount_test_clk_counter_cy<29> (freq_counter/Mcount_test_clk_counter_cy<29>)
-     XORCY:CI->O           1   0.262   0.000  freq_counter/Mcount_test_clk_counter_xor<30> (freq_counter/Mcount_test_clk_counter30)
-     FDCE:D                   -0.000          freq_counter/test_clk_counter_30
+     FDC:C->Q              3   0.236   0.615  freq_counter/test_clk_counter_24 (freq_counter/test_clk_counter_24)
+     LUT5:I0->O            1   0.043   0.522  freq_counter/_n0074_inv4 (freq_counter/_n0074_inv4)
+     LUT6:I2->O            1   0.043   0.350  freq_counter/_n0074_inv5 (freq_counter/_n0074_inv5)
+     LUT5:I4->O           31   0.043   0.469  freq_counter/_n0074_inv7 (freq_counter/_n0074_inv)
+     FDCE:CE                   0.161          freq_counter/output_buffer_0
     ----------------------------------------
-    Total                      1.000ns (1.000ns logic, 0.000ns route)
-                                       (100.0% logic, 0.0% route)
+    Total                      2.482ns (0.526ns logic, 1.956ns route)
+                                       (21.2% logic, 78.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
-  Total number of paths / destination ports: 2672 / 98
+  Total number of paths / destination ports: 2575 / 95
 -------------------------------------------------------------------------
 Offset:              1.462ns (Levels of Logic = 18)
   Source:            reg_0<31> (PAD)
-  Destination:       freq_counter/master_clk_timeout_31 (FF)
+  Destination:       freq_counter/master_clk_timeout_30 (FF)
   Destination Clock: Clk rising
 
-  Data Path: reg_0<31> to freq_counter/master_clk_timeout_31
+  Data Path: reg_0<31> to freq_counter/master_clk_timeout_30
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -1018,11 +946,30 @@ Offset:              1.462ns (Levels of Logic = 18)
      MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<13> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<13>)
      MUXCY:CI->O           1   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<14> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<14>)
      MUXCY:CI->O           2   0.013   0.000  freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<15> (freq_counter/Mcompar_GND_5_o_master_clk_timeout[31]_LessThan_1_o_cy<15>)
-     MUXCY:CI->O          32   0.165   0.469  freq_counter/_n0051_inv1_cy (freq_counter/_n0051_inv)
+     MUXCY:CI->O          31   0.165   0.469  freq_counter/_n0067_inv1_cy (freq_counter/_n0067_inv)
      FDCE:CE                   0.161          freq_counter/master_clk_timeout_0
     ----------------------------------------
     Total                      1.462ns (0.993ns logic, 0.469ns route)
                                        (67.9% logic, 32.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ring_osc/a<0>'
+  Total number of paths / destination ports: 221 / 221
+-------------------------------------------------------------------------
+Offset:              0.804ns (Levels of Logic = 1)
+  Source:            Reset_n (PAD)
+  Destination:       freq_counter/reg_1_31 (FF)
+  Destination Clock: ring_osc/a<0> rising
+
+  Data Path: Reset_n to freq_counter/reg_1_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     INV:I->O            127   0.054   0.486  freq_counter/Reset_n_inv1_INV_0 (freq_counter/Reset_n_inv)
+     FDC:CLR                   0.264          freq_counter/reg_1_0
+    ----------------------------------------
+    Total                      0.804ns (0.318ns logic, 0.486ns route)
+                                       (39.5% logic, 60.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'ring_osc/a<0>'
@@ -1060,19 +1007,19 @@ Clock to Setup on destination clock ring_osc/a<0>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk            |    1.389|         |         |         |
-ring_osc/a<0>  |    1.526|         |         |         |
+Clk            |    1.561|         |         |         |
+ring_osc/a<0>  |    2.482|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.87 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.44 secs
  
 --> 
 
-Total memory usage is 449796 kilobytes
+Total memory usage is 450768 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    2 (   0 filtered)

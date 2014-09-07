@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Runs Version="1" Minor="8">
 	<Run Id="blanking" Type="Ft2:EntireDesign" SrcSet="sources_1" Part="xc7k325tffg900-2" ConstrsSet="constrs_1" Description=""/>
-	<Run Id="counter" Type="Ft2:EntireDesign" SrcSet="sources_1" Part="xc7k325tffg900-2" LaunchPart="xc7k325tffg900-2" ConstrsSet="constrs_1" Description="" State="current" Dir="$PRUNDIR/counter" LaunchTime="1408055658">
-		<File Type="PA-EDIF" Name="counter.edf"/>
+	<Run Id="counter" Type="Ft2:EntireDesign" SrcSet="sources_1" Part="xc7k325tffg900-2" LaunchPart="xc7k325tffg900-2" ConstrsSet="constrs_1" Description="" State="current" Dir="$PRUNDIR/counter" LaunchTime="1408569666">
 		<File Type="MAP-PSR" Name="counter.psr"/>
-		<File Type="PA-UCF" Name="counter.ucf"/>
+		<File Type="PA-EDIF" Name="counter.edf"/>
 		<File Type="PAR-NCD" Name="counter_routed.ncd"/>
+		<File Type="PA-UCF" Name="counter.ucf"/>
 		<File Type="PAR-PAD" Name="counter_routed_pad.txt"/>
 		<File Type="PAR-PAR" Name="counter_routed.par"/>
 		<File Type="PAR-UNR" Name="counter_routed.unroutes"/>

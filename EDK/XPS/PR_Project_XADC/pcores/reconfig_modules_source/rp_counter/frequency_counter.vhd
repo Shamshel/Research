@@ -54,6 +54,7 @@ architecture Behavioral of frequency_counter is
 	signal master_gate			: std_logic := '0';
 	signal master_clk_timeout	: integer := 0;
 	signal test_clk_counter		: integer := 0;
+	signal output_buffer			: std_logic_vector(C_BUS_WIDTH-2 downto 0);
 
 begin
 	-- reference clock input process
@@ -107,6 +108,7 @@ begin
 		then
 			--internal_counter := 0;
 			test_clk_counter <= 0;
+			output_buffer <= (others=>'0');
 			reg_1 <= (others=>'0');
 	
 		-- test clock posedge
@@ -117,33 +119,31 @@ begin
 			then
 				--internal_counter := 0;
 				test_clk_counter <= 0;
+				output_buffer <= (others=>'0');
 				reg_1 <= (others=>'0');
 			
 			-- counter is enabled, master gate is active
 			elsif(master_gate = '1')
 			then
-				--internal_counter := internal_counter+1;
+				test_clk_counter <= test_clk_counter+1;
+				output_buffer <= std_logic_vector(to_unsigned(test_clk_counter, C_BUS_WIDTH-1));
 				
-				--if(internal_counter >= C_OVERFLOW_COUNT)
-				--then
-					test_clk_counter <= test_clk_counter+1;
-				--	internal_counter := 0;
-				
-				--end if;
-				
-				--reg_1 <= "10101010101110111100110011011101";
-				--reg_1 <= '0' & std_logic_vector(to_unsigned(test_clk_counter, C_BUS_WIDTH-1));
-				--reg_1 <= reg_0;
-				reg_1 <= (others=>'0');
+				reg_1 <= '0' & output_buffer;
 			
 			-- counter is disabled, master gate is inactive
 			elsif(master_gate = '0')
-			then
-				--internal_counter := 0;
-				test_clk_counter <= test_clk_counter;
-				--reg_1 <= "10000000000000000000000000000001";
-				reg_1 <= '1' & std_logic_vector(to_unsigned(test_clk_counter, C_BUS_WIDTH-1));
-				--reg_1 <= reg_0;
+			then				
+				if(test_clk_counter /= 0)
+				then
+					output_buffer <= std_logic_vector(to_unsigned(test_clk_counter, C_BUS_WIDTH-1));
+				
+				else
+					output_buffer <= output_buffer;
+				
+				end if;
+				
+				reg_1 <= '1' & output_buffer;
+				test_clk_counter <= 0;
 				
 			end if;
 		

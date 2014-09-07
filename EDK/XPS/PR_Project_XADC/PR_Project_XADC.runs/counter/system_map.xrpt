@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Map" timeStamp="Thu Aug 14 16:39:09 2014">
+  <application stringID="Map" timeStamp="Wed Aug 20 15:28:33 2014">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -61,16 +61,16 @@
       <item DEFAULT="off" label="-pr" stringID="MAP_PACK_INTERNAL" value="b"/>
     </section>
     <task stringID="MAP_PACK_REPORT">
-      <item AVAILABLE="407600" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="3063">
-        <item dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="3025"/>
+      <item AVAILABLE="407600" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="6058">
+        <item dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="6020"/>
         <item dataType="int" stringID="MAP_NUM_SLICE_LATCH" value="3"/>
         <item dataType="int" stringID="MAP_NUM_SLICE_LATCHTHRU" value="0"/>
         <item dataType="int" stringID="MAP_NUM_SLICE_LATCHLOGIC" value="35"/>
       </item>
-      <item AVAILABLE="203800" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="3833">
-        <item dataType="int" label="Number using O5 output only" stringID="MAP_NUM_LOGIC_O5ONLY" value="49"/>
-        <item dataType="int" label="Number using O6 output only" stringID="MAP_NUM_LOGIC_O6ONLY" value="2813"/>
-        <item dataType="int" label="Number using O5 and O6" stringID="MAP_NUM_LOGIC_O5ANDO6" value="711"/>
+      <item AVAILABLE="203800" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="14626">
+        <item dataType="int" label="Number using O5 output only" stringID="MAP_NUM_LOGIC_O5ONLY" value="482"/>
+        <item dataType="int" label="Number using O6 output only" stringID="MAP_NUM_LOGIC_O6ONLY" value="11734"/>
+        <item dataType="int" label="Number using O5 and O6" stringID="MAP_NUM_LOGIC_O5ANDO6" value="2136"/>
         <item dataType="int" stringID="MAP_NUM_ROM_O5ONLY" value="0"/>
         <item dataType="int" stringID="MAP_NUM_ROM_O6ONLY" value="0"/>
         <item dataType="int" stringID="MAP_NUM_ROM_O5ANDO6" value="0"/>
@@ -83,11 +83,11 @@
         <item dataType="int" stringID="MAP_NUM_SRL_O5ONLY" value="1"/>
         <item dataType="int" stringID="MAP_NUM_SRL_O6ONLY" value="189"/>
         <item dataType="int" stringID="MAP_NUM_SRL_O5ANDO6" value="0"/>
-        <item dataType="int" stringID="MAP_NUM_LUT_RT_EXO6" value="1"/>
+        <item dataType="int" stringID="MAP_NUM_LUT_RT_EXO6" value="15"/>
         <item dataType="int" stringID="MAP_NUM_LUT_RT_EXO5" value="0"/>
         <item dataType="int" stringID="MAP_NUM_LUT_RT_O5ANDO6" value="5"/>
         <item dataType="int" stringID="MAP_NUM_LUT_RT_DRIVES_FLOP" value="0"/>
-        <item dataType="int" stringID="MAP_NUM_LUT_RT_DRIVES_CARRY4" value="6"/>
+        <item dataType="int" stringID="MAP_NUM_LUT_RT_DRIVES_CARRY4" value="20"/>
         <item dataType="int" stringID="MAP_NUM_LUT_RT_DRIVES_OTHERS" value="0"/>
       </item>
       <item AVAILABLE="500" dataType="int" stringID="MAP_AGG_BONDED_IO" value="34"/>
@@ -112,22 +112,22 @@
       <section stringID="MAP_DESIGN_SUMMARY">
         <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
-        <item dataType="int" stringID="MAP_NUM_WARNINGS" value="23"/>
-        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="1373480"/>
-        <item stringID="MAP_TOTAL_REAL_TIME" value="4 mins 12 secs "/>
-        <item stringID="MAP_TOTAL_CPU_TIME" value="4 mins 12 secs "/>
+        <item dataType="int" stringID="MAP_NUM_WARNINGS" value="36"/>
+        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="1725620"/>
+        <item stringID="MAP_TOTAL_REAL_TIME" value="6 mins 13 secs "/>
+        <item stringID="MAP_TOTAL_CPU_TIME" value="6 mins 10 secs "/>
       </section>
       <section stringID="MAP_SLICE_REPORTING">
-        <item AVAILABLE="407600" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="3063">
-          <item dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="3025"/>
+        <item AVAILABLE="407600" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="6058">
+          <item dataType="int" label="Number of Slice Flip Flops" stringID="MAP_NUM_SLICE_FF" value="6020"/>
           <item dataType="int" stringID="MAP_NUM_SLICE_LATCH" value="3"/>
           <item dataType="int" stringID="MAP_NUM_SLICE_LATCHTHRU" value="0"/>
           <item dataType="int" stringID="MAP_NUM_SLICE_LATCHLOGIC" value="35"/>
         </item>
-        <item AVAILABLE="203800" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="3918">
-          <item dataType="int" label="Number using O5 output only" stringID="MAP_NUM_LOGIC_O5ONLY" value="51"/>
-          <item dataType="int" label="Number using O6 output only" stringID="MAP_NUM_LOGIC_O6ONLY" value="2811"/>
-          <item dataType="int" label="Number using O5 and O6" stringID="MAP_NUM_LOGIC_O5ANDO6" value="711"/>
+        <item AVAILABLE="203800" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="14724">
+          <item dataType="int" label="Number using O5 output only" stringID="MAP_NUM_LOGIC_O5ONLY" value="496"/>
+          <item dataType="int" label="Number using O6 output only" stringID="MAP_NUM_LOGIC_O6ONLY" value="11721"/>
+          <item dataType="int" label="Number using O5 and O6" stringID="MAP_NUM_LOGIC_O5ANDO6" value="2136"/>
           <item dataType="int" stringID="MAP_NUM_ROM_O5ONLY" value="0"/>
           <item dataType="int" stringID="MAP_NUM_ROM_O6ONLY" value="0"/>
           <item dataType="int" stringID="MAP_NUM_ROM_O5ANDO6" value="0"/>
@@ -140,21 +140,21 @@
           <item dataType="int" stringID="MAP_NUM_SRL_O5ONLY" value="1"/>
           <item dataType="int" stringID="MAP_NUM_SRL_O6ONLY" value="189"/>
           <item dataType="int" stringID="MAP_NUM_SRL_O5ANDO6" value="0"/>
-          <item dataType="int" stringID="MAP_NUM_LUT_RT_EXO6" value="1"/>
-          <item dataType="int" stringID="MAP_NUM_LUT_RT_EXO5" value="85"/>
+          <item dataType="int" stringID="MAP_NUM_LUT_RT_EXO6" value="15"/>
+          <item dataType="int" stringID="MAP_NUM_LUT_RT_EXO5" value="97"/>
           <item dataType="int" stringID="MAP_NUM_LUT_RT_O5ANDO6" value="5"/>
-          <item dataType="int" stringID="MAP_NUM_LUT_RT_DRIVES_FLOP" value="85"/>
-          <item dataType="int" stringID="MAP_NUM_LUT_RT_DRIVES_CARRY4" value="6"/>
+          <item dataType="int" stringID="MAP_NUM_LUT_RT_DRIVES_FLOP" value="97"/>
+          <item dataType="int" stringID="MAP_NUM_LUT_RT_DRIVES_CARRY4" value="20"/>
           <item dataType="int" stringID="MAP_NUM_LUT_RT_DRIVES_OTHERS" value="0"/>
         </item>
-        <item AVAILABLE="50950" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="1640">
-          <item AVAILABLE="34950" dataType="int" stringID="MAP_NUM_SLICEL" value="1515"/>
-          <item AVAILABLE="16000" dataType="int" stringID="MAP_NUM_SLICEM" value="125"/>
+        <item AVAILABLE="50950" dataType="int" label="Number of occupied Slices" stringID="MAP_OCCUPIED_SLICES" value="5647">
+          <item AVAILABLE="34950" dataType="int" stringID="MAP_NUM_SLICEL" value="5504"/>
+          <item AVAILABLE="16000" dataType="int" stringID="MAP_NUM_SLICEM" value="143"/>
         </item>
-        <item dataType="int" label="Number of LUT Flip Flop pairs used" stringID="MAP_OCCUPIED_LUT_AND_FF" value="4714">
-          <item dataType="int" stringID="MAP_OCCUPIED_LUT_ONLY" value="1963"/>
-          <item dataType="int" label="Number with an unused LUT" stringID="MAP_OCCUPIED_FF_ONLY" value="796"/>
-          <item dataType="int" label="Number of fully used LUT-FF pairs" stringID="MAP_OCCUPIED_FF_AND_LUT" value="1955"/>
+        <item dataType="int" label="Number of LUT Flip Flop pairs used" stringID="MAP_OCCUPIED_LUT_AND_FF" value="16108">
+          <item dataType="int" stringID="MAP_OCCUPIED_LUT_ONLY" value="11041"/>
+          <item dataType="int" label="Number with an unused LUT" stringID="MAP_OCCUPIED_FF_ONLY" value="1384"/>
+          <item dataType="int" label="Number of fully used LUT-FF pairs" stringID="MAP_OCCUPIED_FF_AND_LUT" value="3683"/>
         </item>
       </section>
       <section stringID="MAP_IOB_REPORTING">
@@ -510,7 +510,7 @@
       </section>
       <section stringID="MAP_RPM_MACROS">
         <section stringID="MAP_SHAPE_SECTION">
-          <item dataType="int" stringID="MAP_NUM_SHAPE" value="39"/>
+          <item dataType="int" stringID="MAP_NUM_SHAPE" value="96"/>
         </section>
       </section>
       <section stringID="MAP_GUIDE_REPORT"/>
@@ -526,7 +526,7 @@
           <item stringID="MAP_PARTITION_INHERITED_SMARTGUIDE_TRAIT" value="no"/>
           <item stringID="MAP_PARTITION_INHERITED_FROM" value="/system"/>
         </item>
-        <item stringID="MAP_IMPLEMENTED_PARTITION" value="/system/reconfigurable_peripherials_0/reconfigurable_peripherials_0/USER_LOGIC_I/rp_instance"/>
+        <item stringID="MAP_IMPLEMENTED_PARTITION" value="/system/reconfigurable_peripherials_9/reconfigurable_peripherials_9/USER_LOGIC_I/rp_instance"/>
       </section>
       <section stringID="MAP_PARTITION_SUMMARY">
         <scope label="Partition" stringID="MAP_PARTITION" value="Partition1">
@@ -537,9 +537,9 @@
           <item stringID="MAP_PRESERVATION_LEVEL" value="routing"/>
           <item stringID="MAP_STATE" value="implement"/>
           <item stringID="MAP_BOUNDARY_OPT" value="NONE"/>
-          <item AVAILABLE="1640" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="1444"/>
-          <item AVAILABLE="3028" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="2932"/>
-          <item AVAILABLE="4017" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="3342"/>
+          <item AVAILABLE="5647" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="2415"/>
+          <item AVAILABLE="6023" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="4245"/>
+          <item AVAILABLE="14797" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="4829"/>
           <item AVAILABLE="34" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="34"/>
           <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
           <item AVAILABLE="34" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="34"/>
@@ -552,9 +552,204 @@
           <item stringID="MAP_PRESERVATION_LEVEL" value="routing"/>
           <item stringID="MAP_STATE" value="implement"/>
           <item stringID="MAP_BOUNDARY_OPT" value="NONE"/>
-          <item AVAILABLE="196" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="196"/>
-          <item AVAILABLE="96" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="96"/>
-          <item AVAILABLE="675" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="675"/>
+          <item AVAILABLE="245" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="245"/>
+          <item AVAILABLE="127" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="712" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope label="Partition" stringID="MAP_PARTITION" value="Partition3">
+          <item stringID="MAP_MODULE_NAME" value="/system/reconfigurable_peripherials_1/reconfigurable_peripherials_1/USER_LOGIC_I/rp_instance"/>
+          <item stringID="MAP_IMPORT_TAG" value="not used"/>
+          <item stringID="MAP_ISOLATED" value="false"/>
+          <item stringID="MAP_RECONFIGURABLE" value="true"/>
+          <item stringID="MAP_PRESERVATION_LEVEL" value="routing"/>
+          <item stringID="MAP_STATE" value="implement"/>
+          <item stringID="MAP_BOUNDARY_OPT" value="NONE"/>
+          <item AVAILABLE="230" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="230"/>
+          <item AVAILABLE="127" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="712" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope label="Partition" stringID="MAP_PARTITION" value="Partition4">
+          <item stringID="MAP_MODULE_NAME" value="/system/reconfigurable_peripherials_10/reconfigurable_peripherials_10/USER_LOGIC_I/rp_instance"/>
+          <item stringID="MAP_IMPORT_TAG" value="not used"/>
+          <item stringID="MAP_ISOLATED" value="false"/>
+          <item stringID="MAP_RECONFIGURABLE" value="true"/>
+          <item stringID="MAP_PRESERVATION_LEVEL" value="routing"/>
+          <item stringID="MAP_STATE" value="implement"/>
+          <item stringID="MAP_BOUNDARY_OPT" value="NONE"/>
+          <item AVAILABLE="225" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="225"/>
+          <item AVAILABLE="127" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="712" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope label="Partition" stringID="MAP_PARTITION" value="Partition5">
+          <item stringID="MAP_MODULE_NAME" value="/system/reconfigurable_peripherials_11/reconfigurable_peripherials_11/USER_LOGIC_I/rp_instance"/>
+          <item stringID="MAP_IMPORT_TAG" value="not used"/>
+          <item stringID="MAP_ISOLATED" value="false"/>
+          <item stringID="MAP_RECONFIGURABLE" value="true"/>
+          <item stringID="MAP_PRESERVATION_LEVEL" value="routing"/>
+          <item stringID="MAP_STATE" value="implement"/>
+          <item stringID="MAP_BOUNDARY_OPT" value="NONE"/>
+          <item AVAILABLE="247" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="247"/>
+          <item AVAILABLE="127" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="712" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope label="Partition" stringID="MAP_PARTITION" value="Partition6">
+          <item stringID="MAP_MODULE_NAME" value="/system/reconfigurable_peripherials_12/reconfigurable_peripherials_12/USER_LOGIC_I/rp_instance"/>
+          <item stringID="MAP_IMPORT_TAG" value="not used"/>
+          <item stringID="MAP_ISOLATED" value="false"/>
+          <item stringID="MAP_RECONFIGURABLE" value="true"/>
+          <item stringID="MAP_PRESERVATION_LEVEL" value="routing"/>
+          <item stringID="MAP_STATE" value="implement"/>
+          <item stringID="MAP_BOUNDARY_OPT" value="NONE"/>
+          <item AVAILABLE="225" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="225"/>
+          <item AVAILABLE="127" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="712" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope label="Partition" stringID="MAP_PARTITION" value="Partition7">
+          <item stringID="MAP_MODULE_NAME" value="/system/reconfigurable_peripherials_13/reconfigurable_peripherials_13/USER_LOGIC_I/rp_instance"/>
+          <item stringID="MAP_IMPORT_TAG" value="not used"/>
+          <item stringID="MAP_ISOLATED" value="false"/>
+          <item stringID="MAP_RECONFIGURABLE" value="true"/>
+          <item stringID="MAP_PRESERVATION_LEVEL" value="routing"/>
+          <item stringID="MAP_STATE" value="implement"/>
+          <item stringID="MAP_BOUNDARY_OPT" value="NONE"/>
+          <item AVAILABLE="249" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="249"/>
+          <item AVAILABLE="127" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="712" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope label="Partition" stringID="MAP_PARTITION" value="Partition8">
+          <item stringID="MAP_MODULE_NAME" value="/system/reconfigurable_peripherials_2/reconfigurable_peripherials_2/USER_LOGIC_I/rp_instance"/>
+          <item stringID="MAP_IMPORT_TAG" value="not used"/>
+          <item stringID="MAP_ISOLATED" value="false"/>
+          <item stringID="MAP_RECONFIGURABLE" value="true"/>
+          <item stringID="MAP_PRESERVATION_LEVEL" value="routing"/>
+          <item stringID="MAP_STATE" value="implement"/>
+          <item stringID="MAP_BOUNDARY_OPT" value="NONE"/>
+          <item AVAILABLE="227" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="227"/>
+          <item AVAILABLE="127" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="712" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope label="Partition" stringID="MAP_PARTITION" value="Partition9">
+          <item stringID="MAP_MODULE_NAME" value="/system/reconfigurable_peripherials_3/reconfigurable_peripherials_3/USER_LOGIC_I/rp_instance"/>
+          <item stringID="MAP_IMPORT_TAG" value="not used"/>
+          <item stringID="MAP_ISOLATED" value="false"/>
+          <item stringID="MAP_RECONFIGURABLE" value="true"/>
+          <item stringID="MAP_PRESERVATION_LEVEL" value="routing"/>
+          <item stringID="MAP_STATE" value="implement"/>
+          <item stringID="MAP_BOUNDARY_OPT" value="NONE"/>
+          <item AVAILABLE="241" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="241"/>
+          <item AVAILABLE="127" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="712" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope label="Partition" stringID="MAP_PARTITION" value="Partition10">
+          <item stringID="MAP_MODULE_NAME" value="/system/reconfigurable_peripherials_4/reconfigurable_peripherials_4/USER_LOGIC_I/rp_instance"/>
+          <item stringID="MAP_IMPORT_TAG" value="not used"/>
+          <item stringID="MAP_ISOLATED" value="false"/>
+          <item stringID="MAP_RECONFIGURABLE" value="true"/>
+          <item stringID="MAP_PRESERVATION_LEVEL" value="routing"/>
+          <item stringID="MAP_STATE" value="implement"/>
+          <item stringID="MAP_BOUNDARY_OPT" value="NONE"/>
+          <item AVAILABLE="241" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="241"/>
+          <item AVAILABLE="127" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="712" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope label="Partition" stringID="MAP_PARTITION" value="Partition11">
+          <item stringID="MAP_MODULE_NAME" value="/system/reconfigurable_peripherials_5/reconfigurable_peripherials_5/USER_LOGIC_I/rp_instance"/>
+          <item stringID="MAP_IMPORT_TAG" value="not used"/>
+          <item stringID="MAP_ISOLATED" value="false"/>
+          <item stringID="MAP_RECONFIGURABLE" value="true"/>
+          <item stringID="MAP_PRESERVATION_LEVEL" value="routing"/>
+          <item stringID="MAP_STATE" value="implement"/>
+          <item stringID="MAP_BOUNDARY_OPT" value="NONE"/>
+          <item AVAILABLE="221" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="221"/>
+          <item AVAILABLE="127" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="712" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope label="Partition" stringID="MAP_PARTITION" value="Partition12">
+          <item stringID="MAP_MODULE_NAME" value="/system/reconfigurable_peripherials_6/reconfigurable_peripherials_6/USER_LOGIC_I/rp_instance"/>
+          <item stringID="MAP_IMPORT_TAG" value="not used"/>
+          <item stringID="MAP_ISOLATED" value="false"/>
+          <item stringID="MAP_RECONFIGURABLE" value="true"/>
+          <item stringID="MAP_PRESERVATION_LEVEL" value="routing"/>
+          <item stringID="MAP_STATE" value="implement"/>
+          <item stringID="MAP_BOUNDARY_OPT" value="NONE"/>
+          <item AVAILABLE="219" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="219"/>
+          <item AVAILABLE="127" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="712" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope label="Partition" stringID="MAP_PARTITION" value="Partition13">
+          <item stringID="MAP_MODULE_NAME" value="/system/reconfigurable_peripherials_7/reconfigurable_peripherials_7/USER_LOGIC_I/rp_instance"/>
+          <item stringID="MAP_IMPORT_TAG" value="not used"/>
+          <item stringID="MAP_ISOLATED" value="false"/>
+          <item stringID="MAP_RECONFIGURABLE" value="true"/>
+          <item stringID="MAP_PRESERVATION_LEVEL" value="routing"/>
+          <item stringID="MAP_STATE" value="implement"/>
+          <item stringID="MAP_BOUNDARY_OPT" value="NONE"/>
+          <item AVAILABLE="222" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="222"/>
+          <item AVAILABLE="127" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="712" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope label="Partition" stringID="MAP_PARTITION" value="Partition14">
+          <item stringID="MAP_MODULE_NAME" value="/system/reconfigurable_peripherials_8/reconfigurable_peripherials_8/USER_LOGIC_I/rp_instance"/>
+          <item stringID="MAP_IMPORT_TAG" value="not used"/>
+          <item stringID="MAP_ISOLATED" value="false"/>
+          <item stringID="MAP_RECONFIGURABLE" value="true"/>
+          <item stringID="MAP_PRESERVATION_LEVEL" value="routing"/>
+          <item stringID="MAP_STATE" value="implement"/>
+          <item stringID="MAP_BOUNDARY_OPT" value="NONE"/>
+          <item AVAILABLE="221" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="221"/>
+          <item AVAILABLE="127" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="712" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope label="Partition" stringID="MAP_PARTITION" value="Partition15">
+          <item stringID="MAP_MODULE_NAME" value="/system/reconfigurable_peripherials_9/reconfigurable_peripherials_9/USER_LOGIC_I/rp_instance"/>
+          <item stringID="MAP_IMPORT_TAG" value="not used"/>
+          <item stringID="MAP_ISOLATED" value="false"/>
+          <item stringID="MAP_RECONFIGURABLE" value="true"/>
+          <item stringID="MAP_PRESERVATION_LEVEL" value="routing"/>
+          <item stringID="MAP_STATE" value="implement"/>
+          <item stringID="MAP_BOUNDARY_OPT" value="NONE"/>
+          <item AVAILABLE="219" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="219"/>
+          <item AVAILABLE="127" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="712" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
           <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
           <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
           <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
@@ -564,9 +759,139 @@
         <scope stringID="MAP_AREA_GROUP" value="pblock_reconfigurable_peripherials_0_USER_LOGIC_I_rp_instance">
           <item dataType="int" stringID="MAP_AREA_GROUP_COMPRESSION" value="-1"/>
           <item stringID="MAP_AREA_GROUP_RANGE" value="SLICE_X38Y160:SLICE_X49Y194"/>
-          <item AVAILABLE="0" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="196"/>
-          <item AVAILABLE="0" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="96"/>
-          <item AVAILABLE="0" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="675"/>
+          <item AVAILABLE="0" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="245"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope stringID="MAP_AREA_GROUP" value="pblock_reconfigurable_peripherials_10_USER_LOGIC_I_rp_instance">
+          <item dataType="int" stringID="MAP_AREA_GROUP_COMPRESSION" value="-1"/>
+          <item stringID="MAP_AREA_GROUP_RANGE" value="SLICE_X92Y160:SLICE_X103Y194"/>
+          <item AVAILABLE="0" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="225"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope stringID="MAP_AREA_GROUP" value="pblock_reconfigurable_peripherials_11_USER_LOGIC_I_rp_instance">
+          <item dataType="int" stringID="MAP_AREA_GROUP_COMPRESSION" value="-1"/>
+          <item stringID="MAP_AREA_GROUP_RANGE" value="SLICE_X92Y110:SLICE_X103Y144"/>
+          <item AVAILABLE="0" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="247"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope stringID="MAP_AREA_GROUP" value="pblock_reconfigurable_peripherials_12_USER_LOGIC_I_rp_instance">
+          <item dataType="int" stringID="MAP_AREA_GROUP_COMPRESSION" value="-1"/>
+          <item stringID="MAP_AREA_GROUP_RANGE" value="SLICE_X92Y60:SLICE_X103Y94"/>
+          <item AVAILABLE="0" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="225"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope stringID="MAP_AREA_GROUP" value="pblock_reconfigurable_peripherials_13_USER_LOGIC_I_rp_instance">
+          <item dataType="int" stringID="MAP_AREA_GROUP_COMPRESSION" value="-1"/>
+          <item stringID="MAP_AREA_GROUP_RANGE" value="SLICE_X92Y10:SLICE_X103Y44"/>
+          <item AVAILABLE="0" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="249"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope stringID="MAP_AREA_GROUP" value="pblock_reconfigurable_peripherials_1_USER_LOGIC_I_rp_instance">
+          <item dataType="int" stringID="MAP_AREA_GROUP_COMPRESSION" value="-1"/>
+          <item stringID="MAP_AREA_GROUP_RANGE" value="SLICE_X38Y310:SLICE_X49Y344"/>
+          <item AVAILABLE="0" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="230"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope stringID="MAP_AREA_GROUP" value="pblock_reconfigurable_peripherials_2_USER_LOGIC_I_rp_instance">
+          <item dataType="int" stringID="MAP_AREA_GROUP_COMPRESSION" value="-1"/>
+          <item stringID="MAP_AREA_GROUP_RANGE" value="SLICE_X38Y260:SLICE_X49Y294"/>
+          <item AVAILABLE="0" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="227"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope stringID="MAP_AREA_GROUP" value="pblock_reconfigurable_peripherials_3_USER_LOGIC_I_rp_instance">
+          <item dataType="int" stringID="MAP_AREA_GROUP_COMPRESSION" value="-1"/>
+          <item stringID="MAP_AREA_GROUP_RANGE" value="SLICE_X38Y210:SLICE_X49Y244"/>
+          <item AVAILABLE="0" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="241"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope stringID="MAP_AREA_GROUP" value="pblock_reconfigurable_peripherials_4_USER_LOGIC_I_rp_instance">
+          <item dataType="int" stringID="MAP_AREA_GROUP_COMPRESSION" value="-1"/>
+          <item stringID="MAP_AREA_GROUP_RANGE" value="SLICE_X38Y110:SLICE_X49Y144"/>
+          <item AVAILABLE="0" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="241"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope stringID="MAP_AREA_GROUP" value="pblock_reconfigurable_peripherials_5_USER_LOGIC_I_rp_instance">
+          <item dataType="int" stringID="MAP_AREA_GROUP_COMPRESSION" value="-1"/>
+          <item stringID="MAP_AREA_GROUP_RANGE" value="SLICE_X38Y60:SLICE_X49Y94"/>
+          <item AVAILABLE="0" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="221"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope stringID="MAP_AREA_GROUP" value="pblock_reconfigurable_peripherials_6_USER_LOGIC_I_rp_instance">
+          <item dataType="int" stringID="MAP_AREA_GROUP_COMPRESSION" value="-1"/>
+          <item stringID="MAP_AREA_GROUP_RANGE" value="SLICE_X38Y10:SLICE_X49Y44"/>
+          <item AVAILABLE="0" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="219"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope stringID="MAP_AREA_GROUP" value="pblock_reconfigurable_peripherials_7_USER_LOGIC_I_rp_instance">
+          <item dataType="int" stringID="MAP_AREA_GROUP_COMPRESSION" value="-1"/>
+          <item stringID="MAP_AREA_GROUP_RANGE" value="SLICE_X92Y310:SLICE_X103Y344"/>
+          <item AVAILABLE="0" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="222"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope stringID="MAP_AREA_GROUP" value="pblock_reconfigurable_peripherials_8_USER_LOGIC_I_rp_instance">
+          <item dataType="int" stringID="MAP_AREA_GROUP_COMPRESSION" value="-1"/>
+          <item stringID="MAP_AREA_GROUP_RANGE" value="SLICE_X92Y260:SLICE_X103Y294"/>
+          <item AVAILABLE="0" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="221"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
+          <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
+          <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
+        </scope>
+        <scope stringID="MAP_AREA_GROUP" value="pblock_reconfigurable_peripherials_9_USER_LOGIC_I_rp_instance_1">
+          <item dataType="int" stringID="MAP_AREA_GROUP_COMPRESSION" value="-1"/>
+          <item stringID="MAP_AREA_GROUP_RANGE" value="SLICE_X92Y210:SLICE_X103Y244"/>
+          <item AVAILABLE="0" dataType="int" label="Number of occupied Slices" stringID="MAP_AGG_SLICE" value="219"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="127"/>
+          <item AVAILABLE="0" dataType="int" label="Number of Slice LUTs" stringID="MAP_SLICE_LUTS" value="712"/>
           <item AVAILABLE="0" dataType="int" label="Number of bonded IOBs" stringID="MAP_AGG_BONDED_IOB" value="0"/>
           <item AVAILABLE="0" dataType="int" stringID="MAP_AGG_UNBONDED_IOB" value="0"/>
           <item AVAILABLE="0" dataType="int" stringID="MAP_BLOCK_RAM_FIFO" value="0"/>
@@ -688,7 +1013,7 @@
         <item stringID="MAP_PATTERN" value="FFFFFFFFFFFF"/>
       </section>
       <section stringID="MAP_CONTROL_SET_INFORMATION">
-        <item dataType="int" label="Number of unique control sets" stringID="MAP_NUM_CONTROL_SETS" value="212"/>
+        <item dataType="int" label="Number of unique control sets" stringID="MAP_NUM_CONTROL_SETS" value="354"/>
         <tree stringID="MAP_CONTROL_SET_HIERARCHY">
           <property stringID="MAP_CLOCK_SIGNAL"/>
           <property stringID="MAP_RESET_SIGNAL"/>

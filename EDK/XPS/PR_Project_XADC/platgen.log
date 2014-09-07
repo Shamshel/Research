@@ -38,6 +38,10 @@ INFO:EDK:4130 - IPNAME: axi_hwicap, INSTANCE:axi_hwicap_0 - tcl is overriding
    PARAMETER C_FAMILY value to kintex7 -
    C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_hwicap_v2_03_a\d
    ata\axi_hwicap_v2_1_0.mpd line 94 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to kintex7 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
 
 Computing clock values...
 INFO:EDK:740 - Cannot determine the input clock associated with port :
@@ -70,7 +74,30 @@ Address Map for Processor microblaze_0
   (0x40800000-0x4080ffff) IIC_MAIN	axi4lite_0
   (0x41400000-0x4140ffff) debug_module	axi4lite_0
   (0x71a00000-0x71a0ffff) fan_controller_0	axi4lite_0
+  (0x72400000-0x7240ffff)
+reconfigurable_peripherials_10	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x72420000-0x7242ffff)
+reconfigurable_peripherials_11	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x72440000-0x7244ffff)
+reconfigurable_peripherials_12	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x72460000-0x7246ffff)
+reconfigurable_peripherials_13	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
   (0x7b000000-0x7b00ffff) reconfigurable_peripherials_0	axi4lite_0
+  (0x7b020000-0x7b02ffff) reconfigurable_peripherials_1	axi4lite_0
+  (0x7b040000-0x7b04ffff) reconfigurable_peripherials_2	axi4lite_0
+  (0x7b060000-0x7b06ffff) reconfigurable_peripherials_3	axi4lite_0
+  (0x7b080000-0x7b08ffff) reconfigurable_peripherials_4	axi4lite_0
+  (0x7b0a0000-0x7b0affff) reconfigurable_peripherials_5	axi4lite_0
+  (0x7b0c0000-0x7b0cffff) reconfigurable_peripherials_6	axi4lite_0
+  (0x7b0e0000-0x7b0effff) reconfigurable_peripherials_7	axi4lite_0
+  (0x7b100000-0x7b10ffff) reconfigurable_peripherials_8	axi4lite_0
+  (0x7b120000-0x7b12ffff)
+reconfigurable_peripherials_9	axi4lite_0->axi2axi_connector_1->axi_interconnect_
+1
   (0x7e200000-0x7e20ffff) axi_xadc_0	axi4lite_0
 INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
    PARAMETER C_LMB_NUM_SLAVES value to 1 -
@@ -90,7 +117,9 @@ Checking platform address map ...
 Checking platform configuration ...
 IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
 IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
-IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 7 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 16 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 - 1 master(s) : 5
+slave(s) 
 
 Checking port drivers...
 WARNING:EDK:4181 - PORT: axi_xadc_0_VAUXP_pin, CONNECTOR: axi_xadc_0_VAUXP -
@@ -99,6 +128,14 @@ WARNING:EDK:4181 - PORT: axi_xadc_0_VAUXP_pin, CONNECTOR: axi_xadc_0_VAUXP -
 WARNING:EDK:4181 - PORT: axi_xadc_0_VAUXN_pin, CONNECTOR: axi_xadc_0_VAUXN -
    floating connection - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line
    24 
+WARNING:EDK:4181 - PORT: M_AXI_AWREGION, CONNECTOR:
+   axi_interconnect_1_S_AWREGION - floating connection -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 198 
+WARNING:EDK:4181 - PORT: M_AXI_ARREGION, CONNECTOR:
+   axi_interconnect_1_S_ARREGION - floating connection -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 223 
 
 Performing Clock DRCs...
 
@@ -140,6 +177,12 @@ INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
    C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
    06_a\data\axi_interconnect_v2_1_0.mpd line 149 
 
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi_interconnect_1.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 149 
+
 Running system level update procedures...
 
 Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
@@ -167,6 +210,7 @@ implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
 It can be overridden by constraints placed in the system.ucf file.
 
 INFO: No asynchronous clock conversions in axi_interconnect axi4lite_0.
+INFO: No asynchronous clock conversions in axi_interconnect axi_interconnect_1.
 
 Modify defaults ...
 
@@ -180,6 +224,48 @@ Creating hardware output directories ...
 Managing hardware (BBD-specified) netlist files ...
 
 Managing cache ...
+IPNAME:proc_sys_reset INSTANCE:proc_sys_reset_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 39 - Copying cache
+implementation netlist
+IPNAME:lmb_v10 INSTANCE:microblaze_0_ilmb -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 52 - Copying cache
+implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_i_bram_ctrl -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 59 - Copying cache
+implementation netlist
+IPNAME:lmb_v10 INSTANCE:microblaze_0_dlmb -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 68 - Copying cache
+implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_d_bram_ctrl -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 75 - Copying cache
+implementation netlist
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 84 - Copying cache
+implementation netlist
+IPNAME:microblaze INSTANCE:microblaze_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 91 - Copying cache
+implementation netlist
+IPNAME:mdm INSTANCE:debug_module -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 114 - Copying cache
+implementation netlist
+IPNAME:axi_uartlite INSTANCE:rs232_uart_1 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 151 - Copying cache
+implementation netlist
+IPNAME:axi_iic INSTANCE:iic_main -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 166 - Copying cache
+implementation netlist
+IPNAME:axi_xadc INSTANCE:axi_xadc_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 179 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 197 - Copying cache
+implementation netlist
+IPNAME:fan_controller INSTANCE:fan_controller_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 207 - Copying cache
+implementation netlist
+IPNAME:axi_hwicap INSTANCE:axi_hwicap_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 218 - Copying cache
+implementation netlist
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
@@ -210,62 +296,70 @@ INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
 INFO:EDK:4194 - Running XST parallelly on 4 processors
-INSTANCE:proc_sys_reset_0 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs
-line 39 - Running XST synthesis
-INSTANCE:microblaze_0_ilmb - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs
-line 52 - Running XST synthesis
-INSTANCE:microblaze_0_i_bram_ctrl -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 59 - Running XST
-synthesis
-INSTANCE:microblaze_0_dlmb - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs
-line 68 - Running XST synthesis
-INSTANCE:microblaze_0_d_bram_ctrl -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 75 - Running XST
-synthesis
-INSTANCE:microblaze_0_bram_block -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 84 - Running XST
-synthesis
-INSTANCE:microblaze_0 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line
-91 - Running XST synthesis
-INSTANCE:debug_module - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line
-114 - Running XST synthesis
 INSTANCE:clock_generator_0 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs
 line 127 - Running XST synthesis
 INSTANCE:axi4lite_0 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 143
-- Running XST synthesis
-INSTANCE:rs232_uart_1 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line
-151 - Running XST synthesis
-INSTANCE:iic_main - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 166 -
-Running XST synthesis
-INSTANCE:axi_xadc_0 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 179
 - Running XST synthesis
 INSTANCE:reconfigurable_peripherials_0 -
 C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 197 - Running XST
 synthesis
 INSTANCE:fan_controller_0 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs
 line 207 - Running XST synthesis
-INSTANCE:axi_hwicap_0 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line
-218 - Running XST synthesis
+INSTANCE:reconfigurable_peripherials_1 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 229 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_2 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 238 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_3 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 247 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_4 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 256 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_5 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 265 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_6 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 274 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_7 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 283 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_8 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 292 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_9 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 301 - Running XST
+synthesis
+INSTANCE:axi2axi_connector_1 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs
+line 310 - Running XST synthesis
+INSTANCE:axi_interconnect_1 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs
+line 328 - Running XST synthesis
+INSTANCE:reconfigurable_peripherials_10 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 336 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_11 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 345 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_12 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 354 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_13 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 363 - Running XST
+synthesis
 
 Running NGCBUILD ...
-IPNAME:system_microblaze_0_ilmb_wrapper INSTANCE:microblaze_0_ilmb -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 52 - Running NGCBUILD
-IPNAME:system_microblaze_0_dlmb_wrapper INSTANCE:microblaze_0_dlmb -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 68 - Running NGCBUILD
-IPNAME:system_microblaze_0_wrapper INSTANCE:microblaze_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 91 - Running NGCBUILD
 IPNAME:system_clock_generator_0_wrapper INSTANCE:clock_generator_0 -
 C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 127 - Running NGCBUILD
 IPNAME:system_axi4lite_0_wrapper INSTANCE:axi4lite_0 -
 C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 143 - Running NGCBUILD
-IPNAME:system_axi_xadc_0_wrapper INSTANCE:axi_xadc_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 179 - Running NGCBUILD
-IPNAME:system_axi_hwicap_0_wrapper INSTANCE:axi_hwicap_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 218 - Running NGCBUILD
+IPNAME:system_axi_interconnect_1_wrapper INSTANCE:axi_interconnect_1 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 328 - Running NGCBUILD
 INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
    If any constraint needs to be overridden, this should be done by modifying
    the data/system.ucf file.
 
 Rebuilding cache ...
 
-Total run time: 330.00 seconds
+Total run time: 114.00 seconds

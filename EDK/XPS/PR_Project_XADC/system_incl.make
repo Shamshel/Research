@@ -29,7 +29,7 @@ SEARCHPATHOPT = $(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT)
 
 SUBMODULE_OPT = 
 
-PLATGEN_OPTIONS = -p $(DEVICE) -lang $(XPS_HDL_LANG) -intstyle $(INTSTYLE) $(SEARCHPATHOPT) $(SUBMODULE_OPT) -msg __xps/ise/xmsgprops.lst
+PLATGEN_OPTIONS = -p $(DEVICE) -lang $(XPS_HDL_LANG) -intstyle $(INTSTYLE) $(SEARCHPATHOPT) $(SUBMODULE_OPT) -msg __xps/ise/xmsgprops.lst -parallel yes
 
 OBSERVE_PAR_OPTIONS = -error yes
 
@@ -142,7 +142,22 @@ implementation/system_iic_main_wrapper.ngc \
 implementation/system_axi_xadc_0_wrapper.ngc \
 implementation/system_reconfigurable_peripherials_0_wrapper.ngc \
 implementation/system_fan_controller_0_wrapper.ngc \
-implementation/system_axi_hwicap_0_wrapper.ngc
+implementation/system_axi_hwicap_0_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_1_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_2_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_3_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_4_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_5_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_6_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_7_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_8_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_9_wrapper.ngc \
+implementation/system_axi2axi_connector_1_wrapper.ngc \
+implementation/system_axi_interconnect_1_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_10_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_11_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_12_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_13_wrapper.ngc
 
 POSTSYN_NETLIST = implementation/$(SYSTEM).ngc
 
@@ -170,4 +185,4 @@ SDK_EXPORT_DIR = SDK\SDK_Export\hw
 SYSTEM_HW_HANDOFF = $(SDK_EXPORT_DIR)/$(SYSTEM).xml
 SYSTEM_HW_HANDOFF_BIT = $(SDK_EXPORT_DIR)/$(SYSTEM).bit
 SYSTEM_HW_HANDOFF_BMM = $(SDK_EXPORT_DIR)/$(SYSTEM)_bd.bmm
-SYSTEM_HW_HANDOFF_DEP = $(SYSTEM_HW_HANDOFF) $(SYSTEM_HW_HANDOFF_BIT) $(SYSTEM_HW_HANDOFF_BMM)
+SYSTEM_HW_HANDOFF_DEP = $(SYSTEM_HW_HANDOFF)

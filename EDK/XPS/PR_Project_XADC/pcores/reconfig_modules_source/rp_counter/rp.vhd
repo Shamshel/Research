@@ -83,7 +83,7 @@ architecture Behavioral of rp is
 	signal reg_1_output		: std_logic_vector(C_BUS_WIDTH-1 downto 0);
 
 begin
-	enable <= Reset_n;
+	enable <= reg_0_input(31);
 	
 	-- fix endianness of inputs/outputs
 	--reg_0_input(31 downto 24) <= reg_0(7 downto 0);

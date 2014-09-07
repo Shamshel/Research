@@ -30,6 +30,9 @@ Loading design module
 "C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_axi4lite_0_wrapper
 .ngc"...
 Loading design module
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_axi_interconnect_1
+_wrapper.ngc"...
+Loading design module
 "C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_microblaze_0_wrapp
 er.ngc"...
 Loading design module
@@ -39,11 +42,62 @@ Loading design module
 "C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_microblaze_0_d_bra
 m_ctrl_wrapper.ngc"...
 Loading design module
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_axi2axi_connector_
+1_wrapper.ngc"...
+Loading design module
 "C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_debug_module_wrapp
 er.ngc"...
 Loading design module
 "C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_iic_main_wrapper.n
 gc"...
+Loading design module
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_per
+ipherials_0_wrapper.ngc"...
+Loading design module
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_fan_controller_0_w
+rapper.ngc"...
+Loading design module
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_axi_hwicap_0_wrapp
+er.ngc"...
+Loading design module
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_per
+ipherials_1_wrapper.ngc"...
+Loading design module
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_per
+ipherials_2_wrapper.ngc"...
+Loading design module
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_per
+ipherials_3_wrapper.ngc"...
+Loading design module
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_per
+ipherials_4_wrapper.ngc"...
+Loading design module
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_per
+ipherials_5_wrapper.ngc"...
+Loading design module
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_per
+ipherials_6_wrapper.ngc"...
+Loading design module
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_per
+ipherials_7_wrapper.ngc"...
+Loading design module
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_per
+ipherials_8_wrapper.ngc"...
+Loading design module
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_per
+ipherials_9_wrapper.ngc"...
+Loading design module
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_per
+ipherials_10_wrapper.ngc"...
+Loading design module
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_per
+ipherials_11_wrapper.ngc"...
+Loading design module
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_per
+ipherials_12_wrapper.ngc"...
+Loading design module
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_per
+ipherials_13_wrapper.ngc"...
 Loading design module
 "C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_microblaze_0_bram_
 block_wrapper.ngc"...
@@ -60,8 +114,16 @@ Applying constraints in
 .ncf" to module "axi4lite_0"...
 Checking Constraint Associations...
 Applying constraints in
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_axi_interconnect_1
+_wrapper.ncf" to module "axi_interconnect_1"...
+Checking Constraint Associations...
+Applying constraints in
 "C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_microblaze_0_wrapp
 er.ncf" to module "microblaze_0"...
+Checking Constraint Associations...
+Applying constraints in
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_axi_hwicap_0_wrapp
+er.ncf" to module "axi_hwicap_0"...
 Checking Constraint Associations...
 Gathering constraint information from source properties...
 Done.
@@ -69,6 +131,14 @@ Done.
 Annotating constraints to design from ucf file "system.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
+WARNING:ConstraintSystem:135 - Constraint <INST
+   /system/EXPANDED/system/axi_interconnect_1/axi_interconnect_1\/si_converter_b
+   ank\/gen_conv_slot[0].clock_conv_inst\/interconnect_aresetn_resync<2>_inv1_IN
+   V_0 TNM = FFS:axi_interconnect_1_reset...>: No instances of type FFS were
+   found under block
+   "axi_interconnect_1/axi_interconnect_1/si_converter_bank/gen_conv_slot[0].clo
+   ck_conv_inst/interconnect_aresetn_resync<2>_inv1_INV_0" (type=INV).
+
 WARNING:ConstraintSystem:135 - Constraint <INST
    /system/EXPANDED/system/axi4lite_0/axi4lite_0\/si_converter_bank\/gen_conv_sl
    ot[0].clock_conv_inst\/interconnect_aresetn_resync<2>_inv1_INV_0 TNM =
@@ -78,6 +148,14 @@ WARNING:ConstraintSystem:135 - Constraint <INST
 
 WARNING:ConstraintSystem:58 - Constraint <TIMEGRP axi4lite_0_reset_source = FFS
    PADS CPUS;>: CPUS "*" does not match any design objects.
+
+WARNING:ConstraintSystem:58 - Constraint <TIMEGRP
+   axi_interconnect_1_reset_source = FFS PADS CPUS;>: CPUS "*" does not match
+   any design objects.
+
+WARNING:ConstraintSystem:194 - The TNM 'axi_interconnect_1_reset_resync', does
+   not directly or indirectly drive any flip-flops, latches and/or RAMs and is
+   not actively used by any referencing constraint.
 
 WARNING:ConstraintSystem:194 - The TNM 'axi4lite_0_reset_resync', does not
    directly or indirectly drive any flip-flops, latches and/or RAMs and is not
@@ -105,6 +183,90 @@ WARNING:NgdBuild:443 - SFF primitive
 WARNING:NgdBuild:443 - SFF primitive
    'IIC_MAIN/IIC_MAIN/X_IIC/X_AXI_IPIF_SSP1/X_SOFT_RESET/FF_WRACK' has
    unconnected output pin
+ERROR:NgdBuild:604 - logical block
+   'reconfigurable_peripherials_0/reconfigurable_peripherials_0/USER_LOGIC_I/rp_
+   instance' with type 'rp' could not be resolved. A pin name misspelling can
+   cause this, a missing edif or ngc file, case mismatch between the block name
+   and the edif or ngc file name, or the misspelling of a type name. Symbol 'rp'
+   is not supported in target 'kintex7'.
+ERROR:NgdBuild:604 - logical block
+   'reconfigurable_peripherials_1/reconfigurable_peripherials_1/USER_LOGIC_I/rp_
+   instance' with type 'rp' could not be resolved. A pin name misspelling can
+   cause this, a missing edif or ngc file, case mismatch between the block name
+   and the edif or ngc file name, or the misspelling of a type name. Symbol 'rp'
+   is not supported in target 'kintex7'.
+ERROR:NgdBuild:604 - logical block
+   'reconfigurable_peripherials_2/reconfigurable_peripherials_2/USER_LOGIC_I/rp_
+   instance' with type 'rp' could not be resolved. A pin name misspelling can
+   cause this, a missing edif or ngc file, case mismatch between the block name
+   and the edif or ngc file name, or the misspelling of a type name. Symbol 'rp'
+   is not supported in target 'kintex7'.
+ERROR:NgdBuild:604 - logical block
+   'reconfigurable_peripherials_3/reconfigurable_peripherials_3/USER_LOGIC_I/rp_
+   instance' with type 'rp' could not be resolved. A pin name misspelling can
+   cause this, a missing edif or ngc file, case mismatch between the block name
+   and the edif or ngc file name, or the misspelling of a type name. Symbol 'rp'
+   is not supported in target 'kintex7'.
+ERROR:NgdBuild:604 - logical block
+   'reconfigurable_peripherials_4/reconfigurable_peripherials_4/USER_LOGIC_I/rp_
+   instance' with type 'rp' could not be resolved. A pin name misspelling can
+   cause this, a missing edif or ngc file, case mismatch between the block name
+   and the edif or ngc file name, or the misspelling of a type name. Symbol 'rp'
+   is not supported in target 'kintex7'.
+ERROR:NgdBuild:604 - logical block
+   'reconfigurable_peripherials_5/reconfigurable_peripherials_5/USER_LOGIC_I/rp_
+   instance' with type 'rp' could not be resolved. A pin name misspelling can
+   cause this, a missing edif or ngc file, case mismatch between the block name
+   and the edif or ngc file name, or the misspelling of a type name. Symbol 'rp'
+   is not supported in target 'kintex7'.
+ERROR:NgdBuild:604 - logical block
+   'reconfigurable_peripherials_6/reconfigurable_peripherials_6/USER_LOGIC_I/rp_
+   instance' with type 'rp' could not be resolved. A pin name misspelling can
+   cause this, a missing edif or ngc file, case mismatch between the block name
+   and the edif or ngc file name, or the misspelling of a type name. Symbol 'rp'
+   is not supported in target 'kintex7'.
+ERROR:NgdBuild:604 - logical block
+   'reconfigurable_peripherials_7/reconfigurable_peripherials_7/USER_LOGIC_I/rp_
+   instance' with type 'rp' could not be resolved. A pin name misspelling can
+   cause this, a missing edif or ngc file, case mismatch between the block name
+   and the edif or ngc file name, or the misspelling of a type name. Symbol 'rp'
+   is not supported in target 'kintex7'.
+ERROR:NgdBuild:604 - logical block
+   'reconfigurable_peripherials_8/reconfigurable_peripherials_8/USER_LOGIC_I/rp_
+   instance' with type 'rp' could not be resolved. A pin name misspelling can
+   cause this, a missing edif or ngc file, case mismatch between the block name
+   and the edif or ngc file name, or the misspelling of a type name. Symbol 'rp'
+   is not supported in target 'kintex7'.
+ERROR:NgdBuild:604 - logical block
+   'reconfigurable_peripherials_9/reconfigurable_peripherials_9/USER_LOGIC_I/rp_
+   instance' with type 'rp' could not be resolved. A pin name misspelling can
+   cause this, a missing edif or ngc file, case mismatch between the block name
+   and the edif or ngc file name, or the misspelling of a type name. Symbol 'rp'
+   is not supported in target 'kintex7'.
+ERROR:NgdBuild:604 - logical block
+   'reconfigurable_peripherials_10/reconfigurable_peripherials_10/USER_LOGIC_I/r
+   p_instance' with type 'rp' could not be resolved. A pin name misspelling can
+   cause this, a missing edif or ngc file, case mismatch between the block name
+   and the edif or ngc file name, or the misspelling of a type name. Symbol 'rp'
+   is not supported in target 'kintex7'.
+ERROR:NgdBuild:604 - logical block
+   'reconfigurable_peripherials_11/reconfigurable_peripherials_11/USER_LOGIC_I/r
+   p_instance' with type 'rp' could not be resolved. A pin name misspelling can
+   cause this, a missing edif or ngc file, case mismatch between the block name
+   and the edif or ngc file name, or the misspelling of a type name. Symbol 'rp'
+   is not supported in target 'kintex7'.
+ERROR:NgdBuild:604 - logical block
+   'reconfigurable_peripherials_12/reconfigurable_peripherials_12/USER_LOGIC_I/r
+   p_instance' with type 'rp' could not be resolved. A pin name misspelling can
+   cause this, a missing edif or ngc file, case mismatch between the block name
+   and the edif or ngc file name, or the misspelling of a type name. Symbol 'rp'
+   is not supported in target 'kintex7'.
+ERROR:NgdBuild:604 - logical block
+   'reconfigurable_peripherials_13/reconfigurable_peripherials_13/USER_LOGIC_I/r
+   p_instance' with type 'rp' could not be resolved. A pin name misspelling can
+   cause this, a missing edif or ngc file, case mismatch between the block name
+   and the edif or ngc file name, or the misspelling of a type name. Symbol 'rp'
+   is not supported in target 'kintex7'.
 
 Partition Implementation Status
 -------------------------------
@@ -114,13 +276,14 @@ Partition Implementation Status
 -------------------------------
 
 NGDBUILD Design Results Summary:
-  Number of errors:     0
-  Number of warnings:   6
+  Number of errors:    14
+  Number of warnings:   9
 
-Total memory usage is 269520 kilobytes
+Total memory usage is 305688 kilobytes
 
-Writing NGD file "system.ngd" ...
-Total REAL time to NGDBUILD completion:  50 sec
-Total CPU time to NGDBUILD completion:   50 sec
+Total REAL time to NGDBUILD completion: 1 min  2 sec
+Total CPU time to NGDBUILD completion:  1 min  2 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
 
 Writing NGDBUILD log file "system.bld"...

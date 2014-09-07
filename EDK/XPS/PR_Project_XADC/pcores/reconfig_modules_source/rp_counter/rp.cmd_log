@@ -75,3 +75,8 @@ xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_m
 xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.syr" 
 xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.syr" 
 xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.syr" 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.syr" 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.syr" 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.syr" 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.syr" 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.xst" -ofn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.syr" 

@@ -1,5 +1,5 @@
-set -tmpdir "C:/Users/ECE/Documents/freq_counter/freq_counter/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/ECE/Documents/freq_counter/freq_counter/xst"
+set -tmpdir "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/xst"
 run -compileonly yes
 -p xc7k325t-2-ffg900
 -top frequency_counter
