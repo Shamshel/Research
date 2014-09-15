@@ -84,10 +84,10 @@ void sleep_ms(unsigned int ms)
 
 }
 
-void sleep_us(unsigned int ms)
+void sleep_us(unsigned int us)
 {
 	unsigned int i = 0;
-	for(i; i < (ms*100); i++);
+	for(i; i < (us*100); i++);
 
 }
 
