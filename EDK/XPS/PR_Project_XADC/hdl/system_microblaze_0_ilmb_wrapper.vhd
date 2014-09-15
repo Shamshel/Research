@@ -21,11 +21,11 @@ entity system_microblaze_0_ilmb_wrapper is
     M_AddrStrobe : in std_logic;
     M_DBus : in std_logic_vector(0 to 31);
     M_BE : in std_logic_vector(0 to 3);
-    Sl_DBus : in std_logic_vector(0 to 31);
-    Sl_Ready : in std_logic_vector(0 to 0);
-    Sl_Wait : in std_logic_vector(0 to 0);
-    Sl_UE : in std_logic_vector(0 to 0);
-    Sl_CE : in std_logic_vector(0 to 0);
+    Sl_DBus : in std_logic_vector(0 to 63);
+    Sl_Ready : in std_logic_vector(0 to 1);
+    Sl_Wait : in std_logic_vector(0 to 1);
+    Sl_UE : in std_logic_vector(0 to 1);
+    Sl_CE : in std_logic_vector(0 to 1);
     LMB_ABus : out std_logic_vector(0 to 31);
     LMB_ReadStrobe : out std_logic;
     LMB_WriteStrobe : out std_logic;
@@ -86,7 +86,7 @@ begin
 
   microblaze_0_ilmb : lmb_v10
     generic map (
-      C_LMB_NUM_SLAVES => 1,
+      C_LMB_NUM_SLAVES => 2,
       C_LMB_AWIDTH => 32,
       C_LMB_DWIDTH => 32,
       C_EXT_RESET_HIGH => 1

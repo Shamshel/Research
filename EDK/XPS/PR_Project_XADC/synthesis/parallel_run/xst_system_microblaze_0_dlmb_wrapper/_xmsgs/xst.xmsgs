@@ -5,6 +5,9 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="Xst" num="0" delta="new" >Deleting Xdb <arg fmt="% as" index="1"> 0x0.000000p-1022s</arg>sociated with XstModel <arg fmt="%s" index="2">XstGModel</arg>
+</msg>
+
 <msg type="warning" file="HDLCompiler" num="89" delta="old" >"C:/Xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v2_00_b/hdl/vhdl/lmb_v10.vhd" Line 146: &lt;<arg fmt="%s" index="1">fds</arg>&gt; remains a black-box since it has no binding entity.
 </msg>
 

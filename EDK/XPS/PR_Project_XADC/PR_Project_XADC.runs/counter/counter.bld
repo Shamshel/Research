@@ -32,9 +32,9 @@ INFO:ConstraintSystem:178 - TNM 'sys_clk_pin', used in period specification
    'TS_sys_clk_pin', was traced into MMCME2_ADV instance
    clock_generator_0/MMCM1_INST/MMCM_ADV_inst. The following new TNM groups and
    period specifications were generated at the MMCME2_ADV output(s): 
-   CLKOUT0: <TIMESPEC TS_clock_generator_0_clock_generator_0_SIG_MMCM1_CLKOUT0_0
-   = PERIOD "clock_generator_0_clock_generator_0_SIG_MMCM1_CLKOUT0_0"
-   TS_sys_clk_pin * 0.5 HIGH 50%>
+   CLKOUT0: <TIMESPEC TS_clock_generator_0_clock_generator_0_SIG_MMCM1_CLKOUT0 =
+   PERIOD "clock_generator_0_clock_generator_0_SIG_MMCM1_CLKOUT0" TS_sys_clk_pin
+   * 0.5 HIGH 50%>
 
 WARNING:NgdBuild:1345 - The constraint <TIMESPEC TS_sys_clk_pin = PERIOD
    "sys_clk_pin" 200000 KHz;> [counter.ucf(41)] is overridden by the constraint
@@ -146,10 +146,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   4
 
-Total memory usage is 339680 kilobytes
+Total memory usage is 346656 kilobytes
 
 Writing NGD file "counter.ngd" ...
-Total REAL time to NGDBUILD completion: 1 min  5 sec
-Total CPU time to NGDBUILD completion:   34 sec
+Total REAL time to NGDBUILD completion: 1 min  11 sec
+Total CPU time to NGDBUILD completion:   38 sec
 
 Writing NGDBUILD log file "counter.bld"...

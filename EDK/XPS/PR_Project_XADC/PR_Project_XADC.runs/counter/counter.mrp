@@ -8,48 +8,48 @@ Target Device  : xc7k325t
 Target Package : ffg900
 Target Speed   : -2
 Mapper Version : kintex7 -- $Revision: 1.55 $
-Mapped Date    : Wed Aug 20 15:22:20 2014
+Mapped Date    : Sat Sep 13 14:23:13 2014
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:   36
 Slice Logic Utilization:
-  Number of Slice Registers:                 6,058 out of 407,600    1%
-    Number used as Flip Flops:               6,020
+  Number of Slice Registers:                 6,175 out of 407,600    1%
+    Number used as Flip Flops:               6,139
     Number used as Latches:                      3
     Number used as Latch-thrus:                  0
-    Number used as AND/OR logics:               35
-  Number of Slice LUTs:                     14,724 out of 203,800    7%
-    Number used as logic:                   14,353 out of 203,800    7%
-      Number using O6 output only:          11,721
-      Number using O5 output only:             496
-      Number using O5 and O6:                2,136
+    Number used as AND/OR logics:               33
+  Number of Slice LUTs:                     15,179 out of 203,800    7%
+    Number used as logic:                   14,610 out of 203,800    7%
+      Number using O6 output only:          11,845
+      Number using O5 output only:             644
+      Number using O5 and O6:                2,121
       Number used as ROM:                        0
-    Number used as Memory:                     254 out of  64,000    1%
+    Number used as Memory:                     406 out of  64,000    1%
       Number used as Dual Port RAM:             64
         Number using O6 output only:             0
         Number using O5 output only:             0
         Number using O5 and O6:                 64
       Number used as Single Port RAM:            0
-      Number used as Shift Register:           190
-        Number using O6 output only:           189
-        Number using O5 output only:             1
+      Number used as Shift Register:           342
+        Number using O6 output only:           330
+        Number using O5 output only:            12
         Number using O5 and O6:                  0
-    Number used exclusively as route-thrus:    117
-      Number with same-slice register load:     97
+    Number used exclusively as route-thrus:    163
+      Number with same-slice register load:    143
       Number with same-slice carry load:        20
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 5,647 out of  50,950   11%
-  Number of LUT Flip Flop pairs used:       16,108
-    Number with an unused Flip Flop:        11,041 out of  16,108   68%
-    Number with an unused LUT:               1,384 out of  16,108    8%
-    Number of fully used LUT-FF pairs:       3,683 out of  16,108   22%
-    Number of unique control sets:             354
+  Number of occupied Slices:                 5,580 out of  50,950   10%
+  Number of LUT Flip Flop pairs used:       16,437
+    Number with an unused Flip Flop:        11,313 out of  16,437   68%
+    Number with an unused LUT:               1,258 out of  16,437    7%
+    Number of fully used LUT-FF pairs:       3,866 out of  16,437   23%
+    Number of unique control sets:             367
     Number of slice register sites lost
-      to control set restrictions:           1,259 out of 407,600    1%
+      to control set restrictions:           1,260 out of 407,600    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -67,8 +67,8 @@ IO Utilization:
       Number of LOCed IPADs:                     4 out of       4  100%
 
 Specific Feature Utilization:
-  Number of RAMB36E1/FIFO36E1s:                 32 out of     445    7%
-    Number using RAMB36E1 only:                 32
+  Number of RAMB36E1/FIFO36E1s:                 64 out of     445   14%
+    Number using RAMB36E1 only:                 64
     Number using FIFO36E1 only:                  0
   Number of RAMB18E1/FIFO18E1s:                  2 out of     890    1%
     Number using RAMB18E1 only:                  2
@@ -111,11 +111,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            1 out of       1  100%
   Number of XADCs:                               1 out of       1  100%
 
-Average Fanout of Non-Clock Nets:                2.69
+Average Fanout of Non-Clock Nets:                2.84
 
-Peak Memory Usage:  1685 MB
-Total REAL time to MAP completion:  6 mins 13 secs 
-Total CPU time to MAP completion:   6 mins 10 secs 
+Peak Memory Usage:  1703 MB
+Total REAL time to MAP completion:  6 mins 49 secs 
+Total CPU time to MAP completion:   6 mins 43 secs 
 
 Table of Contents
 -----------------
@@ -147,28 +147,13 @@ WARNING:Security:42 - Your software subscription period has lapsed. Your current
 version of Xilinx tools will continue to function, but you no longer qualify for
 Xilinx software updates or new releases.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   axi_hwicap_0/axi_hwicap_0/HWICAP_CTRL_I/icap_statemachine_I1/icap_nstate_cs[3
-   ]_PWR_53_o_Mux_49_o is sourced by a combinatorial pin. This is not good
-   design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   reconfigurable_peripherials_12/reconfigurable_peripherials_12/USER_LOGIC_I/rp
+   reconfigurable_peripherials_11/reconfigurable_peripherials_11/USER_LOGIC_I/rp
    _instance/ring_osc/a[0] is sourced by a combinatorial pin. This is not good
    design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
    reconfigurable_peripherials_6/reconfigurable_peripherials_6/USER_LOGIC_I/rp_i
    nstance/ring_osc/a[0] is sourced by a combinatorial pin. This is not good
-   design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   axi_hwicap_0/axi_hwicap_0/HWICAP_CTRL_I/icap_statemachine_I1/icap_nstate_cs[3
-   ]_PWR_52_o_Mux_47_o is sourced by a combinatorial pin. This is not good
-   design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   reconfigurable_peripherials_10/reconfigurable_peripherials_10/USER_LOGIC_I/rp
-   _instance/ring_osc/a[0] is sourced by a combinatorial pin. This is not good
    design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
@@ -212,13 +197,13 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   reconfigurable_peripherials_2/reconfigurable_peripherials_2/USER_LOGIC_I/rp_i
-   nstance/ring_osc/a[0] is sourced by a combinatorial pin. This is not good
+   reconfigurable_peripherials_12/reconfigurable_peripherials_12/USER_LOGIC_I/rp
+   _instance/ring_osc/a[0] is sourced by a combinatorial pin. This is not good
    design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   reconfigurable_peripherials_11/reconfigurable_peripherials_11/USER_LOGIC_I/rp
-   _instance/ring_osc/a[0] is sourced by a combinatorial pin. This is not good
+   reconfigurable_peripherials_2/reconfigurable_peripherials_2/USER_LOGIC_I/rp_i
+   nstance/ring_osc/a[0] is sourced by a combinatorial pin. This is not good
    design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
@@ -227,21 +212,63 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   reconfigurable_peripherials_10/reconfigurable_peripherials_10/USER_LOGIC_I/rp
+   _instance/ring_osc/a[0] is sourced by a combinatorial pin. This is not good
+   design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   axi_hwicap_0/axi_hwicap_0/HWICAP_CTRL_I/icap_statemachine_I1/icap_nstate_cs[3
+   ]_PWR_52_o_Mux_47_o is sourced by a combinatorial pin. This is not good
+   design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   axi_hwicap_0/axi_hwicap_0/HWICAP_CTRL_I/icap_statemachine_I1/icap_nstate_cs[3
+   ]_PWR_53_o_Mux_49_o is sourced by a combinatorial pin. This is not good
+   design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
    axi_hwicap_0/axi_hwicap_0/HWICAP_CTRL_I/icap_statemachine_I1/icap_nstate_cs[3
    ]_PWR_54_o_Mux_51_o is sourced by a combinatorial pin. This is not good
    design practice. Use the CE pin to control the loading of data into the
    flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr[31]> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[9].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[8].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
    _File_I/Using_LUT6.All_RAM32M[7].ram32m_i_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[1].ram32m_i_RAMD_D1_O> is incomplete. The
+   _File_I/Using_LUT6.All_RAM32M[6].ram32m_i_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[0].ram32m_i_RAMD_D1_O> is incomplete. The
+   _File_I/Using_LUT6.All_RAM32M[5].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[13].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[12].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[11].ram32m_i_RAMD_D1_O> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
+   _File_I/Using_LUT6.All_RAM32M[14].ram32m_i_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
@@ -253,54 +280,27 @@ WARNING:PhysDesignRules:367 - The signal
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[15].ram32m_i_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
    _File_I/Using_LUT6.All_RAM32M[10].ram32m_i_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[5].ram32m_i_RAMD_D1_O> is incomplete. The
+   _File_I/Using_LUT6.All_RAM32M[1].ram32m_i_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
    _File_I/Using_LUT6.All_RAM32M[4].ram32m_i_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[6].ram32m_i_RAMD_D1_O> is incomplete. The
+   <microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr[30]> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[12].ram32m_i_RAMD_D1_O> is incomplete. The
+   _File_I/Using_LUT6.All_RAM32M[15].ram32m_i_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[13].ram32m_i_RAMD_D1_O> is incomplete. The
+   _File_I/Using_LUT6.All_RAM32M[0].ram32m_i_RAMD_D1_O> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[14].ram32m_i_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[11].ram32m_i_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[8].ram32m_i_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register
-   _File_I/Using_LUT6.All_RAM32M[9].ram32m_i_RAMD_D1_O> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[30]> is
-   incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[31]> is
-   incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:2383 - Issue with pin connections and/or configuration
    on
    block:<axi_hwicap_0/axi_hwicap_0/HWICAP_CTRL_I/IPIC_IF_I/STARTUP_INCLUDE.GEN_
@@ -312,7 +312,7 @@ Section 3 - Informational
 -------------------------
 INFO:Security:56 - Part 'xc7k325t' is not a WebPack part.
 INFO:LIT:243 - Logical network axi_interconnect_1_M_ARADDR[0] has no load.
-INFO:LIT:395 - The above info message is repeated 567 more times for the
+INFO:LIT:395 - The above info message is repeated 573 more times for the
    following (max. 5 shown):
    axi_interconnect_1_M_ARADDR[129],
    axi_interconnect_1_M_ARADDR[131],
@@ -355,9 +355,9 @@ INFO:PhysDesignRules:2288 - The read port and write port clocks of BRAM
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-1183 block(s) removed
- 132 block(s) optimized away
-1201 signal(s) removed
+1181 block(s) removed
+ 141 block(s) optimized away
+1199 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -806,10 +806,6 @@ arbiter_inst/s_amesg[11]" is loadless and has been removed.
        Loadless block
 "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_
 arbiter_inst/Mmux_s_amesg26" (ROM) removed.
-        The signal "axi4lite_0_S_ARADDR[10]" is loadless and has been removed.
-         Loadless block
-"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/MEM_DataBus_Ad
-dr_21" (SFF) removed.
 The signal "axi_interconnect_1_M_ARADDR[107]" is loadless and has been removed.
  Loadless block
 "axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/ge
@@ -830,10 +826,6 @@ arbiter_inst/s_amesg[12]" is loadless and has been removed.
        Loadless block
 "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_
 arbiter_inst/Mmux_s_amesg31" (ROM) removed.
-        The signal "axi4lite_0_S_ARADDR[11]" is loadless and has been removed.
-         Loadless block
-"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/MEM_DataBus_Ad
-dr_20" (SFF) removed.
 The signal "axi_interconnect_1_M_ARADDR[108]" is loadless and has been removed.
  Loadless block
 "axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/ge
@@ -854,10 +846,6 @@ arbiter_inst/s_amesg[13]" is loadless and has been removed.
        Loadless block
 "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_
 arbiter_inst/Mmux_s_amesg43" (ROM) removed.
-        The signal "axi4lite_0_S_ARADDR[12]" is loadless and has been removed.
-         Loadless block
-"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/MEM_DataBus_Ad
-dr_19" (SFF) removed.
 The signal "axi_interconnect_1_M_ARADDR[109]" is loadless and has been removed.
  Loadless block
 "axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/ge
@@ -878,10 +866,6 @@ arbiter_inst/s_amesg[14]" is loadless and has been removed.
        Loadless block
 "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_
 arbiter_inst/Mmux_s_amesg51" (ROM) removed.
-        The signal "axi4lite_0_S_ARADDR[13]" is loadless and has been removed.
-         Loadless block
-"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/MEM_DataBus_Ad
-dr_18" (SFF) removed.
 The signal "axi_interconnect_1_M_ARADDR[110]" is loadless and has been removed.
  Loadless block
 "axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/ge
@@ -902,10 +886,6 @@ arbiter_inst/s_amesg[15]" is loadless and has been removed.
        Loadless block
 "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_
 arbiter_inst/Mmux_s_amesg61" (ROM) removed.
-        The signal "axi4lite_0_S_ARADDR[14]" is loadless and has been removed.
-         Loadless block
-"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/MEM_DataBus_Ad
-dr_17" (SFF) removed.
 The signal "axi_interconnect_1_M_ARADDR[111]" is loadless and has been removed.
  Loadless block
 "axi_interconnect_1/axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/ge
@@ -926,12 +906,23 @@ arbiter_inst/s_amesg[16]" is loadless and has been removed.
        Loadless block
 "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_
 arbiter_inst/Mmux_s_amesg71" (ROM) removed.
-        The signal "axi4lite_0_S_ARADDR[15]" is loadless and has been removed.
-         Loadless block
-"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/MEM_DataBus_Ad
-dr_16" (SFF) removed.
 The signal "net_vcc0" is loadless and has been removed.
  Loadless block "XST_VCC" (ONE) removed.
+The signal "microblaze_0_dlmb_LMB_CE" is loadless and has been removed.
+ Loadless block "microblaze_0_dlmb/microblaze_0_dlmb/SI_CE_ORing.i1" (ROM)
+removed.
+The signal "microblaze_0_dlmb_LMB_UE" is loadless and has been removed.
+ Loadless block "microblaze_0_dlmb/microblaze_0_dlmb/SI_UE_ORing.i1" (ROM)
+removed.
+The signal "microblaze_0_ilmb_LMB_CE" is loadless and has been removed.
+ Loadless block "microblaze_0_ilmb/microblaze_0_ilmb/SI_CE_ORing.i1" (ROM)
+removed.
+The signal "microblaze_0_ilmb_LMB_UE" is loadless and has been removed.
+ Loadless block "microblaze_0_ilmb/microblaze_0_ilmb/SI_UE_ORing.i1" (ROM)
+removed.
+The signal "microblaze_0_ilmb_LMB_Wait" is loadless and has been removed.
+ Loadless block "microblaze_0_ilmb/microblaze_0_ilmb/Wait_ORing.i1" (ROM)
+removed.
 The signal "axi4lite_0_S_BRESP[0]" is loadless and has been removed.
  Loadless block
 "axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.mi_bm
@@ -2566,6 +2557,11 @@ removed.
  Loadless block
 "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_
 Core.Debug_Perf/Dbg_Want_To_Break_Mem_Access1" (ROM) removed.
+The signal "microblaze_0/LOCKSTEP_MASTER_OUT[7]" is loadless and has been
+removed.
+ Loadless block
+"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_
+Core.Debug_Perf/Dbg_Freeze1" (ROM) removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[0]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_0" (SFF) removed.
@@ -2582,78 +2578,78 @@ removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[4]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_4" (SFF) removed.
-  The signal "microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[0]" is
-loadless and has been removed.
+  The signal "microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Addr[0]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[5]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_5" (SFF) removed.
-  The signal "microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[1]" is
-loadless and has been removed.
+  The signal "microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Addr[1]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[6]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_6" (SFF) removed.
-  The signal "microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[2]" is
-loadless and has been removed.
+  The signal "microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Addr[2]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[7]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_7" (SFF) removed.
-  The signal "microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[3]" is
-loadless and has been removed.
+  The signal "microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Addr[3]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[8]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_8" (SFF) removed.
-  The signal "microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[4]" is
-loadless and has been removed.
+  The signal "microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Addr[4]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[9]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_9" (SFF) removed.
-  The signal "microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[5]" is
-loadless and has been removed.
+  The signal "microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Addr[5]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[10]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_10" (SFF) removed.
-  The signal "microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[6]" is
-loadless and has been removed.
+  The signal "microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Addr[6]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[11]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_11" (SFF) removed.
-  The signal "microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[7]" is
-loadless and has been removed.
+  The signal "microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Addr[7]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[12]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_12" (SFF) removed.
-  The signal "microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[8]" is
-loadless and has been removed.
+  The signal "microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Addr[8]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[13]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_13" (SFF) removed.
-  The signal "microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[9]" is
-loadless and has been removed.
+  The signal "microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Addr[9]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[14]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_14" (SFF) removed.
-  The signal "microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[10]" is
-loadless and has been removed.
+  The signal "microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Addr[10]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[15]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_15" (SFF) removed.
-  The signal "microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[11]" is
-loadless and has been removed.
+  The signal "microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Addr[11]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[16]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_16" (SFF) removed.
-  The signal "microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[12]" is
-loadless and has been removed.
+  The signal "microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Addr[12]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[17]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_17" (SFF) removed.
-  The signal "microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[13]" is
-loadless and has been removed.
+  The signal "microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Addr[13]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[18]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_18" (SFF) removed.
-  The signal "microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[14]" is
-loadless and has been removed.
+  The signal "microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Addr[14]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[19]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_19" (SFF) removed.
@@ -2702,88 +2698,88 @@ removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[34]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_34" (SFF) removed.
-  The signal "microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[30]" is
-loadless and has been removed.
+  The signal "microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Addr[30]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[35]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_35" (SFF) removed.
-  The signal "microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[31]" is
-loadless and has been removed.
+  The signal "microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Addr[31]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[36]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_36" (SFF) removed.
-  The signal "microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[0]" is
-loadless and has been removed.
+  The signal "microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr[0]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[37]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_37" (SFF) removed.
-  The signal "microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[1]" is
-loadless and has been removed.
+  The signal "microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr[1]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[38]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_38" (SFF) removed.
-  The signal "microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[2]" is
-loadless and has been removed.
+  The signal "microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr[2]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[39]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_39" (SFF) removed.
-  The signal "microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[3]" is
-loadless and has been removed.
+  The signal "microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr[3]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[40]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_40" (SFF) removed.
-  The signal "microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[4]" is
-loadless and has been removed.
+  The signal "microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr[4]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[41]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_41" (SFF) removed.
-  The signal "microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[5]" is
-loadless and has been removed.
+  The signal "microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr[5]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[42]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_42" (SFF) removed.
-  The signal "microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[6]" is
-loadless and has been removed.
+  The signal "microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr[6]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[43]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_43" (SFF) removed.
-  The signal "microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[7]" is
-loadless and has been removed.
+  The signal "microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr[7]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[44]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_44" (SFF) removed.
-  The signal "microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[8]" is
-loadless and has been removed.
+  The signal "microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr[8]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[45]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_45" (SFF) removed.
-  The signal "microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[9]" is
-loadless and has been removed.
+  The signal "microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr[9]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[46]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_46" (SFF) removed.
-  The signal "microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[10]" is
-loadless and has been removed.
+  The signal "microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr[10]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[47]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_47" (SFF) removed.
-  The signal "microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[11]" is
-loadless and has been removed.
+  The signal "microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr[11]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[48]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_48" (SFF) removed.
-  The signal "microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[12]" is
-loadless and has been removed.
+  The signal "microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr[12]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[49]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_49" (SFF) removed.
-  The signal "microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[13]" is
-loadless and has been removed.
+  The signal "microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr[13]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[50]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_50" (SFF) removed.
-  The signal "microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[14]" is
-loadless and has been removed.
+  The signal "microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr[14]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[51]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_51" (SFF) removed.
@@ -2832,13 +2828,13 @@ removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[66]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_66" (SFF) removed.
-  The signal "microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[30]" is
-loadless and has been removed.
+  The signal "microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr[30]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[67]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_67" (SFF) removed.
-  The signal "microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[31]" is
-loadless and has been removed.
+  The signal "microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr[31]" is loadless and
+has been removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[68]" is loadless and has been
 removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_68" (SFF) removed.
@@ -4697,18 +4693,6 @@ been removed.
 loadless and has been removed.
    Loadless block "microblaze_0/microblaze_0/MicroBlaze_Core_I/Trace_Data_Read"
 (FF) removed.
-    The signal
-"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/MEM_DataBus_Re
-ad" is loadless and has been removed.
-     Loadless block
-"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/MEM_DataBus_Re
-ad" (FF) removed.
-      The signal
-"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/MEM_DataBus_Re
-ad_rstpot1" is loadless and has been removed.
-       Loadless block
-"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/MEM_DataBus_Re
-ad_rstpot1" (ROM) removed.
 The signal "microblaze_0/microblaze_0/LOCKSTEP_Out[3807]" is loadless and has
 been removed.
  Loadless block "microblaze_0/microblaze_0/LOCKSTEP_Out_3807" (SFF) removed.
@@ -5456,48 +5440,6 @@ hold" is unused and has been removed.
 hold" (SFF) removed.
 The signal
 "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/o
-f_MSR_cmb_i[24]" is unused and has been removed.
- Unused block
-"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/M
-mux_Using_FPGA_1.mem_msr_cmb_i1281" (ROM) removed.
-  The signal
-"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/o
-f_MSR_i[24]" is unused and has been removed.
-   Unused block
-"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/U
-sing_FPGA_2.MSR_Bits[24].Using_FDR.MSR_of_I" (SFF) removed.
-  The signal
-"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/E
-X_MTS_MSR_mmx_out3" is unused and has been removed.
-   Unused block
-"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/E
-X_MTS_MSR31" (ROM) removed.
-    The signal
-"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/e
-x_MSR_i[24]" is unused and has been removed.
-     Unused block
-"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/U
-sing_FPGA_2.MSR_Bits[24].Using_FDR.MSR_ex_I" (SFF) removed.
-      The signal
-"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/e
-x_MSR_cmb_i[24]" is unused and has been removed.
-       Unused block
-"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/M
-mux_Using_FPGA_1.mem_msr_cmb_i1131" (ROM) removed.
-        The signal
-"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/m
-em_MSR_i[24]" is unused and has been removed.
-         Unused block
-"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/U
-sing_FPGA_1.MSR_Bits[24].Using_FDR.MSR_I" (SFF) removed.
-          The signal
-"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/U
-sing_FPGA_1.mem_msr_cmb_i[24]" is unused and has been removed.
-           Unused block
-"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/M
-mux_Using_FPGA_1.mem_msr_cmb_i81" (ROM) removed.
-The signal
-"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/o
 f_MSR_cmb_i[19]" is unused and has been removed.
  Unused block
 "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/M
@@ -5538,6 +5480,48 @@ sing_FPGA_1.mem_msr_cmb_i[19]" is unused and has been removed.
            Unused block
 "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/M
 mux_Using_FPGA_1.mem_msr_cmb_i31" (ROM) removed.
+The signal
+"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/o
+f_MSR_cmb_i[24]" is unused and has been removed.
+ Unused block
+"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/M
+mux_Using_FPGA_1.mem_msr_cmb_i1281" (ROM) removed.
+  The signal
+"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/o
+f_MSR_i[24]" is unused and has been removed.
+   Unused block
+"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/U
+sing_FPGA_2.MSR_Bits[24].Using_FDR.MSR_of_I" (SFF) removed.
+  The signal
+"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/E
+X_MTS_MSR_mmx_out3" is unused and has been removed.
+   Unused block
+"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/E
+X_MTS_MSR31" (ROM) removed.
+    The signal
+"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/e
+x_MSR_i[24]" is unused and has been removed.
+     Unused block
+"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/U
+sing_FPGA_2.MSR_Bits[24].Using_FDR.MSR_ex_I" (SFF) removed.
+      The signal
+"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/e
+x_MSR_cmb_i[24]" is unused and has been removed.
+       Unused block
+"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/M
+mux_Using_FPGA_1.mem_msr_cmb_i1131" (ROM) removed.
+        The signal
+"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/m
+em_MSR_i[24]" is unused and has been removed.
+         Unused block
+"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/U
+sing_FPGA_1.MSR_Bits[24].Using_FDR.MSR_I" (SFF) removed.
+          The signal
+"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/U
+sing_FPGA_1.mem_msr_cmb_i[24]" is unused and has been removed.
+           Unused block
+"microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/M
+mux_Using_FPGA_1.mem_msr_cmb_i81" (ROM) removed.
 The signal
 "microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/o
 f_MSR_cmb_i[29]" is unused and has been removed.
@@ -6331,16 +6315,28 @@ FDR
 		microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master
 _Core.Debug_Perf/Performace_Debug_Control.External_Dbg_Stop_Handle.dbg_stop_1
    optimized to 0
-GND 		microblaze_0_d_bram_ctrl/XST_GND
+GND 		microblaze_0_d_bram_ctrl_0/XST_GND
+GND 		microblaze_0_d_bram_ctrl_1/XST_GND
 GND 		microblaze_0_dlmb/XST_GND
-GND 		microblaze_0_i_bram_ctrl/XST_GND
-LUT3 		microblaze_0_i_bram_ctrl/microblaze_0_i_bram_ctrl/lmb_we<0><0>1
+LUT2 		microblaze_0_dlmb/microblaze_0_dlmb/Wait_ORing.i1
    optimized to 0
-LUT3 		microblaze_0_i_bram_ctrl/microblaze_0_i_bram_ctrl/lmb_we<1><1>1
+GND 		microblaze_0_i_bram_ctrl_0/XST_GND
+LUT4 		microblaze_0_i_bram_ctrl_0/microblaze_0_i_bram_ctrl_0/lmb_we<0><0>1
    optimized to 0
-LUT3 		microblaze_0_i_bram_ctrl/microblaze_0_i_bram_ctrl/lmb_we<2><2>1
+LUT4 		microblaze_0_i_bram_ctrl_0/microblaze_0_i_bram_ctrl_0/lmb_we<1><1>1
    optimized to 0
-LUT3 		microblaze_0_i_bram_ctrl/microblaze_0_i_bram_ctrl/lmb_we<3><3>1
+LUT4 		microblaze_0_i_bram_ctrl_0/microblaze_0_i_bram_ctrl_0/lmb_we<2><2>1
+   optimized to 0
+LUT4 		microblaze_0_i_bram_ctrl_0/microblaze_0_i_bram_ctrl_0/lmb_we<3><3>1
+   optimized to 0
+GND 		microblaze_0_i_bram_ctrl_1/XST_GND
+LUT4 		microblaze_0_i_bram_ctrl_1/microblaze_0_i_bram_ctrl_1/lmb_we<0><0>1
+   optimized to 0
+LUT4 		microblaze_0_i_bram_ctrl_1/microblaze_0_i_bram_ctrl_1/lmb_we<1><1>1
+   optimized to 0
+LUT4 		microblaze_0_i_bram_ctrl_1/microblaze_0_i_bram_ctrl_1/lmb_we<2><2>1
+   optimized to 0
+LUT4 		microblaze_0_i_bram_ctrl_1/microblaze_0_i_bram_ctrl_1/lmb_we<3><3>1
    optimized to 0
 GND 		microblaze_0_ilmb/XST_GND
 GND 		proc_sys_reset_0/XST_GND
@@ -6384,8 +6380,10 @@ VCC 		reconfigurable_peripherials_9/XST_VCC
 LUT6_2
 		microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Using_DAXI
 _ALU_Carry.Using_FPGA.Using_6LUT.direct_lut_INST
-GND 		microblaze_0_bram_block/microblaze_0_bram_block/XST_GND
-VCC 		microblaze_0_bram_block/microblaze_0_bram_block/XST_VCC
+GND 		microblaze_0_bram_block_0/microblaze_0_bram_block_0/XST_GND
+VCC 		microblaze_0_bram_block_0/microblaze_0_bram_block_0/XST_VCC
+GND 		microblaze_0_bram_block_1/microblaze_0_bram_block_1/XST_GND
+VCC 		microblaze_0_bram_block_1/microblaze_0_bram_block_1/XST_VCC
 GND
 		reconfigurable_peripherials_0/reconfigurable_peripherials_0/USER_LOGIC_I/rp_in
 stance/XST_GND
@@ -6594,20 +6592,20 @@ for the Partition plus all of its descendents.
 Partition "/system":
   State=implement
   Slice Logic Utilization:
-    Number of Slice Registers:           4,245 (6,023)
-    Number of Slice LUTs:                4,829 (14,797)
-      Number used as logic:              4,575 (14,543)
-      Number used as Memory:               254 (254)
+    Number of Slice Registers:           4,364 (6,142)
+    Number of Slice LUTs:                5,390 (15,358)
+      Number used as logic:              4,984 (14,952)
+      Number used as Memory:               406 (406)
   Slice Logic Distribution:
-    Number of occupied Slices:           2,415 (5,647)
-    Number of LUT Flip Flop pairs used:  6,126 (16,108)
-      Number with an unused Flip Flop:   2,179 out of  6,126   35%
-      Number with an unused LUT:         1,384 out of  6,126   22%
-      Number of fully used LUT-FF pairs: 2,563 out of  6,126   41%
+    Number of occupied Slices:           2,493 (5,580)
+    Number of LUT Flip Flop pairs used:  6,455 (16,437)
+      Number with an unused Flip Flop:   2,451 out of  6,455   37%
+      Number with an unused LUT:         1,258 out of  6,455   19%
+      Number of fully used LUT-FF pairs: 2,746 out of  6,455   42%
   IO Utilization:
     Number of bonded IOBs:                  34 (34)
-  Number of RAMB36E1/FIFO36E1s:             32 (32)
-    Number using RAMB36E1 only:             32
+  Number of RAMB36E1/FIFO36E1s:             64 (64)
+    Number using RAMB36E1 only:             64
     Number using FIFO36E1 only:              0
   Number of RAMB18E1/FIFO18E1s:              2 (2)
     Number using RAMB18E1 only:              2
@@ -6631,7 +6629,7 @@ Partition "/system/reconfigurable_peripherials_0/reconfigurable_peripherials_0/U
     Number of Slice LUTs:                  712 (712)
       Number used as logic:                712 (712)
   Slice Logic Distribution:
-    Number of occupied Slices:             245 (245)
+    Number of occupied Slices:             244 (244)
     Number of LUT Flip Flop pairs used:    713 (713)
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6645,7 +6643,7 @@ Partition "/system/reconfigurable_peripherials_1/reconfigurable_peripherials_1/U
     Number of Slice LUTs:                  712 (712)
       Number used as logic:                712 (712)
   Slice Logic Distribution:
-    Number of occupied Slices:             230 (230)
+    Number of occupied Slices:             223 (223)
     Number of LUT Flip Flop pairs used:    713 (713)
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6659,7 +6657,7 @@ Partition "/system/reconfigurable_peripherials_10/reconfigurable_peripherials_10
     Number of Slice LUTs:                  712 (712)
       Number used as logic:                712 (712)
   Slice Logic Distribution:
-    Number of occupied Slices:             225 (225)
+    Number of occupied Slices:             218 (218)
     Number of LUT Flip Flop pairs used:    713 (713)
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6673,7 +6671,7 @@ Partition "/system/reconfigurable_peripherials_11/reconfigurable_peripherials_11
     Number of Slice LUTs:                  712 (712)
       Number used as logic:                712 (712)
   Slice Logic Distribution:
-    Number of occupied Slices:             247 (247)
+    Number of occupied Slices:             237 (237)
     Number of LUT Flip Flop pairs used:    713 (713)
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6687,7 +6685,7 @@ Partition "/system/reconfigurable_peripherials_12/reconfigurable_peripherials_12
     Number of Slice LUTs:                  712 (712)
       Number used as logic:                712 (712)
   Slice Logic Distribution:
-    Number of occupied Slices:             225 (225)
+    Number of occupied Slices:             205 (205)
     Number of LUT Flip Flop pairs used:    713 (713)
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6701,7 +6699,7 @@ Partition "/system/reconfigurable_peripherials_13/reconfigurable_peripherials_13
     Number of Slice LUTs:                  712 (712)
       Number used as logic:                712 (712)
   Slice Logic Distribution:
-    Number of occupied Slices:             249 (249)
+    Number of occupied Slices:             229 (229)
     Number of LUT Flip Flop pairs used:    713 (713)
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6715,7 +6713,7 @@ Partition "/system/reconfigurable_peripherials_2/reconfigurable_peripherials_2/U
     Number of Slice LUTs:                  712 (712)
       Number used as logic:                712 (712)
   Slice Logic Distribution:
-    Number of occupied Slices:             227 (227)
+    Number of occupied Slices:             226 (226)
     Number of LUT Flip Flop pairs used:    713 (713)
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6729,7 +6727,7 @@ Partition "/system/reconfigurable_peripherials_3/reconfigurable_peripherials_3/U
     Number of Slice LUTs:                  712 (712)
       Number used as logic:                712 (712)
   Slice Logic Distribution:
-    Number of occupied Slices:             241 (241)
+    Number of occupied Slices:             224 (224)
     Number of LUT Flip Flop pairs used:    713 (713)
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6743,7 +6741,7 @@ Partition "/system/reconfigurable_peripherials_4/reconfigurable_peripherials_4/U
     Number of Slice LUTs:                  712 (712)
       Number used as logic:                712 (712)
   Slice Logic Distribution:
-    Number of occupied Slices:             241 (241)
+    Number of occupied Slices:             213 (213)
     Number of LUT Flip Flop pairs used:    713 (713)
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6757,7 +6755,7 @@ Partition "/system/reconfigurable_peripherials_5/reconfigurable_peripherials_5/U
     Number of Slice LUTs:                  712 (712)
       Number used as logic:                712 (712)
   Slice Logic Distribution:
-    Number of occupied Slices:             221 (221)
+    Number of occupied Slices:             223 (223)
     Number of LUT Flip Flop pairs used:    713 (713)
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6771,7 +6769,7 @@ Partition "/system/reconfigurable_peripherials_6/reconfigurable_peripherials_6/U
     Number of Slice LUTs:                  712 (712)
       Number used as logic:                712 (712)
   Slice Logic Distribution:
-    Number of occupied Slices:             219 (219)
+    Number of occupied Slices:             216 (216)
     Number of LUT Flip Flop pairs used:    713 (713)
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6785,7 +6783,7 @@ Partition "/system/reconfigurable_peripherials_7/reconfigurable_peripherials_7/U
     Number of Slice LUTs:                  712 (712)
       Number used as logic:                712 (712)
   Slice Logic Distribution:
-    Number of occupied Slices:             222 (222)
+    Number of occupied Slices:             209 (209)
     Number of LUT Flip Flop pairs used:    713 (713)
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6799,7 +6797,7 @@ Partition "/system/reconfigurable_peripherials_8/reconfigurable_peripherials_8/U
     Number of Slice LUTs:                  712 (712)
       Number used as logic:                712 (712)
   Slice Logic Distribution:
-    Number of occupied Slices:             221 (221)
+    Number of occupied Slices:             209 (209)
     Number of LUT Flip Flop pairs used:    713 (713)
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6813,7 +6811,7 @@ Partition "/system/reconfigurable_peripherials_9/reconfigurable_peripherials_9/U
     Number of Slice LUTs:                  712 (712)
       Number used as logic:                712 (712)
   Slice Logic Distribution:
-    Number of occupied Slices:             219 (219)
+    Number of occupied Slices:             211 (211)
     Number of LUT Flip Flop pairs used:    713 (713)
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6831,7 +6829,7 @@ Area Group "pblock_reconfigurable_peripherials_0_USER_LOGIC_I_rp_instance"
     Number of Slice LUTs:                  712 out of  1,680   42%
       Number used as logic:                712
   Slice Logic Distribution:
-    Number of occupied Slices:             245 out of    420   58%
+    Number of occupied Slices:             244 out of    420   58%
     Number of LUT Flip Flop pairs used:    713
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6845,7 +6843,7 @@ Area Group "pblock_reconfigurable_peripherials_10_USER_LOGIC_I_rp_instance"
     Number of Slice LUTs:                  712 out of  1,680   42%
       Number used as logic:                712
   Slice Logic Distribution:
-    Number of occupied Slices:             225 out of    420   53%
+    Number of occupied Slices:             218 out of    420   51%
     Number of LUT Flip Flop pairs used:    713
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6859,7 +6857,7 @@ Area Group "pblock_reconfigurable_peripherials_11_USER_LOGIC_I_rp_instance"
     Number of Slice LUTs:                  712 out of  1,680   42%
       Number used as logic:                712
   Slice Logic Distribution:
-    Number of occupied Slices:             247 out of    420   58%
+    Number of occupied Slices:             237 out of    420   56%
     Number of LUT Flip Flop pairs used:    713
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6873,7 +6871,7 @@ Area Group "pblock_reconfigurable_peripherials_12_USER_LOGIC_I_rp_instance"
     Number of Slice LUTs:                  712 out of  1,680   42%
       Number used as logic:                712
   Slice Logic Distribution:
-    Number of occupied Slices:             225 out of    420   53%
+    Number of occupied Slices:             205 out of    420   48%
     Number of LUT Flip Flop pairs used:    713
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6887,7 +6885,7 @@ Area Group "pblock_reconfigurable_peripherials_13_USER_LOGIC_I_rp_instance"
     Number of Slice LUTs:                  712 out of  1,680   42%
       Number used as logic:                712
   Slice Logic Distribution:
-    Number of occupied Slices:             249 out of    420   59%
+    Number of occupied Slices:             229 out of    420   54%
     Number of LUT Flip Flop pairs used:    713
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6901,7 +6899,7 @@ Area Group "pblock_reconfigurable_peripherials_1_USER_LOGIC_I_rp_instance"
     Number of Slice LUTs:                  712 out of  1,680   42%
       Number used as logic:                712
   Slice Logic Distribution:
-    Number of occupied Slices:             230 out of    420   54%
+    Number of occupied Slices:             223 out of    420   53%
     Number of LUT Flip Flop pairs used:    713
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6915,7 +6913,7 @@ Area Group "pblock_reconfigurable_peripherials_2_USER_LOGIC_I_rp_instance"
     Number of Slice LUTs:                  712 out of  1,680   42%
       Number used as logic:                712
   Slice Logic Distribution:
-    Number of occupied Slices:             227 out of    420   54%
+    Number of occupied Slices:             226 out of    420   53%
     Number of LUT Flip Flop pairs used:    713
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6929,7 +6927,7 @@ Area Group "pblock_reconfigurable_peripherials_3_USER_LOGIC_I_rp_instance"
     Number of Slice LUTs:                  712 out of  1,680   42%
       Number used as logic:                712
   Slice Logic Distribution:
-    Number of occupied Slices:             241 out of    420   57%
+    Number of occupied Slices:             224 out of    420   53%
     Number of LUT Flip Flop pairs used:    713
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6943,7 +6941,7 @@ Area Group "pblock_reconfigurable_peripherials_4_USER_LOGIC_I_rp_instance"
     Number of Slice LUTs:                  712 out of  1,680   42%
       Number used as logic:                712
   Slice Logic Distribution:
-    Number of occupied Slices:             241 out of    420   57%
+    Number of occupied Slices:             213 out of    420   50%
     Number of LUT Flip Flop pairs used:    713
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6957,7 +6955,7 @@ Area Group "pblock_reconfigurable_peripherials_5_USER_LOGIC_I_rp_instance"
     Number of Slice LUTs:                  712 out of  1,680   42%
       Number used as logic:                712
   Slice Logic Distribution:
-    Number of occupied Slices:             221 out of    420   52%
+    Number of occupied Slices:             223 out of    420   53%
     Number of LUT Flip Flop pairs used:    713
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6971,7 +6969,7 @@ Area Group "pblock_reconfigurable_peripherials_6_USER_LOGIC_I_rp_instance"
     Number of Slice LUTs:                  712 out of  1,680   42%
       Number used as logic:                712
   Slice Logic Distribution:
-    Number of occupied Slices:             219 out of    420   52%
+    Number of occupied Slices:             216 out of    420   51%
     Number of LUT Flip Flop pairs used:    713
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6985,7 +6983,7 @@ Area Group "pblock_reconfigurable_peripherials_7_USER_LOGIC_I_rp_instance"
     Number of Slice LUTs:                  712 out of  1,680   42%
       Number used as logic:                712
   Slice Logic Distribution:
-    Number of occupied Slices:             222 out of    420   52%
+    Number of occupied Slices:             209 out of    420   49%
     Number of LUT Flip Flop pairs used:    713
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -6999,7 +6997,7 @@ Area Group "pblock_reconfigurable_peripherials_8_USER_LOGIC_I_rp_instance"
     Number of Slice LUTs:                  712 out of  1,680   42%
       Number used as logic:                712
   Slice Logic Distribution:
-    Number of occupied Slices:             221 out of    420   52%
+    Number of occupied Slices:             209 out of    420   49%
     Number of LUT Flip Flop pairs used:    713
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%
@@ -7013,7 +7011,7 @@ Area Group "pblock_reconfigurable_peripherials_9_USER_LOGIC_I_rp_instance_1"
     Number of Slice LUTs:                  712 out of  1,680   42%
       Number used as logic:                712
   Slice Logic Distribution:
-    Number of occupied Slices:             219 out of    420   52%
+    Number of occupied Slices:             211 out of    420   50%
     Number of LUT Flip Flop pairs used:    713
       Number with an unused Flip Flop:     633 out of    713   88%
       Number with an unused LUT:             0 out of    713    0%

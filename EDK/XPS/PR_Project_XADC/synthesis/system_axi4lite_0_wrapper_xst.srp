@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> 
 TABLE OF CONTENTS
@@ -3874,11 +3874,11 @@ axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/S_AXI_ACLK|    0.8
 
 
 Total REAL time to Xst completion: 27.00 secs
-Total CPU time to Xst completion: 26.77 secs
+Total CPU time to Xst completion: 27.60 secs
  
 --> 
 
-Total memory usage is 521512 kilobytes
+Total memory usage is 520616 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  680 (   0 filtered)

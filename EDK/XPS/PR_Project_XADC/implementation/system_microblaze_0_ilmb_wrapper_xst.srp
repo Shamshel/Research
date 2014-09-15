@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.53 secs
  
 --> 
 TABLE OF CONTENTS
@@ -90,7 +90,7 @@ Unit <system_microblaze_0_ilmb_wrapper> synthesized.
 
 Synthesizing Unit <lmb_v10>.
     Related source file is "C:/Xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v2_00_b/hdl/vhdl/lmb_v10.vhd".
-        C_LMB_NUM_SLAVES = 1
+        C_LMB_NUM_SLAVES = 2
         C_LMB_DWIDTH = 32
         C_LMB_AWIDTH = 32
         C_EXT_RESET_HIGH = 1
@@ -123,6 +123,8 @@ Macro Statistics
 =========================================================================
 
 Optimizing unit <system_microblaze_0_ilmb_wrapper> ...
+
+Optimizing unit <lmb_v10> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -158,8 +160,10 @@ Top Level Output File Name         : system_microblaze_0_ilmb_wrapper.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1
+# BELS                             : 37
 #      GND                         : 1
+#      LUT2                        : 4
+#      LUT4                        : 32
 # FlipFlops/Latches                : 1
 #      FDS                         : 1
 
@@ -171,16 +175,18 @@ Selected Device : 7k325tffg900-2
 
 Slice Logic Utilization: 
  Number of Slice Registers:               1  out of  407600     0%  
+ Number of Slice LUTs:                   36  out of  203800     0%  
+    Number used as Logic:                36  out of  203800     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      1
-   Number with an unused Flip Flop:       0  out of      1     0%  
-   Number with an unused LUT:             1  out of      1   100%  
-   Number of fully used LUT-FF pairs:     0  out of      1     0%  
+ Number of LUT Flip Flop pairs used:     37
+   Number with an unused Flip Flop:      36  out of     37    97%  
+   Number with an unused LUT:             1  out of     37     2%  
+   Number of fully used LUT-FF pairs:     0  out of     37     0%  
    Number of unique control sets:         1
 
 IO Utilization: 
- Number of IOs:                         217
+ Number of IOs:                         253
  Number of bonded IOBs:                   0  out of    500     0%  
 
 Specific Feature Utilization:
@@ -221,7 +227,7 @@ Speed Grade: -2
    Minimum period: No path found
    Minimum input arrival time before clock: 0.264ns
    Maximum output required time after clock: 0.236ns
-   Maximum combinational path delay: 0.000ns
+   Maximum combinational path delay: 0.226ns
 
 Timing Details:
 ---------------
@@ -265,18 +271,20 @@ Offset:              0.236ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 107 / 107
+  Total number of paths / destination ports: 207 / 107
 -------------------------------------------------------------------------
-Delay:               0.000ns (Levels of Logic = 0)
-  Source:            M_ABus<0> (PAD)
-  Destination:       LMB_ABus<0> (PAD)
+Delay:               0.226ns (Levels of Logic = 1)
+  Source:            Sl_Ready<0> (PAD)
+  Destination:       LMB_ReadDBus<0> (PAD)
 
-  Data Path: M_ABus<0> to LMB_ABus<0>
+  Data Path: Sl_Ready<0> to LMB_ReadDBus<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
+     LUT4:I0->O            0   0.043   0.000  microblaze_0_ilmb/DBus_Oring.tmp_or1 (LMB_ReadDBus<31>)
     ----------------------------------------
-    Total                      0.000ns (0.000ns logic, 0.000ns route)
+    Total                      0.226ns (0.226ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
 
 =========================================================================
 
@@ -284,14 +292,15 @@ Cross Clock Domains Report:
 --------------------------
 
 =========================================================================
+EXCEPTION:Xdm:ModelImp.c:55:$Id: ModelImp.c,v 1.28 2009/06/12 19:55:28 jdl Exp $ - Xdm_Exception::CannotWriteFile file='C:\Users\ECE\Documents\PR_Project_XADC\synthesis\xst_temp_dir\\xil_6'
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.82 secs
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.16 secs
  
 --> 
 
-Total memory usage is 447968 kilobytes
+Total memory usage is 449384 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

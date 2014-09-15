@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Runs Version="1" Minor="8">
 	<Run Id="blanking" Type="Ft2:EntireDesign" SrcSet="sources_1" Part="xc7k325tffg900-2" ConstrsSet="constrs_1" Description=""/>
-	<Run Id="counter" Type="Ft2:EntireDesign" SrcSet="sources_1" Part="xc7k325tffg900-2" LaunchPart="xc7k325tffg900-2" ConstrsSet="constrs_1" Description="" State="current" Dir="$PRUNDIR/counter" LaunchTime="1408569666">
+	<Run Id="counter" Type="Ft2:EntireDesign" SrcSet="sources_1" Part="xc7k325tffg900-2" LaunchPart="xc7k325tffg900-2" ConstrsSet="constrs_1" Description="" State="current" Dir="$PRUNDIR/counter" LaunchTime="1410639712">
 		<File Type="MAP-PSR" Name="counter.psr"/>
 		<File Type="PA-EDIF" Name="counter.edf"/>
 		<File Type="PAR-NCD" Name="counter_routed.ncd"/>

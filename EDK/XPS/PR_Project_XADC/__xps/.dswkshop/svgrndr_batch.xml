@@ -5,13 +5,13 @@
 
   <RENDERIMG RASNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\microblaze_0_ilmb.jpg" SVGNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\microblaze_0_ilmb.svg" TMPSVGFN="C:\Users\ECE\Documents\PR_Project_XADC\__xps\.dswkshop\microblaze_0_ilmb.svg"/>
 
-  <RENDERIMG RASNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\microblaze_0_i_bram_ctrl.jpg" SVGNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\microblaze_0_i_bram_ctrl.svg" TMPSVGFN="C:\Users\ECE\Documents\PR_Project_XADC\__xps\.dswkshop\microblaze_0_i_bram_ctrl.svg"/>
+  <RENDERIMG RASNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\microblaze_0_i_bram_ctrl_0.jpg" SVGNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\microblaze_0_i_bram_ctrl_0.svg" TMPSVGFN="C:\Users\ECE\Documents\PR_Project_XADC\__xps\.dswkshop\microblaze_0_i_bram_ctrl_0.svg"/>
 
   <RENDERIMG RASNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\microblaze_0_dlmb.jpg" SVGNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\microblaze_0_dlmb.svg" TMPSVGFN="C:\Users\ECE\Documents\PR_Project_XADC\__xps\.dswkshop\microblaze_0_dlmb.svg"/>
 
-  <RENDERIMG RASNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\microblaze_0_d_bram_ctrl.jpg" SVGNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\microblaze_0_d_bram_ctrl.svg" TMPSVGFN="C:\Users\ECE\Documents\PR_Project_XADC\__xps\.dswkshop\microblaze_0_d_bram_ctrl.svg"/>
+  <RENDERIMG RASNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\microblaze_0_d_bram_ctrl_0.jpg" SVGNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\microblaze_0_d_bram_ctrl_0.svg" TMPSVGFN="C:\Users\ECE\Documents\PR_Project_XADC\__xps\.dswkshop\microblaze_0_d_bram_ctrl_0.svg"/>
 
-  <RENDERIMG RASNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\microblaze_0_bram_block.jpg" SVGNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\microblaze_0_bram_block.svg" TMPSVGFN="C:\Users\ECE\Documents\PR_Project_XADC\__xps\.dswkshop\microblaze_0_bram_block.svg"/>
+  <RENDERIMG RASNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\microblaze_0_bram_block_0.jpg" SVGNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\microblaze_0_bram_block_0.svg" TMPSVGFN="C:\Users\ECE\Documents\PR_Project_XADC\__xps\.dswkshop\microblaze_0_bram_block_0.svg"/>
 
   <RENDERIMG RASNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\microblaze_0.jpg" SVGNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\microblaze_0.svg" TMPSVGFN="C:\Users\ECE\Documents\PR_Project_XADC\__xps\.dswkshop\microblaze_0.svg"/>
 
@@ -62,6 +62,12 @@
   <RENDERIMG RASNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\reconfigurable_peripherials_12.jpg" SVGNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\reconfigurable_peripherials_12.svg" TMPSVGFN="C:\Users\ECE\Documents\PR_Project_XADC\__xps\.dswkshop\reconfigurable_peripherials_12.svg"/>
 
   <RENDERIMG RASNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\reconfigurable_peripherials_13.jpg" SVGNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\reconfigurable_peripherials_13.svg" TMPSVGFN="C:\Users\ECE\Documents\PR_Project_XADC\__xps\.dswkshop\reconfigurable_peripherials_13.svg"/>
+
+  <RENDERIMG RASNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\microblaze_0_bram_block_1.jpg" SVGNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\microblaze_0_bram_block_1.svg" TMPSVGFN="C:\Users\ECE\Documents\PR_Project_XADC\__xps\.dswkshop\microblaze_0_bram_block_1.svg"/>
+
+  <RENDERIMG RASNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\microblaze_0_d_bram_ctrl_1.jpg" SVGNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\microblaze_0_d_bram_ctrl_1.svg" TMPSVGFN="C:\Users\ECE\Documents\PR_Project_XADC\__xps\.dswkshop\microblaze_0_d_bram_ctrl_1.svg"/>
+
+  <RENDERIMG RASNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\microblaze_0_i_bram_ctrl_1.jpg" SVGNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\microblaze_0_i_bram_ctrl_1.svg" TMPSVGFN="C:\Users\ECE\Documents\PR_Project_XADC\__xps\.dswkshop\microblaze_0_i_bram_ctrl_1.svg"/>
 
   <RENDERIMG RASNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\system_blkd.jpg" SVGNAME="C:\Users\ECE\Documents\PR_Project_XADC\SDK\SDK_Export\hw\imgs\system_blkd.svg" TMPSVGFN="C:\Users\ECE\Documents\PR_Project_XADC\__xps\.dswkshop\system_blkd.svg"/>
 

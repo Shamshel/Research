@@ -1,7 +1,7 @@
 Release 14.6 - par P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Wed Aug 20 15:32:05 2014
+Sat Sep 13 14:33:49 2014
 
 All signals are completely routed.
 
@@ -24,7 +24,7 @@ WARNING:ParHelpers:361 - There are 18 loadless signals in this design. This desi
    microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[7].ram32m_i_RAMD_D1_O
    microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[8].ram32m_i_RAMD_D1_O
    microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[9].ram32m_i_RAMD_D1_O
-   microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[30]
-   microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr[31]
+   microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr[30]
+   microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr[31]
 
 

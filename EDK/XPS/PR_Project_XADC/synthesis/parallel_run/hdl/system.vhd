@@ -68,11 +68,11 @@ architecture STRUCTURE of system is
       M_AddrStrobe : in std_logic;
       M_DBus : in std_logic_vector(0 to 31);
       M_BE : in std_logic_vector(0 to 3);
-      Sl_DBus : in std_logic_vector(0 to 31);
-      Sl_Ready : in std_logic_vector(0 to 0);
-      Sl_Wait : in std_logic_vector(0 to 0);
-      Sl_UE : in std_logic_vector(0 to 0);
-      Sl_CE : in std_logic_vector(0 to 0);
+      Sl_DBus : in std_logic_vector(0 to 63);
+      Sl_Ready : in std_logic_vector(0 to 1);
+      Sl_Wait : in std_logic_vector(0 to 1);
+      Sl_UE : in std_logic_vector(0 to 1);
+      Sl_CE : in std_logic_vector(0 to 1);
       LMB_ABus : out std_logic_vector(0 to 31);
       LMB_ReadStrobe : out std_logic;
       LMB_WriteStrobe : out std_logic;
@@ -87,7 +87,7 @@ architecture STRUCTURE of system is
     );
   end component;
 
-  component system_microblaze_0_i_bram_ctrl_wrapper is
+  component system_microblaze_0_i_bram_ctrl_0_wrapper is
     port (
       LMB_Clk : in std_logic;
       LMB_Rst : in std_logic;
@@ -218,11 +218,11 @@ architecture STRUCTURE of system is
       M_AddrStrobe : in std_logic;
       M_DBus : in std_logic_vector(0 to 31);
       M_BE : in std_logic_vector(0 to 3);
-      Sl_DBus : in std_logic_vector(0 to 31);
-      Sl_Ready : in std_logic_vector(0 to 0);
-      Sl_Wait : in std_logic_vector(0 to 0);
-      Sl_UE : in std_logic_vector(0 to 0);
-      Sl_CE : in std_logic_vector(0 to 0);
+      Sl_DBus : in std_logic_vector(0 to 63);
+      Sl_Ready : in std_logic_vector(0 to 1);
+      Sl_Wait : in std_logic_vector(0 to 1);
+      Sl_UE : in std_logic_vector(0 to 1);
+      Sl_CE : in std_logic_vector(0 to 1);
       LMB_ABus : out std_logic_vector(0 to 31);
       LMB_ReadStrobe : out std_logic;
       LMB_WriteStrobe : out std_logic;
@@ -237,7 +237,7 @@ architecture STRUCTURE of system is
     );
   end component;
 
-  component system_microblaze_0_d_bram_ctrl_wrapper is
+  component system_microblaze_0_d_bram_ctrl_0_wrapper is
     port (
       LMB_Clk : in std_logic;
       LMB_Rst : in std_logic;
@@ -357,7 +357,7 @@ architecture STRUCTURE of system is
     );
   end component;
 
-  component system_microblaze_0_bram_block_wrapper is
+  component system_microblaze_0_bram_block_0_wrapper is
     port (
       BRAM_Rst_A : in std_logic;
       BRAM_Clk_A : in std_logic;
@@ -2394,6 +2394,265 @@ architecture STRUCTURE of system is
     );
   end component;
 
+  component system_microblaze_0_bram_block_1_wrapper is
+    port (
+      BRAM_Rst_A : in std_logic;
+      BRAM_Clk_A : in std_logic;
+      BRAM_EN_A : in std_logic;
+      BRAM_WEN_A : in std_logic_vector(0 to 3);
+      BRAM_Addr_A : in std_logic_vector(0 to 31);
+      BRAM_Din_A : out std_logic_vector(0 to 31);
+      BRAM_Dout_A : in std_logic_vector(0 to 31);
+      BRAM_Rst_B : in std_logic;
+      BRAM_Clk_B : in std_logic;
+      BRAM_EN_B : in std_logic;
+      BRAM_WEN_B : in std_logic_vector(0 to 3);
+      BRAM_Addr_B : in std_logic_vector(0 to 31);
+      BRAM_Din_B : out std_logic_vector(0 to 31);
+      BRAM_Dout_B : in std_logic_vector(0 to 31)
+    );
+  end component;
+
+  component system_microblaze_0_d_bram_ctrl_1_wrapper is
+    port (
+      LMB_Clk : in std_logic;
+      LMB_Rst : in std_logic;
+      LMB_ABus : in std_logic_vector(0 to 31);
+      LMB_WriteDBus : in std_logic_vector(0 to 31);
+      LMB_AddrStrobe : in std_logic;
+      LMB_ReadStrobe : in std_logic;
+      LMB_WriteStrobe : in std_logic;
+      LMB_BE : in std_logic_vector(0 to 3);
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_Ready : out std_logic;
+      Sl_Wait : out std_logic;
+      Sl_UE : out std_logic;
+      Sl_CE : out std_logic;
+      LMB1_ABus : in std_logic_vector(0 to 31);
+      LMB1_WriteDBus : in std_logic_vector(0 to 31);
+      LMB1_AddrStrobe : in std_logic;
+      LMB1_ReadStrobe : in std_logic;
+      LMB1_WriteStrobe : in std_logic;
+      LMB1_BE : in std_logic_vector(0 to 3);
+      Sl1_DBus : out std_logic_vector(0 to 31);
+      Sl1_Ready : out std_logic;
+      Sl1_Wait : out std_logic;
+      Sl1_UE : out std_logic;
+      Sl1_CE : out std_logic;
+      LMB2_ABus : in std_logic_vector(0 to 31);
+      LMB2_WriteDBus : in std_logic_vector(0 to 31);
+      LMB2_AddrStrobe : in std_logic;
+      LMB2_ReadStrobe : in std_logic;
+      LMB2_WriteStrobe : in std_logic;
+      LMB2_BE : in std_logic_vector(0 to 3);
+      Sl2_DBus : out std_logic_vector(0 to 31);
+      Sl2_Ready : out std_logic;
+      Sl2_Wait : out std_logic;
+      Sl2_UE : out std_logic;
+      Sl2_CE : out std_logic;
+      LMB3_ABus : in std_logic_vector(0 to 31);
+      LMB3_WriteDBus : in std_logic_vector(0 to 31);
+      LMB3_AddrStrobe : in std_logic;
+      LMB3_ReadStrobe : in std_logic;
+      LMB3_WriteStrobe : in std_logic;
+      LMB3_BE : in std_logic_vector(0 to 3);
+      Sl3_DBus : out std_logic_vector(0 to 31);
+      Sl3_Ready : out std_logic;
+      Sl3_Wait : out std_logic;
+      Sl3_UE : out std_logic;
+      Sl3_CE : out std_logic;
+      BRAM_Rst_A : out std_logic;
+      BRAM_Clk_A : out std_logic;
+      BRAM_EN_A : out std_logic;
+      BRAM_WEN_A : out std_logic_vector(0 to 3);
+      BRAM_Addr_A : out std_logic_vector(0 to 31);
+      BRAM_Din_A : in std_logic_vector(0 to 31);
+      BRAM_Dout_A : out std_logic_vector(0 to 31);
+      Interrupt : out std_logic;
+      UE : out std_logic;
+      CE : out std_logic;
+      SPLB_CTRL_PLB_ABus : in std_logic_vector(0 to 31);
+      SPLB_CTRL_PLB_PAValid : in std_logic;
+      SPLB_CTRL_PLB_masterID : in std_logic_vector(0 to 0);
+      SPLB_CTRL_PLB_RNW : in std_logic;
+      SPLB_CTRL_PLB_BE : in std_logic_vector(0 to 3);
+      SPLB_CTRL_PLB_size : in std_logic_vector(0 to 3);
+      SPLB_CTRL_PLB_type : in std_logic_vector(0 to 2);
+      SPLB_CTRL_PLB_wrDBus : in std_logic_vector(0 to 31);
+      SPLB_CTRL_Sl_addrAck : out std_logic;
+      SPLB_CTRL_Sl_SSize : out std_logic_vector(0 to 1);
+      SPLB_CTRL_Sl_wait : out std_logic;
+      SPLB_CTRL_Sl_rearbitrate : out std_logic;
+      SPLB_CTRL_Sl_wrDAck : out std_logic;
+      SPLB_CTRL_Sl_wrComp : out std_logic;
+      SPLB_CTRL_Sl_rdDBus : out std_logic_vector(0 to 31);
+      SPLB_CTRL_Sl_rdDAck : out std_logic;
+      SPLB_CTRL_Sl_rdComp : out std_logic;
+      SPLB_CTRL_Sl_MBusy : out std_logic_vector(0 to 0);
+      SPLB_CTRL_Sl_MWrErr : out std_logic_vector(0 to 0);
+      SPLB_CTRL_Sl_MRdErr : out std_logic_vector(0 to 0);
+      SPLB_CTRL_PLB_UABus : in std_logic_vector(0 to 31);
+      SPLB_CTRL_PLB_SAValid : in std_logic;
+      SPLB_CTRL_PLB_rdPrim : in std_logic;
+      SPLB_CTRL_PLB_wrPrim : in std_logic;
+      SPLB_CTRL_PLB_abort : in std_logic;
+      SPLB_CTRL_PLB_busLock : in std_logic;
+      SPLB_CTRL_PLB_MSize : in std_logic_vector(0 to 1);
+      SPLB_CTRL_PLB_lockErr : in std_logic;
+      SPLB_CTRL_PLB_wrBurst : in std_logic;
+      SPLB_CTRL_PLB_rdBurst : in std_logic;
+      SPLB_CTRL_PLB_wrPendReq : in std_logic;
+      SPLB_CTRL_PLB_rdPendReq : in std_logic;
+      SPLB_CTRL_PLB_wrPendPri : in std_logic_vector(0 to 1);
+      SPLB_CTRL_PLB_rdPendPri : in std_logic_vector(0 to 1);
+      SPLB_CTRL_PLB_reqPri : in std_logic_vector(0 to 1);
+      SPLB_CTRL_PLB_TAttribute : in std_logic_vector(0 to 15);
+      SPLB_CTRL_Sl_wrBTerm : out std_logic;
+      SPLB_CTRL_Sl_rdWdAddr : out std_logic_vector(0 to 3);
+      SPLB_CTRL_Sl_rdBTerm : out std_logic;
+      SPLB_CTRL_Sl_MIRQ : out std_logic_vector(0 to 0);
+      S_AXI_CTRL_ACLK : in std_logic;
+      S_AXI_CTRL_ARESETN : in std_logic;
+      S_AXI_CTRL_AWADDR : in std_logic_vector(31 downto 0);
+      S_AXI_CTRL_AWVALID : in std_logic;
+      S_AXI_CTRL_AWREADY : out std_logic;
+      S_AXI_CTRL_WDATA : in std_logic_vector(31 downto 0);
+      S_AXI_CTRL_WSTRB : in std_logic_vector(3 downto 0);
+      S_AXI_CTRL_WVALID : in std_logic;
+      S_AXI_CTRL_WREADY : out std_logic;
+      S_AXI_CTRL_BRESP : out std_logic_vector(1 downto 0);
+      S_AXI_CTRL_BVALID : out std_logic;
+      S_AXI_CTRL_BREADY : in std_logic;
+      S_AXI_CTRL_ARADDR : in std_logic_vector(31 downto 0);
+      S_AXI_CTRL_ARVALID : in std_logic;
+      S_AXI_CTRL_ARREADY : out std_logic;
+      S_AXI_CTRL_RDATA : out std_logic_vector(31 downto 0);
+      S_AXI_CTRL_RRESP : out std_logic_vector(1 downto 0);
+      S_AXI_CTRL_RVALID : out std_logic;
+      S_AXI_CTRL_RREADY : in std_logic
+    );
+  end component;
+
+  component system_microblaze_0_i_bram_ctrl_1_wrapper is
+    port (
+      LMB_Clk : in std_logic;
+      LMB_Rst : in std_logic;
+      LMB_ABus : in std_logic_vector(0 to 31);
+      LMB_WriteDBus : in std_logic_vector(0 to 31);
+      LMB_AddrStrobe : in std_logic;
+      LMB_ReadStrobe : in std_logic;
+      LMB_WriteStrobe : in std_logic;
+      LMB_BE : in std_logic_vector(0 to 3);
+      Sl_DBus : out std_logic_vector(0 to 31);
+      Sl_Ready : out std_logic;
+      Sl_Wait : out std_logic;
+      Sl_UE : out std_logic;
+      Sl_CE : out std_logic;
+      LMB1_ABus : in std_logic_vector(0 to 31);
+      LMB1_WriteDBus : in std_logic_vector(0 to 31);
+      LMB1_AddrStrobe : in std_logic;
+      LMB1_ReadStrobe : in std_logic;
+      LMB1_WriteStrobe : in std_logic;
+      LMB1_BE : in std_logic_vector(0 to 3);
+      Sl1_DBus : out std_logic_vector(0 to 31);
+      Sl1_Ready : out std_logic;
+      Sl1_Wait : out std_logic;
+      Sl1_UE : out std_logic;
+      Sl1_CE : out std_logic;
+      LMB2_ABus : in std_logic_vector(0 to 31);
+      LMB2_WriteDBus : in std_logic_vector(0 to 31);
+      LMB2_AddrStrobe : in std_logic;
+      LMB2_ReadStrobe : in std_logic;
+      LMB2_WriteStrobe : in std_logic;
+      LMB2_BE : in std_logic_vector(0 to 3);
+      Sl2_DBus : out std_logic_vector(0 to 31);
+      Sl2_Ready : out std_logic;
+      Sl2_Wait : out std_logic;
+      Sl2_UE : out std_logic;
+      Sl2_CE : out std_logic;
+      LMB3_ABus : in std_logic_vector(0 to 31);
+      LMB3_WriteDBus : in std_logic_vector(0 to 31);
+      LMB3_AddrStrobe : in std_logic;
+      LMB3_ReadStrobe : in std_logic;
+      LMB3_WriteStrobe : in std_logic;
+      LMB3_BE : in std_logic_vector(0 to 3);
+      Sl3_DBus : out std_logic_vector(0 to 31);
+      Sl3_Ready : out std_logic;
+      Sl3_Wait : out std_logic;
+      Sl3_UE : out std_logic;
+      Sl3_CE : out std_logic;
+      BRAM_Rst_A : out std_logic;
+      BRAM_Clk_A : out std_logic;
+      BRAM_EN_A : out std_logic;
+      BRAM_WEN_A : out std_logic_vector(0 to 3);
+      BRAM_Addr_A : out std_logic_vector(0 to 31);
+      BRAM_Din_A : in std_logic_vector(0 to 31);
+      BRAM_Dout_A : out std_logic_vector(0 to 31);
+      Interrupt : out std_logic;
+      UE : out std_logic;
+      CE : out std_logic;
+      SPLB_CTRL_PLB_ABus : in std_logic_vector(0 to 31);
+      SPLB_CTRL_PLB_PAValid : in std_logic;
+      SPLB_CTRL_PLB_masterID : in std_logic_vector(0 to 0);
+      SPLB_CTRL_PLB_RNW : in std_logic;
+      SPLB_CTRL_PLB_BE : in std_logic_vector(0 to 3);
+      SPLB_CTRL_PLB_size : in std_logic_vector(0 to 3);
+      SPLB_CTRL_PLB_type : in std_logic_vector(0 to 2);
+      SPLB_CTRL_PLB_wrDBus : in std_logic_vector(0 to 31);
+      SPLB_CTRL_Sl_addrAck : out std_logic;
+      SPLB_CTRL_Sl_SSize : out std_logic_vector(0 to 1);
+      SPLB_CTRL_Sl_wait : out std_logic;
+      SPLB_CTRL_Sl_rearbitrate : out std_logic;
+      SPLB_CTRL_Sl_wrDAck : out std_logic;
+      SPLB_CTRL_Sl_wrComp : out std_logic;
+      SPLB_CTRL_Sl_rdDBus : out std_logic_vector(0 to 31);
+      SPLB_CTRL_Sl_rdDAck : out std_logic;
+      SPLB_CTRL_Sl_rdComp : out std_logic;
+      SPLB_CTRL_Sl_MBusy : out std_logic_vector(0 to 0);
+      SPLB_CTRL_Sl_MWrErr : out std_logic_vector(0 to 0);
+      SPLB_CTRL_Sl_MRdErr : out std_logic_vector(0 to 0);
+      SPLB_CTRL_PLB_UABus : in std_logic_vector(0 to 31);
+      SPLB_CTRL_PLB_SAValid : in std_logic;
+      SPLB_CTRL_PLB_rdPrim : in std_logic;
+      SPLB_CTRL_PLB_wrPrim : in std_logic;
+      SPLB_CTRL_PLB_abort : in std_logic;
+      SPLB_CTRL_PLB_busLock : in std_logic;
+      SPLB_CTRL_PLB_MSize : in std_logic_vector(0 to 1);
+      SPLB_CTRL_PLB_lockErr : in std_logic;
+      SPLB_CTRL_PLB_wrBurst : in std_logic;
+      SPLB_CTRL_PLB_rdBurst : in std_logic;
+      SPLB_CTRL_PLB_wrPendReq : in std_logic;
+      SPLB_CTRL_PLB_rdPendReq : in std_logic;
+      SPLB_CTRL_PLB_wrPendPri : in std_logic_vector(0 to 1);
+      SPLB_CTRL_PLB_rdPendPri : in std_logic_vector(0 to 1);
+      SPLB_CTRL_PLB_reqPri : in std_logic_vector(0 to 1);
+      SPLB_CTRL_PLB_TAttribute : in std_logic_vector(0 to 15);
+      SPLB_CTRL_Sl_wrBTerm : out std_logic;
+      SPLB_CTRL_Sl_rdWdAddr : out std_logic_vector(0 to 3);
+      SPLB_CTRL_Sl_rdBTerm : out std_logic;
+      SPLB_CTRL_Sl_MIRQ : out std_logic_vector(0 to 0);
+      S_AXI_CTRL_ACLK : in std_logic;
+      S_AXI_CTRL_ARESETN : in std_logic;
+      S_AXI_CTRL_AWADDR : in std_logic_vector(31 downto 0);
+      S_AXI_CTRL_AWVALID : in std_logic;
+      S_AXI_CTRL_AWREADY : out std_logic;
+      S_AXI_CTRL_WDATA : in std_logic_vector(31 downto 0);
+      S_AXI_CTRL_WSTRB : in std_logic_vector(3 downto 0);
+      S_AXI_CTRL_WVALID : in std_logic;
+      S_AXI_CTRL_WREADY : out std_logic;
+      S_AXI_CTRL_BRESP : out std_logic_vector(1 downto 0);
+      S_AXI_CTRL_BVALID : out std_logic;
+      S_AXI_CTRL_BREADY : in std_logic;
+      S_AXI_CTRL_ARADDR : in std_logic_vector(31 downto 0);
+      S_AXI_CTRL_ARVALID : in std_logic;
+      S_AXI_CTRL_ARREADY : out std_logic;
+      S_AXI_CTRL_RDATA : out std_logic_vector(31 downto 0);
+      S_AXI_CTRL_RRESP : out std_logic_vector(1 downto 0);
+      S_AXI_CTRL_RVALID : out std_logic;
+      S_AXI_CTRL_RREADY : in std_logic
+    );
+  end component;
+
   component IOBUF is
     port (
       I : in std_logic;
@@ -2573,6 +2832,13 @@ architecture STRUCTURE of system is
   signal axi_xadc_0_VAUXN_AMS : std_logic_vector(1 downto 0);
   signal axi_xadc_0_VAUXP_AMS : std_logic_vector(1 downto 0);
   signal clk_100_0000MHz : std_logic_vector(0 to 0);
+  signal microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr : std_logic_vector(0 to 31);
+  signal microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Clk : std_logic;
+  signal microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Din : std_logic_vector(0 to 31);
+  signal microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Dout : std_logic_vector(0 to 31);
+  signal microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_EN : std_logic;
+  signal microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Rst : std_logic;
+  signal microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_WEN : std_logic_vector(0 to 3);
   signal microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr : std_logic_vector(0 to 31);
   signal microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Clk : std_logic;
   signal microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Din : std_logic_vector(0 to 31);
@@ -2606,11 +2872,18 @@ architecture STRUCTURE of system is
   signal microblaze_0_dlmb_M_DBus : std_logic_vector(0 to 31);
   signal microblaze_0_dlmb_M_ReadStrobe : std_logic;
   signal microblaze_0_dlmb_M_WriteStrobe : std_logic;
-  signal microblaze_0_dlmb_Sl_CE : std_logic_vector(0 to 0);
-  signal microblaze_0_dlmb_Sl_DBus : std_logic_vector(0 to 31);
-  signal microblaze_0_dlmb_Sl_Ready : std_logic_vector(0 to 0);
-  signal microblaze_0_dlmb_Sl_UE : std_logic_vector(0 to 0);
-  signal microblaze_0_dlmb_Sl_Wait : std_logic_vector(0 to 0);
+  signal microblaze_0_dlmb_Sl_CE : std_logic_vector(0 to 1);
+  signal microblaze_0_dlmb_Sl_DBus : std_logic_vector(0 to 63);
+  signal microblaze_0_dlmb_Sl_Ready : std_logic_vector(0 to 1);
+  signal microblaze_0_dlmb_Sl_UE : std_logic_vector(0 to 1);
+  signal microblaze_0_dlmb_Sl_Wait : std_logic_vector(0 to 1);
+  signal microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Addr : std_logic_vector(0 to 31);
+  signal microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Clk : std_logic;
+  signal microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Din : std_logic_vector(0 to 31);
+  signal microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Dout : std_logic_vector(0 to 31);
+  signal microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_EN : std_logic;
+  signal microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Rst : std_logic;
+  signal microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_WEN : std_logic_vector(0 to 3);
   signal microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr : std_logic_vector(0 to 31);
   signal microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block_BRAM_Clk : std_logic;
   signal microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block_BRAM_Din : std_logic_vector(0 to 31);
@@ -2633,11 +2906,11 @@ architecture STRUCTURE of system is
   signal microblaze_0_ilmb_M_ABus : std_logic_vector(0 to 31);
   signal microblaze_0_ilmb_M_AddrStrobe : std_logic;
   signal microblaze_0_ilmb_M_ReadStrobe : std_logic;
-  signal microblaze_0_ilmb_Sl_CE : std_logic_vector(0 to 0);
-  signal microblaze_0_ilmb_Sl_DBus : std_logic_vector(0 to 31);
-  signal microblaze_0_ilmb_Sl_Ready : std_logic_vector(0 to 0);
-  signal microblaze_0_ilmb_Sl_UE : std_logic_vector(0 to 0);
-  signal microblaze_0_ilmb_Sl_Wait : std_logic_vector(0 to 0);
+  signal microblaze_0_ilmb_Sl_CE : std_logic_vector(0 to 1);
+  signal microblaze_0_ilmb_Sl_DBus : std_logic_vector(0 to 63);
+  signal microblaze_0_ilmb_Sl_Ready : std_logic_vector(0 to 1);
+  signal microblaze_0_ilmb_Sl_UE : std_logic_vector(0 to 1);
+  signal microblaze_0_ilmb_Sl_Wait : std_logic_vector(0 to 1);
   signal net_gnd0 : std_logic;
   signal net_gnd1 : std_logic_vector(0 to 0);
   signal net_gnd2 : std_logic_vector(0 to 1);
@@ -2659,10 +2932,10 @@ architecture STRUCTURE of system is
   attribute BOX_TYPE : STRING;
   attribute BOX_TYPE of system_proc_sys_reset_0_wrapper : component is "user_black_box";
   attribute BOX_TYPE of system_microblaze_0_ilmb_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of system_microblaze_0_i_bram_ctrl_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of system_microblaze_0_i_bram_ctrl_0_wrapper : component is "user_black_box";
   attribute BOX_TYPE of system_microblaze_0_dlmb_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of system_microblaze_0_d_bram_ctrl_wrapper : component is "user_black_box";
-  attribute BOX_TYPE of system_microblaze_0_bram_block_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of system_microblaze_0_d_bram_ctrl_0_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of system_microblaze_0_bram_block_0_wrapper : component is "user_black_box";
   attribute BOX_TYPE of system_microblaze_0_wrapper : component is "user_black_box";
   attribute BOX_TYPE of system_debug_module_wrapper : component is "user_black_box";
   attribute BOX_TYPE of system_clock_generator_0_wrapper : component is "user_black_box";
@@ -2688,6 +2961,9 @@ architecture STRUCTURE of system is
   attribute BOX_TYPE of system_reconfigurable_peripherials_11_wrapper : component is "user_black_box";
   attribute BOX_TYPE of system_reconfigurable_peripherials_12_wrapper : component is "user_black_box";
   attribute BOX_TYPE of system_reconfigurable_peripherials_13_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of system_microblaze_0_bram_block_1_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of system_microblaze_0_d_bram_ctrl_1_wrapper : component is "user_black_box";
+  attribute BOX_TYPE of system_microblaze_0_i_bram_ctrl_1_wrapper : component is "user_black_box";
 
 begin
 
@@ -2844,10 +3120,10 @@ begin
       M_DBus => net_gnd32,
       M_BE => net_gnd4,
       Sl_DBus => microblaze_0_ilmb_Sl_DBus,
-      Sl_Ready => microblaze_0_ilmb_Sl_Ready(0 to 0),
-      Sl_Wait => microblaze_0_ilmb_Sl_Wait(0 to 0),
-      Sl_UE => microblaze_0_ilmb_Sl_UE(0 to 0),
-      Sl_CE => microblaze_0_ilmb_Sl_CE(0 to 0),
+      Sl_Ready => microblaze_0_ilmb_Sl_Ready,
+      Sl_Wait => microblaze_0_ilmb_Sl_Wait,
+      Sl_UE => microblaze_0_ilmb_Sl_UE,
+      Sl_CE => microblaze_0_ilmb_Sl_CE,
       LMB_ABus => microblaze_0_ilmb_LMB_ABus,
       LMB_ReadStrobe => microblaze_0_ilmb_LMB_ReadStrobe,
       LMB_WriteStrobe => microblaze_0_ilmb_LMB_WriteStrobe,
@@ -2861,7 +3137,7 @@ begin
       LMB_BE => microblaze_0_ilmb_LMB_BE
     );
 
-  microblaze_0_i_bram_ctrl : system_microblaze_0_i_bram_ctrl_wrapper
+  microblaze_0_i_bram_ctrl_0 : system_microblaze_0_i_bram_ctrl_0_wrapper
     port map (
       LMB_Clk => pgassign1(15),
       LMB_Rst => microblaze_0_ilmb_LMB_Rst,
@@ -2871,7 +3147,7 @@ begin
       LMB_ReadStrobe => microblaze_0_ilmb_LMB_ReadStrobe,
       LMB_WriteStrobe => microblaze_0_ilmb_LMB_WriteStrobe,
       LMB_BE => microblaze_0_ilmb_LMB_BE,
-      Sl_DBus => microblaze_0_ilmb_Sl_DBus,
+      Sl_DBus => microblaze_0_ilmb_Sl_DBus(0 to 31),
       Sl_Ready => microblaze_0_ilmb_Sl_Ready(0),
       Sl_Wait => microblaze_0_ilmb_Sl_Wait(0),
       Sl_UE => microblaze_0_ilmb_Sl_UE(0),
@@ -2992,10 +3268,10 @@ begin
       M_DBus => microblaze_0_dlmb_M_DBus,
       M_BE => microblaze_0_dlmb_M_BE,
       Sl_DBus => microblaze_0_dlmb_Sl_DBus,
-      Sl_Ready => microblaze_0_dlmb_Sl_Ready(0 to 0),
-      Sl_Wait => microblaze_0_dlmb_Sl_Wait(0 to 0),
-      Sl_UE => microblaze_0_dlmb_Sl_UE(0 to 0),
-      Sl_CE => microblaze_0_dlmb_Sl_CE(0 to 0),
+      Sl_Ready => microblaze_0_dlmb_Sl_Ready,
+      Sl_Wait => microblaze_0_dlmb_Sl_Wait,
+      Sl_UE => microblaze_0_dlmb_Sl_UE,
+      Sl_CE => microblaze_0_dlmb_Sl_CE,
       LMB_ABus => microblaze_0_dlmb_LMB_ABus,
       LMB_ReadStrobe => microblaze_0_dlmb_LMB_ReadStrobe,
       LMB_WriteStrobe => microblaze_0_dlmb_LMB_WriteStrobe,
@@ -3009,7 +3285,7 @@ begin
       LMB_BE => microblaze_0_dlmb_LMB_BE
     );
 
-  microblaze_0_d_bram_ctrl : system_microblaze_0_d_bram_ctrl_wrapper
+  microblaze_0_d_bram_ctrl_0 : system_microblaze_0_d_bram_ctrl_0_wrapper
     port map (
       LMB_Clk => pgassign1(15),
       LMB_Rst => microblaze_0_dlmb_LMB_Rst,
@@ -3019,7 +3295,7 @@ begin
       LMB_ReadStrobe => microblaze_0_dlmb_LMB_ReadStrobe,
       LMB_WriteStrobe => microblaze_0_dlmb_LMB_WriteStrobe,
       LMB_BE => microblaze_0_dlmb_LMB_BE,
-      Sl_DBus => microblaze_0_dlmb_Sl_DBus,
+      Sl_DBus => microblaze_0_dlmb_Sl_DBus(0 to 31),
       Sl_Ready => microblaze_0_dlmb_Sl_Ready(0),
       Sl_Wait => microblaze_0_dlmb_Sl_Wait(0),
       Sl_UE => microblaze_0_dlmb_Sl_UE(0),
@@ -3128,7 +3404,7 @@ begin
       S_AXI_CTRL_RREADY => net_gnd0
     );
 
-  microblaze_0_bram_block : system_microblaze_0_bram_block_wrapper
+  microblaze_0_bram_block_0 : system_microblaze_0_bram_block_0_wrapper
     port map (
       BRAM_Rst_A => microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block_BRAM_Rst,
       BRAM_Clk_A => microblaze_0_i_bram_ctrl_2_microblaze_0_bram_block_BRAM_Clk,
@@ -5137,6 +5413,262 @@ begin
       S_AXI_BRESP => axi_interconnect_1_M_BRESP(9 downto 8),
       S_AXI_BVALID => axi_interconnect_1_M_BVALID(4),
       S_AXI_AWREADY => axi_interconnect_1_M_AWREADY(4)
+    );
+
+  microblaze_0_bram_block_1 : system_microblaze_0_bram_block_1_wrapper
+    port map (
+      BRAM_Rst_A => microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Rst,
+      BRAM_Clk_A => microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Clk,
+      BRAM_EN_A => microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_EN,
+      BRAM_WEN_A => microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_WEN,
+      BRAM_Addr_A => microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Addr,
+      BRAM_Din_A => microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Din,
+      BRAM_Dout_A => microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Dout,
+      BRAM_Rst_B => microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Rst,
+      BRAM_Clk_B => microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Clk,
+      BRAM_EN_B => microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_EN,
+      BRAM_WEN_B => microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_WEN,
+      BRAM_Addr_B => microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr,
+      BRAM_Din_B => microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Din,
+      BRAM_Dout_B => microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Dout
+    );
+
+  microblaze_0_d_bram_ctrl_1 : system_microblaze_0_d_bram_ctrl_1_wrapper
+    port map (
+      LMB_Clk => pgassign1(15),
+      LMB_Rst => microblaze_0_dlmb_LMB_Rst,
+      LMB_ABus => microblaze_0_dlmb_LMB_ABus,
+      LMB_WriteDBus => microblaze_0_dlmb_LMB_WriteDBus,
+      LMB_AddrStrobe => microblaze_0_dlmb_LMB_AddrStrobe,
+      LMB_ReadStrobe => microblaze_0_dlmb_LMB_ReadStrobe,
+      LMB_WriteStrobe => microblaze_0_dlmb_LMB_WriteStrobe,
+      LMB_BE => microblaze_0_dlmb_LMB_BE,
+      Sl_DBus => microblaze_0_dlmb_Sl_DBus(32 to 63),
+      Sl_Ready => microblaze_0_dlmb_Sl_Ready(1),
+      Sl_Wait => microblaze_0_dlmb_Sl_Wait(1),
+      Sl_UE => microblaze_0_dlmb_Sl_UE(1),
+      Sl_CE => microblaze_0_dlmb_Sl_CE(1),
+      LMB1_ABus => net_gnd32,
+      LMB1_WriteDBus => net_gnd32,
+      LMB1_AddrStrobe => net_gnd0,
+      LMB1_ReadStrobe => net_gnd0,
+      LMB1_WriteStrobe => net_gnd0,
+      LMB1_BE => net_gnd4,
+      Sl1_DBus => open,
+      Sl1_Ready => open,
+      Sl1_Wait => open,
+      Sl1_UE => open,
+      Sl1_CE => open,
+      LMB2_ABus => net_gnd32,
+      LMB2_WriteDBus => net_gnd32,
+      LMB2_AddrStrobe => net_gnd0,
+      LMB2_ReadStrobe => net_gnd0,
+      LMB2_WriteStrobe => net_gnd0,
+      LMB2_BE => net_gnd4,
+      Sl2_DBus => open,
+      Sl2_Ready => open,
+      Sl2_Wait => open,
+      Sl2_UE => open,
+      Sl2_CE => open,
+      LMB3_ABus => net_gnd32,
+      LMB3_WriteDBus => net_gnd32,
+      LMB3_AddrStrobe => net_gnd0,
+      LMB3_ReadStrobe => net_gnd0,
+      LMB3_WriteStrobe => net_gnd0,
+      LMB3_BE => net_gnd4,
+      Sl3_DBus => open,
+      Sl3_Ready => open,
+      Sl3_Wait => open,
+      Sl3_UE => open,
+      Sl3_CE => open,
+      BRAM_Rst_A => microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Rst,
+      BRAM_Clk_A => microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Clk,
+      BRAM_EN_A => microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_EN,
+      BRAM_WEN_A => microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_WEN,
+      BRAM_Addr_A => microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr,
+      BRAM_Din_A => microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Din,
+      BRAM_Dout_A => microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Dout,
+      Interrupt => open,
+      UE => open,
+      CE => open,
+      SPLB_CTRL_PLB_ABus => net_gnd32,
+      SPLB_CTRL_PLB_PAValid => net_gnd0,
+      SPLB_CTRL_PLB_masterID => net_gnd1(0 to 0),
+      SPLB_CTRL_PLB_RNW => net_gnd0,
+      SPLB_CTRL_PLB_BE => net_gnd4,
+      SPLB_CTRL_PLB_size => net_gnd4,
+      SPLB_CTRL_PLB_type => net_gnd3,
+      SPLB_CTRL_PLB_wrDBus => net_gnd32,
+      SPLB_CTRL_Sl_addrAck => open,
+      SPLB_CTRL_Sl_SSize => open,
+      SPLB_CTRL_Sl_wait => open,
+      SPLB_CTRL_Sl_rearbitrate => open,
+      SPLB_CTRL_Sl_wrDAck => open,
+      SPLB_CTRL_Sl_wrComp => open,
+      SPLB_CTRL_Sl_rdDBus => open,
+      SPLB_CTRL_Sl_rdDAck => open,
+      SPLB_CTRL_Sl_rdComp => open,
+      SPLB_CTRL_Sl_MBusy => open,
+      SPLB_CTRL_Sl_MWrErr => open,
+      SPLB_CTRL_Sl_MRdErr => open,
+      SPLB_CTRL_PLB_UABus => net_gnd32,
+      SPLB_CTRL_PLB_SAValid => net_gnd0,
+      SPLB_CTRL_PLB_rdPrim => net_gnd0,
+      SPLB_CTRL_PLB_wrPrim => net_gnd0,
+      SPLB_CTRL_PLB_abort => net_gnd0,
+      SPLB_CTRL_PLB_busLock => net_gnd0,
+      SPLB_CTRL_PLB_MSize => net_gnd2,
+      SPLB_CTRL_PLB_lockErr => net_gnd0,
+      SPLB_CTRL_PLB_wrBurst => net_gnd0,
+      SPLB_CTRL_PLB_rdBurst => net_gnd0,
+      SPLB_CTRL_PLB_wrPendReq => net_gnd0,
+      SPLB_CTRL_PLB_rdPendReq => net_gnd0,
+      SPLB_CTRL_PLB_wrPendPri => net_gnd2,
+      SPLB_CTRL_PLB_rdPendPri => net_gnd2,
+      SPLB_CTRL_PLB_reqPri => net_gnd2,
+      SPLB_CTRL_PLB_TAttribute => net_gnd16,
+      SPLB_CTRL_Sl_wrBTerm => open,
+      SPLB_CTRL_Sl_rdWdAddr => open,
+      SPLB_CTRL_Sl_rdBTerm => open,
+      SPLB_CTRL_Sl_MIRQ => open,
+      S_AXI_CTRL_ACLK => net_vcc0,
+      S_AXI_CTRL_ARESETN => net_gnd0,
+      S_AXI_CTRL_AWADDR => net_gnd32(0 to 31),
+      S_AXI_CTRL_AWVALID => net_gnd0,
+      S_AXI_CTRL_AWREADY => open,
+      S_AXI_CTRL_WDATA => net_gnd32(0 to 31),
+      S_AXI_CTRL_WSTRB => net_gnd4(0 to 3),
+      S_AXI_CTRL_WVALID => net_gnd0,
+      S_AXI_CTRL_WREADY => open,
+      S_AXI_CTRL_BRESP => open,
+      S_AXI_CTRL_BVALID => open,
+      S_AXI_CTRL_BREADY => net_gnd0,
+      S_AXI_CTRL_ARADDR => net_gnd32(0 to 31),
+      S_AXI_CTRL_ARVALID => net_gnd0,
+      S_AXI_CTRL_ARREADY => open,
+      S_AXI_CTRL_RDATA => open,
+      S_AXI_CTRL_RRESP => open,
+      S_AXI_CTRL_RVALID => open,
+      S_AXI_CTRL_RREADY => net_gnd0
+    );
+
+  microblaze_0_i_bram_ctrl_1 : system_microblaze_0_i_bram_ctrl_1_wrapper
+    port map (
+      LMB_Clk => pgassign1(15),
+      LMB_Rst => microblaze_0_ilmb_LMB_Rst,
+      LMB_ABus => microblaze_0_ilmb_LMB_ABus,
+      LMB_WriteDBus => microblaze_0_ilmb_LMB_WriteDBus,
+      LMB_AddrStrobe => microblaze_0_ilmb_LMB_AddrStrobe,
+      LMB_ReadStrobe => microblaze_0_ilmb_LMB_ReadStrobe,
+      LMB_WriteStrobe => microblaze_0_ilmb_LMB_WriteStrobe,
+      LMB_BE => microblaze_0_ilmb_LMB_BE,
+      Sl_DBus => microblaze_0_ilmb_Sl_DBus(32 to 63),
+      Sl_Ready => microblaze_0_ilmb_Sl_Ready(1),
+      Sl_Wait => microblaze_0_ilmb_Sl_Wait(1),
+      Sl_UE => microblaze_0_ilmb_Sl_UE(1),
+      Sl_CE => microblaze_0_ilmb_Sl_CE(1),
+      LMB1_ABus => net_gnd32,
+      LMB1_WriteDBus => net_gnd32,
+      LMB1_AddrStrobe => net_gnd0,
+      LMB1_ReadStrobe => net_gnd0,
+      LMB1_WriteStrobe => net_gnd0,
+      LMB1_BE => net_gnd4,
+      Sl1_DBus => open,
+      Sl1_Ready => open,
+      Sl1_Wait => open,
+      Sl1_UE => open,
+      Sl1_CE => open,
+      LMB2_ABus => net_gnd32,
+      LMB2_WriteDBus => net_gnd32,
+      LMB2_AddrStrobe => net_gnd0,
+      LMB2_ReadStrobe => net_gnd0,
+      LMB2_WriteStrobe => net_gnd0,
+      LMB2_BE => net_gnd4,
+      Sl2_DBus => open,
+      Sl2_Ready => open,
+      Sl2_Wait => open,
+      Sl2_UE => open,
+      Sl2_CE => open,
+      LMB3_ABus => net_gnd32,
+      LMB3_WriteDBus => net_gnd32,
+      LMB3_AddrStrobe => net_gnd0,
+      LMB3_ReadStrobe => net_gnd0,
+      LMB3_WriteStrobe => net_gnd0,
+      LMB3_BE => net_gnd4,
+      Sl3_DBus => open,
+      Sl3_Ready => open,
+      Sl3_Wait => open,
+      Sl3_UE => open,
+      Sl3_CE => open,
+      BRAM_Rst_A => microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Rst,
+      BRAM_Clk_A => microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Clk,
+      BRAM_EN_A => microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_EN,
+      BRAM_WEN_A => microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_WEN,
+      BRAM_Addr_A => microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Addr,
+      BRAM_Din_A => microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Din,
+      BRAM_Dout_A => microblaze_0_i_bram_ctrl_1_BRAM_PORT_BRAM_Dout,
+      Interrupt => open,
+      UE => open,
+      CE => open,
+      SPLB_CTRL_PLB_ABus => net_gnd32,
+      SPLB_CTRL_PLB_PAValid => net_gnd0,
+      SPLB_CTRL_PLB_masterID => net_gnd1(0 to 0),
+      SPLB_CTRL_PLB_RNW => net_gnd0,
+      SPLB_CTRL_PLB_BE => net_gnd4,
+      SPLB_CTRL_PLB_size => net_gnd4,
+      SPLB_CTRL_PLB_type => net_gnd3,
+      SPLB_CTRL_PLB_wrDBus => net_gnd32,
+      SPLB_CTRL_Sl_addrAck => open,
+      SPLB_CTRL_Sl_SSize => open,
+      SPLB_CTRL_Sl_wait => open,
+      SPLB_CTRL_Sl_rearbitrate => open,
+      SPLB_CTRL_Sl_wrDAck => open,
+      SPLB_CTRL_Sl_wrComp => open,
+      SPLB_CTRL_Sl_rdDBus => open,
+      SPLB_CTRL_Sl_rdDAck => open,
+      SPLB_CTRL_Sl_rdComp => open,
+      SPLB_CTRL_Sl_MBusy => open,
+      SPLB_CTRL_Sl_MWrErr => open,
+      SPLB_CTRL_Sl_MRdErr => open,
+      SPLB_CTRL_PLB_UABus => net_gnd32,
+      SPLB_CTRL_PLB_SAValid => net_gnd0,
+      SPLB_CTRL_PLB_rdPrim => net_gnd0,
+      SPLB_CTRL_PLB_wrPrim => net_gnd0,
+      SPLB_CTRL_PLB_abort => net_gnd0,
+      SPLB_CTRL_PLB_busLock => net_gnd0,
+      SPLB_CTRL_PLB_MSize => net_gnd2,
+      SPLB_CTRL_PLB_lockErr => net_gnd0,
+      SPLB_CTRL_PLB_wrBurst => net_gnd0,
+      SPLB_CTRL_PLB_rdBurst => net_gnd0,
+      SPLB_CTRL_PLB_wrPendReq => net_gnd0,
+      SPLB_CTRL_PLB_rdPendReq => net_gnd0,
+      SPLB_CTRL_PLB_wrPendPri => net_gnd2,
+      SPLB_CTRL_PLB_rdPendPri => net_gnd2,
+      SPLB_CTRL_PLB_reqPri => net_gnd2,
+      SPLB_CTRL_PLB_TAttribute => net_gnd16,
+      SPLB_CTRL_Sl_wrBTerm => open,
+      SPLB_CTRL_Sl_rdWdAddr => open,
+      SPLB_CTRL_Sl_rdBTerm => open,
+      SPLB_CTRL_Sl_MIRQ => open,
+      S_AXI_CTRL_ACLK => net_vcc0,
+      S_AXI_CTRL_ARESETN => net_gnd0,
+      S_AXI_CTRL_AWADDR => net_gnd32(0 to 31),
+      S_AXI_CTRL_AWVALID => net_gnd0,
+      S_AXI_CTRL_AWREADY => open,
+      S_AXI_CTRL_WDATA => net_gnd32(0 to 31),
+      S_AXI_CTRL_WSTRB => net_gnd4(0 to 3),
+      S_AXI_CTRL_WVALID => net_gnd0,
+      S_AXI_CTRL_WREADY => open,
+      S_AXI_CTRL_BRESP => open,
+      S_AXI_CTRL_BVALID => open,
+      S_AXI_CTRL_BREADY => net_gnd0,
+      S_AXI_CTRL_ARADDR => net_gnd32(0 to 31),
+      S_AXI_CTRL_ARVALID => net_gnd0,
+      S_AXI_CTRL_ARREADY => open,
+      S_AXI_CTRL_RDATA => open,
+      S_AXI_CTRL_RRESP => open,
+      S_AXI_CTRL_RVALID => open,
+      S_AXI_CTRL_RREADY => net_gnd0
     );
 
   iobuf_0 : IOBUF

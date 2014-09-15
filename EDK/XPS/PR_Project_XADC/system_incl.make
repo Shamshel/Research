@@ -29,7 +29,7 @@ SEARCHPATHOPT = $(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT)
 
 SUBMODULE_OPT = 
 
-PLATGEN_OPTIONS = -p $(DEVICE) -lang $(XPS_HDL_LANG) -intstyle $(INTSTYLE) $(SEARCHPATHOPT) $(SUBMODULE_OPT) -msg __xps/ise/xmsgprops.lst -parallel yes
+PLATGEN_OPTIONS = -p $(DEVICE) -lang $(XPS_HDL_LANG) -intstyle $(INTSTYLE) $(SEARCHPATHOPT) $(SUBMODULE_OPT) -msg __xps/ise/xmsgprops.lst
 
 OBSERVE_PAR_OPTIONS = -error yes
 
@@ -129,10 +129,10 @@ pcores/fan_controller_v1_00_a/hdl/vhdl/fan_controller.vhd
 
 WRAPPER_NGC_FILES = implementation/system_proc_sys_reset_0_wrapper.ngc \
 implementation/system_microblaze_0_ilmb_wrapper.ngc \
-implementation/system_microblaze_0_i_bram_ctrl_wrapper.ngc \
+implementation/system_microblaze_0_i_bram_ctrl_0_wrapper.ngc \
 implementation/system_microblaze_0_dlmb_wrapper.ngc \
-implementation/system_microblaze_0_d_bram_ctrl_wrapper.ngc \
-implementation/system_microblaze_0_bram_block_wrapper.ngc \
+implementation/system_microblaze_0_d_bram_ctrl_0_wrapper.ngc \
+implementation/system_microblaze_0_bram_block_0_wrapper.ngc \
 implementation/system_microblaze_0_wrapper.ngc \
 implementation/system_debug_module_wrapper.ngc \
 implementation/system_clock_generator_0_wrapper.ngc \
@@ -157,7 +157,10 @@ implementation/system_axi_interconnect_1_wrapper.ngc \
 implementation/system_reconfigurable_peripherials_10_wrapper.ngc \
 implementation/system_reconfigurable_peripherials_11_wrapper.ngc \
 implementation/system_reconfigurable_peripherials_12_wrapper.ngc \
-implementation/system_reconfigurable_peripherials_13_wrapper.ngc
+implementation/system_reconfigurable_peripherials_13_wrapper.ngc \
+implementation/system_microblaze_0_bram_block_1_wrapper.ngc \
+implementation/system_microblaze_0_d_bram_ctrl_1_wrapper.ngc \
+implementation/system_microblaze_0_i_bram_ctrl_1_wrapper.ngc
 
 POSTSYN_NETLIST = implementation/$(SYSTEM).ngc
 

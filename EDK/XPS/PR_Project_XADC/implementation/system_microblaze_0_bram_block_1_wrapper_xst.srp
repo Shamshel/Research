@@ -1,0 +1,584 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:\Users\ECE\Documents\PR_Project_XADC\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_microblaze_0_bram_block_1_wrapper_xst.prj"
+Verilog Include Directory          : {"C:\Users\ECE\Documents\PR_Project_XADC\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc7k325tffg900-2
+Output File Name                   : "system_microblaze_0_bram_block_1_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_microblaze_0_bram_block_1_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {./}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" into library microblaze_0_bram_block_1_elaborate_v1_00_a
+Parsing entity <microblaze_0_bram_block_1_elaborate>.
+Parsing architecture <STRUCTURE> of entity <microblaze_0_bram_block_1_elaborate>.
+Parsing VHDL file "C:\Users\ECE\Documents\PR_Project_XADC\synthesis\parallel_run\hdl\system_microblaze_0_bram_block_1_wrapper.vhd" into library work
+Parsing entity <system_microblaze_0_bram_block_1_wrapper>.
+Parsing architecture <STRUCTURE> of entity <system_microblaze_0_bram_block_1_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <system_microblaze_0_bram_block_1_wrapper> (architecture <STRUCTURE>) from library <work>.
+
+Elaborating entity <microblaze_0_bram_block_1_elaborate> (architecture <STRUCTURE>) with generics from library <microblaze_0_bram_block_1_elaborate_v1_00_a>.
+WARNING:HDLCompiler:89 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" Line 42: <ramb36e1> remains a black-box since it has no binding entity.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_microblaze_0_bram_block_1_wrapper>.
+    Related source file is "C:\Users\ECE\Documents\PR_Project_XADC\synthesis\parallel_run\hdl\system_microblaze_0_bram_block_1_wrapper.vhd".
+    Set property "KEEP_HIERARCHY = YES".
+    Summary:
+	no macro.
+Unit <system_microblaze_0_bram_block_1_wrapper> synthesized.
+
+Synthesizing Unit <microblaze_0_bram_block_1_elaborate>.
+    Related source file is "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd".
+        C_MEMSIZE = 131072
+        C_PORT_DWIDTH = 32
+        C_PORT_AWIDTH = 32
+        C_NUM_WE = 4
+        C_FAMILY = "kintex7"
+    Set property "KEEP_HIERARCHY = YES".
+    Set property "BMM_INFO =  " for instance <ramb36e1_0>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_1>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_2>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_3>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_4>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_5>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_6>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_7>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_8>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_9>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_10>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_11>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_12>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_13>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_14>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_15>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_16>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_17>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_18>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_19>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_20>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_21>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_22>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_23>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_24>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_25>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_26>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_27>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_28>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_29>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_30>.
+    Set property "BMM_INFO =  " for instance <ramb36e1_31>.
+WARNING:Xst:647 - Input <BRAM_Addr_A<0:14>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BRAM_Addr_A<30:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BRAM_Addr_B<0:14>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BRAM_Addr_B<30:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1006: Output port <ECCPARITY> of the instance <ramb36e1_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1006: Output port <RDADDRECC> of the instance <ramb36e1_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1006: Output port <DOPADOP> of the instance <ramb36e1_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1006: Output port <DOPBDOP> of the instance <ramb36e1_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1006: Output port <DBITERR> of the instance <ramb36e1_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1006: Output port <SBITERR> of the instance <ramb36e1_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1006: Output port <CASCADEOUTA> of the instance <ramb36e1_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1006: Output port <CASCADEOUTB> of the instance <ramb36e1_0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1053: Output port <ECCPARITY> of the instance <ramb36e1_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1053: Output port <RDADDRECC> of the instance <ramb36e1_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1053: Output port <DOPADOP> of the instance <ramb36e1_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1053: Output port <DOPBDOP> of the instance <ramb36e1_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1053: Output port <DBITERR> of the instance <ramb36e1_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1053: Output port <SBITERR> of the instance <ramb36e1_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1053: Output port <CASCADEOUTA> of the instance <ramb36e1_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1053: Output port <CASCADEOUTB> of the instance <ramb36e1_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1100: Output port <ECCPARITY> of the instance <ramb36e1_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1100: Output port <RDADDRECC> of the instance <ramb36e1_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1100: Output port <DOPADOP> of the instance <ramb36e1_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1100: Output port <DOPBDOP> of the instance <ramb36e1_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1100: Output port <DBITERR> of the instance <ramb36e1_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1100: Output port <SBITERR> of the instance <ramb36e1_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1100: Output port <CASCADEOUTA> of the instance <ramb36e1_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1100: Output port <CASCADEOUTB> of the instance <ramb36e1_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1147: Output port <ECCPARITY> of the instance <ramb36e1_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1147: Output port <RDADDRECC> of the instance <ramb36e1_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1147: Output port <DOPADOP> of the instance <ramb36e1_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1147: Output port <DOPBDOP> of the instance <ramb36e1_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1147: Output port <DBITERR> of the instance <ramb36e1_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1147: Output port <SBITERR> of the instance <ramb36e1_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1147: Output port <CASCADEOUTA> of the instance <ramb36e1_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1147: Output port <CASCADEOUTB> of the instance <ramb36e1_3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1194: Output port <ECCPARITY> of the instance <ramb36e1_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1194: Output port <RDADDRECC> of the instance <ramb36e1_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1194: Output port <DOPADOP> of the instance <ramb36e1_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1194: Output port <DOPBDOP> of the instance <ramb36e1_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1194: Output port <DBITERR> of the instance <ramb36e1_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1194: Output port <SBITERR> of the instance <ramb36e1_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1194: Output port <CASCADEOUTA> of the instance <ramb36e1_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1194: Output port <CASCADEOUTB> of the instance <ramb36e1_4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1241: Output port <ECCPARITY> of the instance <ramb36e1_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1241: Output port <RDADDRECC> of the instance <ramb36e1_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1241: Output port <DOPADOP> of the instance <ramb36e1_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1241: Output port <DOPBDOP> of the instance <ramb36e1_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1241: Output port <DBITERR> of the instance <ramb36e1_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1241: Output port <SBITERR> of the instance <ramb36e1_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1241: Output port <CASCADEOUTA> of the instance <ramb36e1_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1241: Output port <CASCADEOUTB> of the instance <ramb36e1_5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1288: Output port <ECCPARITY> of the instance <ramb36e1_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1288: Output port <RDADDRECC> of the instance <ramb36e1_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1288: Output port <DOPADOP> of the instance <ramb36e1_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1288: Output port <DOPBDOP> of the instance <ramb36e1_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1288: Output port <DBITERR> of the instance <ramb36e1_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1288: Output port <SBITERR> of the instance <ramb36e1_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1288: Output port <CASCADEOUTA> of the instance <ramb36e1_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1288: Output port <CASCADEOUTB> of the instance <ramb36e1_6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1335: Output port <ECCPARITY> of the instance <ramb36e1_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1335: Output port <RDADDRECC> of the instance <ramb36e1_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1335: Output port <DOPADOP> of the instance <ramb36e1_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1335: Output port <DOPBDOP> of the instance <ramb36e1_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1335: Output port <DBITERR> of the instance <ramb36e1_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1335: Output port <SBITERR> of the instance <ramb36e1_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1335: Output port <CASCADEOUTA> of the instance <ramb36e1_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1335: Output port <CASCADEOUTB> of the instance <ramb36e1_7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1382: Output port <ECCPARITY> of the instance <ramb36e1_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1382: Output port <RDADDRECC> of the instance <ramb36e1_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1382: Output port <DOPADOP> of the instance <ramb36e1_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1382: Output port <DOPBDOP> of the instance <ramb36e1_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1382: Output port <DBITERR> of the instance <ramb36e1_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1382: Output port <SBITERR> of the instance <ramb36e1_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1382: Output port <CASCADEOUTA> of the instance <ramb36e1_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1382: Output port <CASCADEOUTB> of the instance <ramb36e1_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1429: Output port <ECCPARITY> of the instance <ramb36e1_9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1429: Output port <RDADDRECC> of the instance <ramb36e1_9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1429: Output port <DOPADOP> of the instance <ramb36e1_9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1429: Output port <DOPBDOP> of the instance <ramb36e1_9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1429: Output port <DBITERR> of the instance <ramb36e1_9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1429: Output port <SBITERR> of the instance <ramb36e1_9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1429: Output port <CASCADEOUTA> of the instance <ramb36e1_9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1429: Output port <CASCADEOUTB> of the instance <ramb36e1_9> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1476: Output port <ECCPARITY> of the instance <ramb36e1_10> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1476: Output port <RDADDRECC> of the instance <ramb36e1_10> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1476: Output port <DOPADOP> of the instance <ramb36e1_10> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1476: Output port <DOPBDOP> of the instance <ramb36e1_10> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1476: Output port <DBITERR> of the instance <ramb36e1_10> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1476: Output port <SBITERR> of the instance <ramb36e1_10> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1476: Output port <CASCADEOUTA> of the instance <ramb36e1_10> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1476: Output port <CASCADEOUTB> of the instance <ramb36e1_10> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1523: Output port <ECCPARITY> of the instance <ramb36e1_11> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1523: Output port <RDADDRECC> of the instance <ramb36e1_11> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1523: Output port <DOPADOP> of the instance <ramb36e1_11> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1523: Output port <DOPBDOP> of the instance <ramb36e1_11> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1523: Output port <DBITERR> of the instance <ramb36e1_11> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1523: Output port <SBITERR> of the instance <ramb36e1_11> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1523: Output port <CASCADEOUTA> of the instance <ramb36e1_11> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1523: Output port <CASCADEOUTB> of the instance <ramb36e1_11> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1570: Output port <ECCPARITY> of the instance <ramb36e1_12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1570: Output port <RDADDRECC> of the instance <ramb36e1_12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1570: Output port <DOPADOP> of the instance <ramb36e1_12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1570: Output port <DOPBDOP> of the instance <ramb36e1_12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1570: Output port <DBITERR> of the instance <ramb36e1_12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1570: Output port <SBITERR> of the instance <ramb36e1_12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1570: Output port <CASCADEOUTA> of the instance <ramb36e1_12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1570: Output port <CASCADEOUTB> of the instance <ramb36e1_12> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1617: Output port <ECCPARITY> of the instance <ramb36e1_13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1617: Output port <RDADDRECC> of the instance <ramb36e1_13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1617: Output port <DOPADOP> of the instance <ramb36e1_13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1617: Output port <DOPBDOP> of the instance <ramb36e1_13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1617: Output port <DBITERR> of the instance <ramb36e1_13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1617: Output port <SBITERR> of the instance <ramb36e1_13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1617: Output port <CASCADEOUTA> of the instance <ramb36e1_13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1617: Output port <CASCADEOUTB> of the instance <ramb36e1_13> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1664: Output port <ECCPARITY> of the instance <ramb36e1_14> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1664: Output port <RDADDRECC> of the instance <ramb36e1_14> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1664: Output port <DOPADOP> of the instance <ramb36e1_14> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1664: Output port <DOPBDOP> of the instance <ramb36e1_14> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1664: Output port <DBITERR> of the instance <ramb36e1_14> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1664: Output port <SBITERR> of the instance <ramb36e1_14> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1664: Output port <CASCADEOUTA> of the instance <ramb36e1_14> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1664: Output port <CASCADEOUTB> of the instance <ramb36e1_14> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1711: Output port <ECCPARITY> of the instance <ramb36e1_15> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1711: Output port <RDADDRECC> of the instance <ramb36e1_15> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1711: Output port <DOPADOP> of the instance <ramb36e1_15> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1711: Output port <DOPBDOP> of the instance <ramb36e1_15> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1711: Output port <DBITERR> of the instance <ramb36e1_15> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1711: Output port <SBITERR> of the instance <ramb36e1_15> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1711: Output port <CASCADEOUTA> of the instance <ramb36e1_15> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1711: Output port <CASCADEOUTB> of the instance <ramb36e1_15> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1758: Output port <ECCPARITY> of the instance <ramb36e1_16> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1758: Output port <RDADDRECC> of the instance <ramb36e1_16> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1758: Output port <DOPADOP> of the instance <ramb36e1_16> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1758: Output port <DOPBDOP> of the instance <ramb36e1_16> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1758: Output port <DBITERR> of the instance <ramb36e1_16> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1758: Output port <SBITERR> of the instance <ramb36e1_16> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1758: Output port <CASCADEOUTA> of the instance <ramb36e1_16> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1758: Output port <CASCADEOUTB> of the instance <ramb36e1_16> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1805: Output port <ECCPARITY> of the instance <ramb36e1_17> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1805: Output port <RDADDRECC> of the instance <ramb36e1_17> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1805: Output port <DOPADOP> of the instance <ramb36e1_17> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1805: Output port <DOPBDOP> of the instance <ramb36e1_17> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1805: Output port <DBITERR> of the instance <ramb36e1_17> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1805: Output port <SBITERR> of the instance <ramb36e1_17> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1805: Output port <CASCADEOUTA> of the instance <ramb36e1_17> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1805: Output port <CASCADEOUTB> of the instance <ramb36e1_17> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1852: Output port <ECCPARITY> of the instance <ramb36e1_18> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1852: Output port <RDADDRECC> of the instance <ramb36e1_18> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1852: Output port <DOPADOP> of the instance <ramb36e1_18> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1852: Output port <DOPBDOP> of the instance <ramb36e1_18> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1852: Output port <DBITERR> of the instance <ramb36e1_18> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1852: Output port <SBITERR> of the instance <ramb36e1_18> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1852: Output port <CASCADEOUTA> of the instance <ramb36e1_18> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1852: Output port <CASCADEOUTB> of the instance <ramb36e1_18> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1899: Output port <ECCPARITY> of the instance <ramb36e1_19> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1899: Output port <RDADDRECC> of the instance <ramb36e1_19> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1899: Output port <DOPADOP> of the instance <ramb36e1_19> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1899: Output port <DOPBDOP> of the instance <ramb36e1_19> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1899: Output port <DBITERR> of the instance <ramb36e1_19> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1899: Output port <SBITERR> of the instance <ramb36e1_19> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1899: Output port <CASCADEOUTA> of the instance <ramb36e1_19> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1899: Output port <CASCADEOUTB> of the instance <ramb36e1_19> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1946: Output port <ECCPARITY> of the instance <ramb36e1_20> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1946: Output port <RDADDRECC> of the instance <ramb36e1_20> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1946: Output port <DOPADOP> of the instance <ramb36e1_20> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1946: Output port <DOPBDOP> of the instance <ramb36e1_20> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1946: Output port <DBITERR> of the instance <ramb36e1_20> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1946: Output port <SBITERR> of the instance <ramb36e1_20> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1946: Output port <CASCADEOUTA> of the instance <ramb36e1_20> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1946: Output port <CASCADEOUTB> of the instance <ramb36e1_20> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1993: Output port <ECCPARITY> of the instance <ramb36e1_21> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1993: Output port <RDADDRECC> of the instance <ramb36e1_21> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1993: Output port <DOPADOP> of the instance <ramb36e1_21> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1993: Output port <DOPBDOP> of the instance <ramb36e1_21> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1993: Output port <DBITERR> of the instance <ramb36e1_21> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1993: Output port <SBITERR> of the instance <ramb36e1_21> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1993: Output port <CASCADEOUTA> of the instance <ramb36e1_21> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 1993: Output port <CASCADEOUTB> of the instance <ramb36e1_21> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2040: Output port <ECCPARITY> of the instance <ramb36e1_22> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2040: Output port <RDADDRECC> of the instance <ramb36e1_22> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2040: Output port <DOPADOP> of the instance <ramb36e1_22> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2040: Output port <DOPBDOP> of the instance <ramb36e1_22> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2040: Output port <DBITERR> of the instance <ramb36e1_22> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2040: Output port <SBITERR> of the instance <ramb36e1_22> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2040: Output port <CASCADEOUTA> of the instance <ramb36e1_22> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2040: Output port <CASCADEOUTB> of the instance <ramb36e1_22> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2087: Output port <ECCPARITY> of the instance <ramb36e1_23> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2087: Output port <RDADDRECC> of the instance <ramb36e1_23> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2087: Output port <DOPADOP> of the instance <ramb36e1_23> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2087: Output port <DOPBDOP> of the instance <ramb36e1_23> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2087: Output port <DBITERR> of the instance <ramb36e1_23> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2087: Output port <SBITERR> of the instance <ramb36e1_23> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2087: Output port <CASCADEOUTA> of the instance <ramb36e1_23> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2087: Output port <CASCADEOUTB> of the instance <ramb36e1_23> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2134: Output port <ECCPARITY> of the instance <ramb36e1_24> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2134: Output port <RDADDRECC> of the instance <ramb36e1_24> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2134: Output port <DOPADOP> of the instance <ramb36e1_24> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2134: Output port <DOPBDOP> of the instance <ramb36e1_24> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2134: Output port <DBITERR> of the instance <ramb36e1_24> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2134: Output port <SBITERR> of the instance <ramb36e1_24> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2134: Output port <CASCADEOUTA> of the instance <ramb36e1_24> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2134: Output port <CASCADEOUTB> of the instance <ramb36e1_24> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2181: Output port <ECCPARITY> of the instance <ramb36e1_25> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2181: Output port <RDADDRECC> of the instance <ramb36e1_25> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2181: Output port <DOPADOP> of the instance <ramb36e1_25> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2181: Output port <DOPBDOP> of the instance <ramb36e1_25> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2181: Output port <DBITERR> of the instance <ramb36e1_25> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2181: Output port <SBITERR> of the instance <ramb36e1_25> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2181: Output port <CASCADEOUTA> of the instance <ramb36e1_25> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2181: Output port <CASCADEOUTB> of the instance <ramb36e1_25> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2228: Output port <ECCPARITY> of the instance <ramb36e1_26> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2228: Output port <RDADDRECC> of the instance <ramb36e1_26> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2228: Output port <DOPADOP> of the instance <ramb36e1_26> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2228: Output port <DOPBDOP> of the instance <ramb36e1_26> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2228: Output port <DBITERR> of the instance <ramb36e1_26> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2228: Output port <SBITERR> of the instance <ramb36e1_26> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2228: Output port <CASCADEOUTA> of the instance <ramb36e1_26> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2228: Output port <CASCADEOUTB> of the instance <ramb36e1_26> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2275: Output port <ECCPARITY> of the instance <ramb36e1_27> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2275: Output port <RDADDRECC> of the instance <ramb36e1_27> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2275: Output port <DOPADOP> of the instance <ramb36e1_27> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2275: Output port <DOPBDOP> of the instance <ramb36e1_27> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2275: Output port <DBITERR> of the instance <ramb36e1_27> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2275: Output port <SBITERR> of the instance <ramb36e1_27> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2275: Output port <CASCADEOUTA> of the instance <ramb36e1_27> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2275: Output port <CASCADEOUTB> of the instance <ramb36e1_27> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2322: Output port <ECCPARITY> of the instance <ramb36e1_28> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2322: Output port <RDADDRECC> of the instance <ramb36e1_28> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2322: Output port <DOPADOP> of the instance <ramb36e1_28> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2322: Output port <DOPBDOP> of the instance <ramb36e1_28> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2322: Output port <DBITERR> of the instance <ramb36e1_28> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2322: Output port <SBITERR> of the instance <ramb36e1_28> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2322: Output port <CASCADEOUTA> of the instance <ramb36e1_28> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2322: Output port <CASCADEOUTB> of the instance <ramb36e1_28> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2369: Output port <ECCPARITY> of the instance <ramb36e1_29> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2369: Output port <RDADDRECC> of the instance <ramb36e1_29> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2369: Output port <DOPADOP> of the instance <ramb36e1_29> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2369: Output port <DOPBDOP> of the instance <ramb36e1_29> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2369: Output port <DBITERR> of the instance <ramb36e1_29> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2369: Output port <SBITERR> of the instance <ramb36e1_29> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2369: Output port <CASCADEOUTA> of the instance <ramb36e1_29> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2369: Output port <CASCADEOUTB> of the instance <ramb36e1_29> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2416: Output port <ECCPARITY> of the instance <ramb36e1_30> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2416: Output port <RDADDRECC> of the instance <ramb36e1_30> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2416: Output port <DOPADOP> of the instance <ramb36e1_30> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2416: Output port <DOPBDOP> of the instance <ramb36e1_30> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2416: Output port <DBITERR> of the instance <ramb36e1_30> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2416: Output port <SBITERR> of the instance <ramb36e1_30> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2416: Output port <CASCADEOUTA> of the instance <ramb36e1_30> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2416: Output port <CASCADEOUTB> of the instance <ramb36e1_30> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2463: Output port <ECCPARITY> of the instance <ramb36e1_31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2463: Output port <RDADDRECC> of the instance <ramb36e1_31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2463: Output port <DOPADOP> of the instance <ramb36e1_31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2463: Output port <DOPBDOP> of the instance <ramb36e1_31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2463: Output port <DBITERR> of the instance <ramb36e1_31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2463: Output port <SBITERR> of the instance <ramb36e1_31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2463: Output port <CASCADEOUTA> of the instance <ramb36e1_31> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:/Users/ECE/Documents/PR_Project_XADC/hdl/elaborate/microblaze_0_bram_block_1_elaborate_v1_00_a/hdl/vhdl/microblaze_0_bram_block_1_elaborate.vhd" line 2463: Output port <CASCADEOUTB> of the instance <ramb36e1_31> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <microblaze_0_bram_block_1_elaborate> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <system_microblaze_0_bram_block_1_wrapper> ...
+
+Optimizing unit <microblaze_0_bram_block_1_elaborate> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_microblaze_0_bram_block_1_wrapper, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_microblaze_0_bram_block_1_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2
+#      GND                         : 1
+#      VCC                         : 1
+# RAMS                             : 32
+#      RAMB36E1                    : 32
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k325tffg900-2 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                         206
+ Number of bonded IOBs:                   0  out of    500     0%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               32  out of    445     7%  
+    Number using Block RAM only:         32
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                     | Load  |
+-----------------------------------+-------------------------------------------+-------+
+BRAM_Clk_B                         | NONE(microblaze_0_bram_block_1/ramb36e1_0)| 32    |
+BRAM_Clk_A                         | NONE(microblaze_0_bram_block_1/ramb36e1_0)| 32    |
+-----------------------------------+-------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------------+--------------------------------------------+-------+
+Control Signal                                                         | Buffer(FF name)                            | Load  |
+-----------------------------------------------------------------------+--------------------------------------------+-------+
+microblaze_0_bram_block_1/net_gnd0(microblaze_0_bram_block_1/XST_GND:G)| NONE(microblaze_0_bram_block_1/ramb36e1_13)| 128   |
+-----------------------------------------------------------------------+--------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 0.543ns
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'BRAM_Clk_A'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              0.543ns (Levels of Logic = 1)
+  Source:            BRAM_Dout_A<0> (PAD)
+  Destination:       microblaze_0_bram_block_1/ramb36e1_0 (RAM)
+  Destination Clock: BRAM_Clk_A rising
+
+  Data Path: BRAM_Dout_A<0> to microblaze_0_bram_block_1/ramb36e1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     begin scope: 'microblaze_0_bram_block_1:BRAM_Dout_A<0>'
+     RAMB36E1:DIADI0           0.543          ramb36e1_0
+    ----------------------------------------
+    Total                      0.543ns (0.543ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'BRAM_Clk_B'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              0.543ns (Levels of Logic = 1)
+  Source:            BRAM_Dout_B<0> (PAD)
+  Destination:       microblaze_0_bram_block_1/ramb36e1_0 (RAM)
+  Destination Clock: BRAM_Clk_B rising
+
+  Data Path: BRAM_Dout_B<0> to microblaze_0_bram_block_1/ramb36e1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     begin scope: 'microblaze_0_bram_block_1:BRAM_Dout_B<0>'
+     RAMB36E1:DIBDI0           0.543          ramb36e1_0
+    ----------------------------------------
+    Total                      0.543ns (0.543ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.90 secs
+ 
+--> 
+
+Total memory usage is 461672 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :  257 (   0 filtered)
+
