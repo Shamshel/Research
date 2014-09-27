@@ -192,16 +192,25 @@ float XADC_core_voltage()
 
 }
 
+void reset_oscillator(unsigned int base_addr, unsigned int calibration_time)
+{
+	Xil_Out32(base_addr+0x00, 0x00000000);
+	sleep_us(100);
+	Xil_Out32(base_addr+0x00, calibration_time);
+
+}
+
+
 void
 init_platform()
 {
-	Xil_Out32(RP_BASEADDR+0x00, 0x00000000);
     /*
      * If you want to run this example outside of SDK,
      * uncomment the following line and also #include "ps7_init.h" at the top.
      * Make sure that the ps7_init.c and ps7_init.h files are included
      * along with this example source files for compilation.
      */
+
     /* ps7_init();*/
     enable_caches();
     init_uart();

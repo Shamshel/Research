@@ -11,5 +11,8 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/ECE/Documents/PR_Project_XADC/pcores/fan_controller_v1_00_a/hdl/vhdl/fan_controller.vhd&quot; into library work</arg>
 </msg>
 
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/ECE/Documents/PR_Project_XADC/pcores/fan_controller_v1_00_a/hdl/vhdl/user_logic.vhd&quot; into library work</arg>
+</msg>
+
 </messages>
 

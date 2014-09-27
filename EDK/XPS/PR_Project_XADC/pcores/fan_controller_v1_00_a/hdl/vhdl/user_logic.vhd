@@ -142,6 +142,7 @@ architecture IMP of user_logic is
   signal slv_read_ack                   : std_logic;
   signal slv_write_ack                  : std_logic;
   constant PWM_COUNT					: integer := 255;
+  constant CLK_DIV						: integer := 200000;
   
 begin
 
@@ -173,6 +174,7 @@ begin
   -- implement slave model software accessible register(s)
   SLAVE_REG_WRITE_PROC : process( Bus2IP_Clk ) is
   
+  variable count_div							 : integer := 0;
   variable count								 : integer := 0;
   
   begin
@@ -204,7 +206,13 @@ begin
 	 
 		end if;
 		
-		count := count + 1;
+		count_div := count_div+1;
+		if(count_div >= CLK_DIV)
+		then
+			count_div := 0;
+			count := count + 1;
+			
+		end if;
 	  
     end if;
 

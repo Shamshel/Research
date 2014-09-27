@@ -61,7 +61,7 @@
 #define NUM_PARTITIONS 14
 
 //debug constant
-//#define DEBUG
+#define DEBUG
 
 
 //globals
@@ -121,14 +121,6 @@ void menu()
 
 }
 
-void reset_oscillator(unsigned int base_addr, unsigned int calibration_time)
-{
-	Xil_Out32(base_addr+0x00, 0x00000000);
-	sleep_us(100);
-	Xil_Out32(base_addr+0x00, calibration_time);
-
-}
-
 /*
 *
 * Reliability Algorithm:
@@ -176,7 +168,7 @@ int algorithm(unsigned int base_addrs[],
 	char partitions_exhausted = 0;
 
 #ifdef DEBUG
-		//printf("Starting algorithm.\n\r");
+		print("Starting algorithm.\n\r");
 
 #endif
 
@@ -186,7 +178,7 @@ int algorithm(unsigned int base_addrs[],
 		reset_oscillator(base_addrs[i] + 0x00, CALIBRATION_TIME);
 
 #ifdef DEBUG
-		//printf("Oscillator %d startup...\n\r", i);
+		xil_printf("Oscillator %d startup...\n\r", i);
 
 #endif
 
@@ -195,11 +187,11 @@ int algorithm(unsigned int base_addrs[],
 	//Gather temperature data for reliability statistics, in a real-world implementation
 	//of this algorithm, programming the partial bitstream for the ring oscillator
 	//for every cycle of the algorithm could introduce unacceptable overhead costs.
-	while (partitions_parsed != NUM_PARTITIONS)
+	while (partitions_parsed < NUM_PARTITIONS)
 	{
 		for (i = 0; i < NUM_PARTITIONS; i++)
 		{
-			temperature_read = Xil_In32(base_addrs[i] + 0x04);
+			temperature_read = Xil_In32(baseaddrs[i]+0x04);
 
 			if ((temperature_read & GO_DONE_MASK) == GO_DONE_MASK)
 			{
@@ -208,7 +200,7 @@ int algorithm(unsigned int base_addrs[],
 				temperature_readings[i] = ~GO_DONE_MASK & temperature_read;
 
 #ifdef DEBUG
-				//printf("module %d... done.\n\r");
+				xil_printf("module %d... done.\n\r", i);
 
 #endif
 
@@ -249,7 +241,7 @@ int algorithm(unsigned int base_addrs[],
 		if (blocks_placed == num_active)
 		{
 #ifdef DEBUG
-			//printf("SUCCESS: all partitions placed\n\r");
+			print("SUCCESS: all partitions placed\n\r");
 
 #endif
 
@@ -264,7 +256,7 @@ int algorithm(unsigned int base_addrs[],
 			partitions_exhausted = 1;
 
 #ifndef DEBUG
-			//printf("checking for exhausted partitions... ");
+			print("checking for exhausted partitions... ");
 
 #endif
 
@@ -282,7 +274,7 @@ int algorithm(unsigned int base_addrs[],
 			{
 				//insufficent partitions remaining for number of active modules
 #ifdef DEBUG
-				//printf("ERROR: insufficent partitions\n\r");
+				print("ERROR: insufficent partitions\n\r");
 
 #endif
 
@@ -294,7 +286,7 @@ int algorithm(unsigned int base_addrs[],
 			else
 			{
 #ifndef DEBUG
-				//printf("done.\n\r");
+				print("done.\n\r");
 
 #endif
 
@@ -383,10 +375,43 @@ void printAlgorithmResults(unsigned int temperature_readings[], unsigned char bl
 
 int main()
 {
+	unsigned int osc_count = 0;
 	unsigned char num_active = 0;
 	int index = 0;
+	int i = 0;
 
     init_platform();
+
+
+    print("Initializing oscillators:\n\r");
+    //initialize all oscillators to known good state
+    for(index = 0; index < NUM_PARTITIONS; index++)
+    {
+    	reset_oscillator(baseaddrs[index], CALIBRATION_TIME);
+
+    }
+
+    while(num_active < NUM_PARTITIONS)
+    {
+		for(index = 0; index < NUM_PARTITIONS; index++)
+		{
+			while(((osc_count & GO_DONE_MASK) != GO_DONE_MASK))
+			{
+				osc_count = 0;
+
+				osc_count = Xil_In32(RP_BASEADDR+04);
+
+			}
+
+			num_active++;
+
+			xil_printf("%d modules initialized\n\r", num_active);
+
+		}
+
+    }
+
+    num_active = 0;
 
     //print("platform initialized!\n\r");
 
@@ -425,7 +450,7 @@ int main()
     {
     	key = XUartLite_RecvByte(XUART_BASEADDR);
 
-    	unsigned int osc_count = 0;
+    	osc_count = 0;
 
     	switch(key)
     	{
@@ -497,7 +522,7 @@ int main()
     	// specific temperature
     	case 't':
     	case 'T':
-    		sleep_ms(500);
+    		sleep_ms(100);
 
     		reset_oscillator(RP_BASEADDR, CALIBRATION_TIME);
 
@@ -674,9 +699,9 @@ int main()
 
     		*/
 
-    		num_active = 3;
+    		num_active = 1;
 
-    		xil_printf("running algorithm:\n\r");
+    		print("running algorithm:\n\r");
 
     		algorithm(baseaddrs,
     			num_active,
@@ -685,7 +710,7 @@ int main()
     			temperature_reading,
     			block_placement);
 
-    		xil_printf("algorithm completed:\n\r");
+    		print("algorithm completed:\n\r");
     		printAlgorithmResults(temperature_reading, block_placement);
 
 

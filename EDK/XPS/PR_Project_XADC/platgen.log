@@ -262,92 +262,95 @@ implementation netlist
 IPNAME:bram_block INSTANCE:microblaze_0_bram_block_0 -
 C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 84 - Copying cache
 implementation netlist
+IPNAME:microblaze INSTANCE:microblaze_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 91 - Copying cache
+implementation netlist
 IPNAME:mdm INSTANCE:debug_module -
 C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 117 - Copying cache
 implementation netlist
 IPNAME:axi_interconnect INSTANCE:axi4lite_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 146 - Copying cache
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 147 - Copying cache
 implementation netlist
 IPNAME:axi_uartlite INSTANCE:rs232_uart_1 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 154 - Copying cache
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 155 - Copying cache
 implementation netlist
 IPNAME:axi_iic INSTANCE:iic_main -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 169 - Copying cache
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 170 - Copying cache
 implementation netlist
 IPNAME:axi_xadc INSTANCE:axi_xadc_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 182 - Copying cache
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 183 - Copying cache
 implementation netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 200 - Copying cache
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 201 - Copying cache
 implementation netlist
 IPNAME:fan_controller INSTANCE:fan_controller_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 210 - Copying cache
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 211 - Copying cache
 implementation netlist
 IPNAME:axi_hwicap INSTANCE:axi_hwicap_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 221 - Copying cache
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 222 - Copying cache
 implementation netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_1 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 232 - Copying cache
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 233 - Copying cache
 implementation netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_2 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 241 - Copying cache
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 242 - Copying cache
 implementation netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_3 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 250 - Copying cache
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 251 - Copying cache
 implementation netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_4 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 259 - Copying cache
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 260 - Copying cache
 implementation netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_5 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 268 - Copying cache
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 269 - Copying cache
 implementation netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_6 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 277 - Copying cache
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 278 - Copying cache
 implementation netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_7 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 286 - Copying cache
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 287 - Copying cache
 implementation netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_8 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 295 - Copying cache
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 296 - Copying cache
 implementation netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_9 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 304 - Copying cache
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 305 - Copying cache
 implementation netlist
 IPNAME:axi2axi_connector INSTANCE:axi2axi_connector_1 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 313 - Copying cache
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 314 - Copying cache
 implementation netlist
 IPNAME:axi_interconnect INSTANCE:axi_interconnect_1 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 331 - Copying cache
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 332 - Copying cache
 implementation netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_10 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 339 - Copying cache
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 340 - Copying cache
 implementation netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_11 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 348 - Copying cache
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 349 - Copying cache
 implementation netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_12 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 357 - Copying cache
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 358 - Copying cache
 implementation netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_13 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 366 - Copying cache
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 367 - Copying cache
 implementation netlist
 IPNAME:bram_block INSTANCE:microblaze_0_bram_block_1 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 375 - Copying cache
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 376 - Copying cache
 implementation netlist
 IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_d_bram_ctrl_1 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 382 - Copying cache
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 383 - Copying cache
 implementation netlist
 IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_i_bram_ctrl_1 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 391 - Copying cache
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 392 - Copying cache
 implementation netlist
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:microblaze_0_bram_block_0 -
 C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 84 - elaborating IP
 IPNAME:bram_block INSTANCE:microblaze_0_bram_block_1 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 375 - elaborating IP
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 376 - elaborating IP
 IPNAME:clock_generator INSTANCE:clock_generator_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 130 - elaborating IP
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 131 - elaborating IP
 ClkGen elaborate status: PASSED
 ----------------------------------------
 ----------------------------------------
@@ -372,64 +375,60 @@ INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
 INFO:EDK:4194 - Running XST parallelly on 4 processors
-INSTANCE:microblaze_0 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line
-91 - Running XST synthesis
 INSTANCE:clock_generator_0 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs
-line 130 - Running XST synthesis
+line 131 - Running XST synthesis
 INSTANCE:reconfigurable_peripherials_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 200 - Running XST
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 201 - Running XST
 synthesis
 INSTANCE:fan_controller_0 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs
-line 210 - Running XST synthesis
+line 211 - Running XST synthesis
 INSTANCE:reconfigurable_peripherials_1 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 232 - Running XST
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 233 - Running XST
 synthesis
 INSTANCE:reconfigurable_peripherials_2 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 241 - Running XST
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 242 - Running XST
 synthesis
 INSTANCE:reconfigurable_peripherials_3 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 250 - Running XST
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 251 - Running XST
 synthesis
 INSTANCE:reconfigurable_peripherials_4 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 259 - Running XST
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 260 - Running XST
 synthesis
 INSTANCE:reconfigurable_peripherials_5 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 268 - Running XST
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 269 - Running XST
 synthesis
 INSTANCE:reconfigurable_peripherials_6 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 277 - Running XST
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 278 - Running XST
 synthesis
 INSTANCE:reconfigurable_peripherials_7 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 286 - Running XST
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 287 - Running XST
 synthesis
 INSTANCE:reconfigurable_peripherials_8 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 295 - Running XST
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 296 - Running XST
 synthesis
 INSTANCE:reconfigurable_peripherials_9 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 304 - Running XST
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 305 - Running XST
 synthesis
 INSTANCE:reconfigurable_peripherials_10 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 339 - Running XST
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 340 - Running XST
 synthesis
 INSTANCE:reconfigurable_peripherials_11 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 348 - Running XST
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 349 - Running XST
 synthesis
 INSTANCE:reconfigurable_peripherials_12 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 357 - Running XST
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 358 - Running XST
 synthesis
 INSTANCE:reconfigurable_peripherials_13 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 366 - Running XST
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 367 - Running XST
 synthesis
 
 Running NGCBUILD ...
-IPNAME:system_microblaze_0_wrapper INSTANCE:microblaze_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 91 - Running NGCBUILD
 IPNAME:system_clock_generator_0_wrapper INSTANCE:clock_generator_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 130 - Running NGCBUILD
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 131 - Running NGCBUILD
 INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
    If any constraint needs to be overridden, this should be done by modifying
    the data/system.ucf file.
 
 Rebuilding cache ...
 
-Total run time: 126.00 seconds
+Total run time: 95.00 seconds

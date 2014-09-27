@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-07-07T10:00:10</DateModified>
+  <DateModified>2014-09-26T10:13:22</DateModified>
   <ModuleName>fan_controller</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/ECE/Documents/PR_Project_XADC/pcores/fan_controller_v1_00_a/hdl/vhdl/fan_controller/iseconfig/fan_controller.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/ECE/Documents/PR_Project_XADC/pcores/fan_controller_v1_00_a/hdl/vhdl/fan_controller</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/ECE/Documents/PR_Project_XADC/pcores/fan_controller_v1_00_a/hdl/vhdl/fan_controller\</ImplementationReportsDirectory>
   <DateInitialized>2014-07-07T10:00:10</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

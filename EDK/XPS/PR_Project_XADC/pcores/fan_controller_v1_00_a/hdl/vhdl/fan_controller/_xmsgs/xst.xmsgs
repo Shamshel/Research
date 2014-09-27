@@ -5,61 +5,61 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="104" delta="new" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 58: Cannot find &lt;<arg fmt="%s" index="1">proc_common_pkg</arg>&gt; in library &lt;<arg fmt="%s" index="2">proc_common_v3_00_a</arg>&gt;. Please ensure that the library was compiled, and that a library and a use clause are present in the VHDL file.
+<msg type="error" file="HDLCompiler" num="104" delta="old" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 58: Cannot find &lt;<arg fmt="%s" index="1">proc_common_pkg</arg>&gt; in library &lt;<arg fmt="%s" index="2">proc_common_v3_00_a</arg>&gt;. Please ensure that the library was compiled, and that a library and a use clause are present in the VHDL file.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="854" delta="new" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 84: Unit &lt;<arg fmt="%s" index="1">user_logic</arg>&gt; ignored due to previous errors.
+<msg type="error" file="HDLCompiler" num="854" delta="old" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 84: Unit &lt;<arg fmt="%s" index="1">user_logic</arg>&gt; ignored due to previous errors.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="374" delta="new" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 131: Entity &lt;<arg fmt="%s" index="1">user_logic</arg>&gt; is not yet compiled.
+<msg type="error" file="HDLCompiler" num="374" delta="old" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 131: Entity &lt;<arg fmt="%s" index="1">user_logic</arg>&gt; is not yet compiled.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="69" delta="new" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 138: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 138: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="69" delta="new" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 139: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 139: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="69" delta="new" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 140: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 140: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="69" delta="new" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 141: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 141: &lt;<arg fmt="%s" index="1">std_logic_vector</arg>&gt; is not declared.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="69" delta="new" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 142: &lt;<arg fmt="%s" index="1">std_logic</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 142: &lt;<arg fmt="%s" index="1">std_logic</arg>&gt; is not declared.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="69" delta="new" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 143: &lt;<arg fmt="%s" index="1">std_logic</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 143: &lt;<arg fmt="%s" index="1">std_logic</arg>&gt; is not declared.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="69" delta="new" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 144: &lt;<arg fmt="%s" index="1">integer</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 144: &lt;<arg fmt="%s" index="1">integer</arg>&gt; is not declared.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="69" delta="new" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 168: &lt;<arg fmt="%s" index="1">slv_reg_write_sel</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 145: &lt;<arg fmt="%s" index="1">integer</arg>&gt; is not declared.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="69" delta="new" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 169: &lt;<arg fmt="%s" index="1">slv_reg_read_sel</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 169: &lt;<arg fmt="%s" index="1">slv_reg_write_sel</arg>&gt; is not declared.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="69" delta="new" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 170: &lt;<arg fmt="%s" index="1">slv_write_ack</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 170: &lt;<arg fmt="%s" index="1">slv_reg_read_sel</arg>&gt; is not declared.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="69" delta="new" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 171: &lt;<arg fmt="%s" index="1">slv_read_ack</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 171: &lt;<arg fmt="%s" index="1">slv_write_ack</arg>&gt; is not declared.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="69" delta="new" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 176: &lt;<arg fmt="%s" index="1">integer</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 172: &lt;<arg fmt="%s" index="1">slv_read_ack</arg>&gt; is not declared.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="69" delta="new" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 182: &lt;<arg fmt="%s" index="1">slv_reg0</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 177: &lt;<arg fmt="%s" index="1">integer</arg>&gt; is not declared.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="69" delta="new" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 186: &lt;<arg fmt="%s" index="1">c_slv_dwidth</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 178: &lt;<arg fmt="%s" index="1">integer</arg>&gt; is not declared.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="24" delta="new" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 186: <arg fmt="%s" index="1">&quot;**&quot;</arg> expects <arg fmt="%d" index="2">2</arg> arguments
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 184: &lt;<arg fmt="%s" index="1">slv_reg0</arg>&gt; is not declared.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="69" delta="new" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 188: &lt;<arg fmt="%s" index="1">slv_reg0</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\ECE\Documents\PR_Project_XADC\pcores\fan_controller_v1_00_a\hdl\vhdl\user_logic.vhd" Line 188: &lt;<arg fmt="%s" index="1">c_slv_dwidth</arg>&gt; is not declared.
 </msg>
 
 </messages>

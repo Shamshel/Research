@@ -3,7 +3,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to C:\Users\ECE\Documents\PR_Project_XADC\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.13 secs
  
 --> 
@@ -1340,24 +1340,24 @@ Top Level Output File Name         : system.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 6744
+# BELS                             : 6861
 #      GND                         : 38
-#      INV                         : 137
-#      LUT1                        : 39
+#      INV                         : 139
+#      LUT1                        : 71
 #      LUT2                        : 781
-#      LUT3                        : 798
-#      LUT4                        : 728
-#      LUT5                        : 717
+#      LUT3                        : 800
+#      LUT4                        : 738
+#      LUT5                        : 719
 #      LUT6                        : 2203
 #      LUT6_2                      : 96
 #      MULT_AND                    : 2
-#      MUXCY                       : 383
+#      MUXCY                       : 421
 #      MUXCY_L                     : 177
 #      MUXF7                       : 339
 #      MUXF8                       : 44
 #      VCC                         : 30
-#      XORCY                       : 232
-# FlipFlops/Latches                : 5196
+#      XORCY                       : 263
+# FlipFlops/Latches                : 5214
 #      FD                          : 569
 #      FDC                         : 260
 #      FDC_1                       : 5
@@ -1366,7 +1366,7 @@ Primitive and Black Box Usage:
 #      FDE_1                       : 8
 #      FDP                         : 24
 #      FDPE                        : 6
-#      FDR                         : 1389
+#      FDR                         : 1407
 #      FDR_1                       : 1
 #      FDRE                        : 2050
 #      FDRE_1                      : 1
@@ -1407,19 +1407,19 @@ Selected Device : 7k325tffg900-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            5196  out of  407600     1%  
- Number of Slice LUTs:                 5907  out of  203800     2%  
-    Number used as Logic:              5499  out of  203800     2%  
+ Number of Slice Registers:            5214  out of  407600     1%  
+ Number of Slice LUTs:                 5955  out of  203800     2%  
+    Number used as Logic:              5547  out of  203800     2%  
     Number used as Memory:              408  out of  64000     0%  
        Number used as RAM:               64
        Number used as SRL:              344
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   8448
-   Number with an unused Flip Flop:    3252  out of   8448    38%  
-   Number with an unused LUT:          2541  out of   8448    30%  
-   Number of fully used LUT-FF pairs:  2655  out of   8448    31%  
-   Number of unique control sets:       376
+ Number of LUT Flip Flop pairs used:   8495
+   Number with an unused Flip Flop:    3281  out of   8495    38%  
+   Number with an unused LUT:          2540  out of   8495    29%  
+   Number of fully used LUT-FF pairs:  2674  out of   8495    31%  
+   Number of unique control sets:       377
 
 IO Utilization: 
  Number of IOs:                          66
@@ -1452,7 +1452,7 @@ Clock Information:
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                                                                                                                                                                                               | Clock buffer(FF name)                                                                                             | Load  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+-------+
-clock_generator_0/clock_generator_0/SIG_MMCM1_CLKOUT0                                                                                                                                                      | BUFG                                                                                                              | 5196  |
+clock_generator_0/clock_generator_0/SIG_MMCM1_CLKOUT0                                                                                                                                                      | BUFG                                                                                                              | 5214  |
 debug_module/debug_module/drck_i                                                                                                                                                                           | BUFG                                                                                                              | 383   |
 debug_module/Ext_JTAG_UPDATE                                                                                                                                                                               | NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/command_reg_0)| 43    |
 axi_hwicap_0/axi_hwicap_0/HWICAP_CTRL_I/icap_statemachine_I1/icap_nstate_cs[3]_PWR_54_o_Mux_51_o(axi_hwicap_0/axi_hwicap_0/HWICAP_CTRL_I/icap_statemachine_I1/Mmux_icap_nstate_cs[3]_PWR_54_o_Mux_51_o11:O)| NONE(*)(axi_hwicap_0/axi_hwicap_0/HWICAP_CTRL_I/icap_statemachine_I1/hang_status_ns)                              | 1     |
@@ -1469,8 +1469,8 @@ Asynchronous Control Signals Information:
 ---------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+-------+
 Control Signal                                                                                                             | Buffer(FF name)                                                      | Load  |
 ---------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+-------+
-microblaze_0_bram_block_0/microblaze_0_bram_block_0/net_gnd0(microblaze_0_bram_block_0/microblaze_0_bram_block_0/XST_GND:G)| NONE(microblaze_0_bram_block_0/microblaze_0_bram_block_0/ramb36e1_12)| 64    |
-microblaze_0_bram_block_1/microblaze_0_bram_block_1/net_gnd0(microblaze_0_bram_block_1/microblaze_0_bram_block_1/XST_GND:G)| NONE(microblaze_0_bram_block_1/microblaze_0_bram_block_1/ramb36e1_13)| 64    |
+microblaze_0_bram_block_0/microblaze_0_bram_block_0/net_gnd0(microblaze_0_bram_block_0/microblaze_0_bram_block_0/XST_GND:G)| NONE(microblaze_0_bram_block_0/microblaze_0_bram_block_0/ramb36e1_31)| 64    |
+microblaze_0_bram_block_1/microblaze_0_bram_block_1/net_gnd0(microblaze_0_bram_block_1/microblaze_0_bram_block_1/XST_GND:G)| NONE(microblaze_0_bram_block_1/microblaze_0_bram_block_1/ramb36e1_14)| 64    |
 ---------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+-------+
 
 Timing Summary:
@@ -1489,7 +1489,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clock_generator_0/clock_generator_0/SIG_MMCM1_CLKOUT0'
   Clock period: 6.309ns (frequency: 158.502MHz)
-  Total number of paths / destination ports: 395770 / 12497
+  Total number of paths / destination ports: 403281 / 12533
 -------------------------------------------------------------------------
 Delay:               6.309ns (Levels of Logic = 21)
   Source:            microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Byte_Doublet_Handle_gti_I/MEM_DataBus_Write_Data_31 (FF)
@@ -1842,12 +1842,12 @@ debug_module/debug_module/drck_i                     |    1.517|    2.005|    1.
 =========================================================================
 
 
-Total REAL time to Xst completion: 32.00 secs
-Total CPU time to Xst completion: 32.84 secs
+Total REAL time to Xst completion: 33.00 secs
+Total CPU time to Xst completion: 32.21 secs
  
 --> 
 
-Total memory usage is 574376 kilobytes
+Total memory usage is 573776 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    8 (   0 filtered)

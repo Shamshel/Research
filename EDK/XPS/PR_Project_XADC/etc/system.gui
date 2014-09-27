@@ -9,21 +9,19 @@
       <VARIABLE COL_INDEX="1" COL_WIDTH="342" IS_VISIBLE="TRUE" VIEWDISP="Bus Name" VIEWTYPE="HEADER"/>
       <VARIABLE COL_INDEX="2" IS_VISIBLE="FALSE" VIEWDISP="Bus Standard" VIEWTYPE="HEADER"/>
       <VARIABLE COL_INDEX="3" COL_WIDTH="132" IS_VISIBLE="TRUE" VIEWDISP="IP Type" VIEWTYPE="HEADER"/>
-      <VARIABLE COL_INDEX="4" COL_WIDTH="595" IS_VISIBLE="TRUE" VIEWDISP="IP Version" VIEWTYPE="HEADER"/>
+      <VARIABLE COL_INDEX="4" COL_WIDTH="417" IS_VISIBLE="TRUE" VIEWDISP="IP Version" VIEWTYPE="HEADER"/>
       <VARIABLE COL_INDEX="5" IS_VISIBLE="FALSE" VIEWDISP="IP Classification" VIEWTYPE="HEADER"/>
       <VARIABLE COL_INDEX="6" IS_VISIBLE="FALSE" VIEWDISP="Type" VIEWTYPE="HEADER"/>
     </HEADERS>
     <SPLITTERS COLLAPSIBLE="1" HANDLEWIDTH="4" MARKER="255" ORIENTATION="1" RESIZE="1" SIZES="101,296,200" VERSION="0"/>
     <SET ID="microblaze_0_i_bram_ctrl_0" IS_EXPANDED="TRUE"/>
-    <SET ID="microblaze_0_d_bram_ctrl_0" IS_EXPANDED="TRUE"/>
     <SET ID="microblaze_0_bram_block_0" IS_EXPANDED="TRUE"/>
     <SET ID="microblaze_0" IS_EXPANDED="TRUE"/>
     <SET ID="microblaze_0_bram_block_1" IS_EXPANDED="TRUE"/>
-    <SET ID="microblaze_0_d_bram_ctrl_1" IS_EXPANDED="TRUE"/>
     <SET ID="microblaze_0_i_bram_ctrl_1" IS_EXPANDED="TRUE"/>
     <STATUS>
       <SELECTIONS>
-        <VARIABLE ID="microblaze_0"/>
+        <VARIABLE ID="DLMB" PARENT="microblaze_0"/>
       </SELECTIONS>
     </STATUS>
     <SEQUENCES IS_DEF_SEQUENCES="TRUE">
@@ -31,7 +29,7 @@
       <VARIABLE ID="microblaze_0_ilmb" ROW_INDEX="3"/>
       <VARIABLE ID="microblaze_0_i_bram_ctrl_0" IS_EXPANDED="TRUE" ROW_INDEX="7"/>
       <VARIABLE ID="microblaze_0_dlmb" ROW_INDEX="2"/>
-      <VARIABLE ID="microblaze_0_d_bram_ctrl_0" IS_EXPANDED="TRUE" ROW_INDEX="6"/>
+      <VARIABLE ID="microblaze_0_d_bram_ctrl_0" ROW_INDEX="6"/>
       <VARIABLE ID="microblaze_0_bram_block_0" IS_EXPANDED="TRUE" ROW_INDEX="5"/>
       <VARIABLE ID="microblaze_0" IS_EXPANDED="TRUE" ROW_INDEX="4"/>
       <VARIABLE ID="debug_module" ROW_INDEX="12"/>
@@ -59,7 +57,7 @@
       <VARIABLE ID="reconfigurable_peripherials_12" ROW_INDEX="29"/>
       <VARIABLE ID="reconfigurable_peripherials_13" ROW_INDEX="30"/>
       <VARIABLE ID="microblaze_0_bram_block_1" IS_EXPANDED="TRUE" ROW_INDEX="8"/>
-      <VARIABLE ID="microblaze_0_d_bram_ctrl_1" IS_EXPANDED="TRUE" ROW_INDEX="9"/>
+      <VARIABLE ID="microblaze_0_d_bram_ctrl_1" ROW_INDEX="9"/>
       <VARIABLE ID="microblaze_0_i_bram_ctrl_1" IS_EXPANDED="TRUE" ROW_INDEX="10"/>
     </SEQUENCES>
   </SET>

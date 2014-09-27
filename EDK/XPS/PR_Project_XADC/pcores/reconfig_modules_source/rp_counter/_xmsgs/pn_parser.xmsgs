@@ -11,5 +11,11 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/frequency_counter.vhd&quot; into library work</arg>
 </msg>
 
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/ring_oscillator.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.vhd&quot; into library work</arg>
+</msg>
+
 </messages>
 

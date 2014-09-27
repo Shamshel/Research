@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.28 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> 
 TABLE OF CONTENTS
@@ -575,35 +575,38 @@ WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/p
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
     Found 32-bit register for signal <SLAVE_REG_WRITE_PROC.count>.
     Found 1-bit register for signal <Fan_Ctrl>.
+    Found 32-bit register for signal <SLAVE_REG_WRITE_PROC.count_div>.
     Found 32-bit register for signal <slv_reg0>.
-    Found 32-bit adder for signal <SLAVE_REG_WRITE_PROC.count[31]_GND_16_o_add_6_OUT> created at line 207.
-    Found 32-bit comparator greater for signal <n0038> created at line 197
-    Found 33-bit comparator lessequal for signal <n0040> created at line 202
+    Found 32-bit adder for signal <SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT> created at line 209.
+    Found 32-bit adder for signal <SLAVE_REG_WRITE_PROC.count[31]_GND_16_o_add_8_OUT> created at line 213.
+    Found 32-bit comparator greater for signal <n0038> created at line 199
+    Found 33-bit comparator lessequal for signal <n0040> created at line 204
+    Found 32-bit comparator greater for signal <n0046> created at line 210
     Summary:
-	inferred   1 Adder/Subtractor(s).
-	inferred  65 D-type flip-flop(s).
-	inferred   2 Comparator(s).
-	inferred  35 Multiplexer(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  97 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred  36 Multiplexer(s).
 Unit <user_logic> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 2
- 32-bit adder                                          : 1
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 2
  4-bit adder                                           : 1
-# Registers                                            : 13
+# Registers                                            : 14
  1-bit register                                        : 7
  2-bit register                                        : 2
- 32-bit register                                       : 3
+ 32-bit register                                       : 4
  4-bit register                                        : 1
-# Comparators                                          : 2
- 32-bit comparator greater                             : 1
+# Comparators                                          : 3
+ 32-bit comparator greater                             : 2
  33-bit comparator lessequal                           : 1
-# Multiplexers                                         : 37
+# Multiplexers                                         : 38
  1-bit 2-to-1 multiplexer                              : 33
- 32-bit 2-to-1 multiplexer                             : 4
+ 32-bit 2-to-1 multiplexer                             : 5
 # FSMs                                                 : 1
 
 =========================================================================
@@ -618,24 +621,26 @@ The following registers are absorbed into counter <INCLUDE_DPHASE_TIMER.dpto_cnt
 Unit <slave_attachment> synthesized (advanced).
 
 Synthesizing (advanced) Unit <user_logic>.
-The following registers are absorbed into counter <SLAVE_REG_WRITE_PROC.count>: 1 register on signal <SLAVE_REG_WRITE_PROC.count>.
+The following registers are absorbed into counter <SLAVE_REG_WRITE_PROC.count_div>: 1 register on signal <SLAVE_REG_WRITE_PROC.count_div>.
 Unit <user_logic> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
 # Counters                                             : 2
  32-bit up counter                                     : 1
  4-bit up counter                                      : 1
-# Registers                                            : 75
- Flip-Flops                                            : 75
-# Comparators                                          : 2
- 32-bit comparator greater                             : 1
+# Registers                                            : 107
+ Flip-Flops                                            : 107
+# Comparators                                          : 3
+ 32-bit comparator greater                             : 2
  33-bit comparator lessequal                           : 1
-# Multiplexers                                         : 36
+# Multiplexers                                         : 38
  1-bit 2-to-1 multiplexer                              : 33
- 32-bit 2-to-1 multiplexer                             : 3
+ 32-bit 2-to-1 multiplexer                             : 5
 # FSMs                                                 : 1
 
 =========================================================================
@@ -664,30 +669,44 @@ Optimizing unit <slave_attachment> ...
 Optimizing unit <user_logic> ...
 WARNING:Xst:1293 - FF/Latch <fan_controller_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_1> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_1> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_8> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_9> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_10> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_11> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_12> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_13> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_14> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_15> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_16> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_17> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_18> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_19> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_20> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_21> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_22> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_23> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_24> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_26> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_25> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_26> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_27> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_28> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_29> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_30> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_24> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_23> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_22> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_21> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_20> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_19> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_18> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_17> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_16> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_15> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_14> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_13> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_12> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_11> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_10> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_9> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_8> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_div_31> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_div_30> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_div_29> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_div_28> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_div_27> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_div_26> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_div_25> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_div_24> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_div_23> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_div_22> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_div_21> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_div_20> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_div_19> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_div_18> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_31> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_30> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_29> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_28> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_27> has a constant value of 0 in block <system_fan_controller_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -699,8 +718,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 84
- Flip-Flops                                            : 84
+# Registers                                            : 102
+ Flip-Flops                                            : 102
 
 =========================================================================
 
@@ -723,21 +742,21 @@ Top Level Output File Name         : system_fan_controller_0_wrapper.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 126
+# BELS                             : 243
 #      GND                         : 1
-#      INV                         : 2
-#      LUT1                        : 2
+#      INV                         : 4
+#      LUT1                        : 34
 #      LUT2                        : 24
-#      LUT3                        : 36
-#      LUT4                        : 11
-#      LUT5                        : 3
+#      LUT3                        : 38
+#      LUT4                        : 21
+#      LUT5                        : 5
 #      LUT6                        : 5
-#      MUXCY                       : 33
+#      MUXCY                       : 71
 #      VCC                         : 1
-#      XORCY                       : 8
-# FlipFlops/Latches                : 84
+#      XORCY                       : 39
+# FlipFlops/Latches                : 102
 #      FD                          : 12
-#      FDR                         : 8
+#      FDR                         : 26
 #      FDRE                        : 64
 
 Device utilization summary:
@@ -747,16 +766,16 @@ Selected Device : 7k325tffg900-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              84  out of  407600     0%  
- Number of Slice LUTs:                   83  out of  203800     0%  
-    Number used as Logic:                83  out of  203800     0%  
+ Number of Slice Registers:             102  out of  407600     0%  
+ Number of Slice LUTs:                  131  out of  203800     0%  
+    Number used as Logic:               131  out of  203800     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    116
-   Number with an unused Flip Flop:      32  out of    116    27%  
-   Number with an unused LUT:            33  out of    116    28%  
-   Number of fully used LUT-FF pairs:    51  out of    116    43%  
-   Number of unique control sets:         5
+ Number of LUT Flip Flop pairs used:    163
+   Number with an unused Flip Flop:      61  out of    163    37%  
+   Number with an unused LUT:            32  out of    163    19%  
+   Number of fully used LUT-FF pairs:    70  out of    163    42%  
+   Number of unique control sets:         6
 
 IO Utilization: 
  Number of IOs:                         149
@@ -785,7 +804,7 @@ Clock Information:
 -----------------------------------+-------------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                                   | Load  |
 -----------------------------------+-------------------------------------------------------------------------+-------+
-S_AXI_ACLK                         | NONE(fan_controller_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1)| 84    |
+S_AXI_ACLK                         | NONE(fan_controller_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1)| 102   |
 -----------------------------------+-------------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -797,7 +816,7 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 2.242ns (Maximum Frequency: 445.941MHz)
+   Minimum period: 3.110ns (Maximum Frequency: 321.576MHz)
    Minimum input arrival time before clock: 0.787ns
    Maximum output required time after clock: 0.815ns
    Maximum combinational path delay: No path found
@@ -808,41 +827,44 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'S_AXI_ACLK'
-  Clock period: 2.242ns (frequency: 445.941MHz)
-  Total number of paths / destination ports: 765 / 155
+  Clock period: 3.110ns (frequency: 321.576MHz)
+  Total number of paths / destination ports: 8276 / 191
 -------------------------------------------------------------------------
-Delay:               2.242ns (Levels of Logic = 17)
-  Source:            fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_0 (FF)
-  Destination:       fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_7 (FF)
+Delay:               3.110ns (Levels of Logic = 20)
+  Source:            fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_div_0 (FF)
+  Destination:       fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_div_17 (FF)
   Source Clock:      S_AXI_ACLK rising
   Destination Clock: S_AXI_ACLK rising
 
-  Data Path: fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_0 to fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_7
+  Data Path: fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_div_0 to fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_div_17
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               4   0.236   0.620  fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_0 (fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_0)
-     LUT5:I0->O            1   0.043   0.000  fan_controller_0/USER_LOGIC_I/Mcompar_n0038_lut<0> (fan_controller_0/USER_LOGIC_I/Mcompar_n0038_lut<0>)
-     MUXCY:S->O            1   0.238   0.000  fan_controller_0/USER_LOGIC_I/Mcompar_n0038_cy<0> (fan_controller_0/USER_LOGIC_I/Mcompar_n0038_cy<0>)
-     MUXCY:CI->O           1   0.013   0.000  fan_controller_0/USER_LOGIC_I/Mcompar_n0038_cy<1> (fan_controller_0/USER_LOGIC_I/Mcompar_n0038_cy<1>)
-     MUXCY:CI->O           1   0.013   0.000  fan_controller_0/USER_LOGIC_I/Mcompar_n0038_cy<2> (fan_controller_0/USER_LOGIC_I/Mcompar_n0038_cy<2>)
-     MUXCY:CI->O           1   0.013   0.000  fan_controller_0/USER_LOGIC_I/Mcompar_n0038_cy<3> (fan_controller_0/USER_LOGIC_I/Mcompar_n0038_cy<3>)
-     MUXCY:CI->O           1   0.013   0.000  fan_controller_0/USER_LOGIC_I/Mcompar_n0038_cy<4> (fan_controller_0/USER_LOGIC_I/Mcompar_n0038_cy<4>)
-     MUXCY:CI->O           1   0.013   0.000  fan_controller_0/USER_LOGIC_I/Mcompar_n0038_cy<5> (fan_controller_0/USER_LOGIC_I/Mcompar_n0038_cy<5>)
-     MUXCY:CI->O          10   0.013   0.400  fan_controller_0/USER_LOGIC_I/Mcompar_n0038_cy<6> (fan_controller_0/USER_LOGIC_I/Mcompar_n0038_cy<6>)
-     LUT2:I1->O            1   0.043   0.000  fan_controller_0/USER_LOGIC_I/Mcount_SLAVE_REG_WRITE_PROC.count_lut<0> (fan_controller_0/USER_LOGIC_I/Mcount_SLAVE_REG_WRITE_PROC.count_lut<0>)
-     MUXCY:S->O            1   0.238   0.000  fan_controller_0/USER_LOGIC_I/Mcount_SLAVE_REG_WRITE_PROC.count_cy<0> (fan_controller_0/USER_LOGIC_I/Mcount_SLAVE_REG_WRITE_PROC.count_cy<0>)
-     MUXCY:CI->O           1   0.014   0.000  fan_controller_0/USER_LOGIC_I/Mcount_SLAVE_REG_WRITE_PROC.count_cy<1> (fan_controller_0/USER_LOGIC_I/Mcount_SLAVE_REG_WRITE_PROC.count_cy<1>)
-     MUXCY:CI->O           1   0.014   0.000  fan_controller_0/USER_LOGIC_I/Mcount_SLAVE_REG_WRITE_PROC.count_cy<2> (fan_controller_0/USER_LOGIC_I/Mcount_SLAVE_REG_WRITE_PROC.count_cy<2>)
-     MUXCY:CI->O           1   0.014   0.000  fan_controller_0/USER_LOGIC_I/Mcount_SLAVE_REG_WRITE_PROC.count_cy<3> (fan_controller_0/USER_LOGIC_I/Mcount_SLAVE_REG_WRITE_PROC.count_cy<3>)
-     MUXCY:CI->O           1   0.014   0.000  fan_controller_0/USER_LOGIC_I/Mcount_SLAVE_REG_WRITE_PROC.count_cy<4> (fan_controller_0/USER_LOGIC_I/Mcount_SLAVE_REG_WRITE_PROC.count_cy<4>)
-     MUXCY:CI->O           1   0.014   0.000  fan_controller_0/USER_LOGIC_I/Mcount_SLAVE_REG_WRITE_PROC.count_cy<5> (fan_controller_0/USER_LOGIC_I/Mcount_SLAVE_REG_WRITE_PROC.count_cy<5>)
-     MUXCY:CI->O           0   0.014   0.000  fan_controller_0/USER_LOGIC_I/Mcount_SLAVE_REG_WRITE_PROC.count_cy<6> (fan_controller_0/USER_LOGIC_I/Mcount_SLAVE_REG_WRITE_PROC.count_cy<6>)
-     XORCY:CI->O           1   0.262   0.000  fan_controller_0/USER_LOGIC_I/Mcount_SLAVE_REG_WRITE_PROC.count_xor<7> (fan_controller_0/USER_LOGIC_I/Mcount_SLAVE_REG_WRITE_PROC.count7)
-     FD:D                     -0.000          fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_7
+     FDR:C->Q              2   0.236   0.344  fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_div_0 (fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_div_0)
+     INV:I->O              1   0.054   0.000  fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_lut<0>_INV_0 (fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_lut<0>)
+     MUXCY:S->O            1   0.238   0.000  fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_cy<0> (fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_cy<0>)
+     MUXCY:CI->O           1   0.013   0.000  fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_cy<1> (fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_cy<2> (fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_cy<3> (fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_cy<4> (fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_cy<4>)
+     MUXCY:CI->O           1   0.013   0.000  fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_cy<5> (fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_cy<5>)
+     MUXCY:CI->O           1   0.013   0.000  fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_cy<6> (fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_cy<6>)
+     MUXCY:CI->O           1   0.013   0.000  fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_cy<7> (fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_cy<7>)
+     MUXCY:CI->O           1   0.013   0.000  fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_cy<8> (fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_cy<8>)
+     MUXCY:CI->O           1   0.013   0.000  fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_cy<9> (fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_cy<9>)
+     MUXCY:CI->O           1   0.013   0.000  fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_cy<10> (fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_cy<10>)
+     MUXCY:CI->O           1   0.013   0.000  fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_cy<11> (fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_cy<11>)
+     XORCY:CI->O           2   0.262   0.608  fan_controller_0/USER_LOGIC_I/Madd_SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT_xor<12> (fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_div[31]_GND_16_o_add_6_OUT<12>)
+     LUT5:I0->O            1   0.043   0.000  fan_controller_0/USER_LOGIC_I/Mcompar_n0046_lut<1> (fan_controller_0/USER_LOGIC_I/Mcompar_n0046_lut<1>)
+     MUXCY:S->O            1   0.238   0.000  fan_controller_0/USER_LOGIC_I/Mcompar_n0046_cy<1> (fan_controller_0/USER_LOGIC_I/Mcompar_n0046_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  fan_controller_0/USER_LOGIC_I/Mcompar_n0046_cy<2> (fan_controller_0/USER_LOGIC_I/Mcompar_n0046_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  fan_controller_0/USER_LOGIC_I/Mcompar_n0046_cy<3> (fan_controller_0/USER_LOGIC_I/Mcompar_n0046_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  fan_controller_0/USER_LOGIC_I/Mcompar_n0046_cy<4> (fan_controller_0/USER_LOGIC_I/Mcompar_n0046_cy<4>)
+     MUXCY:CI->O          26   0.165   0.468  fan_controller_0/USER_LOGIC_I/Mcompar_n0046_cy<5> (fan_controller_0/USER_LOGIC_I/Mcompar_n0046_cy<5>)
+     FDR:R                     0.264          fan_controller_0/USER_LOGIC_I/SLAVE_REG_WRITE_PROC.count_div_0
     ----------------------------------------
-    Total                      2.242ns (1.222ns logic, 1.020ns route)
-                                       (54.5% logic, 45.5% route)
+    Total                      3.110ns (1.689ns logic, 1.420ns route)
+                                       (54.3% logic, 45.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'S_AXI_ACLK'
@@ -892,20 +914,20 @@ Clock to Setup on destination clock S_AXI_ACLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-S_AXI_ACLK     |    2.242|         |         |         |
+S_AXI_ACLK     |    3.110|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 18.00 secs
-Total CPU time to Xst completion: 17.99 secs
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 16.04 secs
  
 --> 
 
-Total memory usage is 477416 kilobytes
+Total memory usage is 478352 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   41 (   0 filtered)
+Number of warnings :   55 (   0 filtered)
 Number of infos    :    6 (   0 filtered)
 

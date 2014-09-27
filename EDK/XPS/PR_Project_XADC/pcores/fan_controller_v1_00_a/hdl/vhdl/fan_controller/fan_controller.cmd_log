@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/fan_controller_v1_00_a/hdl/vhdl/fan_controller/fan_controller.xst" -ofn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/fan_controller_v1_00_a/hdl/vhdl/fan_controller/fan_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/fan_controller_v1_00_a/hdl/vhdl/fan_controller/fan_controller.xst" -ofn "C:/Users/ECE/Documents/PR_Project_XADC/pcores/fan_controller_v1_00_a/hdl/vhdl/fan_controller/fan_controller.syr" 

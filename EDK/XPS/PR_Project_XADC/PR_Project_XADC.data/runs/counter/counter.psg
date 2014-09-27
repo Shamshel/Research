@@ -14,7 +14,6 @@
 	<Step Id="xdl">
 	</Step>
 	<Step Id="bitgen">
-		<Option Id="MemFile">C:\Users\ECE\workspace\PR_Project_XADC\Debug\PR_Project_XADC.elf</Option>
 	</Step>
 </Strategy>
 

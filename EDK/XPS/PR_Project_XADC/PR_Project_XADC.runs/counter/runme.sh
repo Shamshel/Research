@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=C:/Xilinx/14.6/ISE_DS/EDK/bin/nt;C:/Xilinx/14.6/ISE_DS/EDK/lib/nt;C:/Xilinx/14.6/ISE_DS/ISE/bin/nt;C:/Xilinx/14.6/ISE_DS/ISE/lib/nt;C:/Xilinx/14.6/ISE_DS/common/bin/nt;C:/Xilinx/14.6/ISE_DS/common/lib/nt:C:/Xilinx/14.6/ISE_DS/PlanAhead/bin
+  PATH=C:/Xilinx/14.6/ISE_DS/EDK/bin/nt64;C:/Xilinx/14.6/ISE_DS/EDK/lib/nt64;C:/Xilinx/14.6/ISE_DS/ISE/bin/nt64;C:/Xilinx/14.6/ISE_DS/ISE/lib/nt64;C:/Xilinx/14.6/ISE_DS/common/bin/nt64;C:/Xilinx/14.6/ISE_DS/common/lib/nt64:C:/Xilinx/14.6/ISE_DS/PlanAhead/bin
 else
-  PATH=C:/Xilinx/14.6/ISE_DS/EDK/bin/nt;C:/Xilinx/14.6/ISE_DS/EDK/lib/nt;C:/Xilinx/14.6/ISE_DS/ISE/bin/nt;C:/Xilinx/14.6/ISE_DS/ISE/lib/nt;C:/Xilinx/14.6/ISE_DS/common/bin/nt;C:/Xilinx/14.6/ISE_DS/common/lib/nt:C:/Xilinx/14.6/ISE_DS/PlanAhead/bin:$PATH
+  PATH=C:/Xilinx/14.6/ISE_DS/EDK/bin/nt64;C:/Xilinx/14.6/ISE_DS/EDK/lib/nt64;C:/Xilinx/14.6/ISE_DS/ISE/bin/nt64;C:/Xilinx/14.6/ISE_DS/ISE/lib/nt64;C:/Xilinx/14.6/ISE_DS/common/bin/nt64;C:/Xilinx/14.6/ISE_DS/common/lib/nt64:C:/Xilinx/14.6/ISE_DS/PlanAhead/bin:$PATH
 fi
 export PATH
 
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep bitgen "counter_routed.ncd" "counter.bit" "counter.pcf" -bd C:\Users\ECE\workspace\PR_Project_XADC\Debug\PR_Project_XADC.elf -w -intstyle pa
+EAStep bitgen "counter_routed.ncd" "counter.bit" "counter.pcf" -w -intstyle pa
