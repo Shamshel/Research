@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6 (64-bit)
+# Build 269223 by xbuild on Wed Jun  5 11:14:03 MDT 2013
+# Start of session at: Sat Oct 04 17:12:08 2014
+# Process ID: 6660
+# Log file: C:/Users/ECE/Documents/PR_Project_XADC/planAhead.log
+# Journal file: C:/Users/ECE/Documents/PR_Project_XADC\planAhead.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\Users\ECE\Documents\PR_Project_XADC\PR_Project_XADC.ppr}
+link_design -name netlist_1
+open_run counter

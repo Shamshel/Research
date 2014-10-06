@@ -215,12 +215,6 @@
         <Attr Name="UsedInImplementation" Val="1"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/pcores/reconfig_modules_source/rp_counter/rp.ngc">
-      <FileInfo>
-        <Attr Name="UsedInSynthesis" Val="1"/>
-        <Attr Name="UsedInImplementation" Val="1"/>
-      </FileInfo>
-    </File>
     <File Path="$PPRDIR/implementation/system_microblaze_0_bram_block_0_wrapper.ngc">
       <FileInfo>
         <Attr Name="UsedInSynthesis" Val="1"/>

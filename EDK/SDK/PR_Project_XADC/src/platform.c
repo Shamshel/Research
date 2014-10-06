@@ -192,15 +192,6 @@ float XADC_core_voltage()
 
 }
 
-void reset_oscillator(unsigned int base_addr, unsigned int calibration_time)
-{
-	Xil_Out32(base_addr+0x00, 0x00000000);
-	sleep_us(100);
-	Xil_Out32(base_addr+0x00, calibration_time);
-
-}
-
-
 void
 init_platform()
 {

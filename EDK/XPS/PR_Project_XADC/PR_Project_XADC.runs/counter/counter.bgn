@@ -5,7 +5,7 @@ C:\Xilinx\14.6\ISE_DS\ISE\.
    "system" is an NCD, version 3.2, device xc7k325t, package ffg900, speed -2
 Partition
 "/system/reconfigurable_peripherials_0/reconfigurable_peripherials_0/USER_LOGIC_
-I/rp_instance" (Reconfigurable Module "counter")
+I/rp_instance" (Reconfigurable Module "rp_counter")
 Partition
 "/system/reconfigurable_peripherials_1/reconfigurable_peripherials_1/USER_LOGIC_
 I/rp_instance" (Reconfigurable Module "rp_counter")
@@ -47,7 +47,7 @@ Partition
 C_I/rp_instance" (Reconfigurable Module "rp_counter")
 Opened constraints file counter.pcf.
 
-Fri Sep 26 18:24:29 2014
+Sun Oct 05 18:44:44 2014
 
 C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -w -intstyle pa counter_routed.ncd counter.bit counter.pcf 
 

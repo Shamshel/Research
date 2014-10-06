@@ -5,7 +5,7 @@ C:\Xilinx\14.6\ISE_DS\ISE\.
    "system" is an NCD, version 3.2, device xc7k325t, package ffg900, speed -2
 Opened constraints file counter.pcf.
 
-Fri Sep 26 19:15:32 2014
+Sun Oct 05 19:37:17 2014
 
 C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -w -intstyle pa -g Partial:reconfigurable_peripherials_13/reconfigurable_peripherials_13/USER_LOGIC_I/rp_instance -g ActiveReconfig:Yes counter_routed.ncd counter_reconfigurable_peripherials_13_reconfigurable_peripherials_13_USER_LOGIC_I_rp_instance_rp_counter_partial.bgn counter.pcf 
 

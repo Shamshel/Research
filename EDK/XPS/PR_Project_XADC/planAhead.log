@@ -1,0 +1,1068 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6 (64-bit)
+# Build 269223 by xbuild on Wed Jun  5 11:14:03 MDT 2013
+# Start of session at: Sat Oct 04 17:12:08 2014
+# Process ID: 6660
+# Log file: C:/Users/ECE/Documents/PR_Project_XADC/planAhead.log
+# Journal file: C:/Users/ECE/Documents/PR_Project_XADC\planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -245 day(s)
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+INFO: [Common 17-81] Feature available: PartialReconfiguration
+open_project {C:\Users\ECE\Documents\PR_Project_XADC\PR_Project_XADC.ppr}
+Scanning sources...
+Finished scanning sources
+open_project: Time (s): elapsed = 00:00:05 . Memory (MB): peak = 482.922 ; gain = 128.117
+link_design -name netlist_1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc7k325tffg900-2
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system.ngc ...
+WARNING:NetListWriters:298 - No output is written to system.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_AWADDR<511 : 0> on block
+   system is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi4lite_0_M_ARADDR<511 : 0> on block
+   system is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system.edif ...
+ngc2edif: Total memory usage is 91636 kilobytes
+
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi_xadc_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi_xadc_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   axi_xadc_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i<31 : 0> on block
+   system_axi_xadc_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi_xadc_0/ip2bus_data_int<31 : 0> on
+   block system_axi_xadc_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi_xadc_0/bus2ip_wrce<24 : 0> on block
+   system_axi_xadc_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi_xadc_0/bus2ip_rdce<24 : 0> on block
+   system_axi_xadc_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi_xadc_0/bus2ip_be<3 : 0> on block
+   system_axi_xadc_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_xadc_0/AXI_XADC_CORE_I/TEMP_BUS_ARB_GEN_I.temp_rd_arbiter_inst/Inst_drp_r
+   dwr_fsm/daddr_arb<6 : 0> on block system_axi_xadc_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_xadc_0/AXI_XADC_CORE_I/TEMP_BUS_ARB_GEN_I.temp_rd_arbiter_inst/Inst_drp_r
+   dwr_fsm/state[3]_GND_46_o_wide_mux_15_OUT<6 : 0> on block
+   system_axi_xadc_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_axi_xadc_0_wrapper.edif ...
+ngc2edif: Total memory usage is 80244 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_axi_xadc_0_wrapper.ngc' for (cell view 'system_axi_xadc_0_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_axi_xadc_0_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_axi_xadc_0_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_rs232_uart_1_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_rs232_uart_1_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file system_rs232_uart_1_wrapper.edif ...
+ngc2edif: Total memory usage is 78324 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_rs232_uart_1_wrapper.ngc' for (cell view 'system_rs232_uart_1_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_rs232_uart_1_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_rs232_uart_1_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_proc_sys_reset_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_proc_sys_reset_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus proc_sys_reset_0/SEQ/pr_dec<2 : 0> on
+   block system_proc_sys_reset_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus proc_sys_reset_0/SEQ/bsr_dec<2 : 0> on
+   block system_proc_sys_reset_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_proc_sys_reset_0_wrapper.edif ...
+ngc2edif: Total memory usage is 78324 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_proc_sys_reset_0_wrapper.ngc' for (cell view 'system_proc_sys_reset_0_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_proc_sys_reset_0_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_proc_sys_reset_0_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_clock_generator_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_clock_generator_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file system_clock_generator_0_wrapper.edif ...
+ngc2edif: Total memory usage is 77108 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_clock_generator_0_wrapper.ngc' for (cell view 'system_clock_generator_0_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_clock_generator_0_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_clock_generator_0_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_microblaze_0_ilmb_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_microblaze_0_ilmb_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file system_microblaze_0_ilmb_wrapper.edif ...
+ngc2edif: Total memory usage is 78260 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_microblaze_0_ilmb_wrapper.ngc' for (cell view 'system_microblaze_0_ilmb_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_microblaze_0_ilmb_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_microblaze_0_ilmb_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_microblaze_0_dlmb_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_microblaze_0_dlmb_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file system_microblaze_0_dlmb_wrapper.edif ...
+ngc2edif: Total memory usage is 78516 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_microblaze_0_dlmb_wrapper.ngc' for (cell view 'system_microblaze_0_dlmb_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_microblaze_0_dlmb_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_microblaze_0_dlmb_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi4lite_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi4lite_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_i
+   nst/m_amesg_i<48 : 1> on block system_axi4lite_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_i
+   nst/s_amesg<48 : 1> on block system_axi4lite_0_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.gen_addr_decod
+   er.addr_decoder_inst/ADDRESS_HIT<243 : 0> on block system_axi4lite_0_wrapper
+   is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_axi4lite_0_wrapper.edif ...
+ngc2edif: Total memory usage is 82420 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_axi4lite_0_wrapper.ngc' for (cell view 'system_axi4lite_0_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_axi4lite_0_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_axi4lite_0_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi_interconnect_1_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi_interconnect_1_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_a
+   rbiter_inst/m_amesg_i<48 : 1> on block system_axi_interconnect_1_wrapper is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi_interconnect_1/cb_mf_awvalid<4 : 2>
+   on block system_axi_interconnect_1_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   axi_interconnect_1/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_a
+   rbiter_inst/s_amesg<48 : 1> on block system_axi_interconnect_1_wrapper is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_axi_interconnect_1_wrapper.edif ...
+ngc2edif: Total memory usage is 80372 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_axi_interconnect_1_wrapper.ngc' for (cell view 'system_axi_interconnect_1_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_axi_interconnect_1_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_axi_interconnect_1_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_microblaze_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_microblaze_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_
+   Perf/control_reg[8 : 0] on block system_microblaze_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus microblaze_0/LOCKSTEP_Out[3817 : 0] on
+   block system_microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.wb_databus_read_data[31 : 0] on
+   block system_microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.mem_MSR[28 : 0] on block
+   system_microblaze_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.ex_MSR[30 : 0] on block
+   system_microblaze_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_PipeRun_carry[9 : 1]
+   on block system_microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/of_pipe_ctrl[10 : 2] on
+   block system_microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/Using_
+   FPGA_Buffers_Mux.buffer_or_new[32 : 0] on block system_microblaze_0_wrapper
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/PreFetch_Buffer_I1/Using_
+   FPGA_Buffers_Mux.srl16[42 : 0] on block system_microblaze_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_
+   Perf/Detect_Commands.sample[6 : 0] on block system_microblaze_0_wrapper is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_
+   Perf/status_reg[27 : 0] on block system_microblaze_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_
+   Perf/Use_SRL16.tdo_config_word1[15 : 0] on block system_microblaze_0_wrapper
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/n0084[30 : 0] on block
+   system_microblaze_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/mem_fwd[30 : 0] on
+   block system_microblaze_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/wb_MSR_cmb[3
+   0 : 28] on block system_microblaze_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/of_MSR_i[31
+   : 17] on block system_microblaze_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/ex_MSR_i[31
+   : 17] on block system_microblaze_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/msr_reg_i/mem_MSR_i[31
+   : 17] on block system_microblaze_0_wrapper is not reconstructed, because
+   there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_microblaze_0_wrapper.edif ...
+ngc2edif: Total memory usage is 91636 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_microblaze_0_wrapper.ngc' for (cell view 'system_microblaze_0_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_microblaze_0_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_microblaze_0_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_microblaze_0_i_bram_ctrl_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_microblaze_0_i_bram_ctrl_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file system_microblaze_0_i_bram_ctrl_0_wrapper.edif ...
+ngc2edif: Total memory usage is 78324 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_microblaze_0_i_bram_ctrl_0_wrapper.ngc' for (cell view 'system_microblaze_0_i_bram_ctrl_0_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_microblaze_0_i_bram_ctrl_0_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_microblaze_0_i_bram_ctrl_0_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_microblaze_0_i_bram_ctrl_1_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_microblaze_0_i_bram_ctrl_1_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file system_microblaze_0_i_bram_ctrl_1_wrapper.edif ...
+ngc2edif: Total memory usage is 78324 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_microblaze_0_i_bram_ctrl_1_wrapper.ngc' for (cell view 'system_microblaze_0_i_bram_ctrl_1_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_microblaze_0_i_bram_ctrl_1_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_microblaze_0_i_bram_ctrl_1_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_microblaze_0_d_bram_ctrl_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_microblaze_0_d_bram_ctrl_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file system_microblaze_0_d_bram_ctrl_0_wrapper.edif ...
+ngc2edif: Total memory usage is 78708 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_microblaze_0_d_bram_ctrl_0_wrapper.ngc' for (cell view 'system_microblaze_0_d_bram_ctrl_0_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_microblaze_0_d_bram_ctrl_0_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_microblaze_0_d_bram_ctrl_0_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_microblaze_0_d_bram_ctrl_1_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_microblaze_0_d_bram_ctrl_1_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file system_microblaze_0_d_bram_ctrl_1_wrapper.edif ...
+ngc2edif: Total memory usage is 78324 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_microblaze_0_d_bram_ctrl_1_wrapper.ngc' for (cell view 'system_microblaze_0_d_bram_ctrl_1_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_microblaze_0_d_bram_ctrl_1_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_microblaze_0_d_bram_ctrl_1_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi2axi_connector_1_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi2axi_connector_1_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file system_axi2axi_connector_1_wrapper.edif ...
+ngc2edif: Total memory usage is 78324 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_axi2axi_connector_1_wrapper.ngc' for (cell view 'system_axi2axi_connector_1_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_axi2axi_connector_1_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_axi2axi_connector_1_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_debug_module_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_debug_module_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus debug_module/MDM_Core_I1/Config_Reg<31 :
+   1> on block system_debug_module_wrapper is not reconstructed, because there
+   are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_debug_module_wrapper.edif ...
+ngc2edif: Total memory usage is 79348 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_debug_module_wrapper.ngc' for (cell view 'system_debug_module_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_debug_module_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_debug_module_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_iic_main_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_iic_main_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   IIC_MAIN/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata
+   _i[31 : 0] on block system_iic_main_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus IIC_MAIN/X_IIC/Bus2IIC_WrCE[8 : 0] on
+   block system_iic_main_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   IIC_MAIN/X_IIC/X_AXI_IPIF_SSP1/AXI_IP2Bus_Data[31 : 0] on block
+   system_iic_main_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   IIC_MAIN/X_IIC/X_AXI_IPIF_SSP1/AXI_Bus2IP_WrCE[16 : 10] on block
+   system_iic_main_wrapper is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   IIC_MAIN/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/c
+   s_out_i[2 : 0] on block system_iic_main_wrapper is not reconstructed, because
+   there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   IIC_MAIN/X_IIC/X_AXI_IPIF_SSP1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/c
+   e_expnd_i[34 : 7] on block system_iic_main_wrapper is not reconstructed,
+   because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   IIC_MAIN/X_IIC/REG_INTERFACE_I/timing_param_thddat_i[9]_GND_62_o_mux_91_OUT[8
+   : 0] on block system_iic_main_wrapper is not reconstructed, because there are
+   some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   IIC_MAIN/X_IIC/REG_INTERFACE_I/timing_param_thdsta_i[9]_GND_62_o_mux_71_OUT[3
+   : 1] on block system_iic_main_wrapper is not reconstructed, because there are
+   some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_iic_main_wrapper.edif ...
+ngc2edif: Total memory usage is 79476 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_iic_main_wrapper.ngc' for (cell view 'system_iic_main_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_iic_main_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_iic_main_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_reconfigurable_peripherials_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_reconfigurable_peripherials_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   reconfigurable_peripherials_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_
+   i[8 : 2] on block system_reconfigurable_peripherials_0_wrapper is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_reconfigurable_peripherials_0_wrapper.edif ...
+ngc2edif: Total memory usage is 78196 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_0_wrapper.ngc' for (cell view 'system_reconfigurable_peripherials_0_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_0_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_0_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design rp.ngc ...
+WARNING:NetListWriters:298 - No output is written to rp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file rp.edif ...
+ngc2edif: Total memory usage is 79348 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.ngc' for (cell view 'rp', library 'system_reconfigurable_peripherials_0_wrapper_lib', file 'system_reconfigurable_peripherials_0_wrapper.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_fan_controller_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_fan_controller_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file system_fan_controller_0_wrapper.edif ...
+ngc2edif: Total memory usage is 78516 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_fan_controller_0_wrapper.ngc' for (cell view 'system_fan_controller_0_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_fan_controller_0_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_fan_controller_0_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_axi_hwicap_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_axi_hwicap_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   axi_hwicap_0/intr2bus_data[0]_ip2bus_data[0]_or_2_OUT[31 : 0] on block
+   system_axi_hwicap_0_wrapper is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus axi_hwicap_0/bus2ip_wrce[16 : 0] on
+   block system_axi_hwicap_0_wrapper is not reconstructed, because there are
+   some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_axi_hwicap_0_wrapper.edif ...
+ngc2edif: Total memory usage is 80244 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_axi_hwicap_0_wrapper.ngc' for (cell view 'system_axi_hwicap_0_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_axi_hwicap_0_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_axi_hwicap_0_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_reconfigurable_peripherials_1_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_reconfigurable_peripherials_1_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   reconfigurable_peripherials_1/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_
+   i[8 : 2] on block system_reconfigurable_peripherials_1_wrapper is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_reconfigurable_peripherials_1_wrapper.edif ...
+ngc2edif: Total memory usage is 78324 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_1_wrapper.ngc' for (cell view 'system_reconfigurable_peripherials_1_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_1_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_1_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_reconfigurable_peripherials_2_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_reconfigurable_peripherials_2_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   reconfigurable_peripherials_2/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_
+   i[8 : 2] on block system_reconfigurable_peripherials_2_wrapper is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_reconfigurable_peripherials_2_wrapper.edif ...
+ngc2edif: Total memory usage is 78900 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_2_wrapper.ngc' for (cell view 'system_reconfigurable_peripherials_2_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_2_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_2_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_reconfigurable_peripherials_3_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_reconfigurable_peripherials_3_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   reconfigurable_peripherials_3/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_
+   i[8 : 2] on block system_reconfigurable_peripherials_3_wrapper is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_reconfigurable_peripherials_3_wrapper.edif ...
+ngc2edif: Total memory usage is 78324 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_3_wrapper.ngc' for (cell view 'system_reconfigurable_peripherials_3_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_3_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_3_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_reconfigurable_peripherials_4_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_reconfigurable_peripherials_4_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   reconfigurable_peripherials_4/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_
+   i[8 : 2] on block system_reconfigurable_peripherials_4_wrapper is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_reconfigurable_peripherials_4_wrapper.edif ...
+ngc2edif: Total memory usage is 78196 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_4_wrapper.ngc' for (cell view 'system_reconfigurable_peripherials_4_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_4_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_4_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_reconfigurable_peripherials_5_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_reconfigurable_peripherials_5_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   reconfigurable_peripherials_5/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_
+   i[8 : 2] on block system_reconfigurable_peripherials_5_wrapper is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_reconfigurable_peripherials_5_wrapper.edif ...
+ngc2edif: Total memory usage is 79092 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_5_wrapper.ngc' for (cell view 'system_reconfigurable_peripherials_5_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_5_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_5_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_reconfigurable_peripherials_6_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_reconfigurable_peripherials_6_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   reconfigurable_peripherials_6/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_
+   i[8 : 2] on block system_reconfigurable_peripherials_6_wrapper is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_reconfigurable_peripherials_6_wrapper.edif ...
+ngc2edif: Total memory usage is 79092 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_6_wrapper.ngc' for (cell view 'system_reconfigurable_peripherials_6_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_6_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_6_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_reconfigurable_peripherials_7_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_reconfigurable_peripherials_7_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   reconfigurable_peripherials_7/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_
+   i[8 : 2] on block system_reconfigurable_peripherials_7_wrapper is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_reconfigurable_peripherials_7_wrapper.edif ...
+ngc2edif: Total memory usage is 78324 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_7_wrapper.ngc' for (cell view 'system_reconfigurable_peripherials_7_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_7_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_7_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_reconfigurable_peripherials_8_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_reconfigurable_peripherials_8_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   reconfigurable_peripherials_8/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_
+   i[8 : 2] on block system_reconfigurable_peripherials_8_wrapper is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_reconfigurable_peripherials_8_wrapper.edif ...
+ngc2edif: Total memory usage is 78196 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_8_wrapper.ngc' for (cell view 'system_reconfigurable_peripherials_8_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_8_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_8_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_reconfigurable_peripherials_9_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_reconfigurable_peripherials_9_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   reconfigurable_peripherials_9/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr_
+   i[8 : 2] on block system_reconfigurable_peripherials_9_wrapper is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_reconfigurable_peripherials_9_wrapper.edif ...
+ngc2edif: Total memory usage is 78324 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_9_wrapper.ngc' for (cell view 'system_reconfigurable_peripherials_9_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_9_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_9_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_reconfigurable_peripherials_10_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_reconfigurable_peripherials_10_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   reconfigurable_peripherials_10/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr
+   _i[8 : 2] on block system_reconfigurable_peripherials_10_wrapper is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_reconfigurable_peripherials_10_wrapper.edif ...
+ngc2edif: Total memory usage is 78324 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_10_wrapper.ngc' for (cell view 'system_reconfigurable_peripherials_10_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_10_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_10_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_reconfigurable_peripherials_11_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_reconfigurable_peripherials_11_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   reconfigurable_peripherials_11/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr
+   _i[8 : 2] on block system_reconfigurable_peripherials_11_wrapper is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_reconfigurable_peripherials_11_wrapper.edif ...
+ngc2edif: Total memory usage is 78900 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_11_wrapper.ngc' for (cell view 'system_reconfigurable_peripherials_11_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_11_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_11_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_reconfigurable_peripherials_12_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_reconfigurable_peripherials_12_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   reconfigurable_peripherials_12/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr
+   _i[8 : 2] on block system_reconfigurable_peripherials_12_wrapper is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_reconfigurable_peripherials_12_wrapper.edif ...
+ngc2edif: Total memory usage is 79092 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_12_wrapper.ngc' for (cell view 'system_reconfigurable_peripherials_12_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_12_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_12_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_reconfigurable_peripherials_13_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_reconfigurable_peripherials_13_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   reconfigurable_peripherials_13/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/bus2ip_addr
+   _i[8 : 2] on block system_reconfigurable_peripherials_13_wrapper is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file system_reconfigurable_peripherials_13_wrapper.edif ...
+ngc2edif: Total memory usage is 78324 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_13_wrapper.ngc' for (cell view 'system_reconfigurable_peripherials_13_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_13_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_reconfigurable_peripherials_13_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_microblaze_0_bram_block_0_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_microblaze_0_bram_block_0_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file system_microblaze_0_bram_block_0_wrapper.edif ...
+ngc2edif: Total memory usage is 80052 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_microblaze_0_bram_block_0_wrapper.ngc' for (cell view 'system_microblaze_0_bram_block_0_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_microblaze_0_bram_block_0_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_microblaze_0_bram_block_0_wrapper.edif]
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design system_microblaze_0_bram_block_1_wrapper.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   system_microblaze_0_bram_block_1_wrapper.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file system_microblaze_0_bram_block_1_wrapper.edif ...
+ngc2edif: Total memory usage is 80244 kilobytes
+
+Reading core file 'C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_microblaze_0_bram_block_1_wrapper.ngc' for (cell view 'system_microblaze_0_bram_block_1_wrapper', library 'system_lib', file 'system.ngc')
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_microblaze_0_bram_block_1_wrapper.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/system_microblaze_0_bram_block_1_wrapper.edif]
+INFO: [Netlist 29-17] Analyzing 4189 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design rp.ngc ...
+WARNING:NetListWriters:298 - No output is written to rp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file rp.edif ...
+ngc2edif: Total memory usage is 79348 kilobytes
+
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design rp.ngc ...
+WARNING:NetListWriters:298 - No output is written to rp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file rp.edif ...
+ngc2edif: Total memory usage is 79412 kilobytes
+
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design rp.ngc ...
+WARNING:NetListWriters:298 - No output is written to rp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file rp.edif ...
+ngc2edif: Total memory usage is 79156 kilobytes
+
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design rp.ngc ...
+WARNING:NetListWriters:298 - No output is written to rp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file rp.edif ...
+ngc2edif: Total memory usage is 79348 kilobytes
+
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design rp.ngc ...
+WARNING:NetListWriters:298 - No output is written to rp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file rp.edif ...
+ngc2edif: Total memory usage is 79348 kilobytes
+
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design rp.ngc ...
+WARNING:NetListWriters:298 - No output is written to rp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file rp.edif ...
+ngc2edif: Total memory usage is 79348 kilobytes
+
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design rp.ngc ...
+WARNING:NetListWriters:298 - No output is written to rp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file rp.edif ...
+ngc2edif: Total memory usage is 79348 kilobytes
+
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design rp.ngc ...
+WARNING:NetListWriters:298 - No output is written to rp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file rp.edif ...
+ngc2edif: Total memory usage is 80116 kilobytes
+
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design rp.ngc ...
+WARNING:NetListWriters:298 - No output is written to rp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file rp.edif ...
+ngc2edif: Total memory usage is 79348 kilobytes
+
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design rp.ngc ...
+WARNING:NetListWriters:298 - No output is written to rp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file rp.edif ...
+ngc2edif: Total memory usage is 79604 kilobytes
+
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design rp.ngc ...
+WARNING:NetListWriters:298 - No output is written to rp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file rp.edif ...
+ngc2edif: Total memory usage is 79348 kilobytes
+
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design rp.ngc ...
+WARNING:NetListWriters:298 - No output is written to rp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file rp.edif ...
+ngc2edif: Total memory usage is 79348 kilobytes
+
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design rp.ngc ...
+WARNING:NetListWriters:298 - No output is written to rp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file rp.edif ...
+ngc2edif: Total memory usage is 79412 kilobytes
+
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design rp.ngc ...
+WARNING:NetListWriters:298 - No output is written to rp.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file rp.edif ...
+ngc2edif: Total memory usage is 79348 kilobytes
+
+Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+Finished Parsing EDIF File [./.Xil/PlanAhead-6660-ECE-PC/ngc2edif/rp.edif]
+INFO: [Netlist 29-17] Analyzing 65 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/kintex7/kintex7/xc7k325t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/kintex7/kintex7/xc7k325t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/14.6/ISE_DS/PlanAhead/data/parts/xilinx/kintex7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/kintex7/PinFunctions.xml...
+Loading package from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/kintex7/kintex7/xc7k325t/ffg900/Package.xml
+Loading io standards from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/kintex7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.6/ISE_DS/PlanAhead/data\parts/xilinx/kintex7/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/kintex7/drc.xml
+Parsing UCF File [C:/Users/ECE/Documents/PR_Project_XADC/data/system.ucf]
+Finished Parsing UCF File [C:/Users/ECE/Documents/PR_Project_XADC/data/system.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4120 instances were transformed.
+  FD => FD (FDCE, VCC, GND): 569 instances
+  FDC => FDC (FDCE, VCC): 1153 instances
+  FDC_1 => FDC_1 (VCC, FDCE): 5 instances
+  FDE => FDE (FDCE, GND): 595 instances
+  FDE_1 => FDE_1 (GND, FDCE): 8 instances
+  FDP => FDP (FDPE, VCC): 24 instances
+  FDR => FDR (FDRE, VCC): 1407 instances
+  FDRE_1 => FDRE_1 (FDRE): 1 instances
+  FDR_1 => FDR_1 (FDRE, VCC): 1 instances
+  FDS => FDS (FDSE, VCC): 59 instances
+  IBUFGDS => IBUFGDS (IBUFDS): 1 instances
+  IOBUF => IOBUF (OBUFT, IBUF): 2 instances
+  LD => LD (LDCE, VCC, GND): 3 instances
+  LUT6_2 => LUT6_2 (LUT6, LUT5): 96 instances
+  MULT_AND => MULT_AND (LUT2): 2 instances
+  MUXCY_L => MUXCY_L (MUXCY): 177 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 16 instances
+  SRL16 => SRL16 (SRL16E, VCC): 1 instances
+
+Phase 0 | Netlist Checksum: 414e48b0
+link_design: Time (s): elapsed = 00:01:22 . Memory (MB): peak = 1034.348 ; gain = 545.668
+open_run counter
+Parsing EDIF File [./PR_Project_XADC.runs/counter/counter.edf]
+Finished Parsing EDIF File [./PR_Project_XADC.runs/counter/counter.edf]
+INFO: [Netlist 29-17] Analyzing 4189 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Parsing UCF File [C:/Users/ECE/Documents/PR_Project_XADC/PR_Project_XADC.runs/counter/.constrs/system.ucf]
+Finished Parsing UCF File [C:/Users/ECE/Documents/PR_Project_XADC/PR_Project_XADC.runs/counter/.constrs/system.ucf]
+INFO: [Designutils 20-669] Parsing Placement File : C:/Users/ECE/Documents/PR_Project_XADC/PR_Project_XADC.runs/counter/counter_routed.xdl
+INFO: [Designutils 20-658] Finished Parsing Placement File : C:/Users/ECE/Documents/PR_Project_XADC/PR_Project_XADC.runs/counter/counter_routed.xdl
+INFO: [Designutils 20-671] Placed 24191 instances
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4120 instances were transformed.
+  FD => FD (FDCE, VCC, GND): 569 instances
+  FDC => FDC (FDCE, VCC): 1153 instances
+  FDC_1 => FDC_1 (VCC, FDCE): 5 instances
+  FDE => FDE (FDCE, GND): 595 instances
+  FDE_1 => FDE_1 (GND, FDCE): 8 instances
+  FDP => FDP (FDPE, VCC): 24 instances
+  FDR => FDR (FDRE, VCC): 1407 instances
+  FDRE_1 => FDRE_1 (FDRE): 1 instances
+  FDR_1 => FDR_1 (FDRE, VCC): 1 instances
+  FDS => FDS (FDSE, VCC): 59 instances
+  IBUFGDS => IBUFGDS (IBUFDS): 1 instances
+  IOBUF => IOBUF (OBUFT, IBUF): 2 instances
+  LD => LD (LDCE, VCC, GND): 3 instances
+  LUT6_2 => LUT6_2 (LUT6, LUT5): 96 instances
+  MULT_AND => MULT_AND (LUT2): 2 instances
+  MUXCY_L => MUXCY_L (MUXCY): 177 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 16 instances
+  SRL16 => SRL16 (SRL16E, VCC): 1 instances
+
+Phase 0 | Netlist Checksum: 339f751c
+open_run: Time (s): elapsed = 00:00:24 . Memory (MB): peak = 1214.582 ; gain = 179.336
+exit
+INFO: [Common 17-206] Exiting PlanAhead at Sat Oct 04 17:24:54 2014...
+INFO: [Common 17-83] Releasing license: PlanAhead

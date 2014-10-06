@@ -8,7 +8,7 @@ Target Device  : xc7k325t
 Target Package : ffg900
 Target Speed   : -2
 Mapper Version : kintex7 -- $Revision: 1.55 $
-Mapped Date    : Fri Sep 26 11:30:55 2014
+Mapped Date    : Sun Oct 05 18:32:36 2014
 
 Design Summary
 --------------
@@ -113,9 +113,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                2.83
 
-Peak Memory Usage:  1703 MB
-Total REAL time to MAP completion:  6 mins 50 secs 
-Total CPU time to MAP completion:   6 mins 44 secs 
+Peak Memory Usage:  1701 MB
+Total REAL time to MAP completion:  6 mins 48 secs 
+Total CPU time to MAP completion:   6 mins 43 secs 
 
 Table of Contents
 -----------------
@@ -6540,7 +6540,7 @@ Partition Implementation Status
     Partition "/system":
 Attribute STATE set to IMPLEMENT.
 
-    Partition "/system/reconfigurable_peripherials_0/reconfigurable_peripherials_0/USER_LOGIC_I/rp_instance" (Reconfigurable Module "counter"):
+    Partition "/system/reconfigurable_peripherials_0/reconfigurable_peripherials_0/USER_LOGIC_I/rp_instance" (Reconfigurable Module "rp_counter"):
 Attribute STATE set to IMPLEMENT.
 
     Partition "/system/reconfigurable_peripherials_1/reconfigurable_peripherials_1/USER_LOGIC_I/rp_instance" (Reconfigurable Module "rp_counter"):
@@ -6621,7 +6621,7 @@ Partition "/system":
   Number of OLOGICE2:                        1 (1)
   Number of STARTUP:                         1 (1)
 
-Partition "/system/reconfigurable_peripherials_0/reconfigurable_peripherials_0/USER_LOGIC_I/rp_instance" (Reconfigurable Module "counter") (Area Group
+Partition "/system/reconfigurable_peripherials_0/reconfigurable_peripherials_0/USER_LOGIC_I/rp_instance" (Reconfigurable Module "rp_counter") (Area Group
 "pblock_reconfigurable_peripherials_0_USER_LOGIC_I_rp_instance"):
   State=implement
   Slice Logic Utilization:

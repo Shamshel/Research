@@ -104,9 +104,10 @@ Slack: 208.360ns (max period limit - period)
 --------------------------------------------------------------------------------
 
 ================================================================================
-Timing constraint: TS_clock_generator_0_clock_generator_0_SIG_MMCM1_CLKOUT0 = 
-PERIOD TIMEGRP         "clock_generator_0_clock_generator_0_SIG_MMCM1_CLKOUT0" 
-TS_sys_clk_pin         * 0.5 HIGH 50%;
+Timing constraint: TS_clock_generator_0_clock_generator_0_SIG_MMCM1_CLKOUT0_0 = 
+PERIOD TIMEGRP         
+"clock_generator_0_clock_generator_0_SIG_MMCM1_CLKOUT0_0"         
+TS_sys_clk_pin * 0.5 HIGH 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
  1143376 paths analyzed, 29973 endpoints analyzed, 0 failing endpoints
@@ -1350,9 +1351,9 @@ Slack:                  0.112ns (requirement - (data path - clock path skew + un
 
 --------------------------------------------------------------------------------
 
-Component Switching Limit Checks: TS_clock_generator_0_clock_generator_0_SIG_MMCM1_CLKOUT0 = PERIOD TIMEGRP
-        "clock_generator_0_clock_generator_0_SIG_MMCM1_CLKOUT0" TS_sys_clk_pin
-        * 0.5 HIGH 50%;
+Component Switching Limit Checks: TS_clock_generator_0_clock_generator_0_SIG_MMCM1_CLKOUT0_0 = PERIOD TIMEGRP
+        "clock_generator_0_clock_generator_0_SIG_MMCM1_CLKOUT0_0"
+        TS_sys_clk_pin * 0.5 HIGH 50%;
 --------------------------------------------------------------------------------
 Slack: 0.000ns (period - min period limit)
   Period: 10.000ns
@@ -1605,7 +1606,7 @@ Derived Constraints for TS_sys_clk_pin
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 |TS_sys_clk_pin                 |      5.000ns|      2.800ns|      5.000ns|            0|            0|            0|      1143376|
 | TS_clock_generator_0_clock_gen|     10.000ns|     10.000ns|          N/A|            0|            0|      1143376|            0|
-| erator_0_SIG_MMCM1_CLKOUT0    |             |             |             |             |             |             |             |
+| erator_0_SIG_MMCM1_CLKOUT0_0  |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 All constraints were met.
@@ -1648,14 +1649,14 @@ Design statistics:
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Fri Sep 26 11:42:08 2014 
+Analysis completed Sun Oct 05 18:43:49 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 1038 MB
+Peak Memory Usage: 1035 MB
 
 
 
