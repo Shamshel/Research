@@ -58,6 +58,8 @@
 //physical constants
 #define COUNT_PER_DEGREE 8
 #define MAX_TEMP 2870
+#define BASE_TEMP 2525
+#define THRESH_TEMP 2592
 #define NUM_PARTITIONS 14
 
 //debug constant
@@ -136,16 +138,85 @@ void reset_oscillator(unsigned int base_addr, unsigned int calibration_time)
 }
 
 void menu() {
-	print("\n\r------------------------ XADC ring oscillator calibration -----------------------\n\r");
+	print("\n\r");
+	print("------------------------ XADC ring oscillator calibration -----------------------\n\r");
 	print("print this menu --------------------------------------------------------------- m \n\r");
 	print("print partition status -------------------------------------------------------- s \n\r");
 	print("sweep temperature calibration (room temp to 80C) ------------------------------ c \n\r");
-	print("test at specific temperature -------------------------------------------------- t \n\r");
+	print("cyclic sweep () --------------------------------------------------------------- e \n\r");
+	print("test osc 0 at current temp ---------------------------------------------------- t \n\r");
 	print("reset calibration time -------------------------------------------------------- r \n\r");
 	print("set fan speed ----------------------------------------------------------------- f \n\r");
 	print("display core temperature (diode) ---------------------------------------------- d \n\r");
-	print("display oscillator temperature ------------------------------------------------ r \n\r");
+	print("display core temperature (oscillator) ----------------------------------------- r \n\r");
 	print("run algorithm once ------------------------------------------------------------ a \n\r");
+	print("toggle all modules ------------------------------------------------------------ x \n\r");
+	print("activate/deactivate module ---------------------------------------------------- v \n\r");
+	print("---------------------------------------------------------------------------------\n\r");
+
+}
+
+void startup_oscillators(partition_information partition[])
+{
+	int done = 0;
+	int i = 0;
+
+	for(i = 0; i < NUM_PARTITIONS; i++)
+	{
+		reset_oscillator(partition[i].baseaddr+0x00 , CALIBRATION_TIME);
+
+	}
+
+	//Gather temperature data for reliability statistics, in a real-world implementation
+	//of this algorithm, programming the partial bitstream for the ring oscillator
+	//for every cycle of the algorithm could introduce unacceptable overhead costs.
+	while (!done)
+	{
+		done = 1;
+
+		for (i = 0; i < NUM_PARTITIONS; i++)
+		{
+			partition[i].temperature_reading = Xil_In32(partition[i].baseaddr+0x04);
+
+			if ((partition[i].temperature_reading & GO_DONE_MASK) == GO_DONE_MASK)
+			{
+				partition[i].temperature_reading = partition[i].temperature_reading & ~GO_DONE_MASK;
+
+			}
+
+			else
+			{
+				done = 0;
+
+			}
+
+		}
+
+	}
+
+	while (!done)
+	{
+		done = 1;
+
+		for (i = 0; i < NUM_PARTITIONS; i++)
+		{
+			partition[i].temperature_reading = Xil_In32(partition[i].baseaddr+0x04);
+
+			if ((partition[i].temperature_reading & GO_DONE_MASK) == GO_DONE_MASK)
+			{
+				partition[i].temperature_reading = partition[i].temperature_reading & GO_DONE_MASK;
+
+			}
+
+			else
+			{
+				done = 0;
+
+			}
+
+		}
+
+	}
 
 }
 
@@ -194,8 +265,8 @@ int algorithm(partition_information partition[], unsigned char num_active)
 
 		if(partition[i].block_active)
 		{
-			partition[i].usage++;
-			partition[i].block_active = 0;
+				partition[i].usage++;
+				partition[i].block_active = 0;
 
 		}
 
@@ -209,32 +280,7 @@ int algorithm(partition_information partition[], unsigned char num_active)
 
 	}
 
-	//Gather temperature data for reliability statistics, in a real-world implementation
-	//of this algorithm, programming the partial bitstream for the ring oscillator
-	//for every cycle of the algorithm could introduce unacceptable overhead costs.
-	while (!done)
-	{
-		done = 1;
-
-		for (i = 0; i < NUM_PARTITIONS; i++)
-		{
-			partition[i].temperature_reading = Xil_In32(partition[i].baseaddr+0x04);
-
-			if ((partition[i].temperature_reading & GO_DONE_MASK) == GO_DONE_MASK)
-			{
-				//partition[i].temperature_reading = partition[i].temperature_reading;
-
-			}
-
-			else
-			{
-				done = 0;
-
-			}
-
-		}
-
-	}
+	startup_oscillators(partition);
 
 	//disable each oscillator to prevent self-heating
 	for(i = 0; i < NUM_PARTITIONS; i++)
@@ -354,11 +400,9 @@ int algorithm(partition_information partition[], unsigned char num_active)
 
 	}
 
-
 	return XST_SUCCESS;
 
 }
-
 
 void printAlgorithmResults(partition_information partition[])
 {
@@ -412,7 +456,7 @@ void printAlgorithmResults(partition_information partition[])
 
 	}
 
-	xil_printf("useage results:\n\r");
+	xil_printf("usage results:\n\r");
 
 	for (i = 1; i < 4; i++)
 	{
@@ -542,6 +586,8 @@ int main()
 
 	init_platform();
 
+	Xil_Out8(FAN_CONTROLLER_BASEADDR, 255);
+
 	print("Initializing oscillators:\n\r");
 	//initialize all oscillators to known good state
 	for (index = 0; index < NUM_PARTITIONS; index++)
@@ -599,8 +645,6 @@ int main()
 
 	//print("HwIcap initialized!\n\r");
 
-	Xil_Out8(FAN_CONTROLLER_BASEADDR, 255);
-
 	menu();
 
 	while (1 == 1)
@@ -624,7 +668,7 @@ int main()
 
 				break;
 
-				// sweep calibration
+			// sweep calibration
 			case 'c':
 			case 'C':
 				print("sweeping calibration...\n\r");
@@ -632,19 +676,37 @@ int main()
 				int lastTemp = initialTemp;
 				int currentTemp = initialTemp;
 
-				xil_printf("starting at current temperature: 0x%x\n\r",
-						initialTemp);
+				xil_printf("starting at current temperature: 0x%x\n\r", initialTemp);
 
 				//shutdown fan
 				Xil_Out8(FAN_CONTROLLER_BASEADDR, 0);
 
-				//startup oscillator (self-heating)
-				reset_oscillator(RP_BASEADDR, SELF_HEAT);
+				//reset oscillators
+				startup_oscillators(partition);
+
+				xil_printf("core temperature: %d\n\r", currentTemp);
+
+				printAlgorithmResults(partition);
+
+				//startup oscillators (self-heating)
+				for(index = 0; index < NUM_PARTITIONS; index++)
+				{
+					if(partition[index].block_active)
+					{
+						reset_oscillator(partition[index].baseaddr, SELF_HEAT);
+
+					}
+
+					else
+					{
+						reset_oscillator(partition[index].baseaddr, 0x00);
+
+					}
+
+				}
 
 				while (currentTemp < MAX_TEMP)
 				{
-					osc_count = 0;
-
 					while (currentTemp - lastTemp < COUNT_PER_DEGREE)
 					{
 						currentTemp = XADC_raw_temperature() >> 4;
@@ -654,72 +716,27 @@ int main()
 
 					lastTemp = currentTemp;
 
-					reset_oscillator(RP_BASEADDR, CALIBRATION_TIME);
+					//reset_oscillator(RP_BASEADDR, CALIBRATION_TIME);
 
-					while (((osc_count & GO_DONE_MASK) != GO_DONE_MASK))
+					startup_oscillators(partition);
+
+					xil_printf("core temperature: %d\n\r", currentTemp);
+
+					printAlgorithmResults(partition);
+
+					//display calibration
+
+					for(index = 0; index < NUM_PARTITIONS; index++)
 					{
-						osc_count = 0;
-
-						osc_count = Xil_In32(RP_BASEADDR+04);
-
-					}
-
-					//display calibration time
-					xil_printf("value at %x: 0x%x\n\r", currentTemp,
-							(osc_count & ~GO_DONE_MASK));
-
-				}
-
-				break;
-
-				// display core temperature
-			case 'd':
-			case 'D':
-				xil_printf("core temperature: %x (%d)\n\r",
-						(XADC_raw_temperature() >> 4), XADC_raw_temperature());
-				break;
-
-				// specific temperature
-			case 't':
-			case 'T':
-				sleep_ms(100);
-
-				reset_oscillator(RP_BASEADDR, CALIBRATION_TIME);
-
-				while (((osc_count & GO_DONE_MASK) != GO_DONE_MASK))
-				{
-					osc_count = 0;
-
-					osc_count = Xil_In32(RP_BASEADDR+04);
-
-				}
-
-				xil_printf("counter result: 0x%x at core temperature: %x (%d)\n\r",
-						osc_count, XADC_raw_temperature() >> 4,
-						XADC_raw_temperature() >> 4);
-				break;
-
-			case 'r':
-			case 'R':
-				done = 0;
-
-				while (!done)
-				{
-					done = 1;
-
-					for (index = 0; index < NUM_PARTITIONS; index++)
-					{
-						partition[index].temperature_reading = Xil_In32(partition[index].baseaddr+0x04);
-
-						if ((partition[index].temperature_reading & GO_DONE_MASK) == GO_DONE_MASK)
+						if(partition[index].block_active)
 						{
-							partition[index].temperature_reading = ~GO_DONE_MASK & partition[index].temperature_reading;
+							reset_oscillator(partition[index].baseaddr, SELF_HEAT);
 
 						}
 
 						else
 						{
-							done = 0;
+							reset_oscillator(partition[index].baseaddr, 0x00);
 
 						}
 
@@ -743,9 +760,172 @@ int main()
 
 				}
 
-				printAlgorithmResults(partition);
+				break;
 
+			case 'e':
+			case 'E':
+				print("oscillating sweeping calibration...\n\r");
+				initialTemp = XADC_raw_temperature() >> 4;
+				lastTemp = initialTemp;
+				currentTemp = initialTemp;
 
+				xil_printf("starting at current temperature: 0x%x\n\r", initialTemp);
+
+				while(1 == 1)
+				{
+					print("starting cycle:\n\r\n\r");
+
+					//shutdown fan
+					Xil_Out8(FAN_CONTROLLER_BASEADDR, 0);
+
+					//reset oscillators
+					startup_oscillators(partition);
+
+					xil_printf("core temperature: %d\n\r", currentTemp);
+
+					printAlgorithmResults(partition);
+
+					//startup oscillators (self-heating)
+					for(index = 0; index < NUM_PARTITIONS; index++)
+					{
+						if(partition[index].block_active)
+						{
+							reset_oscillator(partition[index].baseaddr, SELF_HEAT);
+
+						}
+
+						else
+						{
+							reset_oscillator(partition[index].baseaddr, 0x00);
+
+						}
+
+					}
+
+					while (currentTemp < THRESH_TEMP)
+					{
+						while (currentTemp - lastTemp < COUNT_PER_DEGREE)
+						{
+							currentTemp = XADC_raw_temperature() >> 4;
+							//xil_printf("temperature: 0x%x\n\r", currentTemp);
+
+						}
+
+						lastTemp = currentTemp;
+
+						//reset_oscillator(RP_BASEADDR, CALIBRATION_TIME);
+
+						startup_oscillators(partition);
+
+						xil_printf("core temperature: %d\n\r", currentTemp);
+
+						printAlgorithmResults(partition);
+
+						//display calibration
+
+						for(index = 0; index < NUM_PARTITIONS; index++)
+						{
+							if(partition[index].block_active)
+							{
+								reset_oscillator(partition[index].baseaddr, SELF_HEAT);
+
+							}
+
+							else
+							{
+								reset_oscillator(partition[index].baseaddr, 0x00);
+
+							}
+
+						}
+
+					}
+
+					//startup fan
+					Xil_Out8(FAN_CONTROLLER_BASEADDR, 255);
+
+					while(currentTemp  > BASE_TEMP)
+					{
+						currentTemp = XADC_raw_temperature() >> 4;
+
+					}
+
+				}
+
+				break;
+
+				// display core temperature
+			case 'd':
+			case 'D':
+				xil_printf("core temperature: %x (%d)\n\r",
+						(XADC_raw_temperature() >> 4), XADC_raw_temperature());
+				break;
+
+			case 't':
+			case 'T':
+
+				reset_oscillator(RP_BASEADDR, CALIBRATION_TIME);
+
+				while (((osc_count & GO_DONE_MASK) != GO_DONE_MASK))
+				{
+					osc_count = 0;
+
+					osc_count = Xil_In32(RP_BASEADDR+04);
+
+				}
+
+				xil_printf("counter result: 0x%x at core temperature: %x (%d)\n\r",
+						osc_count, XADC_raw_temperature() >> 4,
+						XADC_raw_temperature() >> 4);
+				break;
+
+			case 'r':
+			case 'R':
+				done = 0;
+
+				print("Select oscillator: ");
+
+				key = XUartLite_RecvByte(XUART_BASEADDR);
+
+				selected_osc = switch_char(key);
+
+				if(selected_osc > 13)
+				{
+					selected_osc = 13;
+
+				}
+
+				xil_printf("selected oscillator: %d\n\r", selected_osc);
+
+				reset_oscillator(partition[selected_osc].baseaddr, CALIBRATION_TIME);
+
+				while (!done)
+				{
+					partition[selected_osc].temperature_reading = Xil_In32(partition[selected_osc].baseaddr+0x04);
+
+					if ((partition[selected_osc].temperature_reading & GO_DONE_MASK) == GO_DONE_MASK)
+					{
+						partition[selected_osc].temperature_reading = partition[selected_osc].temperature_reading;
+
+						done = 1;
+
+					}
+
+					xil_printf("oscillator temp: 0x%x (%d)\n\r", partition[selected_osc].temperature_reading, partition[selected_osc].temperature_reading);
+
+				}
+
+				if(partition[selected_osc].block_active)
+				{
+					reset_oscillator(partition[selected_osc].baseaddr, SELF_HEAT);
+
+				}
+
+				else
+				{
+					reset_oscillator(partition[selected_osc].baseaddr, 0x00);
+
+				}
 
 				break;
 
@@ -824,6 +1004,64 @@ int main()
 				algorithm(partition, 1);
 
 				printAlgorithmResults(partition);
+
+				break;
+
+			case 'x':
+			case 'X':
+				print("toggling activation...");
+
+				for(index = 0; index < NUM_PARTITIONS; index++)
+				{
+					if(partition[index].block_active)
+					{
+						partition[index].block_active = 0;
+
+					}
+
+					else
+					{
+						partition[index].block_active = 1;
+
+					}
+
+				}
+
+				print("done.\n\r");
+
+				break;
+
+			case 'v':
+			case 'V':
+				print("Select oscillator: ");
+
+				key = XUartLite_RecvByte(XUART_BASEADDR);
+
+				selected_osc = switch_char(key);
+
+				if(selected_osc > 13)
+				{
+					selected_osc = 13;
+
+				}
+
+				xil_printf(" Selected oscillator %d\n\r", selected_osc);
+
+				if(partition[selected_osc].block_active)
+				{
+					partition[selected_osc].block_active = 0;
+
+					Xil_Out32(partition[selected_osc].baseaddr, 0x00);
+
+				}
+
+				else
+				{
+					partition[selected_osc].block_active = 1;
+
+					Xil_Out32(partition[selected_osc].baseaddr, SELF_HEAT);
+
+				}
 
 				break;
 
