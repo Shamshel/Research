@@ -17716,3 +17716,2357 @@ Done writing filter settings to:
 	C:\Users\ECE\Documents\PR_Project_XADC\etc\system.filters
 Done writing Tab View settings to:
 	C:\Users\ECE\Documents\PR_Project_XADC\etc\system.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Assigned Driver generic 1.00.a for instance reconfigurable_peripherials_14
+reconfigurable_peripherials_14 has been added to the project
+WARNING:EDK:2137 - Peripheral reconfigurable_peripherials_14 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Address Map for Processor microblaze_0
+  (0000000000-0x0001ffff) microblaze_0_d_bram_ctrl_0	microblaze_0_dlmb
+  (0000000000-0x0001ffff) microblaze_0_i_bram_ctrl_0	microblaze_0_ilmb
+  (0x00020000-0x0003ffff) microblaze_0_d_bram_ctrl_1	microblaze_0_dlmb
+  (0x00020000-0x0003ffff) microblaze_0_i_bram_ctrl_1	microblaze_0_ilmb
+  (0x40200000-0x4020ffff) axi_hwicap_0	axi4lite_0
+  (0x40600000-0x4060ffff) RS232_Uart_1	axi4lite_0
+  (0x40800000-0x4080ffff) IIC_MAIN	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+  (0x71a00000-0x71a0ffff) fan_controller_0	axi4lite_0
+  (0x72400000-0x7240ffff) reconfigurable_peripherials_10	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72420000-0x7242ffff) reconfigurable_peripherials_11	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72440000-0x7244ffff) reconfigurable_peripherials_12	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72460000-0x7246ffff) reconfigurable_peripherials_13	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72480000-0x7248ffff) reconfigurable_peripherials_14	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x7b000000-0x7b00ffff) reconfigurable_peripherials_0	axi4lite_0
+  (0x7b020000-0x7b02ffff) reconfigurable_peripherials_1	axi4lite_0
+  (0x7b040000-0x7b04ffff) reconfigurable_peripherials_2	axi4lite_0
+  (0x7b060000-0x7b06ffff) reconfigurable_peripherials_3	axi4lite_0
+  (0x7b080000-0x7b08ffff) reconfigurable_peripherials_4	axi4lite_0
+  (0x7b0a0000-0x7b0affff) reconfigurable_peripherials_5	axi4lite_0
+  (0x7b0c0000-0x7b0cffff) reconfigurable_peripherials_6	axi4lite_0
+  (0x7b0e0000-0x7b0effff) reconfigurable_peripherials_7	axi4lite_0
+  (0x7b100000-0x7b10ffff) reconfigurable_peripherials_8	axi4lite_0
+  (0x7b120000-0x7b12ffff) reconfigurable_peripherials_9	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x7e200000-0x7e20ffff) axi_xadc_0	axi4lite_0
+INFO:EDK - Use reconfigurable_peripherials_10 as reference
+INFO:EDK - Connect bus interface S_AXI to axi_interconnect_1
+INFO:EDK - Connect clock port S_AXI_ACLK to clk_100_0000MHz
+INFO:EDK - External IO port grouping doneINFO:EDK - Generate address successfully
+INFO:EDK - Successfully finished auto bus connection for IP instance: reconfigurable_peripherials_14
+Assigned Driver generic 1.00.a for instance reconfigurable_peripherials_15
+reconfigurable_peripherials_15 has been added to the project
+WARNING:EDK:2137 - Peripheral reconfigurable_peripherials_15 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Address Map for Processor microblaze_0
+  (0000000000-0x0001ffff) microblaze_0_d_bram_ctrl_0	microblaze_0_dlmb
+  (0000000000-0x0001ffff) microblaze_0_i_bram_ctrl_0	microblaze_0_ilmb
+  (0x00020000-0x0003ffff) microblaze_0_d_bram_ctrl_1	microblaze_0_dlmb
+  (0x00020000-0x0003ffff) microblaze_0_i_bram_ctrl_1	microblaze_0_ilmb
+  (0x40200000-0x4020ffff) axi_hwicap_0	axi4lite_0
+  (0x40600000-0x4060ffff) RS232_Uart_1	axi4lite_0
+  (0x40800000-0x4080ffff) IIC_MAIN	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+  (0x71a00000-0x71a0ffff) fan_controller_0	axi4lite_0
+  (0x72400000-0x7240ffff) reconfigurable_peripherials_10	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72420000-0x7242ffff) reconfigurable_peripherials_11	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72440000-0x7244ffff) reconfigurable_peripherials_12	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72460000-0x7246ffff) reconfigurable_peripherials_13	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72480000-0x7248ffff) reconfigurable_peripherials_14	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724a0000-0x724affff) reconfigurable_peripherials_15	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x7b000000-0x7b00ffff) reconfigurable_peripherials_0	axi4lite_0
+  (0x7b020000-0x7b02ffff) reconfigurable_peripherials_1	axi4lite_0
+  (0x7b040000-0x7b04ffff) reconfigurable_peripherials_2	axi4lite_0
+  (0x7b060000-0x7b06ffff) reconfigurable_peripherials_3	axi4lite_0
+  (0x7b080000-0x7b08ffff) reconfigurable_peripherials_4	axi4lite_0
+  (0x7b0a0000-0x7b0affff) reconfigurable_peripherials_5	axi4lite_0
+  (0x7b0c0000-0x7b0cffff) reconfigurable_peripherials_6	axi4lite_0
+  (0x7b0e0000-0x7b0effff) reconfigurable_peripherials_7	axi4lite_0
+  (0x7b100000-0x7b10ffff) reconfigurable_peripherials_8	axi4lite_0
+  (0x7b120000-0x7b12ffff) reconfigurable_peripherials_9	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x7e200000-0x7e20ffff) axi_xadc_0	axi4lite_0
+INFO:EDK - Use reconfigurable_peripherials_10 as reference
+INFO:EDK - Connect bus interface S_AXI to axi_interconnect_1
+INFO:EDK - Connect clock port S_AXI_ACLK to clk_100_0000MHz
+INFO:EDK - External IO port grouping doneINFO:EDK - Generate address successfully
+INFO:EDK - Successfully finished auto bus connection for IP instance: reconfigurable_peripherials_15
+Assigned Driver generic 1.00.a for instance reconfigurable_peripherials_16
+reconfigurable_peripherials_16 has been added to the project
+WARNING:EDK:2137 - Peripheral reconfigurable_peripherials_16 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Address Map for Processor microblaze_0
+  (0000000000-0x0001ffff) microblaze_0_d_bram_ctrl_0	microblaze_0_dlmb
+  (0000000000-0x0001ffff) microblaze_0_i_bram_ctrl_0	microblaze_0_ilmb
+  (0x00020000-0x0003ffff) microblaze_0_d_bram_ctrl_1	microblaze_0_dlmb
+  (0x00020000-0x0003ffff) microblaze_0_i_bram_ctrl_1	microblaze_0_ilmb
+  (0x40200000-0x4020ffff) axi_hwicap_0	axi4lite_0
+  (0x40600000-0x4060ffff) RS232_Uart_1	axi4lite_0
+  (0x40800000-0x4080ffff) IIC_MAIN	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+  (0x71a00000-0x71a0ffff) fan_controller_0	axi4lite_0
+  (0x72400000-0x7240ffff) reconfigurable_peripherials_10	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72420000-0x7242ffff) reconfigurable_peripherials_11	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72440000-0x7244ffff) reconfigurable_peripherials_12	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72460000-0x7246ffff) reconfigurable_peripherials_13	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72480000-0x7248ffff) reconfigurable_peripherials_14	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724a0000-0x724affff) reconfigurable_peripherials_15	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724c0000-0x724cffff) reconfigurable_peripherials_16	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x7b000000-0x7b00ffff) reconfigurable_peripherials_0	axi4lite_0
+  (0x7b020000-0x7b02ffff) reconfigurable_peripherials_1	axi4lite_0
+  (0x7b040000-0x7b04ffff) reconfigurable_peripherials_2	axi4lite_0
+  (0x7b060000-0x7b06ffff) reconfigurable_peripherials_3	axi4lite_0
+  (0x7b080000-0x7b08ffff) reconfigurable_peripherials_4	axi4lite_0
+  (0x7b0a0000-0x7b0affff) reconfigurable_peripherials_5	axi4lite_0
+  (0x7b0c0000-0x7b0cffff) reconfigurable_peripherials_6	axi4lite_0
+  (0x7b0e0000-0x7b0effff) reconfigurable_peripherials_7	axi4lite_0
+  (0x7b100000-0x7b10ffff) reconfigurable_peripherials_8	axi4lite_0
+  (0x7b120000-0x7b12ffff) reconfigurable_peripherials_9	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x7e200000-0x7e20ffff) axi_xadc_0	axi4lite_0
+INFO:EDK - Use reconfigurable_peripherials_10 as reference
+INFO:EDK - Connect bus interface S_AXI to axi_interconnect_1
+INFO:EDK - Connect clock port S_AXI_ACLK to clk_100_0000MHz
+INFO:EDK - External IO port grouping doneINFO:EDK - Generate address successfully
+INFO:EDK - Successfully finished auto bus connection for IP instance: reconfigurable_peripherials_16
+Assigned Driver generic 1.00.a for instance reconfigurable_peripherials_17
+reconfigurable_peripherials_17 has been added to the project
+WARNING:EDK:2137 - Peripheral reconfigurable_peripherials_17 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Address Map for Processor microblaze_0
+  (0000000000-0x0001ffff) microblaze_0_d_bram_ctrl_0	microblaze_0_dlmb
+  (0000000000-0x0001ffff) microblaze_0_i_bram_ctrl_0	microblaze_0_ilmb
+  (0x00020000-0x0003ffff) microblaze_0_d_bram_ctrl_1	microblaze_0_dlmb
+  (0x00020000-0x0003ffff) microblaze_0_i_bram_ctrl_1	microblaze_0_ilmb
+  (0x40200000-0x4020ffff) axi_hwicap_0	axi4lite_0
+  (0x40600000-0x4060ffff) RS232_Uart_1	axi4lite_0
+  (0x40800000-0x4080ffff) IIC_MAIN	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+  (0x71a00000-0x71a0ffff) fan_controller_0	axi4lite_0
+  (0x72400000-0x7240ffff) reconfigurable_peripherials_10	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72420000-0x7242ffff) reconfigurable_peripherials_11	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72440000-0x7244ffff) reconfigurable_peripherials_12	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72460000-0x7246ffff) reconfigurable_peripherials_13	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72480000-0x7248ffff) reconfigurable_peripherials_14	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724a0000-0x724affff) reconfigurable_peripherials_15	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724c0000-0x724cffff) reconfigurable_peripherials_16	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724e0000-0x724effff) reconfigurable_peripherials_17	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x7b000000-0x7b00ffff) reconfigurable_peripherials_0	axi4lite_0
+  (0x7b020000-0x7b02ffff) reconfigurable_peripherials_1	axi4lite_0
+  (0x7b040000-0x7b04ffff) reconfigurable_peripherials_2	axi4lite_0
+  (0x7b060000-0x7b06ffff) reconfigurable_peripherials_3	axi4lite_0
+  (0x7b080000-0x7b08ffff) reconfigurable_peripherials_4	axi4lite_0
+  (0x7b0a0000-0x7b0affff) reconfigurable_peripherials_5	axi4lite_0
+  (0x7b0c0000-0x7b0cffff) reconfigurable_peripherials_6	axi4lite_0
+  (0x7b0e0000-0x7b0effff) reconfigurable_peripherials_7	axi4lite_0
+  (0x7b100000-0x7b10ffff) reconfigurable_peripherials_8	axi4lite_0
+  (0x7b120000-0x7b12ffff) reconfigurable_peripherials_9	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x7e200000-0x7e20ffff) axi_xadc_0	axi4lite_0
+INFO:EDK - Use reconfigurable_peripherials_10 as reference
+INFO:EDK - Connect bus interface S_AXI to axi_interconnect_1
+INFO:EDK - Connect clock port S_AXI_ACLK to clk_100_0000MHz
+INFO:EDK - External IO port grouping doneINFO:EDK - Generate address successfully
+INFO:EDK - Successfully finished auto bus connection for IP instance: reconfigurable_peripherials_17
+Assigned Driver generic 1.00.a for instance reconfigurable_peripherials_18
+reconfigurable_peripherials_18 has been added to the project
+WARNING:EDK:2137 - Peripheral reconfigurable_peripherials_18 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Address Map for Processor microblaze_0
+  (0000000000-0x0001ffff) microblaze_0_d_bram_ctrl_0	microblaze_0_dlmb
+  (0000000000-0x0001ffff) microblaze_0_i_bram_ctrl_0	microblaze_0_ilmb
+  (0x00020000-0x0003ffff) microblaze_0_d_bram_ctrl_1	microblaze_0_dlmb
+  (0x00020000-0x0003ffff) microblaze_0_i_bram_ctrl_1	microblaze_0_ilmb
+  (0x40200000-0x4020ffff) axi_hwicap_0	axi4lite_0
+  (0x40600000-0x4060ffff) RS232_Uart_1	axi4lite_0
+  (0x40800000-0x4080ffff) IIC_MAIN	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+  (0x71a00000-0x71a0ffff) fan_controller_0	axi4lite_0
+  (0x72400000-0x7240ffff) reconfigurable_peripherials_10	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72420000-0x7242ffff) reconfigurable_peripherials_11	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72440000-0x7244ffff) reconfigurable_peripherials_12	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72460000-0x7246ffff) reconfigurable_peripherials_13	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72480000-0x7248ffff) reconfigurable_peripherials_14	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724a0000-0x724affff) reconfigurable_peripherials_15	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724c0000-0x724cffff) reconfigurable_peripherials_16	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724e0000-0x724effff) reconfigurable_peripherials_17	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72500000-0x7250ffff) reconfigurable_peripherials_18	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x7b000000-0x7b00ffff) reconfigurable_peripherials_0	axi4lite_0
+  (0x7b020000-0x7b02ffff) reconfigurable_peripherials_1	axi4lite_0
+  (0x7b040000-0x7b04ffff) reconfigurable_peripherials_2	axi4lite_0
+  (0x7b060000-0x7b06ffff) reconfigurable_peripherials_3	axi4lite_0
+  (0x7b080000-0x7b08ffff) reconfigurable_peripherials_4	axi4lite_0
+  (0x7b0a0000-0x7b0affff) reconfigurable_peripherials_5	axi4lite_0
+  (0x7b0c0000-0x7b0cffff) reconfigurable_peripherials_6	axi4lite_0
+  (0x7b0e0000-0x7b0effff) reconfigurable_peripherials_7	axi4lite_0
+  (0x7b100000-0x7b10ffff) reconfigurable_peripherials_8	axi4lite_0
+  (0x7b120000-0x7b12ffff) reconfigurable_peripherials_9	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x7e200000-0x7e20ffff) axi_xadc_0	axi4lite_0
+INFO:EDK - Use reconfigurable_peripherials_10 as reference
+INFO:EDK - Connect bus interface S_AXI to axi_interconnect_1
+INFO:EDK - Connect clock port S_AXI_ACLK to clk_100_0000MHz
+INFO:EDK - External IO port grouping doneINFO:EDK - Generate address successfully
+INFO:EDK - Successfully finished auto bus connection for IP instance: reconfigurable_peripherials_18
+Assigned Driver generic 1.00.a for instance reconfigurable_peripherials_19
+reconfigurable_peripherials_19 has been added to the project
+WARNING:EDK:2137 - Peripheral reconfigurable_peripherials_19 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Address Map for Processor microblaze_0
+  (0000000000-0x0001ffff) microblaze_0_d_bram_ctrl_0	microblaze_0_dlmb
+  (0000000000-0x0001ffff) microblaze_0_i_bram_ctrl_0	microblaze_0_ilmb
+  (0x00020000-0x0003ffff) microblaze_0_d_bram_ctrl_1	microblaze_0_dlmb
+  (0x00020000-0x0003ffff) microblaze_0_i_bram_ctrl_1	microblaze_0_ilmb
+  (0x40200000-0x4020ffff) axi_hwicap_0	axi4lite_0
+  (0x40600000-0x4060ffff) RS232_Uart_1	axi4lite_0
+  (0x40800000-0x4080ffff) IIC_MAIN	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+  (0x71a00000-0x71a0ffff) fan_controller_0	axi4lite_0
+  (0x72400000-0x7240ffff) reconfigurable_peripherials_10	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72420000-0x7242ffff) reconfigurable_peripherials_11	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72440000-0x7244ffff) reconfigurable_peripherials_12	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72460000-0x7246ffff) reconfigurable_peripherials_13	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72480000-0x7248ffff) reconfigurable_peripherials_14	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724a0000-0x724affff) reconfigurable_peripherials_15	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724c0000-0x724cffff) reconfigurable_peripherials_16	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724e0000-0x724effff) reconfigurable_peripherials_17	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72500000-0x7250ffff) reconfigurable_peripherials_18	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72520000-0x7252ffff) reconfigurable_peripherials_19	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x7b000000-0x7b00ffff) reconfigurable_peripherials_0	axi4lite_0
+  (0x7b020000-0x7b02ffff) reconfigurable_peripherials_1	axi4lite_0
+  (0x7b040000-0x7b04ffff) reconfigurable_peripherials_2	axi4lite_0
+  (0x7b060000-0x7b06ffff) reconfigurable_peripherials_3	axi4lite_0
+  (0x7b080000-0x7b08ffff) reconfigurable_peripherials_4	axi4lite_0
+  (0x7b0a0000-0x7b0affff) reconfigurable_peripherials_5	axi4lite_0
+  (0x7b0c0000-0x7b0cffff) reconfigurable_peripherials_6	axi4lite_0
+  (0x7b0e0000-0x7b0effff) reconfigurable_peripherials_7	axi4lite_0
+  (0x7b100000-0x7b10ffff) reconfigurable_peripherials_8	axi4lite_0
+  (0x7b120000-0x7b12ffff) reconfigurable_peripherials_9	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x7e200000-0x7e20ffff) axi_xadc_0	axi4lite_0
+INFO:EDK - Use reconfigurable_peripherials_10 as reference
+INFO:EDK - Connect bus interface S_AXI to axi_interconnect_1
+INFO:EDK - Connect clock port S_AXI_ACLK to clk_100_0000MHz
+INFO:EDK - External IO port grouping doneINFO:EDK - Generate address successfully
+INFO:EDK - Successfully finished auto bus connection for IP instance: reconfigurable_peripherials_19
+Assigned Driver generic 1.00.a for instance reconfigurable_peripherials_20
+reconfigurable_peripherials_20 has been added to the project
+WARNING:EDK:2137 - Peripheral reconfigurable_peripherials_20 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Address Map for Processor microblaze_0
+  (0000000000-0x0001ffff) microblaze_0_d_bram_ctrl_0	microblaze_0_dlmb
+  (0000000000-0x0001ffff) microblaze_0_i_bram_ctrl_0	microblaze_0_ilmb
+  (0x00020000-0x0003ffff) microblaze_0_d_bram_ctrl_1	microblaze_0_dlmb
+  (0x00020000-0x0003ffff) microblaze_0_i_bram_ctrl_1	microblaze_0_ilmb
+  (0x40200000-0x4020ffff) axi_hwicap_0	axi4lite_0
+  (0x40600000-0x4060ffff) RS232_Uart_1	axi4lite_0
+  (0x40800000-0x4080ffff) IIC_MAIN	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+  (0x71a00000-0x71a0ffff) fan_controller_0	axi4lite_0
+  (0x72400000-0x7240ffff) reconfigurable_peripherials_10	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72420000-0x7242ffff) reconfigurable_peripherials_11	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72440000-0x7244ffff) reconfigurable_peripherials_12	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72460000-0x7246ffff) reconfigurable_peripherials_13	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72480000-0x7248ffff) reconfigurable_peripherials_14	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724a0000-0x724affff) reconfigurable_peripherials_15	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724c0000-0x724cffff) reconfigurable_peripherials_16	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724e0000-0x724effff) reconfigurable_peripherials_17	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72500000-0x7250ffff) reconfigurable_peripherials_18	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72520000-0x7252ffff) reconfigurable_peripherials_19	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72540000-0x7254ffff) reconfigurable_peripherials_20	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x7b000000-0x7b00ffff) reconfigurable_peripherials_0	axi4lite_0
+  (0x7b020000-0x7b02ffff) reconfigurable_peripherials_1	axi4lite_0
+  (0x7b040000-0x7b04ffff) reconfigurable_peripherials_2	axi4lite_0
+  (0x7b060000-0x7b06ffff) reconfigurable_peripherials_3	axi4lite_0
+  (0x7b080000-0x7b08ffff) reconfigurable_peripherials_4	axi4lite_0
+  (0x7b0a0000-0x7b0affff) reconfigurable_peripherials_5	axi4lite_0
+  (0x7b0c0000-0x7b0cffff) reconfigurable_peripherials_6	axi4lite_0
+  (0x7b0e0000-0x7b0effff) reconfigurable_peripherials_7	axi4lite_0
+  (0x7b100000-0x7b10ffff) reconfigurable_peripherials_8	axi4lite_0
+  (0x7b120000-0x7b12ffff) reconfigurable_peripherials_9	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x7e200000-0x7e20ffff) axi_xadc_0	axi4lite_0
+INFO:EDK - Use reconfigurable_peripherials_10 as reference
+INFO:EDK - Connect bus interface S_AXI to axi_interconnect_1
+INFO:EDK - Connect clock port S_AXI_ACLK to clk_100_0000MHz
+INFO:EDK - External IO port grouping doneINFO:EDK - Generate address successfully
+INFO:EDK - Successfully finished auto bus connection for IP instance: reconfigurable_peripherials_20
+Assigned Driver generic 1.00.a for instance reconfigurable_peripherials_21
+reconfigurable_peripherials_21 has been added to the project
+WARNING:EDK:2137 - Peripheral reconfigurable_peripherials_21 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Address Map for Processor microblaze_0
+  (0000000000-0x0001ffff) microblaze_0_d_bram_ctrl_0	microblaze_0_dlmb
+  (0000000000-0x0001ffff) microblaze_0_i_bram_ctrl_0	microblaze_0_ilmb
+  (0x00020000-0x0003ffff) microblaze_0_d_bram_ctrl_1	microblaze_0_dlmb
+  (0x00020000-0x0003ffff) microblaze_0_i_bram_ctrl_1	microblaze_0_ilmb
+  (0x40200000-0x4020ffff) axi_hwicap_0	axi4lite_0
+  (0x40600000-0x4060ffff) RS232_Uart_1	axi4lite_0
+  (0x40800000-0x4080ffff) IIC_MAIN	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+  (0x71a00000-0x71a0ffff) fan_controller_0	axi4lite_0
+  (0x72400000-0x7240ffff) reconfigurable_peripherials_10	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72420000-0x7242ffff) reconfigurable_peripherials_11	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72440000-0x7244ffff) reconfigurable_peripherials_12	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72460000-0x7246ffff) reconfigurable_peripherials_13	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72480000-0x7248ffff) reconfigurable_peripherials_14	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724a0000-0x724affff) reconfigurable_peripherials_15	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724c0000-0x724cffff) reconfigurable_peripherials_16	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724e0000-0x724effff) reconfigurable_peripherials_17	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72500000-0x7250ffff) reconfigurable_peripherials_18	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72520000-0x7252ffff) reconfigurable_peripherials_19	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72540000-0x7254ffff) reconfigurable_peripherials_20	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72560000-0x7256ffff) reconfigurable_peripherials_21	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x7b000000-0x7b00ffff) reconfigurable_peripherials_0	axi4lite_0
+  (0x7b020000-0x7b02ffff) reconfigurable_peripherials_1	axi4lite_0
+  (0x7b040000-0x7b04ffff) reconfigurable_peripherials_2	axi4lite_0
+  (0x7b060000-0x7b06ffff) reconfigurable_peripherials_3	axi4lite_0
+  (0x7b080000-0x7b08ffff) reconfigurable_peripherials_4	axi4lite_0
+  (0x7b0a0000-0x7b0affff) reconfigurable_peripherials_5	axi4lite_0
+  (0x7b0c0000-0x7b0cffff) reconfigurable_peripherials_6	axi4lite_0
+  (0x7b0e0000-0x7b0effff) reconfigurable_peripherials_7	axi4lite_0
+  (0x7b100000-0x7b10ffff) reconfigurable_peripherials_8	axi4lite_0
+  (0x7b120000-0x7b12ffff) reconfigurable_peripherials_9	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x7e200000-0x7e20ffff) axi_xadc_0	axi4lite_0
+INFO:EDK - Use reconfigurable_peripherials_10 as reference
+INFO:EDK - Connect bus interface S_AXI to axi_interconnect_1
+INFO:EDK - Connect clock port S_AXI_ACLK to clk_100_0000MHz
+INFO:EDK - External IO port grouping doneINFO:EDK - Generate address successfully
+INFO:EDK - Successfully finished auto bus connection for IP instance: reconfigurable_peripherials_21
+Assigned Driver generic 1.00.a for instance reconfigurable_peripherials_22
+reconfigurable_peripherials_22 has been added to the project
+WARNING:EDK:2137 - Peripheral reconfigurable_peripherials_22 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Address Map for Processor microblaze_0
+  (0000000000-0x0001ffff) microblaze_0_d_bram_ctrl_0	microblaze_0_dlmb
+  (0000000000-0x0001ffff) microblaze_0_i_bram_ctrl_0	microblaze_0_ilmb
+  (0x00020000-0x0003ffff) microblaze_0_d_bram_ctrl_1	microblaze_0_dlmb
+  (0x00020000-0x0003ffff) microblaze_0_i_bram_ctrl_1	microblaze_0_ilmb
+  (0x40200000-0x4020ffff) axi_hwicap_0	axi4lite_0
+  (0x40600000-0x4060ffff) RS232_Uart_1	axi4lite_0
+  (0x40800000-0x4080ffff) IIC_MAIN	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+  (0x71a00000-0x71a0ffff) fan_controller_0	axi4lite_0
+  (0x72400000-0x7240ffff) reconfigurable_peripherials_10	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72420000-0x7242ffff) reconfigurable_peripherials_11	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72440000-0x7244ffff) reconfigurable_peripherials_12	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72460000-0x7246ffff) reconfigurable_peripherials_13	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72480000-0x7248ffff) reconfigurable_peripherials_14	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724a0000-0x724affff) reconfigurable_peripherials_15	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724c0000-0x724cffff) reconfigurable_peripherials_16	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724e0000-0x724effff) reconfigurable_peripherials_17	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72500000-0x7250ffff) reconfigurable_peripherials_18	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72520000-0x7252ffff) reconfigurable_peripherials_19	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72540000-0x7254ffff) reconfigurable_peripherials_20	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72560000-0x7256ffff) reconfigurable_peripherials_21	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72580000-0x7258ffff) reconfigurable_peripherials_22	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x7b000000-0x7b00ffff) reconfigurable_peripherials_0	axi4lite_0
+  (0x7b020000-0x7b02ffff) reconfigurable_peripherials_1	axi4lite_0
+  (0x7b040000-0x7b04ffff) reconfigurable_peripherials_2	axi4lite_0
+  (0x7b060000-0x7b06ffff) reconfigurable_peripherials_3	axi4lite_0
+  (0x7b080000-0x7b08ffff) reconfigurable_peripherials_4	axi4lite_0
+  (0x7b0a0000-0x7b0affff) reconfigurable_peripherials_5	axi4lite_0
+  (0x7b0c0000-0x7b0cffff) reconfigurable_peripherials_6	axi4lite_0
+  (0x7b0e0000-0x7b0effff) reconfigurable_peripherials_7	axi4lite_0
+  (0x7b100000-0x7b10ffff) reconfigurable_peripherials_8	axi4lite_0
+  (0x7b120000-0x7b12ffff) reconfigurable_peripherials_9	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x7e200000-0x7e20ffff) axi_xadc_0	axi4lite_0
+INFO:EDK - Use reconfigurable_peripherials_10 as reference
+INFO:EDK - Connect bus interface S_AXI to axi_interconnect_1
+INFO:EDK - Connect clock port S_AXI_ACLK to clk_100_0000MHz
+INFO:EDK - External IO port grouping doneINFO:EDK - Generate address successfully
+INFO:EDK - Successfully finished auto bus connection for IP instance: reconfigurable_peripherials_22
+Assigned Driver generic 1.00.a for instance reconfigurable_peripherials_23
+reconfigurable_peripherials_23 has been added to the project
+WARNING:EDK:2137 - Peripheral reconfigurable_peripherials_23 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Address Map for Processor microblaze_0
+  (0000000000-0x0001ffff) microblaze_0_d_bram_ctrl_0	microblaze_0_dlmb
+  (0000000000-0x0001ffff) microblaze_0_i_bram_ctrl_0	microblaze_0_ilmb
+  (0x00020000-0x0003ffff) microblaze_0_d_bram_ctrl_1	microblaze_0_dlmb
+  (0x00020000-0x0003ffff) microblaze_0_i_bram_ctrl_1	microblaze_0_ilmb
+  (0x40200000-0x4020ffff) axi_hwicap_0	axi4lite_0
+  (0x40600000-0x4060ffff) RS232_Uart_1	axi4lite_0
+  (0x40800000-0x4080ffff) IIC_MAIN	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+  (0x71a00000-0x71a0ffff) fan_controller_0	axi4lite_0
+  (0x72400000-0x7240ffff) reconfigurable_peripherials_10	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72420000-0x7242ffff) reconfigurable_peripherials_11	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72440000-0x7244ffff) reconfigurable_peripherials_12	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72460000-0x7246ffff) reconfigurable_peripherials_13	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72480000-0x7248ffff) reconfigurable_peripherials_14	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724a0000-0x724affff) reconfigurable_peripherials_15	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724c0000-0x724cffff) reconfigurable_peripherials_16	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724e0000-0x724effff) reconfigurable_peripherials_17	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72500000-0x7250ffff) reconfigurable_peripherials_18	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72520000-0x7252ffff) reconfigurable_peripherials_19	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72540000-0x7254ffff) reconfigurable_peripherials_20	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72560000-0x7256ffff) reconfigurable_peripherials_21	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72580000-0x7258ffff) reconfigurable_peripherials_22	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x725a0000-0x725affff) reconfigurable_peripherials_23	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x7b000000-0x7b00ffff) reconfigurable_peripherials_0	axi4lite_0
+  (0x7b020000-0x7b02ffff) reconfigurable_peripherials_1	axi4lite_0
+  (0x7b040000-0x7b04ffff) reconfigurable_peripherials_2	axi4lite_0
+  (0x7b060000-0x7b06ffff) reconfigurable_peripherials_3	axi4lite_0
+  (0x7b080000-0x7b08ffff) reconfigurable_peripherials_4	axi4lite_0
+  (0x7b0a0000-0x7b0affff) reconfigurable_peripherials_5	axi4lite_0
+  (0x7b0c0000-0x7b0cffff) reconfigurable_peripherials_6	axi4lite_0
+  (0x7b0e0000-0x7b0effff) reconfigurable_peripherials_7	axi4lite_0
+  (0x7b100000-0x7b10ffff) reconfigurable_peripherials_8	axi4lite_0
+  (0x7b120000-0x7b12ffff) reconfigurable_peripherials_9	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x7e200000-0x7e20ffff) axi_xadc_0	axi4lite_0
+INFO:EDK - Use reconfigurable_peripherials_10 as reference
+INFO:EDK - Connect bus interface S_AXI to axi_interconnect_1
+INFO:EDK - Connect clock port S_AXI_ACLK to clk_100_0000MHz
+INFO:EDK - External IO port grouping doneINFO:EDK - Generate address successfully
+INFO:EDK - Successfully finished auto bus connection for IP instance: reconfigurable_peripherials_23
+Assigned Driver generic 1.00.a for instance reconfigurable_peripherials_24
+reconfigurable_peripherials_24 has been added to the project
+WARNING:EDK:2137 - Peripheral reconfigurable_peripherials_24 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Assigned Driver generic 1.00.a for instance axi2axi_connector_2
+Assigned Driver generic 1.00.a for instance axi_interconnect_2
+Address Map for Processor microblaze_0
+  (0000000000-0x0001ffff) microblaze_0_d_bram_ctrl_0	microblaze_0_dlmb
+  (0000000000-0x0001ffff) microblaze_0_i_bram_ctrl_0	microblaze_0_ilmb
+  (0x00020000-0x0003ffff) microblaze_0_d_bram_ctrl_1	microblaze_0_dlmb
+  (0x00020000-0x0003ffff) microblaze_0_i_bram_ctrl_1	microblaze_0_ilmb
+  (0x40200000-0x4020ffff) axi_hwicap_0	axi4lite_0
+  (0x40600000-0x4060ffff) RS232_Uart_1	axi4lite_0
+  (0x40800000-0x4080ffff) IIC_MAIN	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+  (0x71a00000-0x71a0ffff) fan_controller_0	axi4lite_0
+  (0x72400000-0x7240ffff) reconfigurable_peripherials_10	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72420000-0x7242ffff) reconfigurable_peripherials_11	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72440000-0x7244ffff) reconfigurable_peripherials_12	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72460000-0x7246ffff) reconfigurable_peripherials_13	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72480000-0x7248ffff) reconfigurable_peripherials_14	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724a0000-0x724affff) reconfigurable_peripherials_15	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724c0000-0x724cffff) reconfigurable_peripherials_16	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724e0000-0x724effff) reconfigurable_peripherials_17	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72500000-0x7250ffff) reconfigurable_peripherials_18	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72520000-0x7252ffff) reconfigurable_peripherials_19	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72540000-0x7254ffff) reconfigurable_peripherials_20	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72560000-0x7256ffff) reconfigurable_peripherials_21	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72580000-0x7258ffff) reconfigurable_peripherials_22	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x725a0000-0x725affff) reconfigurable_peripherials_23	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x725c0000-0x725cffff) reconfigurable_peripherials_24	axi4lite_0->axi2axi_connector_1->axi_interconnect_1->axi2axi_connector_2->axi_interconnect_2
+  (0x7b000000-0x7b00ffff) reconfigurable_peripherials_0	axi4lite_0
+  (0x7b020000-0x7b02ffff) reconfigurable_peripherials_1	axi4lite_0
+  (0x7b040000-0x7b04ffff) reconfigurable_peripherials_2	axi4lite_0
+  (0x7b060000-0x7b06ffff) reconfigurable_peripherials_3	axi4lite_0
+  (0x7b080000-0x7b08ffff) reconfigurable_peripherials_4	axi4lite_0
+  (0x7b0a0000-0x7b0affff) reconfigurable_peripherials_5	axi4lite_0
+  (0x7b0c0000-0x7b0cffff) reconfigurable_peripherials_6	axi4lite_0
+  (0x7b0e0000-0x7b0effff) reconfigurable_peripherials_7	axi4lite_0
+  (0x7b100000-0x7b10ffff) reconfigurable_peripherials_8	axi4lite_0
+  (0x7b120000-0x7b12ffff) reconfigurable_peripherials_9	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x7e200000-0x7e20ffff) axi_xadc_0	axi4lite_0
+INFO:EDK - Use reconfigurable_peripherials_10 as reference
+INFO:EDK - Create new axi2axi_connector IP instance axi2axi_connector_2
+INFO:EDK - Create new axi_interconnect IP instance axi_interconnect_2
+INFO:EDK - Connect port INTERCONNECT_ARESETN in axi_interconnect_2 to port INTERCONNECT_ARESETN in proc_sys_reset_0
+INFO:EDK - Connect clock port S_AXI_ACLK to clk_100_0000MHz
+INFO:EDK - External IO port grouping doneINFO:EDK - Generate address successfully
+INFO:EDK - Successfully finished auto bus connection for IP instance: reconfigurable_peripherials_24
+Assigned Driver generic 1.00.a for instance reconfigurable_peripherials_25
+reconfigurable_peripherials_25 has been added to the project
+WARNING:EDK:2137 - Peripheral reconfigurable_peripherials_25 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+Address Map for Processor microblaze_0
+  (0000000000-0x0001ffff) microblaze_0_d_bram_ctrl_0	microblaze_0_dlmb
+  (0000000000-0x0001ffff) microblaze_0_i_bram_ctrl_0	microblaze_0_ilmb
+  (0x00020000-0x0003ffff) microblaze_0_d_bram_ctrl_1	microblaze_0_dlmb
+  (0x00020000-0x0003ffff) microblaze_0_i_bram_ctrl_1	microblaze_0_ilmb
+  (0x40200000-0x4020ffff) axi_hwicap_0	axi4lite_0
+  (0x40600000-0x4060ffff) RS232_Uart_1	axi4lite_0
+  (0x40800000-0x4080ffff) IIC_MAIN	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+  (0x71a00000-0x71a0ffff) fan_controller_0	axi4lite_0
+  (0x72400000-0x7240ffff) reconfigurable_peripherials_10	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72420000-0x7242ffff) reconfigurable_peripherials_11	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72440000-0x7244ffff) reconfigurable_peripherials_12	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72460000-0x7246ffff) reconfigurable_peripherials_13	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72480000-0x7248ffff) reconfigurable_peripherials_14	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724a0000-0x724affff) reconfigurable_peripherials_15	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724c0000-0x724cffff) reconfigurable_peripherials_16	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x724e0000-0x724effff) reconfigurable_peripherials_17	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72500000-0x7250ffff) reconfigurable_peripherials_18	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72520000-0x7252ffff) reconfigurable_peripherials_19	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72540000-0x7254ffff) reconfigurable_peripherials_20	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72560000-0x7256ffff) reconfigurable_peripherials_21	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72580000-0x7258ffff) reconfigurable_peripherials_22	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x725a0000-0x725affff) reconfigurable_peripherials_23	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x725c0000-0x725cffff) reconfigurable_peripherials_24	axi4lite_0->axi2axi_connector_1->axi_interconnect_1->axi2axi_connector_2->axi_interconnect_2
+  (0x7b000000-0x7b00ffff) reconfigurable_peripherials_0	axi4lite_0
+  (0x7b020000-0x7b02ffff) reconfigurable_peripherials_1	axi4lite_0
+  (0x7b040000-0x7b04ffff) reconfigurable_peripherials_2	axi4lite_0
+  (0x7b060000-0x7b06ffff) reconfigurable_peripherials_3	axi4lite_0
+  (0x7b080000-0x7b08ffff) reconfigurable_peripherials_4	axi4lite_0
+  (0x7b0a0000-0x7b0affff) reconfigurable_peripherials_5	axi4lite_0
+  (0x7b0c0000-0x7b0cffff) reconfigurable_peripherials_6	axi4lite_0
+  (0x7b0e0000-0x7b0effff) reconfigurable_peripherials_7	axi4lite_0
+  (0x7b100000-0x7b10ffff) reconfigurable_peripherials_8	axi4lite_0
+  (0x7b120000-0x7b12ffff) reconfigurable_peripherials_9	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x7e200000-0x7e20ffff) axi_xadc_0	axi4lite_0
+INFO:EDK - Use reconfigurable_peripherials_10 as reference
+INFO:EDK - Connect clock port S_AXI_ACLK to clk_100_0000MHz
+INFO:EDK - External IO port grouping doneINFO:EDK - Generate address successfully
+INFO:EDK - Successfully finished auto bus connection for IP instance: reconfigurable_peripherials_25
+Assigned Driver generic 1.00.a for instance reconfigurable_peripherials_26
+reconfigurable_peripherials_26 has been added to the project
+WARNING:EDK:2137 - Peripheral reconfigurable_peripherials_26 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+ERROR:EDK:3759 - AddresGen MHS Error Address Generator can not generate address map for your design. Please check if there is address conflict, clear the conflict and re-generate the address map.Please consult the online help for how to let Address Generator to overwrite the address. If Address Generator still can not generate the address map, please provide the address map manually.
+INFO:EDK - Use reconfigurable_peripherials_10 as reference
+INFO:EDK - Connect clock port S_AXI_ACLK to clk_100_0000MHz
+INFO:EDK - External IO port grouping doneWARNING:EDK - Generate address failed during auto bus connection
+INFO:EDK - Successfully finished auto bus connection for IP instance: reconfigurable_peripherials_26, however there is problem when generating address, please generate address manually
+Assigned Driver generic 1.00.a for instance reconfigurable_peripherials_27
+reconfigurable_peripherials_27 has been added to the project
+WARNING:EDK:2137 - Peripheral reconfigurable_peripherials_27 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+ERROR:EDK:3759 - AddresGen MHS Error Address Generator can not generate address map for your design. Please check if there is address conflict, clear the conflict and re-generate the address map.Please consult the online help for how to let Address Generator to overwrite the address. If Address Generator still can not generate the address map, please provide the address map manually.
+INFO:EDK - Use reconfigurable_peripherials_10 as reference
+INFO:EDK - Connect clock port S_AXI_ACLK to clk_100_0000MHz
+INFO:EDK - External IO port grouping doneWARNING:EDK - Generate address failed during auto bus connection
+INFO:EDK - Successfully finished auto bus connection for IP instance: reconfigurable_peripherials_27, however there is problem when generating address, please generate address manually
+
+********************************************************************************
+At Local date and time: Sun Nov 16 18:45:06 2014
+ make -f system.make netlist started...
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc7k325tffg900-2 -lang vhdl -intstyle default    -msg __xps/ise/xmsgprops.lst -parallel yes system.mhs
+
+Release 14.6 - platgen Xilinx EDK 14.6 Build EDK_P.68d
+ (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+
+Command Line: platgen -p xc7k325tffg900-2 -lang vhdl -intstyle default -msg
+__xps/ise/xmsgprops.lst -parallel yes system.mhs 
+
+WARNING:EDK - INFO:Security:71 - If a license for part 'xc7k325t' is available,
+   it will be possible to use 'XPS_TDP' instead of 'XPS'.
+   WARNING:Security:42 - Your software subscription period has lapsed. Your
+   current version of Xilinx tools will continue to function, but you no longer
+   qualify for Xilinx software updates or new releases.
+
+
+Parse C:/Users/ECE/Documents/PR_Project_XADC/system.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_2 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to kintex7 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to kintex7 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+orig_family is kintex7
+INFO:EDK:4130 - IPNAME: axi_hwicap, INSTANCE:axi_hwicap_0 - tcl is overriding
+   PARAMETER C_FAMILY value to kintex7 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_hwicap_v2_03_a\d
+   ata\axi_hwicap_v2_1_0.mpd line 94 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to kintex7 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl_1:BRAM_Clk_A. Clock DRCs will not be performed on
+   this core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl_1:BRAM_Clk_A. Clock DRCs will not be performed on
+   this core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl_0:BRAM_Clk_A. Clock DRCs will not be performed on
+   this core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl_0:BRAM_Clk_A. Clock DRCs will not be performed on
+   this core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+
+**************************************************************************
+
+For axi_hwicap v2.03.a... 
+Checking the C_INCLUDE_STARTUP parameter...
+
+With present configuration, the PORT EOS_IN is unconnected.
+
+With present configuration, the STARTUP primitive would be used in the AXI
+HWICAP core.
+
+**************************************************************************
+Address Map for Processor microblaze_0
+  (0000000000-0x0001ffff) microblaze_0_d_bram_ctrl_0	microblaze_0_dlmb
+  (0000000000-0x0001ffff) microblaze_0_i_bram_ctrl_0	microblaze_0_ilmb
+  (0x00020000-0x0003ffff) microblaze_0_d_bram_ctrl_1	microblaze_0_dlmb
+  (0x00020000-0x0003ffff) microblaze_0_i_bram_ctrl_1	microblaze_0_ilmb
+  (0x40200000-0x4020ffff) axi_hwicap_0	axi4lite_0
+  (0x40600000-0x4060ffff) RS232_Uart_1	axi4lite_0
+  (0x40800000-0x4080ffff) IIC_MAIN	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+  (0x71a00000-0x71a0ffff) fan_controller_0	axi4lite_0
+  (0x72400000-0x7240ffff)
+reconfigurable_peripherials_10	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x72420000-0x7242ffff)
+reconfigurable_peripherials_11	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x72440000-0x7244ffff)
+reconfigurable_peripherials_12	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x72460000-0x7246ffff)
+reconfigurable_peripherials_13	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x72480000-0x7248ffff)
+reconfigurable_peripherials_14	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x724a0000-0x724affff)
+reconfigurable_peripherials_15	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x724c0000-0x724cffff)
+reconfigurable_peripherials_16	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x724e0000-0x724effff)
+reconfigurable_peripherials_17	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x72500000-0x7250ffff)
+reconfigurable_peripherials_18	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x72520000-0x7252ffff)
+reconfigurable_peripherials_19	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x72540000-0x7254ffff)
+reconfigurable_peripherials_20	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x72560000-0x7256ffff)
+reconfigurable_peripherials_21	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x72580000-0x7258ffff)
+reconfigurable_peripherials_22	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x725a0000-0x725affff)
+reconfigurable_peripherials_23	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x725c0000-0x725cffff)
+reconfigurable_peripherials_24	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1->axi2axi_connector_2->axi_interconnect_2
+  (0x7b000000-0x7b00ffff) reconfigurable_peripherials_0	axi4lite_0
+  (0x7b020000-0x7b02ffff) reconfigurable_peripherials_1	axi4lite_0
+  (0x7b040000-0x7b04ffff) reconfigurable_peripherials_2	axi4lite_0
+  (0x7b060000-0x7b06ffff) reconfigurable_peripherials_3	axi4lite_0
+  (0x7b080000-0x7b08ffff) reconfigurable_peripherials_4	axi4lite_0
+  (0x7b0a0000-0x7b0affff) reconfigurable_peripherials_5	axi4lite_0
+  (0x7b0c0000-0x7b0cffff) reconfigurable_peripherials_6	axi4lite_0
+  (0x7b0e0000-0x7b0effff) reconfigurable_peripherials_7	axi4lite_0
+  (0x7b100000-0x7b10ffff) reconfigurable_peripherials_8	axi4lite_0
+  (0x7b120000-0x7b12ffff)
+reconfigurable_peripherials_9	axi4lite_0->axi2axi_connector_1->axi_interconnect_
+1
+  (0x7e200000-0x7e20ffff) axi_xadc_0	axi4lite_0
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 2 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 2 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block_1 - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x20000 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block_0 - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x20000 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 2 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 2 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi_interconnect_2 - 1 master(s) : 4
+slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 - 1 master(s) : 16
+slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 16 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4181 - PORT: axi_xadc_0_VAUXP_pin, CONNECTOR: axi_xadc_0_VAUXP -
+   floating connection - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line
+   23 
+WARNING:EDK:4181 - PORT: axi_xadc_0_VAUXN_pin, CONNECTOR: axi_xadc_0_VAUXN -
+   floating connection - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line
+   24 
+WARNING:EDK:4181 - PORT: M_AXI_AWREGION, CONNECTOR:
+   axi_interconnect_2_S_AWREGION - floating connection -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 198 
+WARNING:EDK:4181 - PORT: M_AXI_ARREGION, CONNECTOR:
+   axi_interconnect_2_S_ARREGION - floating connection -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 223 
+WARNING:EDK:4181 - PORT: M_AXI_AWREGION, CONNECTOR:
+   axi_interconnect_1_S_AWREGION - floating connection -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 198 
+WARNING:EDK:4181 - PORT: M_AXI_ARREGION, CONNECTOR:
+   axi_interconnect_1_S_ARREGION - floating connection -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 223 
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_i_bram_ctrl_1 -
+   tcl is overriding PARAMETER C_MASK value to 0x02020000 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_i_bram_ctrl_0 -
+   tcl is overriding PARAMETER C_MASK value to 0x40020000 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_d_bram_ctrl_1 -
+   tcl is overriding PARAMETER C_MASK value to 0x02020000 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_d_bram_ctrl_0 -
+   tcl is overriding PARAMETER C_MASK value to 0x40020000 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_AXI value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 232 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 367 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_BRK value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 402 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_NM_BRK value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 403 
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi_interconnect_2.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_2 - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 149 
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi_interconnect_1.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 149 
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4lite_0.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 149 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: Setting timing constaints for microblaze_0_ilmb.
+INFO: The microblaze_0_ilmb core has constraints automatically generated by XPS
+in implementation/microblaze_0_ilmb_wrapper/microblaze_0_ilmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: Setting timing constaints for microblaze_0_dlmb.
+INFO: The microblaze_0_dlmb core has constraints automatically generated by XPS
+in implementation/microblaze_0_dlmb_wrapper/microblaze_0_dlmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: Setting timing constaints for microblaze_0.
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: No asynchronous clock conversions in axi_interconnect axi_interconnect_2.
+INFO: No asynchronous clock conversions in axi_interconnect axi_interconnect_1.
+INFO: No asynchronous clock conversions in axi_interconnect axi4lite_0.
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 299 - Copying cache
+implementation netlist
+IPNAME:proc_sys_reset INSTANCE:proc_sys_reset_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 315 - Copying cache
+implementation netlist
+IPNAME:lmb_v10 INSTANCE:microblaze_0_ilmb -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 328 - Copying cache
+implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_i_bram_ctrl_1 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 335 - Copying cache
+implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_i_bram_ctrl_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 344 - Copying cache
+implementation netlist
+IPNAME:lmb_v10 INSTANCE:microblaze_0_dlmb -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 353 - Copying cache
+implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_d_bram_ctrl_1 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 360 - Copying cache
+implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_d_bram_ctrl_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 369 - Copying cache
+implementation netlist
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block_1 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 378 - Copying cache
+implementation netlist
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 385 - Copying cache
+implementation netlist
+IPNAME:microblaze INSTANCE:microblaze_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 392 - Copying cache
+implementation netlist
+IPNAME:fan_controller INSTANCE:fan_controller_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 418 - Copying cache
+implementation netlist
+IPNAME:mdm INSTANCE:debug_module -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 429 - Copying cache
+implementation netlist
+IPNAME:axi_xadc INSTANCE:axi_xadc_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 459 - Copying cache
+implementation netlist
+IPNAME:axi_hwicap INSTANCE:axi_hwicap_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 493 - Copying cache
+implementation netlist
+IPNAME:axi2axi_connector INSTANCE:axi2axi_connector_1 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 524 - Copying cache
+implementation netlist
+IPNAME:axi_uartlite INSTANCE:rs232_uart_1 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 564 - Copying cache
+implementation netlist
+IPNAME:axi_iic INSTANCE:iic_main -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 579 - Copying cache
+implementation netlist
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block_1 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 378 - elaborating IP
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 385 - elaborating IP
+IPNAME:clock_generator INSTANCE:clock_generator_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 443 - elaborating IP
+ClkGen elaborate status: PASSED
+----------------------------------------
+----------------------------------------
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 0.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 1.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INFO:EDK:4194 - Running XST parallelly on 4 processors
+INSTANCE:reconfigurable_peripherials_9 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 33 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_8 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 43 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_7 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 53 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_6 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 63 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+EXCEPTION:Xdm:ModelImp.c:55:$Id: ModelImp.c,v 1.28 2009/06/12 19:55:28 jdl Exp $ - Xdm_Exception::CannotWriteFile file='C:\Users\ECE\Documents\PR_Project_XADC\synthesis\xst_temp_dir\\xil_6'
+EXCEPTION:Xdm:ModelImp.c:55:$Id: ModelImp.c,v 1.28 2009/06/12 19:55:28 jdl Exp $ - Xdm_Exception::CannotWriteFile file='C:\Users\ECE\Documents\PR_Project_XADC\synthesis\xst_temp_dir\\xil_6'
+INSTANCE:reconfigurable_peripherials_5 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 73 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_4 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 83 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_3 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 93 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_27 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 103 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_26 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 111 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_25 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 119 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_24 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 129 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_23 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 139 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_22 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 149 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_21 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 159 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_20 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 169 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_2 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 179 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_19 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 189 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_18 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 199 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_17 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 209 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_16 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 219 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_15 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 229 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_14 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 239 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_13 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 249 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_12 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 259 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_11 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 269 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_10 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 279 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_1 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 289 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 299 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:fan_controller_0 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs
+line 418 - Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:clock_generator_0 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs
+line 443 - Running XST synthesis
+INSTANCE:axi_interconnect_2 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs
+line 477 - Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:axi_interconnect_1 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs
+line 485 - Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:axi4lite_0 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 504
+- Running XST synthesis
+INSTANCE:axi2axi_connector_2 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs
+line 512 - Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+
+Running NGCBUILD ...
+IPNAME:system_clock_generator_0_wrapper INSTANCE:clock_generator_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 443 - Running NGCBUILD
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+
+Command Line: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc7k325tffg900-2 -intstyle silent -i -sd .. system_clock_generator_0_wrapper.ngc
+../system_clock_generator_0_wrapper
+
+Reading NGO file
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/clock_generator_0_wrapper
+/system_clock_generator_0_wrapper.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "../system_clock_generator_0_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  5 sec
+Total CPU time to NGCBUILD completion:   4 sec
+
+Writing NGCBUILD log file "../system_clock_generator_0_wrapper.blc"...
+
+NGCBUILD done.
+IPNAME:system_axi_interconnect_2_wrapper INSTANCE:axi_interconnect_2 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 477 - Running NGCBUILD
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+
+Command Line: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc7k325tffg900-2 -intstyle silent -i -sd ..
+system_axi_interconnect_2_wrapper.ngc ../system_axi_interconnect_2_wrapper
+
+Reading NGO file
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/axi_interconnect_2_wrappe
+r/system_axi_interconnect_2_wrapper.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "../system_axi_interconnect_2_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  4 sec
+Total CPU time to NGCBUILD completion:   4 sec
+
+Writing NGCBUILD log file "../system_axi_interconnect_2_wrapper.blc"...
+
+NGCBUILD done.
+IPNAME:system_axi_interconnect_1_wrapper INSTANCE:axi_interconnect_1 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 485 - Running NGCBUILD
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+
+Command Line: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc7k325tffg900-2 -intstyle silent -i -sd ..
+system_axi_interconnect_1_wrapper.ngc ../system_axi_interconnect_1_wrapper
+
+Reading NGO file
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/axi_interconnect_1_wrappe
+r/system_axi_interconnect_1_wrapper.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "../system_axi_interconnect_1_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  4 sec
+Total CPU time to NGCBUILD completion:   4 sec
+
+Writing NGCBUILD log file "../system_axi_interconnect_1_wrapper.blc"...
+
+NGCBUILD done.
+IPNAME:system_axi4lite_0_wrapper INSTANCE:axi4lite_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 504 - Running NGCBUILD
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+
+Command Line: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc7k325tffg900-2 -intstyle silent -i -sd .. system_axi4lite_0_wrapper.ngc
+../system_axi4lite_0_wrapper
+
+Reading NGO file
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/axi4lite_0_wrapper/system
+_axi4lite_0_wrapper.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "../system_axi4lite_0_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  4 sec
+Total CPU time to NGCBUILD completion:   4 sec
+
+Writing NGCBUILD log file "../system_axi4lite_0_wrapper.blc"...
+
+NGCBUILD done.
+INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
+   If any constraint needs to be overridden, this should be done by modifying
+   the data/system.ucf file.
+
+Rebuilding cache ...
+
+Total run time: 198.00 seconds
+"Running synthesis..."
+cd synthesis & synthesis.cmd
+"xst -ifn "system_xst.scr" -intstyle silent"
+"Running XST synthesis ..."
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+EXCEPTION:Xdm:FileReader.c:1763:$Id: FileReader.c,v 1.44 2010/03/15 18:33:38 jdl Exp $ - ../implementation/system_reconfigurable_peripherials_9_wrapper.ngc: internal check sum error around offset 61502, expected xbdeec015but found x58f44863
+make: *** [implementation/system.ngc] Error 1
+Done!
+
+********************************************************************************
+At Local date and time: Sun Nov 16 18:58:28 2014
+ make -f system.make netlist started...
+"****************************************************"
+"Creating system netlist for hardware specification.."
+"****************************************************"
+platgen -p xc7k325tffg900-2 -lang vhdl -intstyle default    -msg __xps/ise/xmsgprops.lst -parallel yes system.mhs
+
+Release 14.6 - platgen Xilinx EDK 14.6 Build EDK_P.68d
+ (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+
+Command Line: platgen -p xc7k325tffg900-2 -lang vhdl -intstyle default -msg
+__xps/ise/xmsgprops.lst -parallel yes system.mhs 
+
+WARNING:EDK - INFO:Security:71 - If a license for part 'xc7k325t' is available,
+   it will be possible to use 'XPS_TDP' instead of 'XPS'.
+   WARNING:Security:42 - Your software subscription period has lapsed. Your
+   current version of Xilinx tools will continue to function, but you no longer
+   qualify for Xilinx software updates or new releases.
+
+
+Parse C:/Users/ECE/Documents/PR_Project_XADC/system.mhs ...
+
+Read MPD definitions ...
+
+Overriding IP level properties ...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ENDIANNESS value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 198 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ICACHE_USE_FSL value to 0 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 339 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_USE_FSL value to 0 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 369 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_2 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to kintex7 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to kintex7 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+orig_family is kintex7
+INFO:EDK:4130 - IPNAME: axi_hwicap, INSTANCE:axi_hwicap_0 - tcl is overriding
+   PARAMETER C_FAMILY value to kintex7 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_hwicap_v2_03_a\d
+   ata\axi_hwicap_v2_1_0.mpd line 94 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_BASEFAMILY value to kintex7 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: axi2axi_connector, INSTANCE:axi2axi_connector_2 - tcl is
+   overriding PARAMETER C_INTERCONNECT_S_AXI_WRITE_ACCEPTANCE value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 89 
+INFO:EDK:4130 - IPNAME: axi2axi_connector, INSTANCE:axi2axi_connector_2 - tcl is
+   overriding PARAMETER C_INTERCONNECT_S_AXI_READ_ACCEPTANCE value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 90 
+INFO:EDK:4130 - IPNAME: axi2axi_connector, INSTANCE:axi2axi_connector_2 - tcl is
+   overriding PARAMETER C_INTERCONNECT_M_AXI_WRITE_ISSUING value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 106 
+INFO:EDK:4130 - IPNAME: axi2axi_connector, INSTANCE:axi2axi_connector_2 - tcl is
+   overriding PARAMETER C_INTERCONNECT_M_AXI_READ_ISSUING value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 107 
+INFO:EDK:4130 - IPNAME: axi2axi_connector, INSTANCE:axi2axi_connector_2 - tcl is
+   overriding PARAMETER C_M_AXI_PROTOCOL value to AXI4LITE -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 93 
+INFO:EDK:4130 - IPNAME: axi2axi_connector, INSTANCE:axi2axi_connector_1 - tcl is
+   overriding PARAMETER C_INTERCONNECT_S_AXI_WRITE_ACCEPTANCE value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 89 
+INFO:EDK:4130 - IPNAME: axi2axi_connector, INSTANCE:axi2axi_connector_1 - tcl is
+   overriding PARAMETER C_INTERCONNECT_S_AXI_READ_ACCEPTANCE value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 90 
+INFO:EDK:4130 - IPNAME: axi2axi_connector, INSTANCE:axi2axi_connector_1 - tcl is
+   overriding PARAMETER C_INTERCONNECT_M_AXI_WRITE_ISSUING value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 106 
+INFO:EDK:4130 - IPNAME: axi2axi_connector, INSTANCE:axi2axi_connector_1 - tcl is
+   overriding PARAMETER C_INTERCONNECT_M_AXI_READ_ISSUING value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 107 
+INFO:EDK:4130 - IPNAME: axi2axi_connector, INSTANCE:axi2axi_connector_1 - tcl is
+   overriding PARAMETER C_M_AXI_PROTOCOL value to AXI4LITE -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 93 
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl_1:BRAM_Clk_A. Clock DRCs will not be performed on
+   this core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl_1:BRAM_Clk_A. Clock DRCs will not be performed on
+   this core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl_0:BRAM_Clk_A. Clock DRCs will not be performed on
+   this core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl_0:BRAM_Clk_A. Clock DRCs will not be performed on
+   this core and cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+
+**************************************************************************
+
+For axi_hwicap v2.03.a... 
+Checking the C_INCLUDE_STARTUP parameter...
+
+With present configuration, the PORT EOS_IN is unconnected.
+
+With present configuration, the STARTUP primitive would be used in the AXI
+HWICAP core.
+
+**************************************************************************
+Address Map for Processor microblaze_0
+  (0000000000-0x0001ffff) microblaze_0_d_bram_ctrl_0	microblaze_0_dlmb
+  (0000000000-0x0001ffff) microblaze_0_i_bram_ctrl_0	microblaze_0_ilmb
+  (0x00020000-0x0003ffff) microblaze_0_d_bram_ctrl_1	microblaze_0_dlmb
+  (0x00020000-0x0003ffff) microblaze_0_i_bram_ctrl_1	microblaze_0_ilmb
+  (0x40200000-0x4020ffff) axi_hwicap_0	axi4lite_0
+  (0x40600000-0x4060ffff) RS232_Uart_1	axi4lite_0
+  (0x40800000-0x4080ffff) IIC_MAIN	axi4lite_0
+  (0x41400000-0x4140ffff) debug_module	axi4lite_0
+  (0x71a00000-0x71a0ffff) fan_controller_0	axi4lite_0
+  (0x72400000-0x7240ffff)
+reconfigurable_peripherials_10	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x72420000-0x7242ffff)
+reconfigurable_peripherials_11	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x72440000-0x7244ffff)
+reconfigurable_peripherials_12	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x72460000-0x7246ffff)
+reconfigurable_peripherials_13	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x72480000-0x7248ffff)
+reconfigurable_peripherials_14	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x724a0000-0x724affff)
+reconfigurable_peripherials_15	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x724c0000-0x724cffff)
+reconfigurable_peripherials_16	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x724e0000-0x724effff)
+reconfigurable_peripherials_17	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x72500000-0x7250ffff)
+reconfigurable_peripherials_18	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x72520000-0x7252ffff)
+reconfigurable_peripherials_19	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x72540000-0x7254ffff)
+reconfigurable_peripherials_20	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x72560000-0x7256ffff)
+reconfigurable_peripherials_21	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x72580000-0x7258ffff)
+reconfigurable_peripherials_22	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x725a0000-0x725affff)
+reconfigurable_peripherials_23	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1
+  (0x725c0000-0x725cffff)
+reconfigurable_peripherials_24	axi4lite_0->axi2axi_connector_1->axi_interconnect
+_1->axi2axi_connector_2->axi_interconnect_2
+  (0x7b000000-0x7b00ffff) reconfigurable_peripherials_0	axi4lite_0
+  (0x7b020000-0x7b02ffff) reconfigurable_peripherials_1	axi4lite_0
+  (0x7b040000-0x7b04ffff) reconfigurable_peripherials_2	axi4lite_0
+  (0x7b060000-0x7b06ffff) reconfigurable_peripherials_3	axi4lite_0
+  (0x7b080000-0x7b08ffff) reconfigurable_peripherials_4	axi4lite_0
+  (0x7b0a0000-0x7b0affff) reconfigurable_peripherials_5	axi4lite_0
+  (0x7b0c0000-0x7b0cffff) reconfigurable_peripherials_6	axi4lite_0
+  (0x7b0e0000-0x7b0effff) reconfigurable_peripherials_7	axi4lite_0
+  (0x7b100000-0x7b10ffff) reconfigurable_peripherials_8	axi4lite_0
+  (0x7b120000-0x7b12ffff)
+reconfigurable_peripherials_9	axi4lite_0->axi2axi_connector_1->axi_interconnect_
+1
+  (0x7e200000-0x7e20ffff) axi_xadc_0	axi4lite_0
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 2 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
+   PARAMETER C_LMB_NUM_SLAVES value to 2 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block_1 - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x20000 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block_0 - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x20000 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 2 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 2 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi_interconnect_2 - 1 master(s) : 4
+slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 - 1 master(s) : 16
+slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 16 slave(s) 
+
+Checking port drivers...
+WARNING:EDK:4181 - PORT: axi_xadc_0_VAUXP_pin, CONNECTOR: axi_xadc_0_VAUXP -
+   floating connection - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line
+   23 
+WARNING:EDK:4181 - PORT: axi_xadc_0_VAUXN_pin, CONNECTOR: axi_xadc_0_VAUXN -
+   floating connection - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line
+   24 
+WARNING:EDK:4181 - PORT: M_AXI_AWREGION, CONNECTOR:
+   axi_interconnect_2_S_AWREGION - floating connection -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 198 
+WARNING:EDK:4181 - PORT: M_AXI_ARREGION, CONNECTOR:
+   axi_interconnect_2_S_ARREGION - floating connection -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 223 
+WARNING:EDK:4181 - PORT: M_AXI_AWREGION, CONNECTOR:
+   axi_interconnect_1_S_AWREGION - floating connection -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 198 
+WARNING:EDK:4181 - PORT: M_AXI_ARREGION, CONNECTOR:
+   axi_interconnect_1_S_ARREGION - floating connection -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 223 
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_i_bram_ctrl_1 -
+   tcl is overriding PARAMETER C_MASK value to 0x02020000 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_i_bram_ctrl_0 -
+   tcl is overriding PARAMETER C_MASK value to 0x40020000 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_d_bram_ctrl_1 -
+   tcl is overriding PARAMETER C_MASK value to 0x02020000 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_d_bram_ctrl_0 -
+   tcl is overriding PARAMETER C_MASK value to 0x40020000 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_AXI value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 232 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 367 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_BRK value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 402 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_NM_BRK value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 403 
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi_interconnect_2.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_2 - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 149 
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi_interconnect_1.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 149 
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4lite_0.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 149 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
+INFO: Setting timing constaints for microblaze_0_ilmb.
+INFO: The microblaze_0_ilmb core has constraints automatically generated by XPS
+in implementation/microblaze_0_ilmb_wrapper/microblaze_0_ilmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: Setting timing constaints for microblaze_0_dlmb.
+INFO: The microblaze_0_dlmb core has constraints automatically generated by XPS
+in implementation/microblaze_0_dlmb_wrapper/microblaze_0_dlmb_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: Setting timing constaints for microblaze_0.
+INFO: The microblaze_0 core has constraints automatically generated by XPS in
+implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
+It can be overridden by constraints placed in the system.ucf file.
+
+INFO: No asynchronous clock conversions in axi_interconnect axi_interconnect_2.
+INFO: No asynchronous clock conversions in axi_interconnect axi_interconnect_1.
+INFO: No asynchronous clock conversions in axi_interconnect axi4lite_0.
+
+Modify defaults ...
+
+Creating stub ...
+
+Processing licensed instances ...
+Completion time: 0.00 seconds
+
+Creating hardware output directories ...
+
+Managing hardware (BBD-specified) netlist files ...
+
+Managing cache ...
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_9 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 33 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_8 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 43 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_7 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 53 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_6 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 63 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_5 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 73 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_4 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 83 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_3 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 93 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_27 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 103 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_26 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 111 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_25 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 119 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_24 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 129 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_23 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 139 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_22 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 149 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_21 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 159 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_20 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 169 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_2 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 179 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_19 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 189 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_18 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 199 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_17 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 209 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_16 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 219 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_15 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 229 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_14 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 239 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_13 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 249 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_12 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 259 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_11 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 269 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_10 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 279 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_1 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 289 - Copying cache
+implementation netlist
+IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 299 - Copying cache
+implementation netlist
+IPNAME:proc_sys_reset INSTANCE:proc_sys_reset_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 315 - Copying cache
+implementation netlist
+IPNAME:lmb_v10 INSTANCE:microblaze_0_ilmb -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 328 - Copying cache
+implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_i_bram_ctrl_1 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 335 - Copying cache
+implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_i_bram_ctrl_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 344 - Copying cache
+implementation netlist
+IPNAME:lmb_v10 INSTANCE:microblaze_0_dlmb -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 353 - Copying cache
+implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_d_bram_ctrl_1 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 360 - Copying cache
+implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_d_bram_ctrl_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 369 - Copying cache
+implementation netlist
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block_1 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 378 - Copying cache
+implementation netlist
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 385 - Copying cache
+implementation netlist
+IPNAME:microblaze INSTANCE:microblaze_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 392 - Copying cache
+implementation netlist
+IPNAME:fan_controller INSTANCE:fan_controller_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 418 - Copying cache
+implementation netlist
+IPNAME:mdm INSTANCE:debug_module -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 429 - Copying cache
+implementation netlist
+IPNAME:axi_xadc INSTANCE:axi_xadc_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 459 - Copying cache
+implementation netlist
+IPNAME:axi_hwicap INSTANCE:axi_hwicap_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 493 - Copying cache
+implementation netlist
+IPNAME:axi2axi_connector INSTANCE:axi2axi_connector_2 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 512 - Copying cache
+implementation netlist
+IPNAME:axi2axi_connector INSTANCE:axi2axi_connector_1 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 525 - Copying cache
+implementation netlist
+IPNAME:axi_uartlite INSTANCE:rs232_uart_1 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 566 - Copying cache
+implementation netlist
+IPNAME:axi_iic INSTANCE:iic_main -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 581 - Copying cache
+implementation netlist
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block_1 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 378 - elaborating IP
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 385 - elaborating IP
+IPNAME:clock_generator INSTANCE:clock_generator_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 443 - elaborating IP
+ClkGen elaborate status: PASSED
+----------------------------------------
+----------------------------------------
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+Completion time: 1.00 seconds
+
+Constructing platform-level connectivity ...
+Completion time: 0.00 seconds
+
+Writing (top-level) BMM ...
+
+Writing (top-level and wrappers) HDL ...
+
+Generating synthesis project file ...
+
+Running XST synthesis ...
+
+INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
+   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
+   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
+INFO:EDK:4194 - Running XST parallelly on 4 processors
+INSTANCE:reconfigurable_peripherials_9 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 33 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_8 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 43 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_7 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 53 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_6 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 63 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_5 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 73 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_4 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 83 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_3 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 93 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_27 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 103 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_26 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 111 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_25 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 119 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_24 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 129 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_23 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 139 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_22 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 149 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_21 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 159 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_20 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 169 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_2 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 179 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_19 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 189 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_18 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 199 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_17 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 209 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_16 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 219 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_15 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 229 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_14 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 239 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_13 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 249 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_12 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 259 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_11 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 269 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_10 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 279 - Running XST
+synthesis
+INSTANCE:reconfigurable_peripherials_1 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 289 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:reconfigurable_peripherials_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 299 - Running XST
+synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:fan_controller_0 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs
+line 418 - Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:clock_generator_0 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs
+line 443 - Running XST synthesis
+INSTANCE:axi_interconnect_2 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs
+line 477 - Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:axi_interconnect_1 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs
+line 485 - Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+INSTANCE:axi4lite_0 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 504
+- Running XST synthesis
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+
+Running NGCBUILD ...
+IPNAME:system_clock_generator_0_wrapper INSTANCE:clock_generator_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 443 - Running NGCBUILD
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+
+Command Line: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc7k325tffg900-2 -intstyle silent -i -sd .. system_clock_generator_0_wrapper.ngc
+../system_clock_generator_0_wrapper
+
+Reading NGO file
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/clock_generator_0_wrapper
+/system_clock_generator_0_wrapper.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "../system_clock_generator_0_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  4 sec
+Total CPU time to NGCBUILD completion:   4 sec
+
+Writing NGCBUILD log file "../system_clock_generator_0_wrapper.blc"...
+
+NGCBUILD done.
+IPNAME:system_axi_interconnect_2_wrapper INSTANCE:axi_interconnect_2 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 477 - Running NGCBUILD
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+
+Command Line: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc7k325tffg900-2 -intstyle silent -i -sd ..
+system_axi_interconnect_2_wrapper.ngc ../system_axi_interconnect_2_wrapper
+
+Reading NGO file
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/axi_interconnect_2_wrappe
+r/system_axi_interconnect_2_wrapper.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "../system_axi_interconnect_2_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  4 sec
+Total CPU time to NGCBUILD completion:   4 sec
+
+Writing NGCBUILD log file "../system_axi_interconnect_2_wrapper.blc"...
+
+NGCBUILD done.
+IPNAME:system_axi_interconnect_1_wrapper INSTANCE:axi_interconnect_1 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 485 - Running NGCBUILD
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+
+Command Line: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc7k325tffg900-2 -intstyle silent -i -sd ..
+system_axi_interconnect_1_wrapper.ngc ../system_axi_interconnect_1_wrapper
+
+Reading NGO file
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/axi_interconnect_1_wrappe
+r/system_axi_interconnect_1_wrapper.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "../system_axi_interconnect_1_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  4 sec
+Total CPU time to NGCBUILD completion:   4 sec
+
+Writing NGCBUILD log file "../system_axi_interconnect_1_wrapper.blc"...
+
+NGCBUILD done.
+IPNAME:system_axi4lite_0_wrapper INSTANCE:axi4lite_0 -
+C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 504 - Running NGCBUILD
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+
+Command Line: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc7k325tffg900-2 -intstyle silent -i -sd .. system_axi4lite_0_wrapper.ngc
+../system_axi4lite_0_wrapper
+
+Reading NGO file
+"C:/Users/ECE/Documents/PR_Project_XADC/implementation/axi4lite_0_wrapper/system
+_axi4lite_0_wrapper.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGC file "../system_axi4lite_0_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  4 sec
+Total CPU time to NGCBUILD completion:   4 sec
+
+Writing NGCBUILD log file "../system_axi4lite_0_wrapper.blc"...
+
+NGCBUILD done.
+INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
+   If any constraint needs to be overridden, this should be done by modifying
+   the data/system.ucf file.
+
+Rebuilding cache ...
+
+Total run time: 190.00 seconds
+"Running synthesis..."
+cd synthesis & synthesis.cmd
+"xst -ifn "system_xst.scr" -intstyle silent"
+"Running XST synthesis ..."
+PMSPEC -- Overriding Xilinx file
+<C:/Xilinx/14.6/ISE_DS/EDK/kintex7/data/kintex7.acd> with local file
+<C:/Xilinx/14.6/ISE_DS/ISE/kintex7/data/kintex7.acd>
+"XST completed"
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	C:\Users\ECE\Documents\PR_Project_XADC\etc\system.filters
+Done writing Tab View settings to:
+	C:\Users\ECE\Documents\PR_Project_XADC\etc\system.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+
+********************************************************************************
+At Local date and time: Sun Nov 16 19:04:56 2014
+ make -f system.make netlist started...
+make: Nothing to be done for `netlist'.
+Done!
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+
+********************************************************************************
+At Local date and time: Wed Nov 19 15:52:10 2014
+ make -f system.make exporttosdk started...
+IF NOT EXIST "SDK\SDK_Export\hw" @mkdir "SDK\SDK_Export\hw"
+psf2Edward -inp system.xmp -exit_on_error -dont_add_loginfo -make_inst_lower -edwver 1.2 -xml SDK\SDK_Export\hw/system.xml 
+Release 14.6 - psf2Edward EDK_P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Checking platform configuration ...
+IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 2 slave(s) 
+IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 2 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi_interconnect_2 - 1 master(s) : 4
+slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 - 1 master(s) : 16
+slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 16 slave(s) 
+
+Checking port drivers...
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+WARNING:EDK:4181 - PORT: axi_xadc_0_VAUXP_pin, CONNECTOR: axi_xadc_0_VAUXP -
+   floating connection - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line
+   23 
+WARNING:EDK:4181 - PORT: axi_xadc_0_VAUXN_pin, CONNECTOR: axi_xadc_0_VAUXN -
+   floating connection - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line
+   24 
+WARNING:EDK:4181 - PORT: M_AXI_AWREGION, CONNECTOR:
+   axi_interconnect_2_S_AWREGION - floating connection -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 198 
+WARNING:EDK:4181 - PORT: M_AXI_ARREGION, CONNECTOR:
+   axi_interconnect_2_S_ARREGION - floating connection -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 223 
+WARNING:EDK:4181 - PORT: M_AXI_AWREGION, CONNECTOR:
+   axi_interconnect_1_S_AWREGION - floating connection -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 198 
+WARNING:EDK:4181 - PORT: M_AXI_ARREGION, CONNECTOR:
+   axi_interconnect_1_S_ARREGION - floating connection -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 223 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_i_bram_ctrl_1 -
+   tcl is overriding PARAMETER C_MASK value to 0x02020000 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_i_bram_ctrl_0 -
+   tcl is overriding PARAMETER C_MASK value to 0x40020000 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_d_bram_ctrl_1 -
+   tcl is overriding PARAMETER C_MASK value to 0x02020000 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi_interconnect_2.
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi_interconnect_1.
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4lite_0.
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_d_bram_ctrl_0 -
+   tcl is overriding PARAMETER C_MASK value to 0x40020000 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_AXI value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 232 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 367 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_BRK value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 402 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_NM_BRK value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   ata\microblaze_v2_1_0.mpd line 403 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_2 - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 149 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 149 
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 149 
+Conversion to XML complete.
+xdsgen -inp system.xmp -report SDK\SDK_Export\hw/system.html  -make_docs_local
+Release 14.6 - xdsgen EDK_P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=proc_sys_reset;v=v3_00_a;d=proc_sy
+   s_reset.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=lmb_v10;v=v2_00_b;d=pg087-lmb-v10.
+   pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=lmb_bram_if_cntlr;v=v3_10_c;d=pg06
+   1-lmb-bram-if-cntlr.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=lmb_bram_if_cntlr;v=v3_10_c;d=pg06
+   1-lmb-bram-if-cntlr.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=lmb_v10;v=v2_00_b;d=pg087-lmb-v10.
+   pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=lmb_bram_if_cntlr;v=v3_10_c;d=pg06
+   1-lmb-bram-if-cntlr.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=lmb_bram_if_cntlr;v=v3_10_c;d=pg06
+   1-lmb-bram-if-cntlr.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=bram_block;v=v1_00_a;d=bram_block.
+   pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=bram_block;v=v1_00_a;d=bram_block.
+   pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=mdm;v=v2_10_a;d=pg062-mdm.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=clock_generator;v=v4_03_a;d=clock_
+   generator.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axi_xadc;v=v1_00_a;d=pg019_axi_xad
+   c.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axi_interconnect;v=v1_06_a;d=ds768
+   _axi_interconnect.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axi_interconnect;v=v1_06_a;d=ds768
+   _axi_interconnect.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axi_hwicap;v=v2_03_a;d=ds817_axi_h
+   wicap.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axi_interconnect;v=v1_06_a;d=ds768
+   _axi_interconnect.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axi2axi_connector;v=v1_00_a;d=ds80
+   3_axi2axi_connector.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axi2axi_connector;v=v1_00_a;d=ds80
+   3_axi2axi_connector.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axi_uartlite;v=v1_02_a;d=axi_uartl
+   ite_ds741.pdf
+WARNING:EDK:878 - Could not find IP doc
+   http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axi_iic;v=v1_02_a;d=axi_iic_ds756.
+   pdf
+Generated Block Diagram.
+Rasterizing reconfigurable_peripherials_9.jpg.....
+Rasterizing reconfigurable_peripherials_8.jpg.....
+Rasterizing reconfigurable_peripherials_7.jpg.....
+Rasterizing reconfigurable_peripherials_6.jpg.....
+Rasterizing reconfigurable_peripherials_5.jpg.....
+Rasterizing reconfigurable_peripherials_4.jpg.....
+Rasterizing reconfigurable_peripherials_3.jpg.....
+Rasterizing reconfigurable_peripherials_27.jpg.....
+Rasterizing reconfigurable_peripherials_26.jpg.....
+Rasterizing reconfigurable_peripherials_25.jpg.....
+Rasterizing reconfigurable_peripherials_24.jpg.....
+Rasterizing reconfigurable_peripherials_23.jpg.....
+Rasterizing reconfigurable_peripherials_22.jpg.....
+Rasterizing reconfigurable_peripherials_21.jpg.....
+Rasterizing reconfigurable_peripherials_20.jpg.....
+Rasterizing reconfigurable_peripherials_2.jpg.....
+Rasterizing reconfigurable_peripherials_19.jpg.....
+Rasterizing reconfigurable_peripherials_18.jpg.....
+Rasterizing reconfigurable_peripherials_17.jpg.....
+Rasterizing reconfigurable_peripherials_16.jpg.....
+Rasterizing reconfigurable_peripherials_15.jpg.....
+Rasterizing reconfigurable_peripherials_14.jpg.....
+Rasterizing reconfigurable_peripherials_13.jpg.....
+Rasterizing reconfigurable_peripherials_12.jpg.....
+Rasterizing reconfigurable_peripherials_11.jpg.....
+Rasterizing reconfigurable_peripherials_10.jpg.....
+Rasterizing reconfigurable_peripherials_1.jpg.....
+Rasterizing reconfigurable_peripherials_0.jpg.....
+Rasterizing proc_sys_reset_0.jpg.....
+Rasterizing microblaze_0_ilmb.jpg.....
+Rasterizing microblaze_0_i_bram_ctrl_1.jpg.....
+Rasterizing microblaze_0_i_bram_ctrl_0.jpg.....
+Rasterizing microblaze_0_dlmb.jpg.....
+Rasterizing microblaze_0_d_bram_ctrl_1.jpg.....
+Rasterizing microblaze_0_d_bram_ctrl_0.jpg.....
+Rasterizing microblaze_0_bram_block_1.jpg.....
+Rasterizing microblaze_0_bram_block_0.jpg.....
+Rasterizing microblaze_0.jpg.....
+Rasterizing fan_controller_0.jpg.....
+Rasterizing debug_module.jpg.....
+Rasterizing clock_generator_0.jpg.....
+Rasterizing axi_xadc_0.jpg.....
+Rasterizing axi_interconnect_2.jpg.....
+Rasterizing axi_interconnect_1.jpg.....
+Rasterizing axi_hwicap_0.jpg.....
+Rasterizing axi4lite_0.jpg.....
+Rasterizing axi2axi_connector_2.jpg.....
+Rasterizing axi2axi_connector_1.jpg.....
+Rasterizing RS232_Uart_1.jpg.....
+Rasterizing IIC_MAIN.jpg.....
+Rasterizing system_blkd.jpg.....
+Report generated.
+Report generation completed.
+""
+"WARNING: The option to export bit and bmm files to SDK is set to false. Existing bit and bmm files in the SDK\SDK_Export\hw directory (if any) will be deleted."
+""
+Done!
+Writing filter settings....
+Done writing filter settings to:
+	C:\Users\ECE\Documents\PR_Project_XADC\etc\system.filters
+Done writing Tab View settings to:
+	C:\Users\ECE\Documents\PR_Project_XADC\etc\system.gui

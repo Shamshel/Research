@@ -3,7 +3,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to C:\Users\ECE\Documents\PR_Project_XADC\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.15 secs
  
 --> 
@@ -488,7 +488,7 @@ WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/p
         C_BASEADDR = "01111011000100000000000000000000"
         C_HIGHADDR = "01111011000100001111111111111111"
         C_FAMILY = "kintex7"
-        C_NUM_REG = 1
+        C_NUM_REG = 2
         C_NUM_MEM = 1
         C_SLV_AWIDTH = 32
         C_SLV_DWIDTH = 32
@@ -940,11 +940,11 @@ S_AXI_ACLK     |    1.679|         |         |         |
 
 
 Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 13.98 secs
+Total CPU time to Xst completion: 13.56 secs
  
 --> 
 
-Total memory usage is 476112 kilobytes
+Total memory usage is 476268 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   20 (   0 filtered)

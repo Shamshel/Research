@@ -86,7 +86,7 @@ begin
       C_BASEADDR => X"7b020000",
       C_HIGHADDR => X"7b02ffff",
       C_FAMILY => "kintex7",
-      C_NUM_REG => 1,
+      C_NUM_REG => 2,
       C_NUM_MEM => 1,
       C_SLV_AWIDTH => 32,
       C_SLV_DWIDTH => 32

@@ -1,12 +1,90 @@
 #-----------------------------------------------------------
 # PlanAhead v14.6 (64-bit)
 # Build 269223 by xbuild on Wed Jun  5 11:14:03 MDT 2013
-# Start of session at: Sat Oct 04 17:12:08 2014
-# Process ID: 6660
+# Start of session at: Sun Nov 16 20:21:27 2014
+# Process ID: 6216
 # Log file: C:/Users/ECE/Documents/PR_Project_XADC/planAhead.log
 # Journal file: C:/Users/ECE/Documents/PR_Project_XADC\planAhead.jou
 #-----------------------------------------------------------
 start_gui
 open_project {C:\Users\ECE\Documents\PR_Project_XADC\PR_Project_XADC.ppr}
+add_files -norecurse {C:/Users/ECE/Documents/PR_Project_XADC/implementation/system.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_axi2axi_connector_1_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_axi2axi_connector_2_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_axi4lite_0_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_axi_hwicap_0_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_axi_hwicap_0_wrapper_fifo_generator_v9_3_1.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_axi_hwicap_0_wrapper_fifo_generator_v9_3_2.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_axi_interconnect_1_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_axi_interconnect_2_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_axi_xadc_0_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_clock_generator_0_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_debug_module_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_fan_controller_0_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_iic_main_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_microblaze_0_bram_block_0_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_microblaze_0_bram_block_1_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_microblaze_0_bram_block_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_microblaze_0_d_bram_ctrl_0_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_microblaze_0_d_bram_ctrl_1_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_microblaze_0_d_bram_ctrl_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_microblaze_0_dlmb_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_microblaze_0_i_bram_ctrl_0_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_microblaze_0_i_bram_ctrl_1_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_microblaze_0_i_bram_ctrl_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_microblaze_0_ilmb_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_microblaze_0_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_proc_sys_reset_0_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_0_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_10_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_11_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_12_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_13_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_14_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_15_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_16_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_17_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_18_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_19_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_1_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_20_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_21_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_22_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_23_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_24_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_25_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_26_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_27_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_2_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_3_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_4_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_5_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_6_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_7_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_8_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_reconfigurable_peripherials_9_wrapper.ngc C:/Users/ECE/Documents/PR_Project_XADC/implementation/system_rs232_uart_1_wrapper.ngc}
 link_design -name netlist_1
+reset_run counter
+launch_runs counter
+wait_on_run counter
+resize_pblock pblock_reconfigurable_peripherials_27_USER_LOGIC_I_rp_instance -add {SLICE_X108Y10:SLICE_X121Y44 DSP48_X4Y4:DSP48_X4Y17} -locs keep_all -replace
+resize_pblock pblock_reconfigurable_peripherials_26_USER_LOGIC_I_rp_instance -add {SLICE_X108Y60:SLICE_X121Y94 DSP48_X4Y24:DSP48_X4Y37} -locs keep_all -replace
+resize_pblock pblock_reconfigurable_peripherials_25_USER_LOGIC_I_rp_instance -add {SLICE_X108Y110:SLICE_X121Y144 DSP48_X4Y44:DSP48_X4Y57} -locs keep_all -replace
+resize_pblock pblock_reconfigurable_peripherials_23_USER_LOGIC_I_rp_instance -add {SLICE_X108Y210:SLICE_X121Y244 DSP48_X4Y84:DSP48_X4Y97} -locs keep_all -replace
+resize_pblock pblock_reconfigurable_peripherials_22_USER_LOGIC_I_rp_instance -add {SLICE_X108Y260:SLICE_X121Y294 DSP48_X4Y104:DSP48_X4Y117} -locs keep_all -replace
+resize_pblock pblock_reconfigurable_peripherials_21_USER_LOGIC_I_rp_instance -add {SLICE_X108Y310:SLICE_X121Y344 DSP48_X4Y124:DSP48_X4Y137} -locs keep_all -replace
+save_constraints
+reset_run counter
+launch_runs counter
+wait_on_run counter
 open_run counter
+current_design netlist_1
+create_reconfig_module -name rp_counter -cell reconfigurable_peripherials_14/reconfigurable_peripherials_14/USER_LOGIC_I/rp_instance
+set_property edif_top_file C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.ngc [get_filesets reconfigurable_peripherials_14~reconfigurable_peripherials_14~USER_LOGIC_I~rp_instance#rp_counter]
+load_reconfig_modules -reconfig_modules reconfigurable_peripherials_14/reconfigurable_peripherials_14/USER_LOGIC_I/rp_instance:rp_counter
+create_reconfig_module -name rp_counter -cell reconfigurable_peripherials_15/reconfigurable_peripherials_15/USER_LOGIC_I/rp_instance
+set_property edif_top_file C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.ngc [get_filesets reconfigurable_peripherials_15~reconfigurable_peripherials_15~USER_LOGIC_I~rp_instance#rp_counter]
+load_reconfig_modules -reconfig_modules reconfigurable_peripherials_15/reconfigurable_peripherials_15/USER_LOGIC_I/rp_instance:rp_counter
+create_reconfig_module -name rp_counter -cell reconfigurable_peripherials_16/reconfigurable_peripherials_16/USER_LOGIC_I/rp_instance
+set_property edif_top_file C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.ngc [get_filesets reconfigurable_peripherials_16~reconfigurable_peripherials_16~USER_LOGIC_I~rp_instance#rp_counter]
+load_reconfig_modules -reconfig_modules reconfigurable_peripherials_16/reconfigurable_peripherials_16/USER_LOGIC_I/rp_instance:rp_counter
+create_reconfig_module -name rp_counter -cell reconfigurable_peripherials_17/reconfigurable_peripherials_17/USER_LOGIC_I/rp_instance
+set_property edif_top_file C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.ngc [get_filesets reconfigurable_peripherials_17~reconfigurable_peripherials_17~USER_LOGIC_I~rp_instance#rp_counter]
+load_reconfig_modules -reconfig_modules reconfigurable_peripherials_17/reconfigurable_peripherials_17/USER_LOGIC_I/rp_instance:rp_counter
+create_reconfig_module -name rp_counter -cell reconfigurable_peripherials_18/reconfigurable_peripherials_18/USER_LOGIC_I/rp_instance
+set_property edif_top_file C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.ngc [get_filesets reconfigurable_peripherials_18~reconfigurable_peripherials_18~USER_LOGIC_I~rp_instance#rp_counter]
+load_reconfig_modules -reconfig_modules reconfigurable_peripherials_18/reconfigurable_peripherials_18/USER_LOGIC_I/rp_instance:rp_counter
+create_reconfig_module -name rp_counter -cell reconfigurable_peripherials_19/reconfigurable_peripherials_19/USER_LOGIC_I/rp_instance
+set_property edif_top_file C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.ngc [get_filesets reconfigurable_peripherials_19~reconfigurable_peripherials_19~USER_LOGIC_I~rp_instance#rp_counter]
+load_reconfig_modules -reconfig_modules reconfigurable_peripherials_19/reconfigurable_peripherials_19/USER_LOGIC_I/rp_instance:rp_counter
+create_reconfig_module -name rp_counter -cell reconfigurable_peripherials_20/reconfigurable_peripherials_20/USER_LOGIC_I/rp_instance
+set_property edif_top_file C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.ngc [get_filesets reconfigurable_peripherials_20~reconfigurable_peripherials_20~USER_LOGIC_I~rp_instance#rp_counter]
+load_reconfig_modules -reconfig_modules reconfigurable_peripherials_20/reconfigurable_peripherials_20/USER_LOGIC_I/rp_instance:rp_counter
+create_reconfig_module -name rp_counter -cell reconfigurable_peripherials_21/reconfigurable_peripherials_21/USER_LOGIC_I/rp_instance
+set_property edif_top_file C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.ngc [get_filesets reconfigurable_peripherials_21~reconfigurable_peripherials_21~USER_LOGIC_I~rp_instance#rp_counter]
+load_reconfig_modules -reconfig_modules reconfigurable_peripherials_21/reconfigurable_peripherials_21/USER_LOGIC_I/rp_instance:rp_counter
+create_reconfig_module -name rp_counter -cell reconfigurable_peripherials_22/reconfigurable_peripherials_22/USER_LOGIC_I/rp_instance
+set_property edif_top_file C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.ngc [get_filesets reconfigurable_peripherials_22~reconfigurable_peripherials_22~USER_LOGIC_I~rp_instance#rp_counter]
+load_reconfig_modules -reconfig_modules reconfigurable_peripherials_22/reconfigurable_peripherials_22/USER_LOGIC_I/rp_instance:rp_counter
+create_reconfig_module -name rp_counter -cell reconfigurable_peripherials_23/reconfigurable_peripherials_23/USER_LOGIC_I/rp_instance
+set_property edif_top_file C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.ngc [get_filesets reconfigurable_peripherials_23~reconfigurable_peripherials_23~USER_LOGIC_I~rp_instance#rp_counter]
+load_reconfig_modules -reconfig_modules reconfigurable_peripherials_23/reconfigurable_peripherials_23/USER_LOGIC_I/rp_instance:rp_counter
+create_reconfig_module -name rp_counter -cell reconfigurable_peripherials_24/reconfigurable_peripherials_24/USER_LOGIC_I/rp_instance
+set_property edif_top_file C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.ngc [get_filesets reconfigurable_peripherials_24~reconfigurable_peripherials_24~USER_LOGIC_I~rp_instance#rp_counter]
+load_reconfig_modules -reconfig_modules reconfigurable_peripherials_24/reconfigurable_peripherials_24/USER_LOGIC_I/rp_instance:rp_counter
+create_reconfig_module -name rp_counter -cell reconfigurable_peripherials_25/reconfigurable_peripherials_25/USER_LOGIC_I/rp_instance
+set_property edif_top_file C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.ngc [get_filesets reconfigurable_peripherials_25~reconfigurable_peripherials_25~USER_LOGIC_I~rp_instance#rp_counter]
+load_reconfig_modules -reconfig_modules reconfigurable_peripherials_25/reconfigurable_peripherials_25/USER_LOGIC_I/rp_instance:rp_counter
+create_reconfig_module -name rp_counter -cell reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance
+set_property edif_top_file C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.ngc [get_filesets reconfigurable_peripherials_26~reconfigurable_peripherials_26~USER_LOGIC_I~rp_instance#rp_counter]
+load_reconfig_modules -reconfig_modules reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance:rp_counter
+create_reconfig_module -name rp_counter -cell reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance
+set_property edif_top_file C:/Users/ECE/Documents/PR_Project_XADC/pcores/reconfig_modules_source/rp_counter/rp.ngc [get_filesets reconfigurable_peripherials_27~reconfigurable_peripherials_27~USER_LOGIC_I~rp_instance#rp_counter]
+load_reconfig_modules -reconfig_modules reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance:rp_counter
+config_partition -run counter -cell reconfigurable_peripherials_14/reconfigurable_peripherials_14/USER_LOGIC_I/rp_instance -reconfig_module rp_counter -implement
+config_partition -run counter -cell reconfigurable_peripherials_15/reconfigurable_peripherials_15/USER_LOGIC_I/rp_instance -reconfig_module rp_counter -implement
+config_partition -run counter -cell reconfigurable_peripherials_16/reconfigurable_peripherials_16/USER_LOGIC_I/rp_instance -reconfig_module rp_counter -implement
+config_partition -run counter -cell reconfigurable_peripherials_17/reconfigurable_peripherials_17/USER_LOGIC_I/rp_instance -reconfig_module rp_counter -implement
+config_partition -run counter -cell reconfigurable_peripherials_18/reconfigurable_peripherials_18/USER_LOGIC_I/rp_instance -reconfig_module rp_counter -implement
+config_partition -run counter -cell reconfigurable_peripherials_19/reconfigurable_peripherials_19/USER_LOGIC_I/rp_instance -reconfig_module rp_counter -implement
+config_partition -run counter -cell reconfigurable_peripherials_20/reconfigurable_peripherials_20/USER_LOGIC_I/rp_instance -reconfig_module rp_counter -implement
+config_partition -run counter -cell reconfigurable_peripherials_21/reconfigurable_peripherials_21/USER_LOGIC_I/rp_instance -reconfig_module rp_counter -implement
+config_partition -run counter -cell reconfigurable_peripherials_22/reconfigurable_peripherials_22/USER_LOGIC_I/rp_instance -reconfig_module rp_counter -implement
+config_partition -run counter -cell reconfigurable_peripherials_23/reconfigurable_peripherials_23/USER_LOGIC_I/rp_instance -reconfig_module rp_counter -implement
+config_partition -run counter -cell reconfigurable_peripherials_24/reconfigurable_peripherials_24/USER_LOGIC_I/rp_instance -reconfig_module rp_counter -implement
+config_partition -run counter -cell reconfigurable_peripherials_25/reconfigurable_peripherials_25/USER_LOGIC_I/rp_instance -reconfig_module rp_counter -implement
+config_partition -run counter -cell reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance -reconfig_module rp_counter -implement
+config_partition -run counter -cell reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance -reconfig_module rp_counter -implement
+reset_run counter
+launch_runs counter
+wait_on_run counter
+current_design counter
+refresh_design
+launch_runs counter -to_step Bitgen
+wait_on_run counter

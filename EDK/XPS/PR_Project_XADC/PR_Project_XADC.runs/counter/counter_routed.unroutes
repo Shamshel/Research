@@ -1,11 +1,11 @@
 Release 14.6 - par P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Sun Oct 05 18:43:13 2014
+Thu Nov 20 11:33:54 2014
 
 All signals are completely routed.
 
-WARNING:ParHelpers:361 - There are 18 loadless signals in this design. This design will cause Bitgen to issue DRC
+WARNING:ParHelpers:361 - There are 82 loadless signals in this design. This design will cause Bitgen to issue DRC
    warnings.
 
    microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[0].ram32m_i_RAMD_D1_O
@@ -26,5 +26,69 @@ WARNING:ParHelpers:361 - There are 18 loadless signals in this design. This desi
    microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/Register_File_I/Using_LUT6.All_RAM32M[9].ram32m_i_RAMD_D1_O
    microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr[30]
    microblaze_0_d_bram_ctrl_1_BRAM_PORT_BRAM_Addr[31]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[0]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[10]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[11]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[12]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[13]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[14]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[15]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[16]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[17]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[18]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[19]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[1]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[20]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[21]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[22]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[23]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[24]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[25]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[26]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[27]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[28]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[29]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[2]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[30]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[31]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[3]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[4]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[5]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[6]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[7]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[8]
+   reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance/freq_counter/reg_1[9]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[0]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[10]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[11]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[12]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[13]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[14]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[15]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[16]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[17]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[18]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[19]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[1]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[20]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[21]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[22]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[23]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[24]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[25]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[26]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[27]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[28]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[29]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[2]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[30]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[31]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[3]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[4]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[5]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[6]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[7]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[8]
+   reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance/freq_counter/reg_1[9]
 
 

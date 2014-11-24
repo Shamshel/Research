@@ -2,9 +2,11 @@
 Checking platform configuration ...
 IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 2 slave(s) 
 IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 2 slave(s) 
-IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 16 slave(s) 
-IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 - 1 master(s) : 5
+IPNAME: axi_interconnect, INSTANCE: axi_interconnect_2 - 1 master(s) : 4
 slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 - 1 master(s) : 16
+slave(s) 
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 16 slave(s) 
 
 Checking port drivers...
 WARNING:EDK:4181 - PORT: axi_xadc_0_VAUXP_pin, CONNECTOR: axi_xadc_0_VAUXP -
@@ -13,6 +15,14 @@ WARNING:EDK:4181 - PORT: axi_xadc_0_VAUXP_pin, CONNECTOR: axi_xadc_0_VAUXP -
 WARNING:EDK:4181 - PORT: axi_xadc_0_VAUXN_pin, CONNECTOR: axi_xadc_0_VAUXN -
    floating connection - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line
    24 
+WARNING:EDK:4181 - PORT: M_AXI_AWREGION, CONNECTOR:
+   axi_interconnect_2_S_AWREGION - floating connection -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 198 
+WARNING:EDK:4181 - PORT: M_AXI_ARREGION, CONNECTOR:
+   axi_interconnect_2_S_ARREGION - floating connection -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   _00_a\data\axi2axi_connector_v2_1_0.mpd line 223 
 WARNING:EDK:4181 - PORT: M_AXI_AWREGION, CONNECTOR:
    axi_interconnect_1_S_AWREGION - floating connection -
    C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
@@ -27,8 +37,16 @@ Performing Clock DRCs...
 Performing Reset DRCs...
 
 Overriding system level properties...
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_i_bram_ctrl_1 -
+   tcl is overriding PARAMETER C_MASK value to 0x02020000 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
 INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_i_bram_ctrl_0 -
    tcl is overriding PARAMETER C_MASK value to 0x40020000 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_d_bram_ctrl_1 -
+   tcl is overriding PARAMETER C_MASK value to 0x02020000 -
    C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
    _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
 INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_d_bram_ctrl_0 -
@@ -56,8 +74,8 @@ INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
    C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
    ata\microblaze_v2_1_0.mpd line 403 
 
-INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4lite_0.
-INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi_interconnect_2.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_2 - tcl is
    overriding PARAMETER C_RANGE_CHECK value to 1 -
    C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
    06_a\data\axi_interconnect_v2_1_0.mpd line 149 
@@ -67,14 +85,12 @@ INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is
    overriding PARAMETER C_RANGE_CHECK value to 1 -
    C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
    06_a\data\axi_interconnect_v2_1_0.mpd line 149 
-INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_d_bram_ctrl_1 -
-   tcl is overriding PARAMETER C_MASK value to 0x02020000 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
-   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
-INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_i_bram_ctrl_1 -
-   tcl is overriding PARAMETER C_MASK value to 0x02020000 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
-   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+
+INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4lite_0.
+INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
+   overriding PARAMETER C_RANGE_CHECK value to 1 -
+   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   06_a\data\axi_interconnect_v2_1_0.mpd line 149 
 
 Running system level update procedures...
 

@@ -29,7 +29,7 @@ SEARCHPATHOPT = $(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT)
 
 SUBMODULE_OPT = 
 
-PLATGEN_OPTIONS = -p $(DEVICE) -lang $(XPS_HDL_LANG) -intstyle $(INTSTYLE) $(SEARCHPATHOPT) $(SUBMODULE_OPT) -msg __xps/ise/xmsgprops.lst
+PLATGEN_OPTIONS = -p $(DEVICE) -lang $(XPS_HDL_LANG) -intstyle $(INTSTYLE) $(SEARCHPATHOPT) $(SUBMODULE_OPT) -msg __xps/ise/xmsgprops.lst -parallel yes
 
 OBSERVE_PAR_OPTIONS = -error yes
 
@@ -127,40 +127,56 @@ pcores/reconfigurable_peripherials_v1_00_a/hdl/vhdl/reconfigurable_peripherials.
 pcores/fan_controller_v1_00_a/hdl/vhdl/user_logic.vhd \
 pcores/fan_controller_v1_00_a/hdl/vhdl/fan_controller.vhd
 
-WRAPPER_NGC_FILES = implementation/system_proc_sys_reset_0_wrapper.ngc \
+WRAPPER_NGC_FILES = implementation/system_reconfigurable_peripherials_9_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_8_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_7_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_6_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_5_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_4_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_3_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_27_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_26_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_25_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_24_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_23_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_22_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_21_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_20_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_2_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_19_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_18_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_17_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_16_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_15_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_14_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_13_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_12_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_11_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_10_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_1_wrapper.ngc \
+implementation/system_reconfigurable_peripherials_0_wrapper.ngc \
+implementation/system_proc_sys_reset_0_wrapper.ngc \
 implementation/system_microblaze_0_ilmb_wrapper.ngc \
+implementation/system_microblaze_0_i_bram_ctrl_1_wrapper.ngc \
 implementation/system_microblaze_0_i_bram_ctrl_0_wrapper.ngc \
 implementation/system_microblaze_0_dlmb_wrapper.ngc \
+implementation/system_microblaze_0_d_bram_ctrl_1_wrapper.ngc \
 implementation/system_microblaze_0_d_bram_ctrl_0_wrapper.ngc \
+implementation/system_microblaze_0_bram_block_1_wrapper.ngc \
 implementation/system_microblaze_0_bram_block_0_wrapper.ngc \
 implementation/system_microblaze_0_wrapper.ngc \
+implementation/system_fan_controller_0_wrapper.ngc \
 implementation/system_debug_module_wrapper.ngc \
 implementation/system_clock_generator_0_wrapper.ngc \
-implementation/system_axi4lite_0_wrapper.ngc \
-implementation/system_rs232_uart_1_wrapper.ngc \
-implementation/system_iic_main_wrapper.ngc \
 implementation/system_axi_xadc_0_wrapper.ngc \
-implementation/system_reconfigurable_peripherials_0_wrapper.ngc \
-implementation/system_fan_controller_0_wrapper.ngc \
-implementation/system_axi_hwicap_0_wrapper.ngc \
-implementation/system_reconfigurable_peripherials_1_wrapper.ngc \
-implementation/system_reconfigurable_peripherials_2_wrapper.ngc \
-implementation/system_reconfigurable_peripherials_3_wrapper.ngc \
-implementation/system_reconfigurable_peripherials_4_wrapper.ngc \
-implementation/system_reconfigurable_peripherials_5_wrapper.ngc \
-implementation/system_reconfigurable_peripherials_6_wrapper.ngc \
-implementation/system_reconfigurable_peripherials_7_wrapper.ngc \
-implementation/system_reconfigurable_peripherials_8_wrapper.ngc \
-implementation/system_reconfigurable_peripherials_9_wrapper.ngc \
-implementation/system_axi2axi_connector_1_wrapper.ngc \
+implementation/system_axi_interconnect_2_wrapper.ngc \
 implementation/system_axi_interconnect_1_wrapper.ngc \
-implementation/system_reconfigurable_peripherials_10_wrapper.ngc \
-implementation/system_reconfigurable_peripherials_11_wrapper.ngc \
-implementation/system_reconfigurable_peripherials_12_wrapper.ngc \
-implementation/system_reconfigurable_peripherials_13_wrapper.ngc \
-implementation/system_microblaze_0_bram_block_1_wrapper.ngc \
-implementation/system_microblaze_0_d_bram_ctrl_1_wrapper.ngc \
-implementation/system_microblaze_0_i_bram_ctrl_1_wrapper.ngc
+implementation/system_axi_hwicap_0_wrapper.ngc \
+implementation/system_axi4lite_0_wrapper.ngc \
+implementation/system_axi2axi_connector_2_wrapper.ngc \
+implementation/system_axi2axi_connector_1_wrapper.ngc \
+implementation/system_rs232_uart_1_wrapper.ngc \
+implementation/system_iic_main_wrapper.ngc
 
 POSTSYN_NETLIST = implementation/$(SYSTEM).ngc
 

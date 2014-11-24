@@ -101,8 +101,78 @@ C_I/rp_instance" (Reconfigurable Module "rp_counter"):
 Attribute STATE set to IMPLEMENT.
 
     Partition
+"/system/reconfigurable_peripherials_14/reconfigurable_peripherials_14/USER_LOGI
+C_I/rp_instance" (Reconfigurable Module "rp_counter"):
+Attribute STATE set to IMPLEMENT.
+
+    Partition
+"/system/reconfigurable_peripherials_15/reconfigurable_peripherials_15/USER_LOGI
+C_I/rp_instance" (Reconfigurable Module "rp_counter"):
+Attribute STATE set to IMPLEMENT.
+
+    Partition
+"/system/reconfigurable_peripherials_16/reconfigurable_peripherials_16/USER_LOGI
+C_I/rp_instance" (Reconfigurable Module "rp_counter"):
+Attribute STATE set to IMPLEMENT.
+
+    Partition
+"/system/reconfigurable_peripherials_17/reconfigurable_peripherials_17/USER_LOGI
+C_I/rp_instance" (Reconfigurable Module "rp_counter"):
+Attribute STATE set to IMPLEMENT.
+
+    Partition
+"/system/reconfigurable_peripherials_18/reconfigurable_peripherials_18/USER_LOGI
+C_I/rp_instance" (Reconfigurable Module "rp_counter"):
+Attribute STATE set to IMPLEMENT.
+
+    Partition
+"/system/reconfigurable_peripherials_19/reconfigurable_peripherials_19/USER_LOGI
+C_I/rp_instance" (Reconfigurable Module "rp_counter"):
+Attribute STATE set to IMPLEMENT.
+
+    Partition
 "/system/reconfigurable_peripherials_2/reconfigurable_peripherials_2/USER_LOGIC_
 I/rp_instance" (Reconfigurable Module "rp_counter"):
+Attribute STATE set to IMPLEMENT.
+
+    Partition
+"/system/reconfigurable_peripherials_20/reconfigurable_peripherials_20/USER_LOGI
+C_I/rp_instance" (Reconfigurable Module "rp_counter"):
+Attribute STATE set to IMPLEMENT.
+
+    Partition
+"/system/reconfigurable_peripherials_21/reconfigurable_peripherials_21/USER_LOGI
+C_I/rp_instance" (Reconfigurable Module "rp_counter"):
+Attribute STATE set to IMPLEMENT.
+
+    Partition
+"/system/reconfigurable_peripherials_22/reconfigurable_peripherials_22/USER_LOGI
+C_I/rp_instance" (Reconfigurable Module "rp_counter"):
+Attribute STATE set to IMPLEMENT.
+
+    Partition
+"/system/reconfigurable_peripherials_23/reconfigurable_peripherials_23/USER_LOGI
+C_I/rp_instance" (Reconfigurable Module "rp_counter"):
+Attribute STATE set to IMPLEMENT.
+
+    Partition
+"/system/reconfigurable_peripherials_24/reconfigurable_peripherials_24/USER_LOGI
+C_I/rp_instance" (Reconfigurable Module "rp_counter"):
+Attribute STATE set to IMPLEMENT.
+
+    Partition
+"/system/reconfigurable_peripherials_25/reconfigurable_peripherials_25/USER_LOGI
+C_I/rp_instance" (Reconfigurable Module "rp_counter"):
+Attribute STATE set to IMPLEMENT.
+
+    Partition
+"/system/reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGI
+C_I/rp_instance" (Reconfigurable Module "rp_counter"):
+Attribute STATE set to IMPLEMENT.
+
+    Partition
+"/system/reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGI
+C_I/rp_instance" (Reconfigurable Module "rp_counter"):
 Attribute STATE set to IMPLEMENT.
 
     Partition
@@ -146,10 +216,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   4
 
-Total memory usage is 343160 kilobytes
+Total memory usage is 412344 kilobytes
 
 Writing NGD file "counter.ngd" ...
-Total REAL time to NGDBUILD completion: 1 min  12 sec
-Total CPU time to NGDBUILD completion:   38 sec
+Total REAL time to NGDBUILD completion: 1 min  42 sec
+Total CPU time to NGDBUILD completion:   55 sec
 
 Writing NGDBUILD log file "counter.bld"...
