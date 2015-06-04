@@ -298,7 +298,7 @@ begin
       C_BASEADDR => X"00000000",
       C_HIGHADDR => X"0001ffff",
       C_FAMILY => "kintex7",
-      C_MASK => X"40000000",
+      C_MASK => X"40020000",
       C_MASK1 => X"00800000",
       C_MASK2 => X"00800000",
       C_MASK3 => X"00800000",

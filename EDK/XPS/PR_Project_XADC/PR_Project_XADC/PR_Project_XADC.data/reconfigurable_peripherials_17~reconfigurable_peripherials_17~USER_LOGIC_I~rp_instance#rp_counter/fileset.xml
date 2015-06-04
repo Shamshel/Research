@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DARoots Version="1" Minor="26">
+  <FileSet Name="reconfigurable_peripherials_17~reconfigurable_peripherials_17~USER_LOGIC_I~rp_instance#rp_counter" Type="Reconfig" RelSrcDir="$PSRCDIR/reconfigurable_peripherials_17~reconfigurable_peripherials_17~USER_LOGIC_I~rp_instance#rp_counter">
+    <Filter Type=""/>
+    <File Path="$PPRDIR/../../tutorial_2/pcores/reconfig_modules_source/rp_counter/rp.ngc">
+      <FileInfo>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="GateLvl"/>
+      <Option Name="GateLvlMode" Val="EDIF"/>
+      <Option Name="TopFile" Val="$PPRDIR/../../tutorial_2/pcores/reconfig_modules_source/rp_counter/rp.ngc"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="Partition" Val="reconfigurable_peripherials_17/reconfigurable_peripherials_17/USER_LOGIC_I/rp_instance"/>
+      <Option Name="ReconfigModule" Val="rp_counter"/>
+    </Config>
+  </FileSet>
+</DARoots>

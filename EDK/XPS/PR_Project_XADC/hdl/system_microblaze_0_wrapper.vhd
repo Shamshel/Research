@@ -7,8 +7,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 
-library microblaze_v8_50_b;
-use microblaze_v8_50_b.all;
+library microblaze_v8_50_c;
+use microblaze_v8_50_c.all;
 
 entity system_microblaze_0_wrapper is
   port (
@@ -655,7 +655,7 @@ entity system_microblaze_0_wrapper is
   );
 
   attribute x_core_info : STRING;
-  attribute x_core_info of system_microblaze_0_wrapper : entity is "microblaze_v8_50_b";
+  attribute x_core_info of system_microblaze_0_wrapper : entity is "microblaze_v8_50_c";
 
 end system_microblaze_0_wrapper;
 
@@ -1529,9 +1529,9 @@ begin
       C_PVR_USER1 => X"00",
       C_PVR_USER2 => X"00000000",
       C_DEBUG_ENABLED => 1,
-      C_NUMBER_OF_PC_BRK => 4,
-      C_NUMBER_OF_RD_ADDR_BRK => 4,
-      C_NUMBER_OF_WR_ADDR_BRK => 4,
+      C_NUMBER_OF_PC_BRK => 1,
+      C_NUMBER_OF_RD_ADDR_BRK => 0,
+      C_NUMBER_OF_WR_ADDR_BRK => 0,
       C_INTERRUPT_IS_EDGE => 0,
       C_EDGE_IS_POSITIVE => 1,
       C_RESET_MSR => X"00000000",

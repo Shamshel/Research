@@ -1,0 +1,29 @@
+Release 14.7 ngcbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngcbuild.exe -p
+xc7k325tffg900-2 -intstyle silent -i -sd .. system_qspi_flash_wrapper.ngc
+../system_qspi_flash_wrapper
+
+Reading NGO file
+"C:/Users/Cody/Documents/test/implementation/qspi_flash_wrapper/system_qspi_flas
+h_wrapper.ngc" ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 203356 kilobytes
+
+Writing NGC file "../system_qspi_flash_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  4 sec
+Total CPU time to NGCBUILD completion:   4 sec
+
+Writing NGCBUILD log file "../system_qspi_flash_wrapper.blc"...

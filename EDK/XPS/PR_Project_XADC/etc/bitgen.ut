@@ -16,7 +16,5 @@
 -g GWE_cycle:6
 -g LCK_cycle:NoWait
 -g Security:NONE
+#-m
 -g Persist:No
-
-# allow unconstrained pins
-#-g UnconstrainedPins:Allow

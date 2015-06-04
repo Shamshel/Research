@@ -85,13 +85,13 @@ begin
       C_S_AXI_MIN_SIZE => X"000001ff",
       C_USE_WSTRB => 0,
       C_DPHASE_TIMEOUT => 8,
-      C_BASEADDR => X"71a00000",
-      C_HIGHADDR => X"71a0ffff",
+      C_BASEADDR => X"72620000",
+      C_HIGHADDR => X"7262FFFF",
       C_FAMILY => "kintex7",
       C_NUM_REG => 1,
       C_NUM_MEM => 1,
       C_SLV_AWIDTH => 32,
-      C_SLV_DWIDTH => 8
+      C_SLV_DWIDTH => 32
     )
     port map (
       Fan_Ctrl => Fan_Ctrl,

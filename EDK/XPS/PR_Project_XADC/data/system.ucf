@@ -1,5 +1,3 @@
-# Project: PR_Project_XADC
-
 #
 # pin constraints
 #
@@ -15,20 +13,27 @@ NET "IIC_MAIN_SDA" LOC = L21;
 NET "IIC_MAIN_SDA" IOSTANDARD = LVCMOS25;
 NET "IIC_MAIN_SDA" DRIVE = 8;
 NET "IIC_MAIN_SDA" SLEW = SLOW;
+NET "QSPI_FLASH_IO0" IOSTANDARD = LVCMOS25;
+NET "QSPI_FLASH_IO1" IOSTANDARD = LVCMOS25;
+NET "QSPI_FLASH_SS" IOSTANDARD = LVCMOS25;
 NET "RESET" LOC = AB7;
 NET "RESET" IOSTANDARD = LVCMOS15;
 NET "RS232_Uart_1_sin" LOC = M19;
 NET "RS232_Uart_1_sin" IOSTANDARD = LVCMOS25;
 NET "RS232_Uart_1_sout" LOC = K24;
 NET "RS232_Uart_1_sout" IOSTANDARD = LVCMOS25;
-NET "sm_fan_pwm_net" LOC = L26;
-NET "sm_fan_pwm_net" IOSTANDARD = LVCMOS25;
+NET "sm_fan_pwm_net_vcc" LOC = L26;
+NET "sm_fan_pwm_net_vcc" IOSTANDARD = LVCMOS25;
 #
 # additional constraints
 #
 
 NET "CLK" TNM_NET = "sys_clk_pin";
 TIMESPEC TS_sys_clk_pin = PERIOD "sys_clk_pin" 200000 KHz;
+
+NET "QSPI_FLASH_IO0" LOC = P24;
+NET "QSPI_FLASH_IO1" LOC = R25;
+NET "QSPI_FLASH_SS" LOC = U19;
 
 NET "axi_xadc_0_VAUXP_AMS_pin[0]" LOC = J23;
 NET "axi_xadc_0_VAUXP_AMS_pin[0]" IOSTANDARD = LVCMOS25;

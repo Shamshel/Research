@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!--Product Version: PlanAhead v14.7 (64-bit)-->
+<Project Version="4" Minor="36">
+	<FileSet Dir="sources_1" File="fileset.xml"/>
+	<FileSet Dir="constrs_1" File="fileset.xml"/>
+	<FileSet Dir="sim_1" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_0~reconfigurable_peripherials_0~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_1~reconfigurable_peripherials_1~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_2~reconfigurable_peripherials_2~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_3~reconfigurable_peripherials_3~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_4~reconfigurable_peripherials_4~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_5~reconfigurable_peripherials_5~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_6~reconfigurable_peripherials_6~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_7~reconfigurable_peripherials_7~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_8~reconfigurable_peripherials_8~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_9~reconfigurable_peripherials_9~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_10~reconfigurable_peripherials_10~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_11~reconfigurable_peripherials_11~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_12~reconfigurable_peripherials_12~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_13~reconfigurable_peripherials_13~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_14~reconfigurable_peripherials_14~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_15~reconfigurable_peripherials_15~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_16~reconfigurable_peripherials_16~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_17~reconfigurable_peripherials_17~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_18~reconfigurable_peripherials_18~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_19~reconfigurable_peripherials_19~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_21~reconfigurable_peripherials_21~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_22~reconfigurable_peripherials_22~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_23~reconfigurable_peripherials_23~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_24~reconfigurable_peripherials_24~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_25~reconfigurable_peripherials_25~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_26~reconfigurable_peripherials_26~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_27~reconfigurable_peripherials_27~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<FileSet Dir="reconfigurable_peripherials_20~reconfigurable_peripherials_20~USER_LOGIC_I~rp_instance#rp_counter" File="fileset.xml"/>
+	<RunSet Dir="runs" File="runs.xml"/>
+	<DefaultLaunch Dir="$PRUNDIR"/>
+	<DefaultPromote Dir="$PROMOTEDIR"/>
+	<Config>
+		<Option Name="Id" Val="fb4fddfe798d43a69ef77fa064d3a47d"/>
+		<Option Name="Part" Val="xc7k325tffg900-2"/>
+		<Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+		<Option Name="TargetLanguage" Val="Verilog"/>
+		<Option Name="TargetSimulator" Val="ISim"/>
+		<Option Name="Board" Val="kc705"/>
+		<Option Name="SourceMgmtMode" Val="DisplayOnly"/>
+		<Option Name="ActiveSimSet" Val="sim_1"/>
+		<Option Name="CxlOverwriteLibs" Val="1"/>
+		<Option Name="CxlFuncsim" Val="1"/>
+		<Option Name="CxlTimesim" Val="1"/>
+		<Option Name="CxlCore" Val="1"/>
+		<Option Name="CxlEdk" Val="0"/>
+		<Option Name="CxlExcludeCores" Val="1"/>
+		<Option Name="CxlExcludeSubLibs" Val="0"/>
+	</Config>
+</Project>
+

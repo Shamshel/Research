@@ -1,0 +1,298 @@
+<?xml version="1.0"?>
+<PartialReconfig Version="1" Minor="8">
+	<Partitions>
+		<Partition Name="system" Reconfigurable="FALSE">
+			<Partition Name="reconfigurable_peripherials_0/reconfigurable_peripherials_0/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_1/reconfigurable_peripherials_1/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_2/reconfigurable_peripherials_2/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_3/reconfigurable_peripherials_3/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_4/reconfigurable_peripherials_4/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_5/reconfigurable_peripherials_5/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_6/reconfigurable_peripherials_6/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_7/reconfigurable_peripherials_7/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_8/reconfigurable_peripherials_8/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_9/reconfigurable_peripherials_9/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_10/reconfigurable_peripherials_10/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_11/reconfigurable_peripherials_11/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_12/reconfigurable_peripherials_12/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_13/reconfigurable_peripherials_13/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_14/reconfigurable_peripherials_14/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_15/reconfigurable_peripherials_15/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_16/reconfigurable_peripherials_16/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_17/reconfigurable_peripherials_17/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_18/reconfigurable_peripherials_18/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_19/reconfigurable_peripherials_19/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_20/reconfigurable_peripherials_20/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_21/reconfigurable_peripherials_21/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_22/reconfigurable_peripherials_22/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_counter">
+				</PRModule>
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_23/reconfigurable_peripherials_23/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_24/reconfigurable_peripherials_24/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_25/reconfigurable_peripherials_25/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+			<Partition Name="reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance" CurrPRModule="rp_counter" Reconfigurable="TRUE">
+				<PRModule Name="rp_bb" Blackbox="TRUE">
+				</PRModule>
+				<PRModule Name="rp_counter">
+				</PRModule>
+			</Partition>
+		</Partition>
+	</Partitions>
+	<Configs>
+		<Config Name="blanking" State="INITIAL" RunType="Implementation">
+			<PRConfigInst PRInst="system" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_0/reconfigurable_peripherials_0/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_1/reconfigurable_peripherials_1/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_2/reconfigurable_peripherials_2/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_3/reconfigurable_peripherials_3/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_4/reconfigurable_peripherials_4/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_5/reconfigurable_peripherials_5/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_6/reconfigurable_peripherials_6/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_7/reconfigurable_peripherials_7/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_8/reconfigurable_peripherials_8/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_9/reconfigurable_peripherials_9/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_10/reconfigurable_peripherials_10/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_11/reconfigurable_peripherials_11/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_12/reconfigurable_peripherials_12/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_13/reconfigurable_peripherials_13/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_14/reconfigurable_peripherials_14/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_15/reconfigurable_peripherials_15/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_16/reconfigurable_peripherials_16/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_17/reconfigurable_peripherials_17/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_18/reconfigurable_peripherials_18/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_19/reconfigurable_peripherials_19/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_20/reconfigurable_peripherials_20/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_21/reconfigurable_peripherials_21/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_22/reconfigurable_peripherials_22/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_23/reconfigurable_peripherials_23/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_24/reconfigurable_peripherials_24/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_25/reconfigurable_peripherials_25/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance" PRModule="rp_bb" State="IMPLEMENT">
+			</PRConfigInst>
+		</Config>
+		<Config Name="counter" State="INITIAL" RunType="Implementation">
+			<PRConfigInst PRInst="system" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_0/reconfigurable_peripherials_0/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_1/reconfigurable_peripherials_1/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_2/reconfigurable_peripherials_2/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_3/reconfigurable_peripherials_3/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_4/reconfigurable_peripherials_4/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_5/reconfigurable_peripherials_5/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_6/reconfigurable_peripherials_6/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_7/reconfigurable_peripherials_7/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_8/reconfigurable_peripherials_8/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_9/reconfigurable_peripherials_9/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_10/reconfigurable_peripherials_10/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_11/reconfigurable_peripherials_11/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_12/reconfigurable_peripherials_12/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_13/reconfigurable_peripherials_13/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_14/reconfigurable_peripherials_14/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_15/reconfigurable_peripherials_15/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_16/reconfigurable_peripherials_16/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_17/reconfigurable_peripherials_17/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_18/reconfigurable_peripherials_18/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_19/reconfigurable_peripherials_19/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_20/reconfigurable_peripherials_20/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_21/reconfigurable_peripherials_21/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_22/reconfigurable_peripherials_22/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_23/reconfigurable_peripherials_23/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_24/reconfigurable_peripherials_24/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_25/reconfigurable_peripherials_25/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_26/reconfigurable_peripherials_26/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+			<PRConfigInst PRInst="reconfigurable_peripherials_27/reconfigurable_peripherials_27/USER_LOGIC_I/rp_instance" PRModule="rp_counter" State="IMPLEMENT">
+			</PRConfigInst>
+		</Config>
+	</Configs>
+</PartialReconfig>
+

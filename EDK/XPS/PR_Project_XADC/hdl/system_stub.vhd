@@ -9,16 +9,17 @@ use UNISIM.VCOMPONENTS.ALL;
 
 entity system_stub is
   port (
-    sm_fan_pwm_net : out std_logic;
+    sm_fan_pwm_net_vcc : out std_logic;
     RS232_Uart_1_sout : out std_logic;
     RS232_Uart_1_sin : in std_logic;
     RESET : in std_logic;
+    QSPI_FLASH_SS : inout std_logic;
+    QSPI_FLASH_IO1 : inout std_logic;
+    QSPI_FLASH_IO0 : inout std_logic;
     IIC_MAIN_SDA : inout std_logic;
     IIC_MAIN_SCL : inout std_logic;
     CLK_P : in std_logic;
     CLK_N : in std_logic;
-    axi_xadc_0_VAUXP_pin : in std_logic_vector(13 downto 0);
-    axi_xadc_0_VAUXN_pin : in std_logic_vector(13 downto 0);
     axi_xadc_0_VAUXP_AMS_pin : in std_logic_vector(1 downto 0);
     axi_xadc_0_VAUXN_AMS_pin : in std_logic_vector(1 downto 0);
     axi_xadc_0_CONVST_pin : in std_logic;
@@ -32,16 +33,17 @@ architecture STRUCTURE of system_stub is
 
   component system is
     port (
-      sm_fan_pwm_net : out std_logic;
+      sm_fan_pwm_net_vcc : out std_logic;
       RS232_Uart_1_sout : out std_logic;
       RS232_Uart_1_sin : in std_logic;
       RESET : in std_logic;
+      QSPI_FLASH_SS : inout std_logic;
+      QSPI_FLASH_IO1 : inout std_logic;
+      QSPI_FLASH_IO0 : inout std_logic;
       IIC_MAIN_SDA : inout std_logic;
       IIC_MAIN_SCL : inout std_logic;
       CLK_P : in std_logic;
       CLK_N : in std_logic;
-      axi_xadc_0_VAUXP_pin : in std_logic_vector(13 downto 0);
-      axi_xadc_0_VAUXN_pin : in std_logic_vector(13 downto 0);
       axi_xadc_0_VAUXP_AMS_pin : in std_logic_vector(1 downto 0);
       axi_xadc_0_VAUXN_AMS_pin : in std_logic_vector(1 downto 0);
       axi_xadc_0_CONVST_pin : in std_logic;
@@ -58,16 +60,17 @@ begin
 
   system_i : system
     port map (
-      sm_fan_pwm_net => sm_fan_pwm_net,
+      sm_fan_pwm_net_vcc => sm_fan_pwm_net_vcc,
       RS232_Uart_1_sout => RS232_Uart_1_sout,
       RS232_Uart_1_sin => RS232_Uart_1_sin,
       RESET => RESET,
+      QSPI_FLASH_SS => QSPI_FLASH_SS,
+      QSPI_FLASH_IO1 => QSPI_FLASH_IO1,
+      QSPI_FLASH_IO0 => QSPI_FLASH_IO0,
       IIC_MAIN_SDA => IIC_MAIN_SDA,
       IIC_MAIN_SCL => IIC_MAIN_SCL,
       CLK_P => CLK_P,
       CLK_N => CLK_N,
-      axi_xadc_0_VAUXP_pin => axi_xadc_0_VAUXP_pin,
-      axi_xadc_0_VAUXN_pin => axi_xadc_0_VAUXN_pin,
       axi_xadc_0_VAUXP_AMS_pin => axi_xadc_0_VAUXP_AMS_pin,
       axi_xadc_0_VAUXN_AMS_pin => axi_xadc_0_VAUXN_AMS_pin,
       axi_xadc_0_CONVST_pin => axi_xadc_0_CONVST_pin,

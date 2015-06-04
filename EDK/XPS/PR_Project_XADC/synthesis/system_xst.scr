@@ -1,4 +1,4 @@
-set -tmpdir C:\Users\ECE\Documents\PR_Project_XADC\synthesis\xst_temp_dir\
+set -tmpdir C:\Users\Cody\Documents\test\synthesis\xst_temp_dir\
 run
 -opt_mode speed
 -netlist_hierarchy as_optimized
@@ -12,4 +12,4 @@ run
 -iobuf YES
 -max_fanout 10000
 -sd {../implementation}
--vlgincdir {"C:\Users\ECE\Documents\PR_Project_XADC\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+-vlgincdir {"C:\Users\Cody\Documents\test\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }

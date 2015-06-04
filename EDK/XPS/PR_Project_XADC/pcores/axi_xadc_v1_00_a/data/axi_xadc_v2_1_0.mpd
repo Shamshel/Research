@@ -109,7 +109,7 @@ PORT S_AXI_RREADY = RREADY, DIR = I, BUS = S_AXI
 #PORT VAUXP = "", DIR = I, VEC = [13:0], INITIALVAL = GND, IO_IF = sysmon_0, IO_IS = VauxP_ports
 #PORT VAUXN = "", DIR = I, VEC = [13:0], INITIALVAL = GND, IO_IF = sysmon_0, IO_IS = VauxN_ports
 ##
-## Added as shown in xadc eval design
+## Added as shown in xadc eval design (xadc_eval_design_kc705_v1_4)
 PORT VAUXP_AMS = "", DIR = I, VEC = [1:0], INITIALVAL = GND, IO_IF = sysmon_0, IO_IS = VauxP_ports
 PORT VAUXN_AMS = "", DIR = I, VEC = [1:0], INITIALVAL = GND, IO_IF = sysmon_0, IO_IS = VauxN_ports
 ##

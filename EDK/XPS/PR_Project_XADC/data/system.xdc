@@ -17,6 +17,15 @@ set_property DRIVE 8 [ get_ports IIC_MAIN_SDA]
 set_property IOSTANDARD LVCMOS25 [ get_ports IIC_MAIN_SDA]
 set_property SLEW SLOW [ get_ports IIC_MAIN_SDA]
 
+set_property LOC P24 [ get_ports QSPI_FLASH_IO0]
+set_property IOSTANDARD LVCMOS25 [ get_ports QSPI_FLASH_IO0]
+
+set_property LOC R25 [ get_ports QSPI_FLASH_IO1]
+set_property IOSTANDARD LVCMOS25 [ get_ports QSPI_FLASH_IO1]
+
+set_property LOC U19 [ get_ports QSPI_FLASH_SS]
+set_property IOSTANDARD LVCMOS25 [ get_ports QSPI_FLASH_SS]
+
 set_property LOC AB7 [ get_ports RESET]
 set_property IOSTANDARD LVCMOS15 [ get_ports RESET]
 

@@ -1,9 +1,9 @@
-Release 14.6 - platgen Xilinx EDK 14.6 Build EDK_P.68d
+Release 14.7 - platgen Xilinx EDK 14.7 Build EDK_P.20131013
  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: platgen -p xc7k325tffg900-2 -lang vhdl -intstyle default -msg
-__xps/ise/xmsgprops.lst -parallel yes system.mhs 
+__xps/ise/xmsgprops.lst system.mhs 
 
 WARNING:EDK - INFO:Security:71 - If a license for part 'xc7k325t' is available,
    it will be possible to use 'XPS_TDP' instead of 'XPS'.
@@ -12,93 +12,77 @@ WARNING:EDK - INFO:Security:71 - If a license for part 'xc7k325t' is available,
    qualify for Xilinx software updates or new releases.
 
 
-Parse C:/Users/ECE/Documents/PR_Project_XADC/system.mhs ...
+Parse C:/Users/Cody/Documents/test/system.mhs ...
 
 Read MPD definitions ...
 
 Overriding IP level properties ...
 INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
    PARAMETER C_ENDIANNESS value to 1 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
    ata\microblaze_v2_1_0.mpd line 198 
 INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
    PARAMETER C_ICACHE_USE_FSL value to 0 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
    ata\microblaze_v2_1_0.mpd line 339 
 INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
    PARAMETER C_DCACHE_USE_FSL value to 0 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
    ata\microblaze_v2_1_0.mpd line 369 
 INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_2 - tcl is
    overriding PARAMETER C_BASEFAMILY value to kintex7 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
    06_a\data\axi_interconnect_v2_1_0.mpd line 81 
 INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is
    overriding PARAMETER C_BASEFAMILY value to kintex7 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
    06_a\data\axi_interconnect_v2_1_0.mpd line 81 
 orig_family is kintex7
 INFO:EDK:4130 - IPNAME: axi_hwicap, INSTANCE:axi_hwicap_0 - tcl is overriding
    PARAMETER C_FAMILY value to kintex7 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_hwicap_v2_03_a\d
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_hwicap_v2_03_a\d
    ata\axi_hwicap_v2_1_0.mpd line 94 
 INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
    overriding PARAMETER C_BASEFAMILY value to kintex7 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
    06_a\data\axi_interconnect_v2_1_0.mpd line 81 
 INFO:EDK:4130 - IPNAME: axi2axi_connector, INSTANCE:axi2axi_connector_2 - tcl is
    overriding PARAMETER C_INTERCONNECT_S_AXI_WRITE_ACCEPTANCE value to 1 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
    _00_a\data\axi2axi_connector_v2_1_0.mpd line 89 
 INFO:EDK:4130 - IPNAME: axi2axi_connector, INSTANCE:axi2axi_connector_2 - tcl is
    overriding PARAMETER C_INTERCONNECT_S_AXI_READ_ACCEPTANCE value to 1 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
    _00_a\data\axi2axi_connector_v2_1_0.mpd line 90 
 INFO:EDK:4130 - IPNAME: axi2axi_connector, INSTANCE:axi2axi_connector_2 - tcl is
    overriding PARAMETER C_INTERCONNECT_M_AXI_WRITE_ISSUING value to 1 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
    _00_a\data\axi2axi_connector_v2_1_0.mpd line 106 
 INFO:EDK:4130 - IPNAME: axi2axi_connector, INSTANCE:axi2axi_connector_2 - tcl is
    overriding PARAMETER C_INTERCONNECT_M_AXI_READ_ISSUING value to 1 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
    _00_a\data\axi2axi_connector_v2_1_0.mpd line 107 
 INFO:EDK:4130 - IPNAME: axi2axi_connector, INSTANCE:axi2axi_connector_2 - tcl is
    overriding PARAMETER C_M_AXI_PROTOCOL value to AXI4LITE -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
    _00_a\data\axi2axi_connector_v2_1_0.mpd line 93 
-INFO:EDK:4130 - IPNAME: axi2axi_connector, INSTANCE:axi2axi_connector_1 - tcl is
-   overriding PARAMETER C_INTERCONNECT_S_AXI_WRITE_ACCEPTANCE value to 1 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
-   _00_a\data\axi2axi_connector_v2_1_0.mpd line 89 
-INFO:EDK:4130 - IPNAME: axi2axi_connector, INSTANCE:axi2axi_connector_1 - tcl is
-   overriding PARAMETER C_INTERCONNECT_S_AXI_READ_ACCEPTANCE value to 1 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
-   _00_a\data\axi2axi_connector_v2_1_0.mpd line 90 
-INFO:EDK:4130 - IPNAME: axi2axi_connector, INSTANCE:axi2axi_connector_1 - tcl is
-   overriding PARAMETER C_INTERCONNECT_M_AXI_WRITE_ISSUING value to 1 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
-   _00_a\data\axi2axi_connector_v2_1_0.mpd line 106 
-INFO:EDK:4130 - IPNAME: axi2axi_connector, INSTANCE:axi2axi_connector_1 - tcl is
-   overriding PARAMETER C_INTERCONNECT_M_AXI_READ_ISSUING value to 1 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
-   _00_a\data\axi2axi_connector_v2_1_0.mpd line 107 
-INFO:EDK:4130 - IPNAME: axi2axi_connector, INSTANCE:axi2axi_connector_1 - tcl is
-   overriding PARAMETER C_M_AXI_PROTOCOL value to AXI4LITE -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
-   _00_a\data\axi2axi_connector_v2_1_0.mpd line 93 
+INFO:EDK:4130 - IPNAME: axi_quad_spi, INSTANCE:QSPI_FLASH - tcl is overriding
+   PARAMETER C_SUB_FAMILY value to kintex7 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_quad_spi_v2_00_b
+   \data\axi_quad_spi_v2_1_0.mpd line 88 
 
 Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_i_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   microblaze_0_d_bram_ctrl:BRAM_Clk_A. Clock DRCs will not be performed on this
+   core and cores connected to it. 
 INFO:EDK:740 - Cannot determine the input clock associated with port :
    microblaze_0_i_bram_ctrl_1:BRAM_Clk_A. Clock DRCs will not be performed on
    this core and cores connected to it. 
 INFO:EDK:740 - Cannot determine the input clock associated with port :
    microblaze_0_d_bram_ctrl_1:BRAM_Clk_A. Clock DRCs will not be performed on
-   this core and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   microblaze_0_i_bram_ctrl_0:BRAM_Clk_A. Clock DRCs will not be performed on
-   this core and cores connected to it. 
-INFO:EDK:740 - Cannot determine the input clock associated with port :
-   microblaze_0_d_bram_ctrl_0:BRAM_Clk_A. Clock DRCs will not be performed on
    this core and cores connected to it. 
 
 Performing IP level DRCs on properties...
@@ -116,16 +100,58 @@ With present configuration, the STARTUP primitive would be used in the AXI
 HWICAP core.
 
 **************************************************************************
+INFO:EDK - 
+   INFO:For axi_quad_spi v2.00.b... 
+   Checking the C_SCK_RATIO parameter... 
+INFO:EDK - 
+   INFO: The EXT_SPI_CLK port is connected with clk_100_0000MHz signal.
+
+INFO:EDK - 
+   INFO: The actual SPI clock from the core will be EXT_SPI_CLK(integer
+   value)/C_SCK_RATIO.
+
+INFO:EDK - 
+   INFO: Core name                   : QSPI_FLASH
+
+INFO:EDK - 
+   INFO: Instance name               : QSPI_FLASH
+
+INFO:EDK - 
+   INFO: The core is instantiated in the Legacy Mode.
+
+INFO:EDK - 
+   INFO: The AXI interface is AXI4 Lite interface.
+
+INFO:EDK - 
+   INFO: In this mode, the core is backward compatible with the
+   axi_quad_spi_v1_00_a core in register mapping.
+
+INFO:EDK - 
+   INFO: This is Legacy mode of the core and 0 will not affect the core
+   configuration.
+
+INFO:EDK - 
+   INFO: The FIFO depth for AXI Quad SPI core instance is chosen as 0. Only one
+   transaction at a time is allowed.
+
+INFO:EDK - 
+   INFO: With present configuration, the AXI Quad SPI core's PORT SPISEL is
+   connected to net_vcc. 
+INFO:EDK - 
+   INFO: To make the core operating in the master mode, make sure that the
+   mst_n_slv bit is configured to logic 1 in SPICR settings. 
+INFO:EDK - 
+   INFO: The STARTUP primitive is not used in the AXI Quad SPI core
+   configuration.
+
 Address Map for Processor microblaze_0
-  (0000000000-0x0001ffff) microblaze_0_d_bram_ctrl_0	microblaze_0_dlmb
-  (0000000000-0x0001ffff) microblaze_0_i_bram_ctrl_0	microblaze_0_ilmb
+  (0000000000-0x0001ffff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x0001ffff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
   (0x00020000-0x0003ffff) microblaze_0_d_bram_ctrl_1	microblaze_0_dlmb
   (0x00020000-0x0003ffff) microblaze_0_i_bram_ctrl_1	microblaze_0_ilmb
-  (0x40200000-0x4020ffff) axi_hwicap_0	axi4lite_0
   (0x40600000-0x4060ffff) RS232_Uart_1	axi4lite_0
   (0x40800000-0x4080ffff) IIC_MAIN	axi4lite_0
   (0x41400000-0x4140ffff) debug_module	axi4lite_0
-  (0x71a00000-0x71a0ffff) fan_controller_0	axi4lite_0
   (0x72400000-0x7240ffff)
 reconfigurable_peripherials_10	axi4lite_0->axi2axi_connector_1->axi_interconnect
 _1
@@ -170,7 +196,22 @@ reconfigurable_peripherials_23	axi4lite_0->axi2axi_connector_1->axi_interconnect
 _1
   (0x725c0000-0x725cffff)
 reconfigurable_peripherials_24	axi4lite_0->axi2axi_connector_1->axi_interconnect
-_1->axi2axi_connector_2->axi_interconnect_2
+_1
+  (0x725e0000-0x725effff)
+QSPI_FLASH	axi4lite_0->axi2axi_connector_1->axi_interconnect_1
+  (0x72600000-0x7260ffff)
+axi_hwicap_0	axi4lite_0->axi2axi_connector_2->axi_interconnect_2
+  (0x72620000-0x7262ffff)
+fan_controller_0	axi4lite_0->axi2axi_connector_2->axi_interconnect_2
+  (0x72640000-0x7264ffff)
+reconfigurable_peripherials_25	axi4lite_0->axi2axi_connector_2->axi_interconnect
+_2
+  (0x72660000-0x7266ffff)
+reconfigurable_peripherials_26	axi4lite_0->axi2axi_connector_2->axi_interconnect
+_2
+  (0x72680000-0x7268ffff)
+reconfigurable_peripherials_27	axi4lite_0->axi2axi_connector_2->axi_interconnect
+_2
   (0x7b000000-0x7b00ffff) reconfigurable_peripherials_0	axi4lite_0
   (0x7b020000-0x7b02ffff) reconfigurable_peripherials_1	axi4lite_0
   (0x7b040000-0x7b04ffff) reconfigurable_peripherials_2	axi4lite_0
@@ -180,25 +221,23 @@ _1->axi2axi_connector_2->axi_interconnect_2
   (0x7b0c0000-0x7b0cffff) reconfigurable_peripherials_6	axi4lite_0
   (0x7b0e0000-0x7b0effff) reconfigurable_peripherials_7	axi4lite_0
   (0x7b100000-0x7b10ffff) reconfigurable_peripherials_8	axi4lite_0
-  (0x7b120000-0x7b12ffff)
-reconfigurable_peripherials_9	axi4lite_0->axi2axi_connector_1->axi_interconnect_
-1
+  (0x7b120000-0x7b12ffff) reconfigurable_peripherials_9	axi4lite_0
   (0x7e200000-0x7e20ffff) axi_xadc_0	axi4lite_0
 INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
    PARAMETER C_LMB_NUM_SLAVES value to 2 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
    \lmb_v10_v2_1_0.mpd line 82 
 INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
    PARAMETER C_LMB_NUM_SLAVES value to 2 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
    \lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
+   overriding PARAMETER C_MEMSIZE value to 0x20000 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   ata\bram_block_v2_1_0.mpd line 78 
 INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block_1 - tool is
    overriding PARAMETER C_MEMSIZE value to 0x20000 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
-   ata\bram_block_v2_1_0.mpd line 78 
-INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block_0 - tool is
-   overriding PARAMETER C_MEMSIZE value to 0x20000 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
    ata\bram_block_v2_1_0.mpd line 78 
 
 Checking platform address map ...
@@ -206,34 +245,28 @@ Checking platform address map ...
 Checking platform configuration ...
 IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 2 slave(s) 
 IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 2 slave(s) 
-IPNAME: axi_interconnect, INSTANCE: axi_interconnect_2 - 1 master(s) : 4
+IPNAME: axi_interconnect, INSTANCE: axi_interconnect_2 - 1 master(s) : 5
 slave(s) 
 IPNAME: axi_interconnect, INSTANCE: axi_interconnect_1 - 1 master(s) : 16
 slave(s) 
 IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 16 slave(s) 
 
 Checking port drivers...
-WARNING:EDK:4181 - PORT: axi_xadc_0_VAUXP_pin, CONNECTOR: axi_xadc_0_VAUXP -
-   floating connection - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line
-   23 
-WARNING:EDK:4181 - PORT: axi_xadc_0_VAUXN_pin, CONNECTOR: axi_xadc_0_VAUXN -
-   floating connection - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line
-   24 
 WARNING:EDK:4181 - PORT: M_AXI_AWREGION, CONNECTOR:
    axi_interconnect_2_S_AWREGION - floating connection -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
    _00_a\data\axi2axi_connector_v2_1_0.mpd line 198 
 WARNING:EDK:4181 - PORT: M_AXI_ARREGION, CONNECTOR:
    axi_interconnect_2_S_ARREGION - floating connection -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
    _00_a\data\axi2axi_connector_v2_1_0.mpd line 223 
 WARNING:EDK:4181 - PORT: M_AXI_AWREGION, CONNECTOR:
    axi_interconnect_1_S_AWREGION - floating connection -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
    _00_a\data\axi2axi_connector_v2_1_0.mpd line 198 
 WARNING:EDK:4181 - PORT: M_AXI_ARREGION, CONNECTOR:
    axi_interconnect_1_S_ARREGION - floating connection -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi2axi_connector_v1
    _00_a\data\axi2axi_connector_v2_1_0.mpd line 223 
 
 Performing Clock DRCs...
@@ -241,60 +274,60 @@ Performing Clock DRCs...
 Performing Reset DRCs...
 
 Overriding system level properties...
-INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_i_bram_ctrl_1 -
-   tcl is overriding PARAMETER C_MASK value to 0x02020000 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
-   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
-INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_i_bram_ctrl_0 -
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_i_bram_ctrl -
    tcl is overriding PARAMETER C_MASK value to 0x40020000 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
    _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
-INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_d_bram_ctrl_1 -
-   tcl is overriding PARAMETER C_MASK value to 0x02020000 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
-   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
-INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_d_bram_ctrl_0 -
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_d_bram_ctrl -
    tcl is overriding PARAMETER C_MASK value to 0x40020000 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
    _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
 INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
    PARAMETER C_D_AXI value to 1 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
    ata\microblaze_v2_1_0.mpd line 232 
 INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
    PARAMETER C_ADDR_TAG_BITS value to 0 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
    ata\microblaze_v2_1_0.mpd line 337 
 INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
    PARAMETER C_DCACHE_ADDR_TAG value to 0 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
    ata\microblaze_v2_1_0.mpd line 367 
 INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
    PARAMETER C_USE_EXT_BRK value to 1 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
    ata\microblaze_v2_1_0.mpd line 402 
 INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
    PARAMETER C_USE_EXT_NM_BRK value to 1 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_b\d
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
    ata\microblaze_v2_1_0.mpd line 403 
 
 INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi_interconnect_2.
 INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_2 - tcl is
    overriding PARAMETER C_RANGE_CHECK value to 1 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
    06_a\data\axi_interconnect_v2_1_0.mpd line 149 
 
 INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi_interconnect_1.
 INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi_interconnect_1 - tcl is
    overriding PARAMETER C_RANGE_CHECK value to 1 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
    06_a\data\axi_interconnect_v2_1_0.mpd line 149 
 
 INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4lite_0.
 INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
    overriding PARAMETER C_RANGE_CHECK value to 1 -
-   C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
    06_a\data\axi_interconnect_v2_1_0.mpd line 149 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_d_bram_ctrl_1 -
+   tcl is overriding PARAMETER C_MASK value to 0x02020000 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_i_bram_ctrl_1 -
+   tcl is overriding PARAMETER C_MASK value to 0x02020000 -
+   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
+   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
 
 Running system level update procedures...
 
@@ -305,6 +338,20 @@ Running system level DRCs...
 Performing System level DRCs on properties...
 
 Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+INFO:EDK - 
+   INFO:For axi_quad_spi, in the present instance, the C_SCK_RATIO is set to :
+   2. 
+INFO:EDK - 
+   INFO: The EXT_SPI_CLK period is : 10000 ps.
+
+INFO:EDK - 
+   INFO: User can connect the same AXI clock connected to the core to
+   EXT_SPI_CLK port with proper C_SCK_RATIO value.
+
+INFO:EDK - 
+   INFO: For the Winbond memories, the EXT_SPI_CLK is connected to 100000000 Hz
+   clock source and C_SCK_RATIO is 2.
+
 
 Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
 INFO: Setting timing constaints for microblaze_0_ilmb.
@@ -325,6 +372,12 @@ It can be overridden by constraints placed in the system.ucf file.
 INFO: No asynchronous clock conversions in axi_interconnect axi_interconnect_2.
 INFO: No asynchronous clock conversions in axi_interconnect axi_interconnect_1.
 INFO: No asynchronous clock conversions in axi_interconnect axi4lite_0.
+INFO:EDK - 
+   INFO:The EXT_SPI_CLK  = clk_100_0000MHz and  S_AXI_ACLK = clk_100_0000MHz are
+   connected to the same source of clock. 
+INFO:EDK - 
+   INFO:The EXT_SPI_CLK  = clk_100_0000MHz and  S_AXI_ACLK = clk_100_0000MHz are
+   connected to the same source of clock. 
 
 Modify defaults ...
 
@@ -336,154 +389,166 @@ Completion time: 0.00 seconds
 Creating hardware output directories ...
 
 Managing hardware (BBD-specified) netlist files ...
+IPNAME:axi_quad_spi INSTANCE:qspi_flash -
+C:\Users\Cody\Documents\test\system.mhs line 522 - Copying (BBD-specified)
+netlist files.
 
 Managing cache ...
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_9 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 33 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 33 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_8 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 43 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 42 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_7 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 53 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 51 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_6 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 63 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 60 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_5 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 73 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 69 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_4 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 83 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 78 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_3 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 93 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 87 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_27 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 103 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 96 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_26 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 111 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 105 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_25 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 119 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 114 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_24 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 129 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 123 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_23 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 139 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 132 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_22 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 149 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 141 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_21 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 159 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 150 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_20 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 169 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 159 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_2 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 179 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 168 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_19 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 189 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 177 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_18 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 199 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 186 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_17 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 209 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 195 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_16 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 219 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 204 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_15 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 229 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 213 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_14 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 239 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 222 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_13 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 249 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 231 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_12 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 259 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 240 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_11 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 269 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 249 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_10 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 279 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 258 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_1 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 289 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 267 - Copying cache implementation
+netlist
 IPNAME:reconfigurable_peripherials INSTANCE:reconfigurable_peripherials_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 299 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 276 - Copying cache implementation
+netlist
 IPNAME:proc_sys_reset INSTANCE:proc_sys_reset_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 315 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 285 - Copying cache implementation
+netlist
 IPNAME:lmb_v10 INSTANCE:microblaze_0_ilmb -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 328 - Copying cache
-implementation netlist
-IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_i_bram_ctrl_1 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 335 - Copying cache
-implementation netlist
-IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_i_bram_ctrl_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 344 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 298 - Copying cache implementation
+netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_i_bram_ctrl -
+C:\Users\Cody\Documents\test\system.mhs line 305 - Copying cache implementation
+netlist
 IPNAME:lmb_v10 INSTANCE:microblaze_0_dlmb -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 353 - Copying cache
-implementation netlist
-IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_d_bram_ctrl_1 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 360 - Copying cache
-implementation netlist
-IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_d_bram_ctrl_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 369 - Copying cache
-implementation netlist
-IPNAME:bram_block INSTANCE:microblaze_0_bram_block_1 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 378 - Copying cache
-implementation netlist
-IPNAME:bram_block INSTANCE:microblaze_0_bram_block_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 385 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 314 - Copying cache implementation
+netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_d_bram_ctrl -
+C:\Users\Cody\Documents\test\system.mhs line 321 - Copying cache implementation
+netlist
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
+C:\Users\Cody\Documents\test\system.mhs line 330 - Copying cache implementation
+netlist
 IPNAME:microblaze INSTANCE:microblaze_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 392 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 337 - Copying cache implementation
+netlist
 IPNAME:fan_controller INSTANCE:fan_controller_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 418 - Copying cache
-implementation netlist
-IPNAME:mdm INSTANCE:debug_module -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 429 - Copying cache
-implementation netlist
-IPNAME:axi_xadc INSTANCE:axi_xadc_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 459 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 360 - Copying cache implementation
+netlist
+IPNAME:mdm INSTANCE:debug_module - C:\Users\Cody\Documents\test\system.mhs line
+369 - Copying cache implementation netlist
+IPNAME:axi_xadc INSTANCE:axi_xadc_0 - C:\Users\Cody\Documents\test\system.mhs
+line 398 - Copying cache implementation netlist
+IPNAME:axi_interconnect INSTANCE:axi_interconnect_2 -
+C:\Users\Cody\Documents\test\system.mhs line 413 - Copying cache implementation
+netlist
+IPNAME:axi_interconnect INSTANCE:axi_interconnect_1 -
+C:\Users\Cody\Documents\test\system.mhs line 421 - Copying cache implementation
+netlist
 IPNAME:axi_hwicap INSTANCE:axi_hwicap_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 493 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 429 - Copying cache implementation
+netlist
+IPNAME:axi_interconnect INSTANCE:axi4lite_0 -
+C:\Users\Cody\Documents\test\system.mhs line 440 - Copying cache implementation
+netlist
 IPNAME:axi2axi_connector INSTANCE:axi2axi_connector_2 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 512 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 448 - Copying cache implementation
+netlist
 IPNAME:axi2axi_connector INSTANCE:axi2axi_connector_1 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 525 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 467 - Copying cache implementation
+netlist
 IPNAME:axi_uartlite INSTANCE:rs232_uart_1 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 566 - Copying cache
-implementation netlist
-IPNAME:axi_iic INSTANCE:iic_main -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 581 - Copying cache
-implementation netlist
+C:\Users\Cody\Documents\test\system.mhs line 507 - Copying cache implementation
+netlist
+IPNAME:axi_quad_spi INSTANCE:qspi_flash -
+C:\Users\Cody\Documents\test\system.mhs line 522 - Copying cache implementation
+netlist
+IPNAME:axi_iic INSTANCE:iic_main - C:\Users\Cody\Documents\test\system.mhs line
+540 - Copying cache implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_d_bram_ctrl_1 -
+C:\Users\Cody\Documents\test\system.mhs line 553 - Copying cache implementation
+netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_i_bram_ctrl_1 -
+C:\Users\Cody\Documents\test\system.mhs line 562 - Copying cache implementation
+netlist
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block_1 -
+C:\Users\Cody\Documents\test\system.mhs line 571 - Copying cache implementation
+netlist
 
 Elaborating instances ...
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
+C:\Users\Cody\Documents\test\system.mhs line 330 - elaborating IP
 IPNAME:bram_block INSTANCE:microblaze_0_bram_block_1 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 378 - elaborating IP
-IPNAME:bram_block INSTANCE:microblaze_0_bram_block_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 385 - elaborating IP
+C:\Users\Cody\Documents\test\system.mhs line 571 - elaborating IP
 IPNAME:clock_generator INSTANCE:clock_generator_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 443 - elaborating IP
+C:\Users\Cody\Documents\test\system.mhs line 382 - elaborating IP
 ClkGen elaborate status: PASSED
 ----------------------------------------
 ----------------------------------------
@@ -507,115 +572,74 @@ Running XST synthesis ...
 INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
-INFO:EDK:4194 - Running XST parallelly on 4 processors
-INSTANCE:reconfigurable_peripherials_9 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 33 - Running XST
-synthesis
-INSTANCE:reconfigurable_peripherials_8 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 43 - Running XST
-synthesis
-INSTANCE:reconfigurable_peripherials_7 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 53 - Running XST
-synthesis
-INSTANCE:reconfigurable_peripherials_6 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 63 - Running XST
-synthesis
-INSTANCE:reconfigurable_peripherials_5 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 73 - Running XST
-synthesis
-INSTANCE:reconfigurable_peripherials_4 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 83 - Running XST
-synthesis
-INSTANCE:reconfigurable_peripherials_3 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 93 - Running XST
-synthesis
+INSTANCE:reconfigurable_peripherials_9 - C:\Users\Cody\Documents\test\system.mhs
+line 33 - Running XST synthesis
+INSTANCE:reconfigurable_peripherials_8 - C:\Users\Cody\Documents\test\system.mhs
+line 42 - Running XST synthesis
+INSTANCE:reconfigurable_peripherials_7 - C:\Users\Cody\Documents\test\system.mhs
+line 51 - Running XST synthesis
+INSTANCE:reconfigurable_peripherials_6 - C:\Users\Cody\Documents\test\system.mhs
+line 60 - Running XST synthesis
+INSTANCE:reconfigurable_peripherials_5 - C:\Users\Cody\Documents\test\system.mhs
+line 69 - Running XST synthesis
+INSTANCE:reconfigurable_peripherials_4 - C:\Users\Cody\Documents\test\system.mhs
+line 78 - Running XST synthesis
+INSTANCE:reconfigurable_peripherials_3 - C:\Users\Cody\Documents\test\system.mhs
+line 87 - Running XST synthesis
 INSTANCE:reconfigurable_peripherials_27 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 103 - Running XST
-synthesis
+C:\Users\Cody\Documents\test\system.mhs line 96 - Running XST synthesis
 INSTANCE:reconfigurable_peripherials_26 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 111 - Running XST
-synthesis
+C:\Users\Cody\Documents\test\system.mhs line 105 - Running XST synthesis
 INSTANCE:reconfigurable_peripherials_25 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 119 - Running XST
-synthesis
+C:\Users\Cody\Documents\test\system.mhs line 114 - Running XST synthesis
 INSTANCE:reconfigurable_peripherials_24 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 129 - Running XST
-synthesis
+C:\Users\Cody\Documents\test\system.mhs line 123 - Running XST synthesis
 INSTANCE:reconfigurable_peripherials_23 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 139 - Running XST
-synthesis
+C:\Users\Cody\Documents\test\system.mhs line 132 - Running XST synthesis
 INSTANCE:reconfigurable_peripherials_22 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 149 - Running XST
-synthesis
+C:\Users\Cody\Documents\test\system.mhs line 141 - Running XST synthesis
 INSTANCE:reconfigurable_peripherials_21 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 159 - Running XST
-synthesis
+C:\Users\Cody\Documents\test\system.mhs line 150 - Running XST synthesis
 INSTANCE:reconfigurable_peripherials_20 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 169 - Running XST
-synthesis
-INSTANCE:reconfigurable_peripherials_2 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 179 - Running XST
-synthesis
+C:\Users\Cody\Documents\test\system.mhs line 159 - Running XST synthesis
+INSTANCE:reconfigurable_peripherials_2 - C:\Users\Cody\Documents\test\system.mhs
+line 168 - Running XST synthesis
 INSTANCE:reconfigurable_peripherials_19 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 189 - Running XST
-synthesis
+C:\Users\Cody\Documents\test\system.mhs line 177 - Running XST synthesis
 INSTANCE:reconfigurable_peripherials_18 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 199 - Running XST
-synthesis
+C:\Users\Cody\Documents\test\system.mhs line 186 - Running XST synthesis
 INSTANCE:reconfigurable_peripherials_17 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 209 - Running XST
-synthesis
+C:\Users\Cody\Documents\test\system.mhs line 195 - Running XST synthesis
 INSTANCE:reconfigurable_peripherials_16 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 219 - Running XST
-synthesis
+C:\Users\Cody\Documents\test\system.mhs line 204 - Running XST synthesis
 INSTANCE:reconfigurable_peripherials_15 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 229 - Running XST
-synthesis
+C:\Users\Cody\Documents\test\system.mhs line 213 - Running XST synthesis
 INSTANCE:reconfigurable_peripherials_14 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 239 - Running XST
-synthesis
+C:\Users\Cody\Documents\test\system.mhs line 222 - Running XST synthesis
 INSTANCE:reconfigurable_peripherials_13 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 249 - Running XST
-synthesis
+C:\Users\Cody\Documents\test\system.mhs line 231 - Running XST synthesis
 INSTANCE:reconfigurable_peripherials_12 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 259 - Running XST
-synthesis
+C:\Users\Cody\Documents\test\system.mhs line 240 - Running XST synthesis
 INSTANCE:reconfigurable_peripherials_11 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 269 - Running XST
-synthesis
+C:\Users\Cody\Documents\test\system.mhs line 249 - Running XST synthesis
 INSTANCE:reconfigurable_peripherials_10 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 279 - Running XST
-synthesis
-INSTANCE:reconfigurable_peripherials_1 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 289 - Running XST
-synthesis
-INSTANCE:reconfigurable_peripherials_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 299 - Running XST
-synthesis
-INSTANCE:fan_controller_0 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs
-line 418 - Running XST synthesis
-INSTANCE:clock_generator_0 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs
-line 443 - Running XST synthesis
-INSTANCE:axi_interconnect_2 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs
-line 477 - Running XST synthesis
-INSTANCE:axi_interconnect_1 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs
-line 485 - Running XST synthesis
-INSTANCE:axi4lite_0 - C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 504
-- Running XST synthesis
+C:\Users\Cody\Documents\test\system.mhs line 258 - Running XST synthesis
+INSTANCE:reconfigurable_peripherials_1 - C:\Users\Cody\Documents\test\system.mhs
+line 267 - Running XST synthesis
+INSTANCE:reconfigurable_peripherials_0 - C:\Users\Cody\Documents\test\system.mhs
+line 276 - Running XST synthesis
+INSTANCE:fan_controller_0 - C:\Users\Cody\Documents\test\system.mhs line 360 -
+Running XST synthesis
+INSTANCE:clock_generator_0 - C:\Users\Cody\Documents\test\system.mhs line 382 -
+Running XST synthesis
 
 Running NGCBUILD ...
 IPNAME:system_clock_generator_0_wrapper INSTANCE:clock_generator_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 443 - Running NGCBUILD
-IPNAME:system_axi_interconnect_2_wrapper INSTANCE:axi_interconnect_2 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 477 - Running NGCBUILD
-IPNAME:system_axi_interconnect_1_wrapper INSTANCE:axi_interconnect_1 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 485 - Running NGCBUILD
-IPNAME:system_axi4lite_0_wrapper INSTANCE:axi4lite_0 -
-C:\Users\ECE\Documents\PR_Project_XADC\system.mhs line 504 - Running NGCBUILD
+C:\Users\Cody\Documents\test\system.mhs line 382 - Running NGCBUILD
 INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
    If any constraint needs to be overridden, this should be done by modifying
    the data/system.ucf file.
 
 Rebuilding cache ...
 
-Total run time: 190.00 seconds
+Total run time: 314.00 seconds

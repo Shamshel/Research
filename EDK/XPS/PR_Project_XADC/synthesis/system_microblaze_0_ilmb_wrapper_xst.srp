@@ -1,10 +1,10 @@
-Release 14.6 - xst P.68d (nt64)
+Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to C:\Users\ECE\Documents\PR_Project_XADC\synthesis\xst_temp_dir\
+--> Parameter TMPDIR set to C:\Users\Cody\Documents\test\synthesis\xst_temp_dir\
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.53 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> 
 TABLE OF CONTENTS
@@ -35,11 +35,11 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "system_microblaze_0_ilmb_wrapper_xst.prj"
-Verilog Include Directory          : {"C:\Users\ECE\Documents\PR_Project_XADC\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"C:\Users\Cody\Documents\test\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc7k325tffg900-2
-Output File Name                   : "system_microblaze_0_ilmb_wrapper.ngc"
+Output File Name                   : "../implementation/system_microblaze_0_ilmb_wrapper.ngc"
 
 ---- Source Options
 Top Module Name                    : system_microblaze_0_ilmb_wrapper
@@ -54,7 +54,7 @@ Optimization Effort                : 1
 Hierarchy Separator                : /
 
 ---- Other Options
-Cores Search Directories           : {./}
+Cores Search Directories           : {../implementation}
 
 =========================================================================
 
@@ -62,10 +62,10 @@ Cores Search Directories           : {./}
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:/Xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v2_00_b/hdl/vhdl/lmb_v10.vhd" into library lmb_v10_v2_00_b
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v2_00_b/hdl/vhdl/lmb_v10.vhd" into library lmb_v10_v2_00_b
 Parsing entity <lmb_v10>.
 Parsing architecture <IMP> of entity <lmb_v10>.
-Parsing VHDL file "C:\Users\ECE\Documents\PR_Project_XADC\synthesis\parallel_run\hdl\system_microblaze_0_ilmb_wrapper.vhd" into library work
+Parsing VHDL file "C:\Users\Cody\Documents\test\hdl\system_microblaze_0_ilmb_wrapper.vhd" into library work
 Parsing entity <system_microblaze_0_ilmb_wrapper>.
 Parsing architecture <STRUCTURE> of entity <system_microblaze_0_ilmb_wrapper>.
 
@@ -76,20 +76,20 @@ Parsing architecture <STRUCTURE> of entity <system_microblaze_0_ilmb_wrapper>.
 Elaborating entity <system_microblaze_0_ilmb_wrapper> (architecture <STRUCTURE>) from library <work>.
 
 Elaborating entity <lmb_v10> (architecture <IMP>) with generics from library <lmb_v10_v2_00_b>.
-WARNING:HDLCompiler:89 - "C:/Xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v2_00_b/hdl/vhdl/lmb_v10.vhd" Line 146: <fds> remains a black-box since it has no binding entity.
+WARNING:HDLCompiler:89 - "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v2_00_b/hdl/vhdl/lmb_v10.vhd" Line 146: <fds> remains a black-box since it has no binding entity.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <system_microblaze_0_ilmb_wrapper>.
-    Related source file is "C:\Users\ECE\Documents\PR_Project_XADC\synthesis\parallel_run\hdl\system_microblaze_0_ilmb_wrapper.vhd".
+    Related source file is "C:\Users\Cody\Documents\test\hdl\system_microblaze_0_ilmb_wrapper.vhd".
     Summary:
 	no macro.
 Unit <system_microblaze_0_ilmb_wrapper> synthesized.
 
 Synthesizing Unit <lmb_v10>.
-    Related source file is "C:/Xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v2_00_b/hdl/vhdl/lmb_v10.vhd".
+    Related source file is "C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v2_00_b/hdl/vhdl/lmb_v10.vhd".
         C_LMB_NUM_SLAVES = 2
         C_LMB_DWIDTH = 32
         C_LMB_AWIDTH = 32
@@ -292,15 +292,14 @@ Cross Clock Domains Report:
 --------------------------
 
 =========================================================================
-EXCEPTION:Xdm:ModelImp.c:55:$Id: ModelImp.c,v 1.28 2009/06/12 19:55:28 jdl Exp $ - Xdm_Exception::CannotWriteFile file='C:\Users\ECE\Documents\PR_Project_XADC\synthesis\xst_temp_dir\\xil_6'
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 11.16 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.84 secs
  
 --> 
 
-Total memory usage is 449384 kilobytes
+Total memory usage is 447416 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
